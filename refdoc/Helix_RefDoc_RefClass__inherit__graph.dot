@@ -1,0 +1,15 @@
+digraph "RefClass"
+{ graph [bgcolor="transparent"]; 
+ // LATEX_PDF_SIZE
+  edge [fontname="monospace",fontsize="12",labelfontname="monospace",labelfontsize="12"];
+  node [fontname="monospace",fontsize="12",shape=record];
+  Node1 [label="RefClass",height=0.2,width=0.4,color="grey75", fillcolor="#333333", style="filled", fontcolor="white",tooltip="Classes, Traits, and Interfaces."];
+  Node2 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node2 [label="AbstractRefClass",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1AbstractRefClass.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node3 [label="ReflectionClass",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node4 [label="DocBlockTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1DocBlockTrait.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node5 [label="XMLWriterInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$interfaceHelix_1_1RefDoc_1_1XMLWriterInterface.html",tooltip="IoC when content being written by { graph [bgcolor="transparent"]; ."];
+}

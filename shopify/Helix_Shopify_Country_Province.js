@@ -1,0 +1,26 @@
+var Helix_Shopify_Country_Province =
+[
+    [ "DIR", "Helix_Shopify_Country_Province.html#c482d92", null ],
+    [ "TAX_TYPE_COMPOUNDED", "Helix_Shopify_Country_Province.html#668adc3", null ],
+    [ "TAX_TYPE_HARMONIZED", "Helix_Shopify_Country_Province.html#45f2148", null ],
+    [ "TAX_TYPE_NONE", "Helix_Shopify_Country_Province.html#7cf7509", null ],
+    [ "TAX_TYPE_NORMAL", "Helix_Shopify_Country_Province.html#451b8f5", null ],
+    [ "TYPE", "Helix_Shopify_Country_Province.html#0cb7892", null ],
+    [ "_container", "Helix_Shopify_Country_Province.html#9f43825", null ],
+    [ "getCode", "Helix_Shopify_Country_Province.html#e0ff655", null ],
+    [ "getCountry", "Helix_Shopify_Country_Province.html#4790d1a", null ],
+    [ "getCountryId", "Helix_Shopify_Country_Province.html#1cba9ea", null ],
+    [ "getName", "Helix_Shopify_Country_Province.html#8a0b8ec", null ],
+    [ "getShippingZoneId", "Helix_Shopify_Country_Province.html#d456b9f", null ],
+    [ "getTax", "Helix_Shopify_Country_Province.html#281fc66", null ],
+    [ "getTaxName", "Helix_Shopify_Country_Province.html#4b328ba", null ],
+    [ "getTaxPercentage", "Helix_Shopify_Country_Province.html#3c78c41", null ],
+    [ "getTaxType", "Helix_Shopify_Country_Province.html#50b8237", null ],
+    [ "setCode", "Helix_Shopify_Country_Province.html#bf4cc76", null ],
+    [ "setName", "Helix_Shopify_Country_Province.html#2f41205", null ],
+    [ "setShippingZoneId", "Helix_Shopify_Country_Province.html#70f6b29", null ],
+    [ "setTax", "Helix_Shopify_Country_Province.html#d6deb29", null ],
+    [ "setTaxName", "Helix_Shopify_Country_Province.html#f69ef2f", null ],
+    [ "setTaxPercentage", "Helix_Shopify_Country_Province.html#bf6eae2", null ],
+    [ "setTaxType", "Helix_Shopify_Country_Province.html#13c026f", null ]
+];

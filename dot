@@ -1,0 +1,25 @@
+#!/bin/bash
+# hijacks the dot options.
+
+# for some horrible reason this script must actually be named "dot".
+# doxygen isn't smart enough to take a command path. only a dir.
+
+# only make the graph bg transparent instead of EVERYTHING transparent via doxygen options.
+sed -i 's/{/{ graph [bgcolor="transparent"]; /' $1
+
+# override the edge color to match link colors in the docs.
+sed -i 's/,color="midnightblue"/,color="#0090f0"/g' $1
+
+# the hilighted node is already white text. darken the bg, set border to normal.
+sed -i 's/fillcolor="grey75"/fillcolor="#333333"/' $1
+sed -i 's/,color="black"/,color="grey75"/' $1
+
+# make other nodes mute on black, to match section headers in the docs.
+sed -i 's/fillcolor="white"/fillcolor="black",fontcolor="white"/g' $1
+sed -i 's/fontcolor="black"/fontcolor="white"/g' $1
+
+# todo: change fontcolor for interfaces, traits, abstracts, etc.
+
+#cat $1 >&2
+
+dot "$@"

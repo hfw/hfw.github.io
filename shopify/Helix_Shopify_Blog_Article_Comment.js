@@ -1,0 +1,26 @@
+var Helix_Shopify_Blog_Article_Comment =
+[
+    [ "DIR", "Helix_Shopify_Blog_Article_Comment.html#c482d92", null ],
+    [ "TYPE", "Helix_Shopify_Blog_Article_Comment.html#0cb7892", null ],
+    [ "_container", "Helix_Shopify_Blog_Article_Comment.html#9f43825", null ],
+    [ "_dir", "Helix_Shopify_Blog_Article_Comment.html#249b4fd", null ],
+    [ "getArticle", "Helix_Shopify_Blog_Article_Comment.html#46a7630", null ],
+    [ "getArticleId", "Helix_Shopify_Blog_Article_Comment.html#9916d38", null ],
+    [ "getAuthor", "Helix_Shopify_Blog_Article_Comment.html#f736f45", null ],
+    [ "getBlog", "Helix_Shopify_Blog_Article_Comment.html#f7f0e46", null ],
+    [ "getBlogId", "Helix_Shopify_Blog_Article_Comment.html#b934524", null ],
+    [ "getBody", "Helix_Shopify_Blog_Article_Comment.html#472531c", null ],
+    [ "getBodyHtml", "Helix_Shopify_Blog_Article_Comment.html#25f6887", null ],
+    [ "getCreatedAt", "Helix_Shopify_Blog_Article_Comment.html#1adffdc", null ],
+    [ "getEmail", "Helix_Shopify_Blog_Article_Comment.html#30d49cf", null ],
+    [ "getIp", "Helix_Shopify_Blog_Article_Comment.html#9ce4612", null ],
+    [ "getPublishedAt", "Helix_Shopify_Blog_Article_Comment.html#04e755a", null ],
+    [ "getStatus", "Helix_Shopify_Blog_Article_Comment.html#575cf10", null ],
+    [ "getUpdatedAt", "Helix_Shopify_Blog_Article_Comment.html#975c7c7", null ],
+    [ "getUserAgent", "Helix_Shopify_Blog_Article_Comment.html#4f199e8", null ],
+    [ "setAuthor", "Helix_Shopify_Blog_Article_Comment.html#58f8cc7", null ],
+    [ "setBody", "Helix_Shopify_Blog_Article_Comment.html#1e8fbc5", null ],
+    [ "setBodyHtml", "Helix_Shopify_Blog_Article_Comment.html#69659e6", null ],
+    [ "setEmail", "Helix_Shopify_Blog_Article_Comment.html#996536f", null ],
+    [ "setIp", "Helix_Shopify_Blog_Article_Comment.html#4049682", null ]
+];

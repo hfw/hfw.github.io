@@ -1,0 +1,67 @@
+* {
+    background: black !important;
+    color: white !important;
+    font-family: monospace !important;
+    font-size: 14pt !important; /* min font size hack */
+    text-shadow: none !important;
+}
+
+.groupheader {
+    color: #888 !important;
+}
+
+div.memdoc p, td.mdescRight {
+    color: #888 !important;
+}
+
+table.memberdecls {
+    border-spacing: 0.5em !important;
+}
+
+body {
+    margin: 0;
+}
+
+div.fragment {
+    padding: 1em;
+    margin: 1em 1em 1em 0;
+}
+
+a, div.dynheader.closed {
+    color: #09f !important;
+}
+
+a:hover, a:focus, div.dynheader:hover {
+    color: #0f9 !important;
+}
+
+a.active, div.dynheader.opened {
+    color: #0f0 !important;
+}
+
+/* never change external link colors */
+a[href^="http"] {
+    color: #99c !important;
+}
+
+div#projectname a {
+    font-size: inherit !important;
+    color: inherit !important;
+    text-decoration: none;
+}
+
+#nav-tree .label a.nolink {
+    color: #fa0 !important; /* dir links */
+}
+
+#nav-tree .label a.nolink::after {
+    content: "\\"; /* namespace-dirs */
+}
+
+#projectlogo img {
+    width: 100px;
+}
+
+#projectname {
+    font-size: 300% !important;
+}

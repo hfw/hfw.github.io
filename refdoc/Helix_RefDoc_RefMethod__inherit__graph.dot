@@ -1,0 +1,19 @@
+digraph "RefMethod"
+{ graph [bgcolor="transparent"]; 
+ // LATEX_PDF_SIZE
+  edge [fontname="monospace",fontsize="12",labelfontname="monospace",labelfontsize="12"];
+  node [fontname="monospace",fontsize="12",shape=record];
+  Node1 [label="RefMethod",height=0.2,width=0.4,color="grey75", fillcolor="#333333", style="filled", fontcolor="white",tooltip="Extracts info from a method."];
+  Node2 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node2 [label="ReflectionMethod",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node3 [label="RefMemberTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefMemberTrait.html",tooltip="Common overrides and functions for reflection members."];
+  Node4 -> Node3 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node4 [label="DocBlockTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1DocBlockTrait.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node5 [label="VisibilityTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1VisibilityTrait.html",tooltip="Adds visibility helper to member reflections."];
+  Node6 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node6 [label="MemberInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$interfaceHelix_1_1RefDoc_1_1MemberInterface.html",tooltip="A QOL interface to keep all the member types consistent."];
+  Node7 -> Node6 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node7 [label="XMLWriterInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$interfaceHelix_1_1RefDoc_1_1XMLWriterInterface.html",tooltip="IoC when content being written by { graph [bgcolor="transparent"]; ."];
+}

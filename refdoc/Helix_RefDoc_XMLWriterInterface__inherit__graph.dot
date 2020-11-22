@@ -1,0 +1,29 @@
+digraph "XMLWriterInterface"
+{ graph [bgcolor="transparent"]; 
+ // LATEX_PDF_SIZE
+  edge [fontname="monospace",fontsize="12",labelfontname="monospace",labelfontsize="12"];
+  node [fontname="monospace",fontsize="12",shape=record];
+  Node1 [label="XMLWriterInterface",height=0.2,width=0.4,color="grey75", fillcolor="#333333", style="filled", fontcolor="white",tooltip="IoC when content being written by { graph [bgcolor="transparent"]; ."];
+  Node1 -> Node2 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node2 [label="AbstractRefClass",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1AbstractRefClass.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node3 [label="RefClass",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefClass.html",tooltip="Classes, Traits, and Interfaces."];
+  Node2 -> Node4 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node4 [label="RefInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefInterface.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node5 [label="RefTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefTrait.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node6 [label="MagicType",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1MagicType.html",tooltip="A ReflectionType that supports unions and other helpful things."];
+  Node1 -> Node7 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node7 [label="MemberInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$interfaceHelix_1_1RefDoc_1_1MemberInterface.html",tooltip="A QOL interface to keep all the member types consistent."];
+  Node7 -> Node8 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node8 [label="AbstractMagicMember",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1AbstractMagicMember.html",tooltip="A magic member."];
+  Node7 -> Node9 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node9 [label="RefConstant",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefConstant.html",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node10 [label="RefMethod",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefMethod.html",tooltip="Extracts info from a method."];
+  Node7 -> Node11 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node11 [label="RefProperty",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefProperty.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node12 [label="RefParam",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefParam.html",tooltip=" "];
+}

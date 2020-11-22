@@ -1,0 +1,19 @@
+digraph "AbstractRefClass"
+{ graph [bgcolor="transparent"]; 
+ // LATEX_PDF_SIZE
+  edge [fontname="monospace",fontsize="12",labelfontname="monospace",labelfontsize="12"];
+  node [fontname="monospace",fontsize="12",shape=record];
+  Node1 [label="AbstractRefClass",height=0.2,width=0.4,color="grey75", fillcolor="#333333", style="filled", fontcolor="white",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node2 [label="ReflectionClass",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node3 [label="DocBlockTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1DocBlockTrait.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node4 [label="XMLWriterInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$interfaceHelix_1_1RefDoc_1_1XMLWriterInterface.html",tooltip="IoC when content being written by { graph [bgcolor="transparent"]; ."];
+  Node1 -> Node5 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node5 [label="RefClass",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefClass.html",tooltip="Classes, Traits, and Interfaces."];
+  Node1 -> Node6 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node6 [label="RefInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefInterface.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
+  Node7 [label="RefTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefTrait.html",tooltip=" "];
+}

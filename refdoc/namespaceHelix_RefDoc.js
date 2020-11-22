@@ -1,0 +1,28 @@
+var namespaceHelix_RefDoc =
+[
+    [ "AbstractMagicMember", "Helix_RefDoc_AbstractMagicMember.html", "Helix_RefDoc_AbstractMagicMember" ],
+    [ "AbstractRefClass", "Helix_RefDoc_AbstractRefClass.html", "Helix_RefDoc_AbstractRefClass" ],
+    [ "DocBlockTrait", "Helix_RefDoc_DocBlockTrait.html", "Helix_RefDoc_DocBlockTrait" ],
+    [ "Log", "Helix_RefDoc_Log.html", "Helix_RefDoc_Log" ],
+    [ "MagicType", "Helix_RefDoc_MagicType.html", "Helix_RefDoc_MagicType" ],
+    [ "MemberInterface", "Helix_RefDoc_MemberInterface.html", "Helix_RefDoc_MemberInterface" ],
+    [ "RefClass", "Helix_RefDoc_RefClass.html", "Helix_RefDoc_RefClass" ],
+    [ "RefConstant", "Helix_RefDoc_RefConstant.html", "Helix_RefDoc_RefConstant" ],
+    [ "RefInterface", "Helix_RefDoc_RefInterface.html", "Helix_RefDoc_RefInterface" ],
+    [ "RefMemberTrait", "Helix_RefDoc_RefMemberTrait.html", "Helix_RefDoc_RefMemberTrait" ],
+    [ "RefMethod", "Helix_RefDoc_RefMethod.html", "Helix_RefDoc_RefMethod" ],
+    [ "RefParam", "Helix_RefDoc_RefParam.html", "Helix_RefDoc_RefParam" ],
+    [ "RefProperty", "Helix_RefDoc_RefProperty.html", "Helix_RefDoc_RefProperty" ],
+    [ "RefTrait", "Helix_RefDoc_RefTrait.html", "Helix_RefDoc_RefTrait" ],
+    [ "RefXML", "Helix_RefDoc_RefXML.html", "Helix_RefDoc_RefXML" ],
+    [ "TestAbstract", "Helix_RefDoc_TestAbstract.html", "Helix_RefDoc_TestAbstract" ],
+    [ "TestClass", "Helix_RefDoc_TestClass.html", null ],
+    [ "TestInterface", "Helix_RefDoc_TestInterface.html", "Helix_RefDoc_TestInterface" ],
+    [ "TestInterface2", "Helix_RefDoc_TestInterface2.html", null ],
+    [ "TestInterface3", "Helix_RefDoc_TestInterface3.html", null ],
+    [ "TestTrait1", "Helix_RefDoc_TestTrait1.html", "Helix_RefDoc_TestTrait1" ],
+    [ "TestTrait2", "Helix_RefDoc_TestTrait2.html", null ],
+    [ "Util", "Helix_RefDoc_Util.html", "Helix_RefDoc_Util" ],
+    [ "VisibilityTrait", "Helix_RefDoc_VisibilityTrait.html", "Helix_RefDoc_VisibilityTrait" ],
+    [ "XMLWriterInterface", "Helix_RefDoc_XMLWriterInterface.html", "Helix_RefDoc_XMLWriterInterface" ]
+];

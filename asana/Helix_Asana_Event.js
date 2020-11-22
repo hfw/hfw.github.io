@@ -1,0 +1,25 @@
+var Helix_Asana_Event =
+[
+    [ "ACTION_ADDED", "Helix_Asana_Event.html#7911c18", null ],
+    [ "ACTION_CHANGED", "Helix_Asana_Event.html#0b57c67", null ],
+    [ "ACTION_DELETED", "Helix_Asana_Event.html#7015e52", null ],
+    [ "ACTION_REMOVED", "Helix_Asana_Event.html#ea89ec0", null ],
+    [ "ACTION_UNDELETED", "Helix_Asana_Event.html#c367036", null ],
+    [ "GRAPH", "Helix_Asana_Event.html#0b028b2", null ],
+    [ "MAP", "Helix_Asana_Event.html#9c07f6e", null ],
+    [ "_setData", "Helix_Asana_Event.html#e470999", null ],
+    [ "getAction", "Helix_Asana_Event.html#5ff210d", null ],
+    [ "getChange", "Helix_Asana_Event.html#0fe5742", null ],
+    [ "getCreatedAt", "Helix_Asana_Event.html#1adffdc", null ],
+    [ "getParent", "Helix_Asana_Event.html#ddbb1e9", null ],
+    [ "getResource", "Helix_Asana_Event.html#29f7abb", null ],
+    [ "getUser", "Helix_Asana_Event.html#2f9d9ad", null ],
+    [ "hasChange", "Helix_Asana_Event.html#64655b8", null ],
+    [ "hasParent", "Helix_Asana_Event.html#0c5fe84", null ],
+    [ "hasUser", "Helix_Asana_Event.html#cdfcae6", null ],
+    [ "wasAddition", "Helix_Asana_Event.html#e79cf78", null ],
+    [ "wasChange", "Helix_Asana_Event.html#8f4da0e", null ],
+    [ "wasDeletion", "Helix_Asana_Event.html#9ae3c16", null ],
+    [ "wasRemoval", "Helix_Asana_Event.html#f5b6c94", null ],
+    [ "wasUndeletion", "Helix_Asana_Event.html#a641207", null ]
+];

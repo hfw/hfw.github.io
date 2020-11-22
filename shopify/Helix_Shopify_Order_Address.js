@@ -1,0 +1,27 @@
+var Helix_Shopify_Order_Address =
+[
+    [ "getAddress1", "Helix_Shopify_Order_Address.html#2223adf", null ],
+    [ "getAddress2", "Helix_Shopify_Order_Address.html#b7d438d", null ],
+    [ "getCity", "Helix_Shopify_Order_Address.html#1f53525", null ],
+    [ "getCompany", "Helix_Shopify_Order_Address.html#fb95a2a", null ],
+    [ "getCountry", "Helix_Shopify_Order_Address.html#76fdf76", null ],
+    [ "getCountryCode", "Helix_Shopify_Order_Address.html#aab7d50", null ],
+    [ "getCountryName", "Helix_Shopify_Order_Address.html#b93c8df", null ],
+    [ "getName", "Helix_Shopify_Order_Address.html#8a0b8ec", null ],
+    [ "getPhone", "Helix_Shopify_Order_Address.html#4f215a4", null ],
+    [ "getProvince", "Helix_Shopify_Order_Address.html#8ee23e5", null ],
+    [ "getProvinceCode", "Helix_Shopify_Order_Address.html#468c7a5", null ],
+    [ "getZip", "Helix_Shopify_Order_Address.html#793213f", null ],
+    [ "hasPhone", "Helix_Shopify_Order_Address.html#79c5101", null ],
+    [ "isDefault", "Helix_Shopify_Order_Address.html#241616c", null ],
+    [ "setAddress1", "Helix_Shopify_Order_Address.html#7d2b0a2", null ],
+    [ "setAddress2", "Helix_Shopify_Order_Address.html#a45e64b", null ],
+    [ "setCity", "Helix_Shopify_Order_Address.html#03ce819", null ],
+    [ "setCompany", "Helix_Shopify_Order_Address.html#6ec5aef", null ],
+    [ "setCountry", "Helix_Shopify_Order_Address.html#dda40f3", null ],
+    [ "setCountryName", "Helix_Shopify_Order_Address.html#e472e16", null ],
+    [ "setName", "Helix_Shopify_Order_Address.html#2f41205", null ],
+    [ "setPhone", "Helix_Shopify_Order_Address.html#bc5b3e7", null ],
+    [ "setProvince", "Helix_Shopify_Order_Address.html#a4f40f0", null ],
+    [ "setZip", "Helix_Shopify_Order_Address.html#2492b63", null ]
+];

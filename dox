@@ -1,0 +1,98 @@
+#!/bin/bash -eu
+
+# SOME THINGS TO KNOW
+#
+# - doxygen doesn't support markdown headers that use "#",
+#   convert those to === or --- underneath the titles.
+#   otherwise those headers will be interpreted as classes.
+#
+# - use @link ONLY for inlines: {@link class/member [text]}.
+# - use @see ONLY for lists, both internal and external.
+
+if [ ! -d ../$1/src ]; then
+    echo "hfw/$1 not found";
+    exit 1;
+fi
+
+rm -rf $1
+
+# don't fuck with these without consulting default.ini
+cat <<CONFIG | ./doxygen -
+    ABBREVIATE_BRIEF=
+    ALPHABETICAL_INDEX=NO
+    ALWAYS_DETAILED_SEC=YES
+    COLLABORATION_GRAPH=NO
+    DIRECTORY_GRAPH=NO
+    DOT_FONTNAME=monospace
+    DOT_FONTSIZE=12
+    DOT_GRAPH_MAX_NODES=100
+    DOT_MULTI_TARGETS=YES
+    DOT_PATH=.
+    EXTRACT_STATIC=YES
+    FILE_PATTERNS=*.php
+    FILTER_PATTERNS=*.php="php inputFilter.php"
+    GENERATE_LATEX=NO
+    GENERATE_LEGEND=NO
+    GENERATE_TREEVIEW=YES
+    HAVE_DOT=YES
+    HIDE_COMPOUND_REFERENCE=YES
+    HIDE_IN_BODY_DOCS=YES
+    HIDE_SCOPE_NAMES=YES
+    HIDE_UNDOC_RELATIONS=NO
+    HTML_COLORSTYLE_GAMMA=100
+    HTML_DYNAMIC_MENUS=NO
+    HTML_DYNAMIC_SECTIONS=YES
+    HTML_EXTRA_FILES=extra.js LICENSE.txt
+    HTML_EXTRA_STYLESHEET=dark.css
+    HTML_FOOTER=footer.html
+    HTML_HEADER=header.html
+    HTML_OUTPUT=.
+    INPUT=../$1/src/ ../$1/README.md
+    JAVADOC_AUTOBRIEF=YES
+    LAYOUT_FILE=layout.xml
+    OUTPUT_DIRECTORY=$1
+    PROJECT_LOGO=wrench.png
+    PROJECT_NAME=hfw/$1
+    RECURSIVE=YES
+    SEARCHENGINE=NO
+    SORT_BRIEF_DOCS=YES
+    SORT_MEMBER_DOCS=YES
+    SUBGROUPING=NO
+    SHOW_FILES=NO
+    SHOW_USED_FILES=NO
+    TREEVIEW_WIDTH=400
+    USE_MDFILE_AS_MAINPAGE=../$1/README.md
+    WARN_IF_UNDOCUMENTED=NO
+CONFIG
+
+# copy the full class diagram (assuming it's the largest)
+graph=$(du $1/inherit_graph_*.png | sort -nr | head -n1 | cut -f2)
+cp $graph $1/classes.png
+
+# ensure the project has the newest LICENSE.txt
+cp LICENSE.txt ../$1
+
+cd $1
+
+# get rid of trash files
+rm *.md5
+rm *.map
+rm dir_*.html
+
+## fix all the ugly ass file names
+rename 's/_1_1/_/g' *
+rename 's/^(class|interface)([A-Z]\w+)/$2/' *
+for x in *.html *.js *.css; do
+    case $x in
+        dark.css|extra.js|jquery.js|navtree.js|resize.js) continue;;
+    esac
+
+    sed -i 's/\(\w\)_1_1/\1_/g' $x
+    sed -i 's/\(class\|interface\)\([A-Z]\w\+\)\(\.\(html\|png\|js\)\)\?/\2\3/g' $x
+
+    # shorten all the ugly ass hashes
+    # todo: use the class js files to reverse-lookup the actual member names so i can have meaningful anchors
+    sed -i 's/[a-f0-9]\{26\}\([a-f0-9]\{6\}\)/\1/g' $x
+done
+cd -
+

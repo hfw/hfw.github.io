@@ -1,0 +1,27 @@
+var Helix_Socket_AbstractSocket =
+[
+    [ "$resource", "Helix_Socket_AbstractSocket.html#3c26089", null ],
+    [ "__construct", "Helix_Socket_AbstractSocket.html#745defd", null ],
+    [ "__destruct", "Helix_Socket_AbstractSocket.html#ce0c758", null ],
+    [ "await", "Helix_Socket_AbstractSocket.html#142239d", null ],
+    [ "awaitOutOfBand", "Helix_Socket_AbstractSocket.html#11c1c88", null ],
+    [ "awaitReadable", "Helix_Socket_AbstractSocket.html#8380053", null ],
+    [ "awaitWritable", "Helix_Socket_AbstractSocket.html#0f1fa60", null ],
+    [ "close", "Helix_Socket_AbstractSocket.html#a753572", null ],
+    [ "create", "Helix_Socket_AbstractSocket.html#e24b99d", null ],
+    [ "getDomain", "Helix_Socket_AbstractSocket.html#63ec511", null ],
+    [ "getId", "Helix_Socket_AbstractSocket.html#3ebb6b6", null ],
+    [ "getOption", "Helix_Socket_AbstractSocket.html#5fc526a", null ],
+    [ "getResource", "Helix_Socket_AbstractSocket.html#637a7d2", null ],
+    [ "getSockName", "Helix_Socket_AbstractSocket.html#f2e16bf", null ],
+    [ "getType", "Helix_Socket_AbstractSocket.html#41f9f83", null ],
+    [ "isOpen", "Helix_Socket_AbstractSocket.html#63a5564", null ],
+    [ "isOutOfBand", "Helix_Socket_AbstractSocket.html#37765ee", null ],
+    [ "isReadable", "Helix_Socket_AbstractSocket.html#cc7e9b5", null ],
+    [ "isReady", "Helix_Socket_AbstractSocket.html#9a7275b", null ],
+    [ "isWritable", "Helix_Socket_AbstractSocket.html#c93d7bc", null ],
+    [ "setBlocking", "Helix_Socket_AbstractSocket.html#0acd3a7", null ],
+    [ "setOption", "Helix_Socket_AbstractSocket.html#9934845", null ],
+    [ "setTimeout", "Helix_Socket_AbstractSocket.html#c85e6b1", null ],
+    [ "shutdown", "Helix_Socket_AbstractSocket.html#2405925", null ]
+];
