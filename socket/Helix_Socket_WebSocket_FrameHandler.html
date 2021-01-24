@@ -70,7 +70,7 @@ $(document).ready(function(){initNavTree('Helix_Socket_WebSocket_FrameHandler.ht
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Handles received frames from the peer, and packs and sends frames. </p>
+<div class="textblock"><p>Interprets parsed frames from the peer, and packs and writes frames. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
@@ -92,22 +92,21 @@ Protected Properties</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:647bec6"><td class="memItemLeft" align="right" valign="top"><a id="647bec6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (<a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> $client)</td></tr>
+<tr class="memitem:647bec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#647bec6">__construct</a> (<a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> $client)</td></tr>
 <tr class="separator:647bec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:075e22b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#075e22b">getFragmentSize</a> ()</td></tr>
 <tr class="separator:075e22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ff6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#ad9ff6a">getMaxLength</a> ()</td></tr>
 <tr class="separator:ad9ff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:17db452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#17db452">onFrame</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $frame)</td></tr>
-<tr class="memdesc:17db452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by the client when a complete frame has been received.  <a href="Helix_Socket_WebSocket_FrameHandler.html#17db452">More...</a><br /></td></tr>
+<tr class="memdesc:17db452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> when a complete frame has been received.  <a href="Helix_Socket_WebSocket_FrameHandler.html#17db452">More...</a><br /></td></tr>
 <tr class="separator:17db452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6c30e36"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#6c30e36">setFragmentSize</a> (int $bytes)</td></tr>
 <tr class="separator:6c30e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:38a72a3"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#38a72a3">setMaxLength</a> (int $bytes)</td></tr>
 <tr class="separator:38a72a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:179ab33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#179ab33">write</a> (int $opCode, string $payload)</td></tr>
-<tr class="memdesc:179ab33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragments data into frames and writes them to the peer.  <a href="Helix_Socket_WebSocket_FrameHandler.html#179ab33">More...</a><br /></td></tr>
+<tr class="memdesc:179ab33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a payload to the peer, fragmenting if needed.  <a href="Helix_Socket_WebSocket_FrameHandler.html#179ab33">More...</a><br /></td></tr>
 <tr class="separator:179ab33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf4461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#aaf4461">writeBinary</a> (string $payload)</td></tr>
 <tr class="separator:aaf4461"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,17 +127,16 @@ Protected Methods</h2></td></tr>
 <tr class="memitem:a2b6ecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#a2b6ecf">onClose</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $close)</td></tr>
 <tr class="memdesc:a2b6ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a <code>CLOSE</code> frame is received.  <a href="Helix_Socket_WebSocket_FrameHandler.html#a2b6ecf">More...</a><br /></td></tr>
 <tr class="separator:a2b6ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:7cdd416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#7cdd416">onContinue</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $frame)</td></tr>
-<tr class="memdesc:7cdd416"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a <code>CONTINUE</code> data fragment is received.  <a href="Helix_Socket_WebSocket_FrameHandler.html#7cdd416">More...</a><br /></td></tr>
-<tr class="separator:7cdd416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:89af4f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#89af4f5">onContinue</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $fragment)</td></tr>
+<tr class="memdesc:89af4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a <code>CONTINUE</code> frame (data fragment) is received.  <a href="Helix_Socket_WebSocket_FrameHandler.html#89af4f5">More...</a><br /></td></tr>
+<tr class="separator:89af4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:32844f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#32844f7">onControl</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $control)</td></tr>
 <tr class="memdesc:32844f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a control frame is received.  <a href="Helix_Socket_WebSocket_FrameHandler.html#32844f7">More...</a><br /></td></tr>
 <tr class="separator:32844f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:26bfd76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#26bfd76">onData</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $data)</td></tr>
 <tr class="memdesc:26bfd76"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an initial data frame (not <code>CONTINUE</code>) is received.  <a href="Helix_Socket_WebSocket_FrameHandler.html#26bfd76">More...</a><br /></td></tr>
 <tr class="separator:26bfd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589062"><td class="memItemLeft" align="right" valign="top"><a id="a589062"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $data)</td></tr>
+<tr class="memitem:a589062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#a589062">onData_SetContinue</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $data)</td></tr>
 <tr class="separator:a589062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:433fdea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html#433fdea">onFrame_CheckLength</a> (<a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> $frame)</td></tr>
 <tr class="separator:433fdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +256,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
 
 </div>
 </div>
+<h2 class="groupheader">Constructor</h2>
+<a id="647bec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#647bec6">&#9670;&nbsp;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a>&#160;</td>
+          <td class="paramname"><em>$client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html" title="Wraps a WebSocket peer.">WebSocketClient</a></td><td class="paramname">$client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Methods</h2>
 <a id="075e22b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#075e22b">&#9670;&nbsp;</a></span>getFragmentSize()</h2>
@@ -320,7 +343,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
 </div><div class="memdoc">
 
 <p>When a <code>BINARY</code> frame is received. </p>
-<p>Throws by default.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a></td><td class="paramname">$binary</td><td></td></tr>
@@ -373,8 +395,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
 
 </div>
 </div>
-<a id="7cdd416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#7cdd416">&#9670;&nbsp;</a></span>onContinue()</h2>
+<a id="89af4f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#89af4f5">&#9670;&nbsp;</a></span>onContinue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +408,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
           <td class="memname">void onContinue </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a>&#160;</td>
-          <td class="paramname"><em>$frame</em></td><td>)</td>
+          <td class="paramname"><em>$fragment</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -397,10 +419,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
 </table>
 </div><div class="memdoc">
 
-<p>When a <code>CONTINUE</code> data fragment is received. </p>
+<p>When a <code>CONTINUE</code> frame (data fragment) is received. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a></td><td class="paramname">$frame</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a></td><td class="paramname">$fragment</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -484,6 +506,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
 
 </div>
 </div>
+<a id="a589062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589062">&#9670;&nbsp;</a></span>onData_SetContinue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onData_SetContinue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a>&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a></td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="17db452"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#17db452">&#9670;&nbsp;</a></span>onFrame()</h2>
 
@@ -500,7 +560,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
       </table>
 </div><div class="memdoc">
 
-<p>Invoked by the client when a complete frame has been received. </p>
+<p>Called by <a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> when a complete frame has been received. </p>
 <p>Delegates to the other handler methods using the control flow outlined in the RFC.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -537,6 +597,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a></td><td class="paramname">$frame</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -678,7 +744,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
 </div><div class="memdoc">
 
 <p>When a <code>TEXT</code> frame is received. </p>
-<p>Throws by default.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a></td><td class="paramname">$text</td><td></td></tr>
@@ -770,7 +835,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onData_SetContinue</b
       </table>
 </div><div class="memdoc">
 
-<p>Fragments data into frames and writes them to the peer. </p>
+<p>Sends a payload to the peer, fragmenting if needed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$opCode</td><td></td></tr>

@@ -8,11 +8,11 @@ var Helix_Socket_WebSocket_WebSocketServer =
     [ "broadcastBinary", "Helix_Socket_WebSocket_WebSocketServer.html#f911340", null ],
     [ "broadcastPing", "Helix_Socket_WebSocket_WebSocketServer.html#9293d2f", null ],
     [ "broadcastText", "Helix_Socket_WebSocket_WebSocketServer.html#2a975a2", null ],
-    [ "close", "Helix_Socket_WebSocket_WebSocketServer.html#985fd7b", null ],
+    [ "close", "Helix_Socket_WebSocket_WebSocketServer.html#7b7286c", null ],
     [ "count", "Helix_Socket_WebSocket_WebSocketServer.html#2dd9bbb", null ],
     [ "getClients", "Helix_Socket_WebSocket_WebSocketServer.html#a9e5d4c", null ],
     [ "newClient", "Helix_Socket_WebSocket_WebSocketServer.html#9cbb8bb", null ],
     [ "onOutOfBand", "Helix_Socket_WebSocket_WebSocketServer.html#ec44db7", null ],
     [ "onReadable", "Helix_Socket_WebSocket_WebSocketServer.html#d188c8a", null ],
-    [ "remove", "Helix_Socket_WebSocket_WebSocketServer.html#45c81cf", null ]
+    [ "remove", "Helix_Socket_WebSocket_WebSocketServer.html#ccaf663", null ]
 ];

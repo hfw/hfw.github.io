@@ -10,7 +10,7 @@ var Helix_Socket_WebSocket_FrameHandler =
     [ "getMaxLength", "Helix_Socket_WebSocket_FrameHandler.html#ad9ff6a", null ],
     [ "onBinary", "Helix_Socket_WebSocket_FrameHandler.html#5e509af", null ],
     [ "onClose", "Helix_Socket_WebSocket_FrameHandler.html#a2b6ecf", null ],
-    [ "onContinue", "Helix_Socket_WebSocket_FrameHandler.html#7cdd416", null ],
+    [ "onContinue", "Helix_Socket_WebSocket_FrameHandler.html#89af4f5", null ],
     [ "onControl", "Helix_Socket_WebSocket_FrameHandler.html#32844f7", null ],
     [ "onData", "Helix_Socket_WebSocket_FrameHandler.html#26bfd76", null ],
     [ "onData_SetContinue", "Helix_Socket_WebSocket_FrameHandler.html#a589062", null ],

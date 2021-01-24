@@ -93,8 +93,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$head</b> = []</td><
 <tr class="memitem:ae0333e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#ae0333e">$maxLength</a> = 10 * 1024 * 1024</td></tr>
 <tr class="memdesc:ae0333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload size limit.  <a href="Helix_Socket_WebSocket_FrameReader.html#ae0333e">More...</a><br /></td></tr>
 <tr class="separator:ae0333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:96c900a"><td class="memItemLeft" align="right" valign="top"><a id="96c900a"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>REGEXP</b> = '/^.([\x80-\xfd]|\xfe(?&lt;n&gt;..)|\xff(?&lt;J&gt;.{8}))(?&lt;mask&gt;.{4})/s'</td></tr>
+<tr class="memitem:96c900a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#96c900a">REGEXP</a></td></tr>
+<tr class="memdesc:96c900a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This doesn't allow unmasked frames.  <a href="Helix_Socket_WebSocket_FrameReader.html#96c900a">More...</a><br /></td></tr>
 <tr class="separator:96c900a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -103,7 +103,7 @@ Public Methods</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (<a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> $client)</td></tr>
 <tr class="separator:647bec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c9ec601"><td class="memItemLeft" align="right" valign="top">Generator <a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#c9ec601">getFrames</a> ()</td></tr>
-<tr class="memdesc:c9ec601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs and yields all available frames from the peer.  <a href="Helix_Socket_WebSocket_FrameReader.html#c9ec601">More...</a><br /></td></tr>
+<tr class="memdesc:c9ec601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields all available frames from the peer.  <a href="Helix_Socket_WebSocket_FrameReader.html#c9ec601">More...</a><br /></td></tr>
 <tr class="separator:c9ec601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ff6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#ad9ff6a">getMaxLength</a> ()</td></tr>
 <tr class="separator:ad9ff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,8 +112,8 @@ Public Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
-<tr class="memitem:7a2eb79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> null&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#7a2eb79">getFrame</a> ()</td></tr>
-<tr class="separator:7a2eb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:023534c"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#023534c">getFrame</a> ()</td></tr>
+<tr class="separator:023534c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:11fb50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#11fb50e">validate</a> ()</td></tr>
 <tr class="memdesc:11fb50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the current head by not throwing.  <a href="Helix_Socket_WebSocket_FrameReader.html#11fb50e">More...</a><br /></td></tr>
 <tr class="separator:11fb50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,9 +148,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Methods</h2>
-<a id="7a2eb79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#7a2eb79">&#9670;&nbsp;</a></span>getFrame()</h2>
+<a id="96c900a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#96c900a">&#9670;&nbsp;</a></span>REGEXP</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +158,36 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> null getFrame </td>
+          <td class="memname">const REGEXP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;/^.([\x80-\xfd]|\xfe(?&lt;n&gt;..)|\xff(?&lt;J&gt;.{8}))(?&lt;mask&gt;.{4})/s&#39;</span></div>
+</div><!-- fragment -->
+<p>This doesn't allow unmasked frames. </p>
+<p>TODO? </p>
+
+</div>
+</div>
+<h2 class="groupheader">Methods</h2>
+<a id="023534c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#023534c">&#9670;&nbsp;</a></span>getFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null <a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> getFrame </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -171,7 +199,13 @@ Protected Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Frame|null </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>null|Frame </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -190,7 +224,7 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs and yields all available frames from the peer. </p>
+<p>Yields all available frames from the peer. </p>
 <dl class="section return"><dt>Returns</dt><dd>Generator|Frame[] </dd></dl>
 
 </div>

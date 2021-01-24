@@ -12,7 +12,7 @@ var Helix_Socket_AbstractSocket =
     [ "getDomain", "Helix_Socket_AbstractSocket.html#63ec511", null ],
     [ "getId", "Helix_Socket_AbstractSocket.html#3ebb6b6", null ],
     [ "getOption", "Helix_Socket_AbstractSocket.html#5fc526a", null ],
-    [ "getResource", "Helix_Socket_AbstractSocket.html#637a7d2", null ],
+    [ "getResource", "Helix_Socket_AbstractSocket.html#c468fca", null ],
     [ "getSockName", "Helix_Socket_AbstractSocket.html#f2e16bf", null ],
     [ "getType", "Helix_Socket_AbstractSocket.html#41f9f83", null ],
     [ "isOpen", "Helix_Socket_AbstractSocket.html#63a5564", null ],

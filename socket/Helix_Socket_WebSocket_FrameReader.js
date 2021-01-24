@@ -7,7 +7,7 @@ var Helix_Socket_WebSocket_FrameReader =
     [ "MAX_LENGTH_RANGE", "Helix_Socket_WebSocket_FrameReader.html#9606804", null ],
     [ "REGEXP", "Helix_Socket_WebSocket_FrameReader.html#96c900a", null ],
     [ "__construct", "Helix_Socket_WebSocket_FrameReader.html#647bec6", null ],
-    [ "getFrame", "Helix_Socket_WebSocket_FrameReader.html#7a2eb79", null ],
+    [ "getFrame", "Helix_Socket_WebSocket_FrameReader.html#023534c", null ],
     [ "getFrames", "Helix_Socket_WebSocket_FrameReader.html#c9ec601", null ],
     [ "getMaxLength", "Helix_Socket_WebSocket_FrameReader.html#ad9ff6a", null ],
     [ "setMaxLength", "Helix_Socket_WebSocket_FrameReader.html#38a72a3", null ],

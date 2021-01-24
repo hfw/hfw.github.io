@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('Helix_Socket_AbstractSocket.html','');
 <area shape="rect" href="Helix_Socket_SocketInterface.html" title="Instance has an underlying socket resource." alt="" coords="269,5,441,35"/>
 <area shape="rect" href="Helix_Socket_DatagramClient.html" title="Broadcasts datagrams." alt="" coords="5,237,168,267"/>
 <area shape="rect" href="Helix_Socket_StreamClient.html" title="Full duplex connection." alt="" coords="193,237,335,267"/>
-<area shape="rect" href="Helix_Socket_WebSocket_WebSocketClient.html" title="A WebSocket client." alt="" coords="178,315,350,344"/>
+<area shape="rect" href="Helix_Socket_WebSocket_WebSocketClient.html" title="Wraps a WebSocket peer." alt="" coords="178,315,350,344"/>
 <area shape="rect" href="Helix_Socket_DatagramServer.html" title="Receives datagrams." alt="" coords="364,237,527,267"/>
 <area shape="rect" href="Helix_Socket_StreamServer.html" title="Server that accepts and wraps incoming connections as client instances." alt="" coords="551,237,694,267"/>
 <area shape="rect" href="Helix_Socket_WebSocket_WebSocketServer.html" title="A WebSocket server." alt="" coords="537,315,709,344"/>
@@ -130,19 +130,16 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:63ec511"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>AF_*</code> address family constant.  <a href="Helix_Socket_AbstractSocket.html#63ec511">More...</a><br /></td></tr>
 <tr class="separator:63ec511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:3ebb6b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#3ebb6b6">getId</a> ()</td></tr>
-<tr class="memdesc:3ebb6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying socket resource as an integer.  <a href="Helix_Socket_AbstractSocket.html#3ebb6b6">More...</a><br /></td></tr>
 <tr class="separator:3ebb6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5fc526a"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#5fc526a">getOption</a> (int $option)</td></tr>
 <tr class="memdesc:5fc526a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an option value.  <a href="Helix_Socket_AbstractSocket.html#5fc526a">More...</a><br /></td></tr>
 <tr class="separator:5fc526a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:637a7d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#637a7d2">getResource</a> ()</td></tr>
-<tr class="memdesc:637a7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying socket resource.  <a href="Helix_Socket_AbstractSocket.html#637a7d2">More...</a><br /></td></tr>
-<tr class="separator:637a7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c468fca"><td class="memItemLeft" align="right" valign="top">resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#c468fca">getResource</a> ()</td></tr>
+<tr class="separator:c468fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f2e16bf"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#f2e16bf">getSockName</a> ()</td></tr>
 <tr class="memdesc:f2e16bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local address and port, or Unix file path and port <code>0</code>.  <a href="Helix_Socket_AbstractSocket.html#f2e16bf">More...</a><br /></td></tr>
 <tr class="separator:f2e16bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:63a5564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#63a5564">isOpen</a> ()</td></tr>
-<tr class="memdesc:63a5564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the underlying resource is usable.  <a href="Helix_Socket_AbstractSocket.html#63a5564">More...</a><br /></td></tr>
 <tr class="separator:63a5564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:37765ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#37765ee">isOutOfBand</a> ()</td></tr>
 <tr class="memdesc:37765ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls for whether the socket can perform a non-blocking out-of-band read.  <a href="Helix_Socket_AbstractSocket.html#37765ee">More...</a><br /></td></tr>
@@ -503,8 +500,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the underlying socket resource as an integer. </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
 <p>Implements <a class="el" href="Helix_Socket_SocketInterface.html#3ebb6b6">SocketInterface</a>.</p>
@@ -545,8 +540,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="637a7d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#637a7d2">&#9670;&nbsp;</a></span>getResource()</h2>
+<a id="c468fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c468fca">&#9670;&nbsp;</a></span>getResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">getResource </td>
+          <td class="memname">resource getResource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -567,8 +562,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the underlying socket resource. </p>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
 
 <p>Implements <a class="el" href="Helix_Socket_SocketInterface.html#c468fca">SocketInterface</a>.</p>
@@ -646,8 +639,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Whether the underlying resource is usable. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 <p>Implements <a class="el" href="Helix_Socket_SocketInterface.html#63a5564">SocketInterface</a>.</p>
@@ -805,6 +796,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Enables or disables blocking. </p>
 <p><b>Note: PHP provides no way to retrieve a socket's blocking mode.</b></p>
 <p>Sockets are always created in blocking mode.</p>
+<p>If you're using a reactor, keep the sockets in blocking mode.</p>
 <p>Non-blocking errors are thrown when performing ordinary operations, even if unrelated to those operations. This is known as error slippage. To test for and clear an existing non-blocking error, use <code>-&gt;getOption(SO_ERROR)</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://php.net/socket_set_block">https://php.net/socket_set_block</a> </dd>
 <dd>
