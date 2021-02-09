@@ -104,17 +104,26 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>CLOSE_TOO_LARGE</b> 
 <tr class="memitem:e563748"><td class="memItemLeft" align="right" valign="top"><a id="e563748"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>CLOSE_UNHANDLED_DATA</b> = 1003</td></tr>
 <tr class="separator:e563748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7c043b5"><td class="memItemLeft" align="right" valign="top"><a id="7c043b5"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>FIN</b> = 0x80</td></tr>
+<tr class="separator:7c043b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:87a5715"><td class="memItemLeft" align="right" valign="top"><a id="87a5715"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>LEN</b> = 0x7f</td></tr>
+<tr class="separator:87a5715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:3f415be"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><b>NAMES</b></td></tr>
 <tr class="separator:3f415be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b64943d"><td class="memItemLeft" align="right" valign="top"><a id="b64943d"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>OP</b> = 0x0f</td></tr>
+<tr class="separator:b64943d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d1c200c"><td class="memItemLeft" align="right" valign="top"><a id="d1c200c"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>OP_BINARY</b> = 0x02</td></tr>
 <tr class="separator:d1c200c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6805ae9"><td class="memItemLeft" align="right" valign="top"><a id="6805ae9"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>OP_CLOSE</b> = 0x08</td></tr>
 <tr class="separator:6805ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:9c2fa8a"><td class="memItemLeft" align="right" valign="top"><a id="9c2fa8a"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>OP_CONTINUE</b> = 0x00</td></tr>
-<tr class="separator:9c2fa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:3b63ba2"><td class="memItemLeft" align="right" valign="top"><a id="3b63ba2"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>OP_CONTINUATION</b> = 0x00</td></tr>
+<tr class="separator:3b63ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7264c53"><td class="memItemLeft" align="right" valign="top"><a id="7264c53"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>OP_PING</b> = 0x09</td></tr>
 <tr class="separator:7264c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,8 +194,8 @@ Public Methods</h2></td></tr>
 <tr class="separator:f06cb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da2d4b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Frame.html#da2d4b6">isClose</a> ()</td></tr>
 <tr class="separator:da2d4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:82b44f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Frame.html#82b44f5">isContinue</a> ()</td></tr>
-<tr class="separator:82b44f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4c9ee3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Frame.html#4c9ee3d">isContinuation</a> ()</td></tr>
+<tr class="separator:4c9ee3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:278fe37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Frame.html#278fe37">isControl</a> ()</td></tr>
 <tr class="separator:278fe37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:388dfa9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Frame.html#388dfa9">isData</a> ()</td></tr>
@@ -237,7 +246,7 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">        self::OP_CONTINUE =&gt; <span class="stringliteral">&#39;CONTINUE&#39;</span>,</div>
+<div class="line">        self::OP_CONTINUATION =&gt; <span class="stringliteral">&#39;CONTINUATION&#39;</span>,</div>
 <div class="line">        self::OP_TEXT =&gt; <span class="stringliteral">&#39;TEXT&#39;</span>,</div>
 <div class="line">        self::OP_BINARY =&gt; <span class="stringliteral">&#39;BINARY&#39;</span>,</div>
 <div class="line">        0x03 =&gt; <span class="stringliteral">&#39;RESERVED DATA 0x03&#39;</span>,</div>
@@ -638,8 +647,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="82b44f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#82b44f5">&#9670;&nbsp;</a></span>isContinue()</h2>
+<a id="4c9ee3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#4c9ee3d">&#9670;&nbsp;</a></span>isContinuation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -648,7 +657,7 @@ Public Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool isContinue </td>
+          <td class="memname">bool isContinuation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

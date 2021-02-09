@@ -2,7 +2,7 @@
 for x in ../*; do
     if [ -d $x ]; then
         project=$(basename $x)
-        if [ $project == 'hfw.github.io' ]; then continue; fi
+        if [ ! -d "../${project}/src" ]; then continue; fi
         ./dox $project
     fi
 done

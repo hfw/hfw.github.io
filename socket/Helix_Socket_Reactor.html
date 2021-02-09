@@ -64,6 +64,7 @@ $(document).ready(function(){initNavTree('Helix_Socket_Reactor.html',''); initRe
 <a href="#pro-attribs">Protected Properties</a> &#124;
 <a href="#pub-static-methods">Public Static Methods</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
+<a href="#pro-methods">Protected Methods</a> &#124;
 <a href="Helix_Socket_Reactor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Reactor</div>  </div>
@@ -105,12 +106,20 @@ Public Methods</h2></td></tr>
 <tr class="separator:2dd9bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f8898c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_ReactiveInterface.html">ReactiveInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_Reactor.html#f8898c1">getSockets</a> ()</td></tr>
 <tr class="separator:f8898c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c136e2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_Reactor.html#c136e2b">has</a> (<a class="el" href="Helix_Socket_ReactiveInterface.html">ReactiveInterface</a> $socket)</td></tr>
+<tr class="memdesc:c136e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a socket is in the reactor.  <a href="Helix_Socket_Reactor.html#c136e2b">More...</a><br /></td></tr>
+<tr class="separator:c136e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:2e974c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_Reactor.html#2e974c4">react</a> (?float $timeout=null)</td></tr>
 <tr class="memdesc:2e974c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the reactor's sockets and calls their reactive methods.  <a href="Helix_Socket_Reactor.html#2e974c4">More...</a><br /></td></tr>
 <tr class="separator:2e974c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5fc5706"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_Reactor.html#5fc5706">remove</a> (<a class="el" href="Helix_Socket_ReactiveInterface.html">ReactiveInterface</a> $socket)</td></tr>
 <tr class="memdesc:5fc5706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a socket from the reactor.  <a href="Helix_Socket_Reactor.html#5fc5706">More...</a><br /></td></tr>
 <tr class="separator:5fc5706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Methods</h2></td></tr>
+<tr class="memitem:39e819b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_Reactor.html#39e819b">onError</a> (int $channel, $socket, Throwable $error)</td></tr>
+<tr class="separator:39e819b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
 <a id="57eb46c"></a>
@@ -200,6 +209,83 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Socket_ReactiveInterface.html" title="The instance can be added to a reactor and notified of selection.">ReactiveInterface</a>[] </dd></dl>
+
+</div>
+</div>
+<a id="c136e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c136e2b">&#9670;&nbsp;</a></span>has()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_Socket_ReactiveInterface.html">ReactiveInterface</a>&#160;</td>
+          <td class="paramname"><em>$socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a socket is in the reactor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_Socket_ReactiveInterface.html" title="The instance can be added to a reactor and notified of selection.">ReactiveInterface</a></td><td class="paramname">$socket</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="39e819b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#39e819b">&#9670;&nbsp;</a></span>onError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onError </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Throwable&#160;</td>
+          <td class="paramname"><em>$error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$channel</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_Socket_ReactiveInterface.html" title="The instance can be added to a reactor and notified of selection.">ReactiveInterface</a></td><td class="paramname">$socket</td><td></td></tr>
+    <tr><td class="paramtype">Throwable</td><td class="paramname">$error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

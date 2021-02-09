@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>hfw/socket: HandShake</title>
+    <title>hfw/socket: Handshake</title>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="generator" content="Doxygen 1.8.17"/>
@@ -55,7 +55,7 @@
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:91d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('Helix_Socket_WebSocket_HandShake.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('Helix_Socket_WebSocket_Handshake.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -65,13 +65,14 @@ $(document).ready(function(){initNavTree('Helix_Socket_WebSocket_HandShake.html'
 <a href="#pro-attribs">Protected Properties</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
 <a href="#pro-methods">Protected Methods</a> &#124;
-<a href="Helix_Socket_WebSocket_HandShake-members.html">List of all members</a>  </div>
+<a href="Helix_Socket_WebSocket_Handshake-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">HandShake</div>  </div>
+<div class="title">Handshake</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>WebSocket handshake. </p>
+<div class="textblock"><p>Initial WebSocket connection handshake. </p>
+<p><a href="https://tools.ietf.org/html/rfc6455#section-1.3">https://tools.ietf.org/html/rfc6455#section-1.3</a> </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Properties</h2></td></tr>
@@ -87,45 +88,40 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$buffer</b> = ''</t
 <tr class="memitem:ccf486f"><td class="memItemLeft" align="right" valign="top"><a id="ccf486f"></a>
 <a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$client</b></td></tr>
 <tr class="separator:ccf486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f61ec18"><td class="memItemLeft" align="right" valign="top"><a id="f61ec18"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$headers</b> = []</td></tr>
-<tr class="separator:f61ec18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942dd9"><td class="memItemLeft" align="right" valign="top">string[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#a942dd9">$headers</a> = []</td></tr>
+<tr class="memdesc:a942dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ header name =&gt; lowercase value =&gt; actual value ]  <a href="Helix_Socket_WebSocket_Handshake.html#a942dd9">More...</a><br /></td></tr>
+<tr class="separator:a942dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0333e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#ae0333e">$maxLength</a> = 4096</td></tr>
+<tr class="memdesc:ae0333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The connection is closed (HTTP 413) if the received headers exceed this many bytes.  <a href="Helix_Socket_WebSocket_Handshake.html#ae0333e">More...</a><br /></td></tr>
+<tr class="separator:ae0333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5995007"><td class="memItemLeft" align="right" valign="top"><a id="5995007"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$method</b></td></tr>
 <tr class="separator:5995007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:2b24089"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#2b24089">$rsv</a> = 0</td></tr>
-<tr class="memdesc:2b24089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claimed RSV bit mask.  <a href="Helix_Socket_WebSocket_HandShake.html#2b24089">More...</a><br /></td></tr>
-<tr class="separator:2b24089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f85a3d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#f85a3d1">$sizeLimit</a> = 4096</td></tr>
-<tr class="memdesc:f85a3d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Received handshake size limit.  <a href="Helix_Socket_WebSocket_HandShake.html#f85a3d1">More...</a><br /></td></tr>
-<tr class="separator:f85a3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:647bec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#647bec6">__construct</a> (<a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> $client)</td></tr>
+<tr class="memitem:647bec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#647bec6">__construct</a> (<a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> $client)</td></tr>
 <tr class="separator:647bec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394a63"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#a394a63">getHeaders</a> ()</td></tr>
-<tr class="separator:a394a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8251"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#a6a8251">getMethod</a> ()</td></tr>
+<tr class="memitem:1541db3"><td class="memItemLeft" align="right" valign="top">string[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#1541db3">getHeaders</a> ()</td></tr>
+<tr class="separator:1541db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8251"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#a6a8251">getMethod</a> ()</td></tr>
 <tr class="separator:a6a8251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:4bbf86b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#4bbf86b">getRsv</a> ()</td></tr>
-<tr class="separator:4bbf86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d4d9362"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#d4d9362">negotiate</a> ()</td></tr>
-<tr class="memdesc:d4d9362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negotiates the initial connection.  <a href="Helix_Socket_WebSocket_HandShake.html#d4d9362">More...</a><br /></td></tr>
-<tr class="separator:d4d9362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53460"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#ac53460">onReadable</a> ()</td></tr>
+<tr class="memdesc:ac53460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negotiates the initial connection.  <a href="Helix_Socket_WebSocket_Handshake.html#ac53460">More...</a><br /></td></tr>
+<tr class="separator:ac53460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
-<tr class="memitem:232b12a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#232b12a">upgrade</a> ()</td></tr>
-<tr class="memdesc:232b12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the connection upgrade headers.  <a href="Helix_Socket_WebSocket_HandShake.html#232b12a">More...</a><br /></td></tr>
+<tr class="memitem:232b12a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#232b12a">upgrade</a> ()</td></tr>
+<tr class="memdesc:232b12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the connection upgrade headers.  <a href="Helix_Socket_WebSocket_Handshake.html#232b12a">More...</a><br /></td></tr>
 <tr class="separator:232b12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:11fb50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_HandShake.html#11fb50e">validate</a> ()</td></tr>
-<tr class="memdesc:11fb50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the received HTTP handshake headers, or throws.  <a href="Helix_Socket_WebSocket_HandShake.html#11fb50e">More...</a><br /></td></tr>
+<tr class="memitem:11fb50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_Handshake.html#11fb50e">validate</a> ()</td></tr>
+<tr class="memdesc:11fb50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the received HTTP handshake headers, or throws.  <a href="Helix_Socket_WebSocket_Handshake.html#11fb50e">More...</a><br /></td></tr>
 <tr class="separator:11fb50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
-<a id="2b24089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#2b24089">&#9670;&nbsp;</a></span>$rsv</h2>
+<a id="a942dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942dd9">&#9670;&nbsp;</a></span>$headers</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +130,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int $rsv = 0</td>
+          <td class="memname">string [][] $headers = []</td>
         </tr>
       </table>
   </td>
@@ -144,12 +140,12 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Claimed RSV bit mask. </p>
+<p>[ header name =&gt; lowercase value =&gt; actual value ] </p>
 
 </div>
 </div>
-<a id="f85a3d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#f85a3d1">&#9670;&nbsp;</a></span>$sizeLimit</h2>
+<a id="ae0333e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0333e">&#9670;&nbsp;</a></span>$maxLength</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,7 +154,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int $sizeLimit = 4096</td>
+          <td class="memname">int $maxLength = 4096</td>
         </tr>
       </table>
   </td>
@@ -168,7 +164,6 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Received handshake size limit. </p>
 <p>The connection is closed (HTTP 413) if the received headers exceed this many bytes. </p>
 
 </div>
@@ -199,21 +194,21 @@ Protected Methods</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
-<a id="a394a63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a394a63">&#9670;&nbsp;</a></span>getHeaders()</h2>
+<a id="1541db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#1541db3">&#9670;&nbsp;</a></span>getHeaders()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string [] getHeaders </td>
+          <td class="memname">string [][] getHeaders </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>string[] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string[][] </dd></dl>
 
 </div>
 </div>
@@ -235,32 +230,14 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="4bbf86b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#4bbf86b">&#9670;&nbsp;</a></span>getRsv()</h2>
+<a id="ac53460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53460">&#9670;&nbsp;</a></span>onReadable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int getRsv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-
-</div>
-</div>
-<a id="d4d9362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#d4d9362">&#9670;&nbsp;</a></span>negotiate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool negotiate </td>
+          <td class="memname">bool onReadable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -273,6 +250,7 @@ Protected Methods</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
+    <tr><td class="paramname">Throwable</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -345,7 +323,7 @@ Protected Methods</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
     <ul>
-        <li class="navelem"><b>Helix</b></li><li class="navelem"><b>Socket</b></li><li class="navelem"><b>WebSocket</b></li><li class="navelem"><a class="el" href="Helix_Socket_WebSocket_HandShake.html">HandShake</a></li>
+        <li class="navelem"><b>Helix</b></li><li class="navelem"><b>Socket</b></li><li class="navelem"><b>WebSocket</b></li><li class="navelem"><a class="el" href="Helix_Socket_WebSocket_Handshake.html">Handshake</a></li>
         <li class="footer">
             <a href="https://github.com/hfw/socket" target="_blank">https://github.com/hfw/socket</a>
             |

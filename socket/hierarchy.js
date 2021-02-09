@@ -3,8 +3,7 @@ var hierarchy =
     [ "Frame", "Helix_Socket_WebSocket_Frame.html", null ],
     [ "FrameHandler", "Helix_Socket_WebSocket_FrameHandler.html", null ],
     [ "FrameReader", "Helix_Socket_WebSocket_FrameReader.html", null ],
-    [ "HandShake", "Helix_Socket_WebSocket_HandShake.html", null ],
-    [ "MessageHandler", "Helix_Socket_WebSocket_MessageHandler.html", null ],
+    [ "Handshake", "Helix_Socket_WebSocket_Handshake.html", null ],
     [ "SocketInterface", "Helix_Socket_SocketInterface.html", [
       [ "AbstractSocket", "Helix_Socket_AbstractSocket.html", [
         [ "AbstractClient", "Helix_Socket_AbstractClient.html", [

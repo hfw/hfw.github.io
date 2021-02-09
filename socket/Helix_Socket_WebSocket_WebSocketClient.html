@@ -91,14 +91,14 @@ $(document).ready(function(){initNavTree('Helix_Socket_WebSocket_WebSocketClient
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Properties</h2></td></tr>
-<tr class="memitem:56c4a80"><td class="memItemLeft" align="right" valign="top"><a id="56c4a80"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_CLOSE</b> = 2</td></tr>
-<tr class="separator:56c4a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1d8cb"><td class="memItemLeft" align="right" valign="top"><a id="ae1d8cb"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_HANDSHAKE</b> = 0</td></tr>
+<tr class="memitem:9cc1065"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#9cc1065">STATE_CLOSED</a> = 2</td></tr>
+<tr class="memdesc:9cc1065"><td class="mdescLeft">&#160;</td><td class="mdescRight">The peer has disconnected.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#9cc1065">More...</a><br /></td></tr>
+<tr class="separator:9cc1065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d8cb"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#ae1d8cb">STATE_HANDSHAKE</a> = 0</td></tr>
+<tr class="memdesc:ae1d8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The peer has connected but hasn't negotiated a session yet.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#ae1d8cb">More...</a><br /></td></tr>
 <tr class="separator:ae1d8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2f0b"><td class="memItemLeft" align="right" valign="top"><a id="a3d2f0b"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_OK</b> = 1</td></tr>
+<tr class="memitem:a3d2f0b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#a3d2f0b">STATE_OK</a> = 1</td></tr>
+<tr class="memdesc:a3d2f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The session is active and the client can perform frame I/O with the peer.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#a3d2f0b">More...</a><br /></td></tr>
 <tr class="separator:a3d2f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_Helix_Socket_SocketInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_Helix_Socket_SocketInterface')"><img src="closed.png" alt="-"/>&#160;Public Properties inherited from <a class="el" href="Helix_Socket_SocketInterface.html">SocketInterface</a></td></tr>
 <tr class="memitem:ade1d8a inherit pub_attribs_Helix_Socket_SocketInterface"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_SocketInterface.html#ade1d8a">CH_EXCEPT</a> = 2</td></tr>
@@ -116,15 +116,9 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:8bdc18d"><td class="memItemLeft" align="right" valign="top"><a id="8bdc18d"></a>
 <a class="el" href="Helix_Socket_WebSocket_FrameHandler.html">FrameHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$frameHandler</b></td></tr>
 <tr class="separator:8bdc18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:490c956"><td class="memItemLeft" align="right" valign="top"><a id="490c956"></a>
-<a class="el" href="Helix_Socket_WebSocket_FrameReader.html">FrameReader</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$frameReader</b></td></tr>
-<tr class="separator:490c956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:03f091a"><td class="memItemLeft" align="right" valign="top"><a id="03f091a"></a>
-<a class="el" href="Helix_Socket_WebSocket_HandShake.html">HandShake</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$handshake</b></td></tr>
-<tr class="separator:03f091a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ca27091"><td class="memItemLeft" align="right" valign="top"><a id="ca27091"></a>
-<a class="el" href="Helix_Socket_WebSocket_MessageHandler.html">MessageHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$messageHandler</b></td></tr>
-<tr class="separator:ca27091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57806"><td class="memItemLeft" align="right" valign="top"><a id="ae57806"></a>
+<a class="el" href="Helix_Socket_WebSocket_Handshake.html">Handshake</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$handshake</b></td></tr>
+<tr class="separator:ae57806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:34c166a"><td class="memItemLeft" align="right" valign="top"><a id="34c166a"></a>
 <a class="el" href="Helix_Socket_WebSocket_WebSocketServer.html">WebSocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$server</b></td></tr>
 <tr class="separator:34c166a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,24 +139,45 @@ Public Methods</h2></td></tr>
 <tr class="separator:a5cb293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:1235bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html">FrameHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#1235bf8">getFrameHandler</a> ()</td></tr>
 <tr class="separator:1235bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ba96542"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html">FrameReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#ba96542">getFrameReader</a> ()</td></tr>
-<tr class="separator:ba96542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:fdf5258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_WebSocket_HandShake.html">HandShake</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#fdf5258">getHandshake</a> ()</td></tr>
-<tr class="separator:fdf5258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:10c56a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_WebSocket_MessageHandler.html">MessageHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#10c56a1">getMessageHandler</a> ()</td></tr>
-<tr class="separator:10c56a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:999557f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_WebSocket_WebSocketServer.html">WebSocketServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#999557f">getServer</a> ()</td></tr>
 <tr class="separator:999557f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:2eff5d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#2eff5d8">getState</a> ()</td></tr>
 <tr class="separator:2eff5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0d27afc"><td class="memItemLeft" align="right" valign="top"><a id="0d27afc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNegotiating</b> ()</td></tr>
+<tr class="separator:0d27afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:47070fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#47070fd">isOk</a> ()</td></tr>
 <tr class="separator:47070fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:30d1d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#30d1d8c">onBinary</a> (string $binary)</td></tr>
+<tr class="memdesc:30d1d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a complete <code>BINARY</code> payload is received from the peer.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#30d1d8c">More...</a><br /></td></tr>
+<tr class="separator:30d1d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:98d0499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#98d0499">onClose</a> (int $code, string $reason)</td></tr>
+<tr class="memdesc:98d0499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a <code>CLOSE</code> frame is received from the peer.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#98d0499">More...</a><br /></td></tr>
+<tr class="separator:98d0499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ec44db7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#ec44db7">onOutOfBand</a> ()</td></tr>
 <tr class="memdesc:ec44db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSockets do not use the out-of-band channel.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#ec44db7">More...</a><br /></td></tr>
 <tr class="separator:ec44db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9f8d8da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#9f8d8da">onPing</a> (string $message)</td></tr>
+<tr class="memdesc:9f8d8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a <code>PING</code> is received from the peer.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#9f8d8da">More...</a><br /></td></tr>
+<tr class="separator:9f8d8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c9257f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#c9257f9">onPong</a> (string $message)</td></tr>
+<tr class="memdesc:c9257f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a <code>PONG</code> is received from the peer.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#c9257f9">More...</a><br /></td></tr>
+<tr class="separator:c9257f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d188c8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#d188c8a">onReadable</a> ()</td></tr>
-<tr class="memdesc:d188c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegates received data to handlers.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#d188c8a">More...</a><br /></td></tr>
+<tr class="memdesc:d188c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegates the read-channel to handlers.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#d188c8a">More...</a><br /></td></tr>
 <tr class="separator:d188c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:852e93e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#852e93e">onText</a> (string $text)</td></tr>
+<tr class="memdesc:852e93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a complete <code>TEXT</code> payload is received from the peer.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#852e93e">More...</a><br /></td></tr>
+<tr class="separator:852e93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:28d6bb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#28d6bb4">writeBinary</a> (string $binary)</td></tr>
+<tr class="memdesc:28d6bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards to the <a class="el" href="Helix_Socket_WebSocket_FrameHandler.html">FrameHandler</a>.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#28d6bb4">More...</a><br /></td></tr>
+<tr class="separator:28d6bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ba8bc09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#ba8bc09">writeJSON</a> ($data)</td></tr>
+<tr class="memdesc:ba8bc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON-encodes and sends as <code>TEXT</code>.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#ba8bc09">More...</a><br /></td></tr>
+<tr class="separator:ba8bc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:6874e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html#6874e08">writeText</a> (string $text)</td></tr>
+<tr class="memdesc:6874e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards to the <a class="el" href="Helix_Socket_WebSocket_FrameHandler.html">FrameHandler</a>.  <a href="Helix_Socket_WebSocket_WebSocketClient.html#6874e08">More...</a><br /></td></tr>
+<tr class="separator:6874e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_Socket_StreamClient"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_Socket_StreamClient')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_Socket_StreamClient.html">StreamClient</a></td></tr>
 <tr class="memitem:1736437 inherit pub_methods_Helix_Socket_StreamClient"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_StreamClient.html#1736437">read</a> (int $length)</td></tr>
 <tr class="memdesc:1736437 inherit pub_methods_Helix_Socket_StreamClient"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the specified length from the peer (forced blocking).  <a href="Helix_Socket_StreamClient.html#1736437">More...</a><br /></td></tr>
@@ -206,7 +221,7 @@ Public Methods</h2></td></tr>
 <tr class="memitem:0f1fa60 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#0f1fa60">awaitWritable</a> ()</td></tr>
 <tr class="separator:0f1fa60 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753572 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#a753572">close</a> ()</td></tr>
-<tr class="memdesc:a753572 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the underlying resource.  <a href="Helix_Socket_AbstractSocket.html#a753572">More...</a><br /></td></tr>
+<tr class="memdesc:a753572 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the underlying resource if it's open.  <a href="Helix_Socket_AbstractSocket.html#a753572">More...</a><br /></td></tr>
 <tr class="separator:a753572 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:63ec511 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_AbstractSocket.html#63ec511">getDomain</a> ()</td></tr>
 <tr class="memdesc:63ec511 inherit pub_methods_Helix_Socket_AbstractSocket"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>AF_*</code> address family constant.  <a href="Helix_Socket_AbstractSocket.html#63ec511">More...</a><br /></td></tr>
@@ -268,6 +283,55 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:e24b99d inherit pub_static_methods_Helix_Socket_AbstractSocket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the called class.  <a href="Helix_Socket_AbstractSocket.html#e24b99d">More...</a><br /></td></tr>
 <tr class="separator:e24b99d inherit pub_static_methods_Helix_Socket_AbstractSocket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Properties</h2>
+<a id="9cc1065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#9cc1065">&#9670;&nbsp;</a></span>STATE_CLOSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const STATE_CLOSED = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The peer has disconnected. </p>
+
+</div>
+</div>
+<a id="ae1d8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1d8cb">&#9670;&nbsp;</a></span>STATE_HANDSHAKE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const STATE_HANDSHAKE = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The peer has connected but hasn't negotiated a session yet. </p>
+
+</div>
+</div>
+<a id="a3d2f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2f0b">&#9670;&nbsp;</a></span>STATE_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const STATE_OK = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The session is active and the client can perform frame I/O with the peer. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor</h2>
 <a id="1b5f994"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#1b5f994">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -341,8 +405,8 @@ Additional Inherited Members</h2></td></tr>
 </blockquote>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$code</td><td>Only used if <code>&gt;= 1000</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$reason</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$code</td><td>Sent to the peer if &gt;= 1000 </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$reason</td><td>Sent to the peer, if code is &gt;= 1000 </td></tr>
   </table>
   </dd>
 </dl>
@@ -365,60 +429,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Socket_WebSocket_FrameHandler.html" title="Interprets parsed frames from the peer, and packs and writes frames.">FrameHandler</a> </dd></dl>
-
-</div>
-</div>
-<a id="ba96542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ba96542">&#9670;&nbsp;</a></span>getFrameReader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html">FrameReader</a> getFrameReader </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Socket_WebSocket_FrameReader.html" title="Reads frames from the peer.">FrameReader</a> </dd></dl>
-
-</div>
-</div>
-<a id="fdf5258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fdf5258">&#9670;&nbsp;</a></span>getHandshake()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_Socket_WebSocket_HandShake.html">HandShake</a> getHandshake </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Socket_WebSocket_HandShake.html" title="WebSocket handshake.">HandShake</a> </dd></dl>
-
-</div>
-</div>
-<a id="10c56a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#10c56a1">&#9670;&nbsp;</a></span>getMessageHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_Socket_WebSocket_MessageHandler.html">MessageHandler</a> getMessageHandler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Socket_WebSocket_MessageHandler.html" title="Handles complete payloads received from the peer.">MessageHandler</a> </dd></dl>
 
 </div>
 </div>
@@ -484,6 +494,76 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="30d1d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#30d1d8c">&#9670;&nbsp;</a></span>onBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onBinary </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$binary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a complete <code>BINARY</code> payload is received from the peer. </p>
+<p>Throws by default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$binary</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="98d0499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#98d0499">&#9670;&nbsp;</a></span>onClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onClose </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a <code>CLOSE</code> frame is received from the peer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$code</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$reason</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ec44db7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ec44db7">&#9670;&nbsp;</a></span>onOutOfBand()</h2>
 
@@ -508,9 +588,64 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>WebSockets do not use the out-of-band channel. </p>
-<p>The RFC says the connection must be dropped if any unsupported activity occurs. </p>
+<p>The RFC says the connection must be dropped if any unsupported activity occurs.</p>
+<p>Closes the connection with a protocol-error frame. </p>
 
 <p>Implements <a class="el" href="Helix_Socket_ReactiveInterface.html#ec44db7">ReactiveInterface</a>.</p>
+
+</div>
+</div>
+<a id="9f8d8da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#9f8d8da">&#9670;&nbsp;</a></span>onPing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onPing </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a <code>PING</code> is received from the peer. </p>
+<p>Automatically PONGs back the payload back by default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="c9257f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c9257f9">&#9670;&nbsp;</a></span>onPong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onPong </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a <code>PONG</code> is received from the peer. </p>
+<p>Does nothing by default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -529,10 +664,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Delegates received data to handlers. </p>
+<p>Delegates the read-channel to handlers. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Exception</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
+    <tr><td class="paramname">Throwable</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -565,6 +701,125 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the initial connection handshake succeeds and frame I/O can occur. </p>
+<p>Does nothing by default.</p>
+<p>If you have negotiated an extension during <a class="el" href="Helix_Socket_WebSocket_Handshake.html">Handshake</a>, claim the RSV bits here via <a class="el" href="Helix_Socket_WebSocket_FrameReader.html#7a47a57">FrameReader::setRsv()</a> </p>
+
+</div>
+</div>
+<a id="852e93e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#852e93e">&#9670;&nbsp;</a></span>onText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void onText </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a complete <code>TEXT</code> payload is received from the peer. </p>
+<p>Throws by default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="28d6bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#28d6bb4">&#9670;&nbsp;</a></span>writeBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeBinary </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$binary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forwards to the <a class="el" href="Helix_Socket_WebSocket_FrameHandler.html">FrameHandler</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$binary</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ba8bc09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ba8bc09">&#9670;&nbsp;</a></span>writeJSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeJSON </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON-encodes and sends as <code>TEXT</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">JsonException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="6874e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#6874e08">&#9670;&nbsp;</a></span>writeText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeText </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forwards to the <a class="el" href="Helix_Socket_WebSocket_FrameHandler.html">FrameHandler</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

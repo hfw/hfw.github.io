@@ -6,8 +6,7 @@ var annotated =
           [ "Frame", "Helix_Socket_WebSocket_Frame.html", "Helix_Socket_WebSocket_Frame" ],
           [ "FrameHandler", "Helix_Socket_WebSocket_FrameHandler.html", "Helix_Socket_WebSocket_FrameHandler" ],
           [ "FrameReader", "Helix_Socket_WebSocket_FrameReader.html", "Helix_Socket_WebSocket_FrameReader" ],
-          [ "HandShake", "Helix_Socket_WebSocket_HandShake.html", "Helix_Socket_WebSocket_HandShake" ],
-          [ "MessageHandler", "Helix_Socket_WebSocket_MessageHandler.html", "Helix_Socket_WebSocket_MessageHandler" ],
+          [ "Handshake", "Helix_Socket_WebSocket_Handshake.html", "Helix_Socket_WebSocket_Handshake" ],
           [ "WebSocketClient", "Helix_Socket_WebSocket_WebSocketClient.html", "Helix_Socket_WebSocket_WebSocketClient" ],
           [ "WebSocketError", "Helix_Socket_WebSocket_WebSocketError.html", "Helix_Socket_WebSocket_WebSocketError" ],
           [ "WebSocketServer", "Helix_Socket_WebSocket_WebSocketServer.html", "Helix_Socket_WebSocket_WebSocketServer" ]

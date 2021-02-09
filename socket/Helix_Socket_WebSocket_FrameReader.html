@@ -61,7 +61,6 @@ $(document).ready(function(){initNavTree('Helix_Socket_WebSocket_FrameReader.htm
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Properties</a> &#124;
 <a href="#pro-attribs">Protected Properties</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
 <a href="#pro-methods">Protected Methods</a> &#124;
@@ -72,53 +71,107 @@ $(document).ready(function(){initNavTree('Helix_Socket_WebSocket_FrameReader.htm
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Reads frames from the peer. </p>
+<p><a href="https://tools.ietf.org/html/rfc6455#section-5">https://tools.ietf.org/html/rfc6455#section-5</a></p>
+<p>TODO: Support unmasked frames. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Properties</h2></td></tr>
-<tr class="memitem:9606804"><td class="memItemLeft" align="right" valign="top"><a id="9606804"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LENGTH_RANGE</b> = [125, 2 ** 63 - 1]</td></tr>
-<tr class="separator:9606804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
-<tr class="memitem:b3fca54"><td class="memItemLeft" align="right" valign="top"><a id="b3fca54"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$buffer</b> = ''</td></tr>
+<tr class="memitem:b3fca54"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#b3fca54">$buffer</a> = ''</td></tr>
+<tr class="memdesc:b3fca54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peer read buffer.  <a href="Helix_Socket_WebSocket_FrameReader.html#b3fca54">More...</a><br /></td></tr>
 <tr class="separator:b3fca54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ccf486f"><td class="memItemLeft" align="right" valign="top"><a id="ccf486f"></a>
 <a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$client</b></td></tr>
 <tr class="separator:ccf486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:eee43d7"><td class="memItemLeft" align="right" valign="top"><a id="eee43d7"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$head</b> = []</td></tr>
-<tr class="separator:eee43d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0333e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#ae0333e">$maxLength</a> = 10 * 1024 * 1024</td></tr>
-<tr class="memdesc:ae0333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload size limit.  <a href="Helix_Socket_WebSocket_FrameReader.html#ae0333e">More...</a><br /></td></tr>
+<tr class="memitem:cee3f6f"><td class="memItemLeft" align="right" valign="top">null array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#cee3f6f">$header</a></td></tr>
+<tr class="memdesc:cee3f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a> header buffer.  <a href="Helix_Socket_WebSocket_FrameReader.html#cee3f6f">More...</a><br /></td></tr>
+<tr class="separator:cee3f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0333e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#ae0333e">$maxLength</a> = 128 * 1024</td></tr>
+<tr class="memdesc:ae0333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum inbound per-frame payload length (fragment).  <a href="Helix_Socket_WebSocket_FrameReader.html#ae0333e">More...</a><br /></td></tr>
 <tr class="separator:ae0333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2b24089"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#2b24089">$rsv</a> = 0</td></tr>
+<tr class="memdesc:2b24089"><td class="mdescLeft">&#160;</td><td class="mdescRight">RSV bit mask claimed by extensions.  <a href="Helix_Socket_WebSocket_FrameReader.html#2b24089">More...</a><br /></td></tr>
+<tr class="separator:2b24089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:96c900a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#96c900a">REGEXP</a></td></tr>
-<tr class="memdesc:96c900a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This doesn't allow unmasked frames.  <a href="Helix_Socket_WebSocket_FrameReader.html#96c900a">More...</a><br /></td></tr>
+<tr class="memdesc:96c900a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://tools.ietf.org/html/rfc6455#section-5.2">https://tools.ietf.org/html/rfc6455#section-5.2</a>  <a href="Helix_Socket_WebSocket_FrameReader.html#96c900a">More...</a><br /></td></tr>
 <tr class="separator:96c900a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:647bec6"><td class="memItemLeft" align="right" valign="top"><a id="647bec6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (<a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> $client)</td></tr>
+<tr class="memitem:647bec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#647bec6">__construct</a> (<a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a> $client)</td></tr>
 <tr class="separator:647bec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c9ec601"><td class="memItemLeft" align="right" valign="top">Generator <a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#c9ec601">getFrames</a> ()</td></tr>
 <tr class="memdesc:c9ec601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields all available frames from the peer.  <a href="Helix_Socket_WebSocket_FrameReader.html#c9ec601">More...</a><br /></td></tr>
 <tr class="separator:c9ec601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ff6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#ad9ff6a">getMaxLength</a> ()</td></tr>
 <tr class="separator:ad9ff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4bbf86b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#4bbf86b">getRsv</a> ()</td></tr>
+<tr class="separator:4bbf86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:38a72a3"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#38a72a3">setMaxLength</a> (int $bytes)</td></tr>
 <tr class="separator:38a72a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7a47a57"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#7a47a57">setRsv</a> (int $rsv)</td></tr>
+<tr class="separator:7a47a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
 <tr class="memitem:023534c"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#023534c">getFrame</a> ()</td></tr>
+<tr class="memdesc:023534c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and returns a single pending frame from the buffer, or nothing.  <a href="Helix_Socket_WebSocket_FrameReader.html#023534c">More...</a><br /></td></tr>
 <tr class="separator:023534c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:11fb50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#11fb50e">validate</a> ()</td></tr>
-<tr class="memdesc:11fb50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the current head by not throwing.  <a href="Helix_Socket_WebSocket_FrameReader.html#11fb50e">More...</a><br /></td></tr>
-<tr class="separator:11fb50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f41a1e1"><td class="memItemLeft" align="right" valign="top">null array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#f41a1e1">getFrame_header</a> ()</td></tr>
+<tr class="memdesc:f41a1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://tools.ietf.org/html/rfc6455#section-5.2">https://tools.ietf.org/html/rfc6455#section-5.2</a>  <a href="Helix_Socket_WebSocket_FrameReader.html#f41a1e1">More...</a><br /></td></tr>
+<tr class="separator:f41a1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e284e02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Socket_WebSocket_FrameReader.html#e284e02">newFrame</a> (string $payload)</td></tr>
+<tr class="memdesc:e284e02"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> factory.  <a href="Helix_Socket_WebSocket_FrameReader.html#e284e02">More...</a><br /></td></tr>
+<tr class="separator:e284e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
+<a id="b3fca54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b3fca54">&#9670;&nbsp;</a></span>$buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string $buffer = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Peer read buffer. </p>
+
+</div>
+</div>
+<a id="cee3f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#cee3f6f">&#9670;&nbsp;</a></span>$header</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null array $header</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a> header buffer. </p>
+
+</div>
+</div>
 <a id="ae0333e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0333e">&#9670;&nbsp;</a></span>$maxLength</h2>
 
@@ -129,7 +182,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int $maxLength = 10 * 1024 * 1024</td>
+          <td class="memname">int $maxLength = 128 * 1024</td>
         </tr>
       </table>
   </td>
@@ -139,12 +192,34 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Payload size limit. </p>
-<p>Must fall within <a class="el" href="">MAX_LENGTH_RANGE</a> (inclusive).</p>
-<p>Defaults to 10 MiB.</p>
-<p><a href="https://tools.ietf.org/html/rfc6455#section-5.2">https://tools.ietf.org/html/rfc6455#section-5.2</a> </p><blockquote class="doxtable">
-<p>... interpreted as a 64-bit unsigned integer (the most significant bit MUST be 0) ... </p>
-</blockquote>
+<p>Maximum inbound per-frame payload length (fragment). </p>
+<p>Must be greater than or equal to <code>125</code></p>
+<p>Defaults to 128 KiB.</p>
+<p><a href="https://tools.ietf.org/html/rfc6455#section-5.2">https://tools.ietf.org/html/rfc6455#section-5.2</a> </p>
+
+</div>
+</div>
+<a id="2b24089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2b24089">&#9670;&nbsp;</a></span>$rsv</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int $rsv = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RSV bit mask claimed by extensions. </p>
 
 </div>
 </div>
@@ -171,8 +246,32 @@ Protected Methods</h2></td></tr>
 <div class="line">        </div>
 <div class="line">        <span class="stringliteral">&#39;/^.([\x80-\xfd]|\xfe(?&lt;n&gt;..)|\xff(?&lt;J&gt;.{8}))(?&lt;mask&gt;.{4})/s&#39;</span></div>
 </div><!-- fragment -->
-<p>This doesn't allow unmasked frames. </p>
-<p>TODO? </p>
+<p><a href="https://tools.ietf.org/html/rfc6455#section-5.2">https://tools.ietf.org/html/rfc6455#section-5.2</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor</h2>
+<a id="647bec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#647bec6">&#9670;&nbsp;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html">WebSocketClient</a>&#160;</td>
+          <td class="paramname"><em>$client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_Socket_WebSocket_WebSocketClient.html" title="Wraps a WebSocket peer.">WebSocketClient</a></td><td class="paramname">$client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -199,6 +298,8 @@ Protected Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reads and returns a single pending frame from the buffer, or nothing. </p>
 <dl class="section return"><dt>Returns</dt><dd>null|Frame </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
@@ -206,6 +307,34 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="f41a1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f41a1e1">&#9670;&nbsp;</a></span>getFrame_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null array getFrame_header </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a href="https://tools.ietf.org/html/rfc6455#section-5.2">https://tools.ietf.org/html/rfc6455#section-5.2</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>null|array </dd></dl>
 
 </div>
 </div>
@@ -247,6 +376,59 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="4bbf86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#4bbf86b">&#9670;&nbsp;</a></span>getRsv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getRsv </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="e284e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e284e02">&#9670;&nbsp;</a></span>newFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> newFrame </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$payload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Helix_Socket_WebSocket_Frame.html">Frame</a> factory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$payload</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Socket_WebSocket_Frame.html" title="A WebSocket frame.">Frame</a> </dd></dl>
+
+</div>
+</div>
 <a id="38a72a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#38a72a3">&#9670;&nbsp;</a></span>setMaxLength()</h2>
 
@@ -272,36 +454,28 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="11fb50e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#11fb50e">&#9670;&nbsp;</a></span>validate()</h2>
+<a id="7a47a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#7a47a57">&#9670;&nbsp;</a></span>setRsv()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void validate </td>
+          <td class="memname">$this setRsv </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$rsv</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Validates the current head by not throwing. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="Helix_Socket_WebSocket_WebSocketError.html" title="A WebSocket error.">WebSocketError</a></td><td></td></tr>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$rsv</td><td></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
 
 </div>
 </div>
