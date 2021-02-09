@@ -47,7 +47,7 @@ var NAVTREEINDEX =
 ".html",
 "Helix_Asana_CustomField_EnumOption.html#c482d92",
 "Helix_Asana_Task.html#d925d76",
-"Helix_Asana_User_TaskList.html"
+"Helix_Asana_User_Photo.html#baf2b41"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

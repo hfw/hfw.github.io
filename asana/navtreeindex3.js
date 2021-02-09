@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"Helix_Asana_User_Photo.html#baf2b41":[5,0,0,6,0,3],
+"Helix_Asana_User_Photo.html#cf8f3b0":[5,0,0,6,0,0],
 "Helix_Asana_User_TaskList.html":[5,0,0,6,1],
 "Helix_Asana_User_TaskList.html#9c07f6e":[5,0,0,6,1,1],
 "Helix_Asana_User_TaskList.html#c482d92":[5,0,0,6,1,0],
