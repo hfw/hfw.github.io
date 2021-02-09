@@ -13,6 +13,7 @@ var Helix_Asana_Portfolio =
     [ "getMembers", "Helix_Asana_Portfolio.html#dad693b", null ],
     [ "getName", "Helix_Asana_Portfolio.html#8a0b8ec", null ],
     [ "getOwner", "Helix_Asana_Portfolio.html#4b54e5b", null ],
+    [ "getParentNode", "Helix_Asana_Portfolio.html#4344576", null ],
     [ "getProjects", "Helix_Asana_Portfolio.html#1ab990a", null ],
     [ "getWorkspace", "Helix_Asana_Portfolio.html#e076a3c", null ],
     [ "hasMembers", "Helix_Asana_Portfolio.html#29f23fa", null ],

@@ -45,9 +45,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"Helix_Asana_CustomField_EnumOption.html#c482d92",
-"Helix_Asana_Task.html#d925d76",
-"Helix_Asana_User_Photo.html#baf2b41"
+"Helix_Asana_CustomField_EnumOption.html#6cc27b1",
+"Helix_Asana_Tag.html#2f41205",
+"Helix_Asana_User.html#8e11c7f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,6 +1,6 @@
 var Helix_Asana_Project_Status =
 [
-    [ "$parent", "Helix_Asana_Project_Status.html#8bba35f", null ],
+    [ "$project", "Helix_Asana_Project_Status.html#41bf50d", null ],
     [ "COLOR_GREEN", "Helix_Asana_Project_Status.html#cd40b69", null ],
     [ "COLOR_RED", "Helix_Asana_Project_Status.html#10a15a3", null ],
     [ "COLOR_YELLOW", "Helix_Asana_Project_Status.html#d2f8ce4", null ],
@@ -14,6 +14,7 @@ var Helix_Asana_Project_Status =
     [ "getColor", "Helix_Asana_Project_Status.html#6cc27b1", null ],
     [ "getCreatedAt", "Helix_Asana_Project_Status.html#1adffdc", null ],
     [ "getCreatedBy", "Helix_Asana_Project_Status.html#c21942a", null ],
+    [ "getParentNode", "Helix_Asana_Project_Status.html#4b4b09c", null ],
     [ "getProject", "Helix_Asana_Project_Status.html#7b41a48", null ],
     [ "getText", "Helix_Asana_Project_Status.html#6da0a6f", null ],
     [ "getTitle", "Helix_Asana_Project_Status.html#9660eac", null ],

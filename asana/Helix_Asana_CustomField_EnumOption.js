@@ -1,6 +1,6 @@
 var Helix_Asana_CustomField_EnumOption =
 [
-    [ "$parent", "Helix_Asana_CustomField_EnumOption.html#cb20cb8", null ],
+    [ "$customField", "Helix_Asana_CustomField_EnumOption.html#8632215", null ],
     [ "DIR", "Helix_Asana_CustomField_EnumOption.html#c482d92", null ],
     [ "TYPE", "Helix_Asana_CustomField_EnumOption.html#0cb7892", null ],
     [ "__construct", "Helix_Asana_CustomField_EnumOption.html#ac6aae2", null ],
@@ -8,6 +8,7 @@ var Helix_Asana_CustomField_EnumOption =
     [ "getColor", "Helix_Asana_CustomField_EnumOption.html#6cc27b1", null ],
     [ "getCustomField", "Helix_Asana_CustomField_EnumOption.html#9b4da77", null ],
     [ "getName", "Helix_Asana_CustomField_EnumOption.html#8a0b8ec", null ],
+    [ "getParentNode", "Helix_Asana_CustomField_EnumOption.html#6a9f534", null ],
     [ "isEnabled", "Helix_Asana_CustomField_EnumOption.html#7409597", null ],
     [ "moveAbove", "Helix_Asana_CustomField_EnumOption.html#ed937c4", null ],
     [ "moveBelow", "Helix_Asana_CustomField_EnumOption.html#53fea79", null ],

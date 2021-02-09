@@ -44,6 +44,7 @@ var Helix_Asana_Task =
     [ "getNumLikes", "Helix_Asana_Task.html#d4019e6", null ],
     [ "getNumSubtasks", "Helix_Asana_Task.html#ab82117", null ],
     [ "getParent", "Helix_Asana_Task.html#98cf464", null ],
+    [ "getParentNode", "Helix_Asana_Task.html#4344576", null ],
     [ "getProjects", "Helix_Asana_Task.html#1ab990a", null ],
     [ "getResourceSubtype", "Helix_Asana_Task.html#4a1ee7c", null ],
     [ "getSections", "Helix_Asana_Task.html#2122e84", null ],

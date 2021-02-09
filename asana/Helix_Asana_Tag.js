@@ -8,6 +8,7 @@ var Helix_Asana_Tag =
     [ "getFollowers", "Helix_Asana_Tag.html#64a4186", null ],
     [ "getIterator", "Helix_Asana_Tag.html#cddfdab", null ],
     [ "getName", "Helix_Asana_Tag.html#8a0b8ec", null ],
+    [ "getParentNode", "Helix_Asana_Tag.html#4344576", null ],
     [ "getTasks", "Helix_Asana_Tag.html#1c8abf1", null ],
     [ "getWorkspace", "Helix_Asana_Tag.html#e076a3c", null ],
     [ "hasFollowers", "Helix_Asana_Tag.html#1ac1c67", null ],

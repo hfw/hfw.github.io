@@ -21,6 +21,7 @@ var Helix_Asana_CustomField =
     [ "getEnumOptions", "Helix_Asana_CustomField.html#8f1517a", null ],
     [ "getFormat", "Helix_Asana_CustomField.html#d5404bb", null ],
     [ "getName", "Helix_Asana_CustomField.html#8a0b8ec", null ],
+    [ "getParentNode", "Helix_Asana_CustomField.html#4344576", null ],
     [ "getPrecision", "Helix_Asana_CustomField.html#087bba5", null ],
     [ "getResourceSubtype", "Helix_Asana_CustomField.html#4a1ee7c", null ],
     [ "hasNotificationsEnabled", "Helix_Asana_CustomField.html#1563031", null ],

@@ -28,6 +28,7 @@ var Helix_Asana_Project =
     [ "getName", "Helix_Asana_Project.html#8a0b8ec", null ],
     [ "getNotes", "Helix_Asana_Project.html#e9e7f49", null ],
     [ "getOwner", "Helix_Asana_Project.html#7526559", null ],
+    [ "getParentNode", "Helix_Asana_Project.html#4344576", null ],
     [ "getSections", "Helix_Asana_Project.html#64200e9", null ],
     [ "getStatuses", "Helix_Asana_Project.html#01907f2", null ],
     [ "getTaskCounts", "Helix_Asana_Project.html#8b79144", null ],

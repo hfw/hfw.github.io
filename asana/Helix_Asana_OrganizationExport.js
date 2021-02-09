@@ -11,6 +11,7 @@ var Helix_Asana_OrganizationExport =
     [ "getCreatedAt", "Helix_Asana_OrganizationExport.html#1adffdc", null ],
     [ "getDownloadUrl", "Helix_Asana_OrganizationExport.html#05a5fd2", null ],
     [ "getOrganization", "Helix_Asana_OrganizationExport.html#def4dba", null ],
+    [ "getParentNode", "Helix_Asana_OrganizationExport.html#4344576", null ],
     [ "getState", "Helix_Asana_OrganizationExport.html#9990337", null ],
     [ "isActive", "Helix_Asana_OrganizationExport.html#664ce9a", null ],
     [ "isDone", "Helix_Asana_OrganizationExport.html#88f7c11", null ],
