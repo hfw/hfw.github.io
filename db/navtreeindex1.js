@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"Helix_DB_Table.html#6b1fac6":[3,0,0,12,2],
 "Helix_DB_Table.html#3111709":[3,0,0,12,12],
 "Helix_DB_Table.html#78d8eef":[3,0,0,12,13],
 "Helix_DB_Table.html#7dbc33f":[3,0,0,12,16],
@@ -14,8 +15,8 @@ var NAVTREEINDEX1 =
 "Helix_DB_Table.html#366b2a5":[3,0,0,12,9],
 "hierarchy.html":[2],
 "immutable.html":[1],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md0":[0,0],
 "index.html#autotoc_md1":[0,1],
 "index.html#autotoc_md2":[0,2],

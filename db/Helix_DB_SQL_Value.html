@@ -75,10 +75,10 @@ $(document).ready(function(){initNavTree('Helix_DB_SQL_Value.html',''); initResi
 <div class="center"><img src="Helix_DB_SQL_Value__inherit__graph.png" border="0" usemap="#Value_inherit__map" alt="Inheritance graph"/></div>
 <map name="Value_inherit__map" id="Value_inherit__map">
 <area shape="rect" title="Represents a value expression." alt="" coords="338,160,410,189"/>
-<area shape="rect" href="Helix_DB_SQL_Choice.html" title="Represents a CASE expression, with or without a subject expression." alt="" coords="155,237,238,267"/>
-<area shape="rect" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression." alt="" coords="263,237,365,267"/>
-<area shape="rect" href="Helix_DB_SQL_Numeric.html" title="Represents a numeric expression." alt="" coords="389,237,481,267"/>
-<area shape="rect" href="Helix_DB_SQL_Text.html" title="Represents a text expression." alt="" coords="505,237,568,267"/>
+<area shape="rect" href="Helix_DB_SQL_Choice.html" title="Represents a CASE expression, with or without a subject expression." alt="" coords="165,237,247,267"/>
+<area shape="rect" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression." alt="" coords="272,237,375,267"/>
+<area shape="rect" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression." alt="" coords="399,237,451,267"/>
+<area shape="rect" href="Helix_DB_SQL_Text.html" title="Represents a text expression." alt="" coords="475,237,537,267"/>
 <area shape="rect" href="Helix_DB_SQL_Expression.html" title="A literal expression, exempt from being quoted." alt="" coords="50,83,173,112"/>
 <area shape="rect" href="Helix_DB_FactoryTrait.html" title="Installs a magic static factory, where the signature can be changed to match the constructor,..." alt="" coords="5,5,148,35"/>
 <area shape="rect" href="Helix_DB_SQL_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="172,5,384,35"/>
@@ -186,24 +186,24 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$expression</b></td
 <tr class="memitem:48ce91d inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a id="48ce91d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</td></tr>
 <tr class="separator:48ce91d inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3cd3fa8 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Numeric.html">Numeric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#3cd3fa8">getAvg</a> (string $aggregate='ALL')</td></tr>
-<tr class="memdesc:3cd3fa8 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AVG(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#3cd3fa8">More...</a><br /></td></tr>
-<tr class="separator:3cd3fa8 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2abb887 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#2abb887">getAvg</a> (string $aggregate='ALL')</td></tr>
+<tr class="memdesc:2abb887 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AVG(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#2abb887">More...</a><br /></td></tr>
+<tr class="separator:2abb887 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:30e0475 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#30e0475">getConcat</a> (string $delimiter=',')</td></tr>
 <tr class="memdesc:30e0475 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>GROUP_CONCAT($this)</code> using a delimiter.  <a href="Helix_DB_SQL_AggregateTrait.html#30e0475">More...</a><br /></td></tr>
 <tr class="separator:30e0475 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f33c938 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Numeric.html">Numeric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#f33c938">getCount</a> (string $aggregate='ALL')</td></tr>
-<tr class="memdesc:f33c938 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>COUNT(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#f33c938">More...</a><br /></td></tr>
-<tr class="separator:f33c938 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:4773ecd inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Numeric.html">Numeric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#4773ecd">getMax</a> ()</td></tr>
-<tr class="memdesc:4773ecd inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MAX($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#4773ecd">More...</a><br /></td></tr>
-<tr class="separator:4773ecd inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:8b64dc1 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Numeric.html">Numeric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#8b64dc1">getMin</a> ()</td></tr>
-<tr class="memdesc:8b64dc1 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MIN($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#8b64dc1">More...</a><br /></td></tr>
-<tr class="separator:8b64dc1 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:735490c inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Numeric.html">Numeric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#735490c">getSum</a> (string $aggregate='ALL')</td></tr>
-<tr class="memdesc:735490c inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>SUM(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#735490c">More...</a><br /></td></tr>
-<tr class="separator:735490c inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:3e749c4 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#3e749c4">getCount</a> (string $aggregate='ALL')</td></tr>
+<tr class="memdesc:3e749c4 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>COUNT(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#3e749c4">More...</a><br /></td></tr>
+<tr class="separator:3e749c4 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:11ee476 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#11ee476">getMax</a> ()</td></tr>
+<tr class="memdesc:11ee476 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MAX($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#11ee476">More...</a><br /></td></tr>
+<tr class="separator:11ee476 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0e22c07 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#0e22c07">getMin</a> ()</td></tr>
+<tr class="memdesc:0e22c07 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MIN($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#0e22c07">More...</a><br /></td></tr>
+<tr class="separator:0e22c07 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1332 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#abb1332">getSum</a> (string $aggregate='ALL')</td></tr>
+<tr class="memdesc:abb1332 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>SUM(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#abb1332">More...</a><br /></td></tr>
+<tr class="separator:abb1332 inherit pub_methods_Helix_DB_SQL_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

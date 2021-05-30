@@ -5,7 +5,7 @@ var hierarchy =
       [ "Value", "Helix_DB_SQL_Value.html", [
         [ "Choice", "Helix_DB_SQL_Choice.html", null ],
         [ "DateTime", "Helix_DB_SQL_DateTime.html", null ],
-        [ "Numeric", "Helix_DB_SQL_Numeric.html", null ],
+        [ "Num", "Helix_DB_SQL_Num.html", null ],
         [ "Text", "Helix_DB_SQL_Text.html", null ]
       ] ]
     ] ],
@@ -41,9 +41,9 @@ var hierarchy =
         [ "Record", "Helix_DB_Record.html", null ]
       ] ]
     ] ],
-    [ "NumericTrait", "Helix_DB_SQL_NumericTrait.html", [
+    [ "NumTrait", "Helix_DB_SQL_NumTrait.html", [
       [ "Column", "Helix_DB_Column.html", null ],
-      [ "Numeric", "Helix_DB_SQL_Numeric.html", null ]
+      [ "Num", "Helix_DB_SQL_Num.html", null ]
     ] ],
     [ "SQL", "Helix_DB_SQL.html", null ],
     [ "TextTrait", "Helix_DB_SQL_TextTrait.html", [
