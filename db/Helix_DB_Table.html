@@ -63,6 +63,7 @@ $(document).ready(function(){initNavTree('Helix_DB_Table.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#pro-attribs">Protected Properties</a> &#124;
+<a href="#pub-static-methods">Public Static Methods</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
 <a href="#pro-methods">Protected Methods</a> &#124;
 <a href="Helix_DB_Table-members.html">List of all members</a>  </div>
@@ -77,23 +78,24 @@ $(document).ready(function(){initNavTree('Helix_DB_Table.html',''); initResizabl
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_Table__inherit__graph.png" border="0" usemap="#Table_inherit__map" alt="Inheritance graph"/></div>
 <map name="Table_inherit__map" id="Table_inherit__map">
-<area shape="rect" title="Table manipulation using arrays." alt="" coords="97,160,169,189"/>
-<area shape="rect" href="Helix_DB_EAV.html" title="Array storage in an extension table." alt="" coords="5,237,57,267"/>
-<area shape="rect" href="Helix_DB_Junction.html" title="Represents a junction table, derived from an annotated interface." alt="" coords="81,237,184,267"/>
-<area shape="rect" href="Helix_DB_Record.html" title="Represents an &quot;active record&quot; table, derived from an annotated class implementing EntityInterface." alt="" coords="209,237,291,267"/>
-<area shape="rect" href="Helix_DB_AbstractTable.html" title="Uses ArrayAccess to produce Column instances." alt="" coords="57,83,209,112"/>
-<area shape="rect" title=" " alt="" coords="67,5,199,35"/>
+<area shape="rect" title="Table manipulation using arrays." alt="" coords="131,160,203,189"/>
+<area shape="rect" href="Helix_DB_EAV.html" title="Array storage in an extension table." alt="" coords="39,237,91,267"/>
+<area shape="rect" href="Helix_DB_Junction.html" title="Represents a junction table, derived from an annotated interface." alt="" coords="115,237,218,267"/>
+<area shape="rect" href="Helix_DB_Record.html" title="Represents an &quot;active record&quot; table, derived from an annotated class implementing EntityInterface." alt="" coords="243,237,325,267"/>
+<area shape="rect" href="Helix_DB_AbstractTable.html" title="Uses ArrayAccess to produce Column instances." alt="" coords="5,83,157,112"/>
+<area shape="rect" title=" " alt="" coords="15,5,147,35"/>
+<area shape="rect" href="Helix_DB_FactoryTrait.html" title="Installs a magic static factory, where the signature can be changed to match the constructor,..." alt="" coords="182,83,325,112"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p><a class="el" href="Helix_DB_Table.html" title="Table manipulation using arrays.">Table</a> manipulation using arrays. </p>
 <p>Accessing the table as an array produces <a class="el" href="Helix_DB_Column.html">Column</a> instances.</p>
-<dl class="immutable"><dt><b><a class="el" href="immutable.html#_immutable000002">Immutable:</a></b></dt><dd>Mutations operate on and return clones. </dd></dl>
+<dl class="immutable"><dt><b><a class="el" href="immutable.html#_immutable000002">Immutable:</a></b></dt><dd>Mutations operate on and return clones.</dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
 <tr class="memitem:13ea20d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#13ea20d">$_cache</a> = []</td></tr>
-<tr class="memdesc:13ea20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepared query cache.  <a href="Helix_DB_Table.html#13ea20d">More...</a><br /></td></tr>
+<tr class="memdesc:13ea20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepared statement cache, keyed by function name.  <a href="Helix_DB_Table.html#13ea20d">More...</a><br /></td></tr>
 <tr class="separator:13ea20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6617f30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#6617f30">$columns</a> = []</td></tr>
 <tr class="memdesc:6617f30"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[name =&gt; <a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a>]</code>  <a href="Helix_DB_Table.html#6617f30">More...</a><br /></td></tr>
@@ -106,10 +108,20 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 <a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
 <tr class="separator:d144aa2 inherit pro_attribs_Helix_DB_AbstractTable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Public Static Methods</h2></td></tr>
+<tr class="memitem:366b2a5"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#366b2a5">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $name, array $columns)</td></tr>
+<tr class="separator:366b2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_Helix_DB_FactoryTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_Helix_DB_FactoryTrait')"><img src="closed.png" alt="-"/>&#160;Public Static Methods inherited from <a class="el" href="Helix_DB_FactoryTrait.html">FactoryTrait</a></td></tr>
+<tr class="memitem:05dd95f inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memItemLeft" align="right" valign="top">static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_FactoryTrait.html#05dd95f">__callStatic</a> (string $ignored, array $args)</td></tr>
+<tr class="separator:05dd95f inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9e29457 inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_FactoryTrait.html#9e29457">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db,... $args)</td></tr>
+<tr class="separator:9e29457 inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:e2f4f15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e2f4f15">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, $name, array $columns)</td></tr>
-<tr class="separator:e2f4f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bf4c572"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#bf4c572">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $name, array $columns)</td></tr>
+<tr class="separator:bf4c572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f5ddf7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#f5ddf7f">__toString</a> ()</td></tr>
 <tr class="memdesc:f5ddf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the table name.  <a href="Helix_DB_Table.html#f5ddf7f">More...</a><br /></td></tr>
 <tr class="separator:f5ddf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +166,7 @@ Public Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
 <tr class="memitem:ecd600e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#ecd600e">cache</a> (string $key, Closure $<a class="el" href="Helix_DB.html#187ddf1">prepare</a>)</td></tr>
-<tr class="memdesc:ecd600e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches a prepared query.  <a href="Helix_DB_Table.html#ecd600e">More...</a><br /></td></tr>
+<tr class="memdesc:ecd600e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches a prepared statement.  <a href="Helix_DB_Table.html#ecd600e">More...</a><br /></td></tr>
 <tr class="separator:ecd600e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
@@ -178,7 +190,7 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Prepared query cache. </p>
+<p>Prepared statement cache, keyed by function name. </p>
 
 </div>
 </div>
@@ -207,8 +219,8 @@ Protected Methods</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor</h2>
-<a id="e2f4f15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#e2f4f15">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="bf4c572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#bf4c572">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +234,7 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$name</em>, </td>
         </tr>
         <tr>
@@ -246,6 +258,8 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented in <a class="el" href="Helix_DB_Junction.html#cb1b125">Junction</a>.</p>
 
 </div>
 </div>
@@ -341,7 +355,7 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Caches a prepared query. </p>
+<p>Caches a prepared statement. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$key</td><td></td></tr>
@@ -403,6 +417,51 @@ Protected Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Rows affected. </dd></dl>
+
+</div>
+</div>
+<a id="366b2a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#366b2a5">&#9670;&nbsp;</a></span>factory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">magic static self factory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_DB.html">DB</a>&#160;</td>
+          <td class="paramname"><em>$db</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">self</a> </dd></dl>
+
+<p>Reimplemented in <a class="el" href="Helix_DB_Junction.html#fc44d77">Junction</a>.</p>
 
 </div>
 </div>

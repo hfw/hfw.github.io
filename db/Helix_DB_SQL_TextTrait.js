@@ -1,6 +1,7 @@
 var Helix_DB_SQL_TextTrait =
 [
     [ "$db", "Helix_DB_SQL_TextTrait.html#d144aa2", null ],
+    [ "__toString", "Helix_DB_SQL_TextTrait.html#48ce91d", null ],
     [ "getHex", "Helix_DB_SQL_TextTrait.html#302064a", null ],
     [ "getLength", "Helix_DB_SQL_TextTrait.html#dc57718", null ],
     [ "getLower", "Helix_DB_SQL_TextTrait.html#e0779fb", null ],

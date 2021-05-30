@@ -1,6 +1,7 @@
 var Helix_DB_SQL_ComparisonTrait =
 [
     [ "$db", "Helix_DB_SQL_ComparisonTrait.html#d144aa2", null ],
+    [ "__toString", "Helix_DB_SQL_ComparisonTrait.html#48ce91d", null ],
     [ "coalesce", "Helix_DB_SQL_ComparisonTrait.html#ff4bf63", null ],
     [ "is", "Helix_DB_SQL_ComparisonTrait.html#08df9ff", null ],
     [ "isBetween", "Helix_DB_SQL_ComparisonTrait.html#94d1c68", null ],

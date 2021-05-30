@@ -63,6 +63,7 @@ $(document).ready(function(){initNavTree('Helix_DB_Select.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#pro-attribs">Protected Properties</a> &#124;
+<a href="#pub-static-methods">Public Static Methods</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
 <a href="Helix_DB_Select-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -76,12 +77,13 @@ $(document).ready(function(){initNavTree('Helix_DB_Select.html',''); initResizab
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_Select__inherit__graph.png" border="0" usemap="#Select_inherit__map" alt="Inheritance graph"/></div>
 <map name="Select_inherit__map" id="Select_inherit__map">
-<area shape="rect" title="Represents a SELECT query." alt="" coords="284,160,367,189"/>
+<area shape="rect" title="Represents a SELECT query." alt="" coords="364,160,447,189"/>
 <area shape="rect" href="Helix_DB_AbstractTable.html" title="Uses ArrayAccess to produce Column instances." alt="" coords="5,83,157,112"/>
 <area shape="rect" title=" " alt="" coords="15,5,147,35"/>
-<area shape="rect" title=" " alt="" coords="181,83,293,112"/>
-<area shape="rect" title=" " alt="" coords="317,83,509,112"/>
-<area shape="rect" href="Helix_DB_SQL_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="534,83,746,112"/>
+<area shape="rect" href="Helix_DB_FactoryTrait.html" title="Installs a magic static factory, where the signature can be changed to match the constructor,..." alt="" coords="182,83,325,112"/>
+<area shape="rect" title=" " alt="" coords="349,83,461,112"/>
+<area shape="rect" title=" " alt="" coords="485,83,677,112"/>
+<area shape="rect" href="Helix_DB_SQL_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="702,83,914,112"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
@@ -105,6 +107,16 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$table</b></td></tr
 <tr class="memitem:d144aa2 inherit pro_attribs_Helix_DB_AbstractTable"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
 <a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
 <tr class="separator:d144aa2 inherit pro_attribs_Helix_DB_AbstractTable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Public Static Methods</h2></td></tr>
+<tr class="memitem:6314de8"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#6314de8">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db, $table, array $columns)</td></tr>
+<tr class="separator:6314de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_Helix_DB_FactoryTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_Helix_DB_FactoryTrait')"><img src="closed.png" alt="-"/>&#160;Public Static Methods inherited from <a class="el" href="Helix_DB_FactoryTrait.html">FactoryTrait</a></td></tr>
+<tr class="memitem:05dd95f inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memItemLeft" align="right" valign="top">static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_FactoryTrait.html#05dd95f">__callStatic</a> (string $ignored, array $args)</td></tr>
+<tr class="separator:05dd95f inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9e29457 inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_FactoryTrait.html#9e29457">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db,... $args)</td></tr>
+<tr class="separator:9e29457 inherit pub_static_methods_Helix_DB_FactoryTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
@@ -413,6 +425,49 @@ Public Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Statement.html" title="Extends PDOStatement for fluency and logging.">Statement</a> </dd></dl>
+
+</div>
+</div>
+<a id="6314de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#6314de8">&#9670;&nbsp;</a></span>factory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">magic static self factory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_DB.html">DB</a>&#160;</td>
+          <td class="paramname"><em>$db</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">self</a> </dd></dl>
 
 </div>
 </div>

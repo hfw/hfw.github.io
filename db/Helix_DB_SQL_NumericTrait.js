@@ -1,6 +1,7 @@
 var Helix_DB_SQL_NumericTrait =
 [
     [ "$db", "Helix_DB_SQL_NumericTrait.html#d144aa2", null ],
+    [ "__toString", "Helix_DB_SQL_NumericTrait.html#48ce91d", null ],
     [ "abs", "Helix_DB_SQL_NumericTrait.html#d6acc44", null ],
     [ "add", "Helix_DB_SQL_NumericTrait.html#545563f", null ],
     [ "ceil", "Helix_DB_SQL_NumericTrait.html#b15e2ac", null ],
@@ -14,5 +15,5 @@ var Helix_DB_SQL_NumericTrait =
     [ "multiply", "Helix_DB_SQL_NumericTrait.html#a64ddf0", null ],
     [ "pow", "Helix_DB_SQL_NumericTrait.html#673fae7", null ],
     [ "round", "Helix_DB_SQL_NumericTrait.html#f91afc7", null ],
-    [ "subtract", "Helix_DB_SQL_NumericTrait.html#5027c6d", null ]
+    [ "subtract", "Helix_DB_SQL_NumericTrait.html#585956e", null ]
 ];

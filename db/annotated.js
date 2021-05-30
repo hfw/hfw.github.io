@@ -15,7 +15,7 @@ var annotated =
           [ "Predicate", "Helix_DB_SQL_Predicate.html", "Helix_DB_SQL_Predicate" ],
           [ "Text", "Helix_DB_SQL_Text.html", "Helix_DB_SQL_Text" ],
           [ "TextTrait", "Helix_DB_SQL_TextTrait.html", "Helix_DB_SQL_TextTrait" ],
-          [ "Value", "Helix_DB_SQL_Value.html", "Helix_DB_SQL_Value" ],
+          [ "Value", "Helix_DB_SQL_Value.html", null ],
           [ "ValueInterface", "Helix_DB_SQL_ValueInterface.html", null ]
         ] ],
         [ "AbstractTable", "Helix_DB_AbstractTable.html", "Helix_DB_AbstractTable" ],
@@ -23,6 +23,7 @@ var annotated =
         [ "Column", "Helix_DB_Column.html", "Helix_DB_Column" ],
         [ "EAV", "Helix_DB_EAV.html", "Helix_DB_EAV" ],
         [ "EntityInterface", "Helix_DB_EntityInterface.html", "Helix_DB_EntityInterface" ],
+        [ "FactoryTrait", "Helix_DB_FactoryTrait.html", "Helix_DB_FactoryTrait" ],
         [ "Junction", "Helix_DB_Junction.html", "Helix_DB_Junction" ],
         [ "Record", "Helix_DB_Record.html", "Helix_DB_Record" ],
         [ "Select", "Helix_DB_Select.html", "Helix_DB_Select" ],

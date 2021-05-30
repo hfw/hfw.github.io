@@ -4,6 +4,7 @@ var Helix_DB_Column =
     [ "$qualifier", "Helix_DB_Column.html#97c30ef", null ],
     [ "__construct", "Helix_DB_Column.html#1d0dd0e", null ],
     [ "__toString", "Helix_DB_Column.html#f5ddf7f", null ],
+    [ "factory", "Helix_DB_Column.html#8606490", null ],
     [ "getName", "Helix_DB_Column.html#1340b4b", null ],
     [ "getQualifier", "Helix_DB_Column.html#2950784", null ],
     [ "setName", "Helix_DB_Column.html#d9b6873", null ],

@@ -9,6 +9,7 @@ var Helix_DB_Select =
     [ "__toString", "Helix_DB_Select.html#f5ddf7f", null ],
     [ "count", "Helix_DB_Select.html#0781bf4", null ],
     [ "execute", "Helix_DB_Select.html#25da9f5", null ],
+    [ "factory", "Helix_DB_Select.html#6314de8", null ],
     [ "getAll", "Helix_DB_Select.html#5854711", null ],
     [ "getEach", "Helix_DB_Select.html#6c48993", null ],
     [ "getFirst", "Helix_DB_Select.html#e604955", null ],

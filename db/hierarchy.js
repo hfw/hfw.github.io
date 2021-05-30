@@ -31,6 +31,16 @@ var hierarchy =
         [ "Value", "Helix_DB_SQL_Value.html", null ]
       ] ]
     ] ],
+    [ "FactoryTrait", "Helix_DB_FactoryTrait.html", [
+      [ "Column", "Helix_DB_Column.html", null ],
+      [ "Select", "Helix_DB_Select.html", null ],
+      [ "Expression", "Helix_DB_SQL_Expression.html", null ],
+      [ "Table", "Helix_DB_Table.html", [
+        [ "EAV", "Helix_DB_EAV.html", null ],
+        [ "Junction", "Helix_DB_Junction.html", null ],
+        [ "Record", "Helix_DB_Record.html", null ]
+      ] ]
+    ] ],
     [ "NumericTrait", "Helix_DB_SQL_NumericTrait.html", [
       [ "Column", "Helix_DB_Column.html", null ],
       [ "Numeric", "Helix_DB_SQL_Numeric.html", null ]
@@ -44,11 +54,7 @@ var hierarchy =
       [ "DB", "Helix_DB.html", null ],
       [ "AbstractTable", "Helix_DB_AbstractTable.html", [
         [ "Select", "Helix_DB_Select.html", null ],
-        [ "Table", "Helix_DB_Table.html", [
-          [ "EAV", "Helix_DB_EAV.html", null ],
-          [ "Junction", "Helix_DB_Junction.html", null ],
-          [ "Record", "Helix_DB_Record.html", null ]
-        ] ]
+        [ "Table", "Helix_DB_Table.html", null ]
       ] ]
     ] ],
     [ "Countable", null, [

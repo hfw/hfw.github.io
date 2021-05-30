@@ -5,6 +5,7 @@ var Helix_DB_Record =
     [ "$proto", "Helix_DB_Record.html#2f0e87b", null ],
     [ "$types", "Helix_DB_Record.html#8d85209", null ],
     [ "__construct", "Helix_DB_Record.html#8b4dd5b", null ],
+    [ "factory", "Helix_DB_Record.html#6e94e70", null ],
     [ "find", "Helix_DB_Record.html#70b1b3c", null ],
     [ "fromClass", "Helix_DB_Record.html#af3c67b", null ],
     [ "getAll", "Helix_DB_Record.html#93f5255", null ],

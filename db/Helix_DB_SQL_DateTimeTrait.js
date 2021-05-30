@@ -1,6 +1,7 @@
 var Helix_DB_SQL_DateTimeTrait =
 [
     [ "$db", "Helix_DB_SQL_DateTimeTrait.html#d144aa2", null ],
+    [ "__toString", "Helix_DB_SQL_DateTimeTrait.html#48ce91d", null ],
     [ "getDate", "Helix_DB_SQL_DateTimeTrait.html#abe4763", null ],
     [ "getDateTimeFormat", "Helix_DB_SQL_DateTimeTrait.html#f839ac1", null ],
     [ "getDay", "Helix_DB_SQL_DateTimeTrait.html#94913e7", null ],
