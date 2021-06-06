@@ -3,7 +3,6 @@ var annotated =
     [ "Helix", null, [
       [ "DB", null, [
         [ "SQL", null, [
-          [ "AbstractTrait", "Helix_DB_SQL_AbstractTrait.html", "Helix_DB_SQL_AbstractTrait" ],
           [ "AggregateTrait", "Helix_DB_SQL_AggregateTrait.html", "Helix_DB_SQL_AggregateTrait" ],
           [ "CastTrait", "Helix_DB_SQL_CastTrait.html", "Helix_DB_SQL_CastTrait" ],
           [ "Choice", "Helix_DB_SQL_Choice.html", "Helix_DB_SQL_Choice" ],
@@ -25,7 +24,6 @@ var annotated =
         [ "Column", "Helix_DB_Column.html", "Helix_DB_Column" ],
         [ "EAV", "Helix_DB_EAV.html", "Helix_DB_EAV" ],
         [ "EntityInterface", "Helix_DB_EntityInterface.html", "Helix_DB_EntityInterface" ],
-        [ "FactoryTrait", "Helix_DB_FactoryTrait.html", "Helix_DB_FactoryTrait" ],
         [ "Junction", "Helix_DB_Junction.html", "Helix_DB_Junction" ],
         [ "Record", "Helix_DB_Record.html", "Helix_DB_Record" ],
         [ "Select", "Helix_DB_Select.html", "Helix_DB_Select" ],

@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 // doxygen v1.8
 
@@ -14,9 +15,7 @@ function status (string $message = '') {
         $last = $message;
     }
     elseif ($last) {
-        if (!$message) {
-            fputs(STDERR, "\n");
-        }
+        fputs(STDERR, "\n");
     }
 }
 
@@ -87,7 +86,7 @@ $rx = <<<'RX'
 RX;
 while (preg_match($rx, $src, $match)) {
     $class = getClass($match['CLASS']);
-    status("{$class}: Converting @property {$match['NAME']} to class property.");
+    status("{$class}: Converting @property {$match['NAME']} to magic class property.");
     $comment = trim($match['COMMENT']);
     $comment = preg_replace('/^\s*\*\s{0,2}/m', '     * ', $comment); // fix continued indent
     $prop = <<<PROP
@@ -146,7 +145,7 @@ while (preg_match($rx, $src, $match)) {
         $type = 'self'; // avoid double static
     }
     $class = getClass($match['CLASS']);
-    status("{$class}: Converting {$static}@method {$match['NAME']} to class method.");
+    status("{$class}: Converting {$static}@method {$match['NAME']} to magic class method.");
     $comment = trim($match['COMMENT']);
     $comment = preg_replace('/^\s*\*\s{0,2}/m', '     * ', $comment); // fix continued indent
     $function = <<<FUNCTION
@@ -249,7 +248,22 @@ $src = preg_replace('/@inheritDoc/i', '', $src);
 $src = preg_replace('/\/\*\*[\s\*]+\/\s*/', '', $src);
 
 // @internal is broken, even if at the top of a docblock.
-// force the member to "internal" visibility
+// 1) convert @internal classes to "internal" visibility
+$rx = <<<'RX'
+/^
+    \h*\*\h*@internal\s
+    (                               # 1
+        ((?!\*\/).)*                # 2
+        \*\/
+        \s*
+        (final\s+|abstract\s+)?     # 3
+    )
+    (class|interface)               # 4 (traits have already been converted to classes)
+/imsx
+RX;
+$src = preg_replace($rx, '$1internal $4', $src);
+
+// 2) convert @internal members to "internal" visibility
 $rx = <<<'RX'
 /^
     \h*\*\h*@internal\s
