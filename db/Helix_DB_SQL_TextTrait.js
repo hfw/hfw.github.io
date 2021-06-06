@@ -1,13 +1,11 @@
 var Helix_DB_SQL_TextTrait =
 [
-    [ "$db", "Helix_DB_SQL_TextTrait.html#d144aa2", null ],
-    [ "__toString", "Helix_DB_SQL_TextTrait.html#48ce91d", null ],
-    [ "getHex", "Helix_DB_SQL_TextTrait.html#302064a", null ],
-    [ "getLength", "Helix_DB_SQL_TextTrait.html#8136053", null ],
-    [ "getLower", "Helix_DB_SQL_TextTrait.html#e0779fb", null ],
-    [ "getPosition", "Helix_DB_SQL_TextTrait.html#7e1b5a0", null ],
-    [ "getReplacement", "Helix_DB_SQL_TextTrait.html#4080fea", null ],
-    [ "getSize", "Helix_DB_SQL_TextTrait.html#698d4f2", null ],
-    [ "getSubstring", "Helix_DB_SQL_TextTrait.html#6258ac2", null ],
-    [ "getUpper", "Helix_DB_SQL_TextTrait.html#e2d5bfa", null ]
+    [ "hex", "Helix_DB_SQL_TextTrait.html#72bdf38", null ],
+    [ "length", "Helix_DB_SQL_TextTrait.html#42e4ca4", null ],
+    [ "lower", "Helix_DB_SQL_TextTrait.html#3498059", null ],
+    [ "position", "Helix_DB_SQL_TextTrait.html#6568bf4", null ],
+    [ "replace", "Helix_DB_SQL_TextTrait.html#a2ca7b0", null ],
+    [ "size", "Helix_DB_SQL_TextTrait.html#d207ac1", null ],
+    [ "substr", "Helix_DB_SQL_TextTrait.html#cc61b3a", null ],
+    [ "upper", "Helix_DB_SQL_TextTrait.html#8de0e5d", null ]
 ];

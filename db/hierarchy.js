@@ -1,23 +1,37 @@
 var hierarchy =
 [
-    [ "AggregateTrait", "Helix_DB_SQL_AggregateTrait.html", [
-      [ "Column", "Helix_DB_Column.html", null ],
-      [ "Value", "Helix_DB_SQL_Value.html", [
-        [ "Choice", "Helix_DB_SQL_Choice.html", null ],
-        [ "DateTime", "Helix_DB_SQL_DateTime.html", null ],
-        [ "Num", "Helix_DB_SQL_Num.html", null ],
+    [ "AbstractTrait", "Helix_DB_SQL_AbstractTrait.html", [
+      [ "AggregateTrait", "Helix_DB_SQL_AggregateTrait.html", [
+        [ "Column", "Helix_DB_Column.html", null ],
+        [ "Value", "Helix_DB_SQL_Value.html", [
+          [ "Choice", "Helix_DB_SQL_Choice.html", null ],
+          [ "DateTime", "Helix_DB_SQL_DateTime.html", null ],
+          [ "Num", "Helix_DB_SQL_Num.html", null ],
+          [ "Text", "Helix_DB_SQL_Text.html", null ]
+        ] ]
+      ] ],
+      [ "CastTrait", "Helix_DB_SQL_CastTrait.html", [
+        [ "Column", "Helix_DB_Column.html", null ],
+        [ "Value", "Helix_DB_SQL_Value.html", null ]
+      ] ],
+      [ "ComparisonTrait", "Helix_DB_SQL_ComparisonTrait.html", [
+        [ "Column", "Helix_DB_Column.html", null ],
+        [ "Value", "Helix_DB_SQL_Value.html", null ]
+      ] ],
+      [ "DateTimeTrait", "Helix_DB_SQL_DateTimeTrait.html", [
+        [ "Column", "Helix_DB_Column.html", null ],
+        [ "DateTime", "Helix_DB_SQL_DateTime.html", null ]
+      ] ],
+      [ "NumTrait", "Helix_DB_SQL_NumTrait.html", [
+        [ "Column", "Helix_DB_Column.html", null ],
+        [ "Num", "Helix_DB_SQL_Num.html", null ]
+      ] ],
+      [ "TextTrait", "Helix_DB_SQL_TextTrait.html", [
+        [ "Column", "Helix_DB_Column.html", null ],
         [ "Text", "Helix_DB_SQL_Text.html", null ]
       ] ]
     ] ],
     [ "AttributesTrait", "Helix_DB_AttributesTrait.html", null ],
-    [ "ComparisonTrait", "Helix_DB_SQL_ComparisonTrait.html", [
-      [ "Column", "Helix_DB_Column.html", null ],
-      [ "Value", "Helix_DB_SQL_Value.html", null ]
-    ] ],
-    [ "DateTimeTrait", "Helix_DB_SQL_DateTimeTrait.html", [
-      [ "Column", "Helix_DB_Column.html", null ],
-      [ "DateTime", "Helix_DB_SQL_DateTime.html", null ]
-    ] ],
     [ "EntityInterface", "Helix_DB_EntityInterface.html", null ],
     [ "ExpressionInterface", "Helix_DB_SQL_ExpressionInterface.html", [
       [ "Select", "Helix_DB_Select.html", null ],
@@ -41,15 +55,7 @@ var hierarchy =
         [ "Record", "Helix_DB_Record.html", null ]
       ] ]
     ] ],
-    [ "NumTrait", "Helix_DB_SQL_NumTrait.html", [
-      [ "Column", "Helix_DB_Column.html", null ],
-      [ "Num", "Helix_DB_SQL_Num.html", null ]
-    ] ],
     [ "SQL", "Helix_DB_SQL.html", null ],
-    [ "TextTrait", "Helix_DB_SQL_TextTrait.html", [
-      [ "Column", "Helix_DB_Column.html", null ],
-      [ "Text", "Helix_DB_SQL_Text.html", null ]
-    ] ],
     [ "ArrayAccess", null, [
       [ "DB", "Helix_DB.html", null ],
       [ "AbstractTable", "Helix_DB_AbstractTable.html", [

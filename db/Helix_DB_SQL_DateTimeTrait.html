@@ -62,7 +62,6 @@ $(document).ready(function(){initNavTree('Helix_DB_SQL_DateTimeTrait.html',''); 
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pro-attribs">Protected Properties</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
 <a href="Helix_DB_SQL_DateTimeTrait-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -76,80 +75,83 @@ $(document).ready(function(){initNavTree('Helix_DB_SQL_DateTimeTrait.html',''); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_SQL_DateTimeTrait__inherit__graph.png" border="0" usemap="#DateTimeTrait_inherit__map" alt="Inheritance graph"/></div>
 <map name="DateTimeTrait_inherit__map" id="DateTimeTrait_inherit__map">
-<area shape="rect" title="Produces datetime related expressions for the instance." alt="" coords="29,5,181,35"/>
-<area shape="rect" href="Helix_DB_Column.html" title="Immutable column expression." alt="" coords="5,83,88,112"/>
-<area shape="rect" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression." alt="" coords="113,83,215,112"/>
+<area shape="rect" title="Produces datetime related expressions for the instance." alt="" coords="29,83,181,112"/>
+<area shape="rect" href="Helix_DB_Column.html" title="Immutable column expression." alt="" coords="5,160,88,189"/>
+<area shape="rect" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression." alt="" coords="113,160,215,189"/>
+<area shape="rect" href="Helix_DB_SQL_AbstractTrait.html" title="A trait for other traits in this namespace." alt="" coords="29,5,181,35"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Produces datetime related expressions for the instance. </p>
+<p>Each DBMS has its own quirks with dates, which is beyond the scope of this library.</p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://sqlite.org/lang_datefunc.html">https://sqlite.org/lang_datefunc.html</a> </dd>
 <dd>
 <a href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format">https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format</a> </dd></dl>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Properties</h2></td></tr>
-<tr class="memitem:d144aa2"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
-<a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
-<tr class="separator:d144aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:48ce91d"><td class="memItemLeft" align="right" valign="top"><a id="48ce91d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</td></tr>
-<tr class="separator:48ce91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe4763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#abe4763">getDate</a> ()</td></tr>
-<tr class="memdesc:abe4763"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY-MM-DD</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#abe4763">More...</a><br /></td></tr>
-<tr class="separator:abe4763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:6f6bc6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#6f6bc6b">getDateTime</a> ()</td></tr>
-<tr class="memdesc:6f6bc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY-MM-DD hh:mm:ss</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#6f6bc6b">More...</a><br /></td></tr>
-<tr class="separator:6f6bc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f839ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#f839ac1">getDateTimeFormat</a> ($format)</td></tr>
-<tr class="memdesc:f839ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a text expression using a driver-appropriate format function.  <a href="Helix_DB_SQL_DateTimeTrait.html#f839ac1">More...</a><br /></td></tr>
-<tr class="separator:f839ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:112e782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#112e782">getDay</a> ()</td></tr>
-<tr class="memdesc:112e782"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>01</code> to <code>31</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#112e782">More...</a><br /></td></tr>
-<tr class="separator:112e782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:db506bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#db506bd">getDayOfWeek</a> ()</td></tr>
-<tr class="memdesc:db506bd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>0</code> to <code>6</code> (Sunday is <code>0</code>)  <a href="Helix_DB_SQL_DateTimeTrait.html#db506bd">More...</a><br /></td></tr>
-<tr class="separator:db506bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ed4a3f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#ed4a3f5">getDayOfYear</a> ()</td></tr>
-<tr class="memdesc:ed4a3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>001</code> to <code>366</code> (365 + 1 during leap year)  <a href="Helix_DB_SQL_DateTimeTrait.html#ed4a3f5">More...</a><br /></td></tr>
-<tr class="separator:ed4a3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:349fff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#349fff7">getHours</a> ()</td></tr>
-<tr class="memdesc:349fff7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>23</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#349fff7">More...</a><br /></td></tr>
-<tr class="separator:349fff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:c1259d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#c1259d9">getMinutes</a> ()</td></tr>
-<tr class="memdesc:c1259d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>59</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#c1259d9">More...</a><br /></td></tr>
-<tr class="separator:c1259d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:b4e4f77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#b4e4f77">getMonth</a> ()</td></tr>
-<tr class="memdesc:b4e4f77"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>01</code> to <code>12</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#b4e4f77">More...</a><br /></td></tr>
-<tr class="separator:b4e4f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:c27a9f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#c27a9f9">getSeconds</a> ()</td></tr>
-<tr class="memdesc:c27a9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>59</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#c27a9f9">More...</a><br /></td></tr>
-<tr class="separator:c27a9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:626bf5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#626bf5a">getTime</a> ()</td></tr>
-<tr class="memdesc:626bf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00:00:00</code> to <code>23:59:59</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#626bf5a">More...</a><br /></td></tr>
-<tr class="separator:626bf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:5701d2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#5701d2f">getTimestamp</a> ()</td></tr>
-<tr class="memdesc:5701d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unix timestamp.  <a href="Helix_DB_SQL_DateTimeTrait.html#5701d2f">More...</a><br /></td></tr>
-<tr class="separator:5701d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f483bd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#f483bd7">getWeekOfYear</a> ()</td></tr>
-<tr class="memdesc:f483bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>53</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#f483bd7">More...</a><br /></td></tr>
-<tr class="separator:f483bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:15abaa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#15abaa7">getYear</a> ()</td></tr>
-<tr class="memdesc:15abaa7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#15abaa7">More...</a><br /></td></tr>
-<tr class="separator:15abaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:6266c66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#6266c66">date</a> ()</td></tr>
+<tr class="memdesc:6266c66"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY-MM-DD</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#6266c66">More...</a><br /></td></tr>
+<tr class="separator:6266c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:1ffb5db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#1ffb5db">dateFormat</a> ($format)</td></tr>
+<tr class="memdesc:1ffb5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date formatting expression using a driver-appropriate function.  <a href="Helix_DB_SQL_DateTimeTrait.html#1ffb5db">More...</a><br /></td></tr>
+<tr class="separator:1ffb5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de5038e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#de5038e">datetime</a> ()</td></tr>
+<tr class="memdesc:de5038e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY-MM-DD hh:mm:ss</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#de5038e">More...</a><br /></td></tr>
+<tr class="separator:de5038e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:3849cc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#3849cc5">day</a> ()</td></tr>
+<tr class="memdesc:3849cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>01</code> to <code>31</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#3849cc5">More...</a><br /></td></tr>
+<tr class="separator:3849cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:139ce13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#139ce13">dayOfWeek</a> ()</td></tr>
+<tr class="memdesc:139ce13"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>0</code> to <code>6</code> (Sunday is <code>0</code>)  <a href="Helix_DB_SQL_DateTimeTrait.html#139ce13">More...</a><br /></td></tr>
+<tr class="separator:139ce13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e671fc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#e671fc0">dayOfYear</a> ()</td></tr>
+<tr class="memdesc:e671fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>001</code> to <code>366</code> (365 + 1 during leap year)  <a href="Helix_DB_SQL_DateTimeTrait.html#e671fc0">More...</a><br /></td></tr>
+<tr class="separator:e671fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:6d6e301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#6d6e301">hours</a> ()</td></tr>
+<tr class="memdesc:6d6e301"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>23</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#6d6e301">More...</a><br /></td></tr>
+<tr class="separator:6d6e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e90d103"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#e90d103">minutes</a> ()</td></tr>
+<tr class="memdesc:e90d103"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>59</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#e90d103">More...</a><br /></td></tr>
+<tr class="separator:e90d103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:431211f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#431211f">month</a> ()</td></tr>
+<tr class="memdesc:431211f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>01</code> to <code>12</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#431211f">More...</a><br /></td></tr>
+<tr class="separator:431211f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#abc0db4">seconds</a> ()</td></tr>
+<tr class="memdesc:abc0db4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>59</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#abc0db4">More...</a><br /></td></tr>
+<tr class="separator:abc0db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b14ee35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#b14ee35">time</a> ()</td></tr>
+<tr class="memdesc:b14ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00:00:00</code> to <code>23:59:59</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#b14ee35">More...</a><br /></td></tr>
+<tr class="separator:b14ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b2398f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#b2398f0">timestamp</a> ()</td></tr>
+<tr class="memdesc:b2398f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unix timestamp.  <a href="Helix_DB_SQL_DateTimeTrait.html#b2398f0">More...</a><br /></td></tr>
+<tr class="separator:b2398f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:feb7a44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#feb7a44">weekOfYear</a> ()</td></tr>
+<tr class="memdesc:feb7a44"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>53</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#feb7a44">More...</a><br /></td></tr>
+<tr class="separator:feb7a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b50d156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#b50d156">year</a> ()</td></tr>
+<tr class="memdesc:b50d156"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#b50d156">More...</a><br /></td></tr>
+<tr class="separator:b50d156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_Helix_DB_SQL_AbstractTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_SQL_AbstractTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_SQL_AbstractTrait.html">AbstractTrait</a></td></tr>
+<tr class="memitem:f5ddf7f inherit pub_methods_Helix_DB_SQL_AbstractTrait"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AbstractTrait.html#f5ddf7f">__toString</a> ()</td></tr>
+<tr class="separator:f5ddf7f inherit pub_methods_Helix_DB_SQL_AbstractTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_Helix_DB_SQL_AbstractTrait"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_SQL_AbstractTrait')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_SQL_AbstractTrait.html">AbstractTrait</a></td></tr>
+<tr class="memitem:d144aa2 inherit pro_attribs_Helix_DB_SQL_AbstractTrait"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
+<a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
+<tr class="separator:d144aa2 inherit pro_attribs_Helix_DB_SQL_AbstractTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Methods</h2>
-<a id="abe4763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4763">&#9670;&nbsp;</a></span>getDate()</h2>
+<a id="6266c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#6266c66">&#9670;&nbsp;</a></span>date()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> getDate </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> date </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -162,14 +164,41 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="6f6bc6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#6f6bc6b">&#9670;&nbsp;</a></span>getDateTime()</h2>
+<a id="1ffb5db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#1ffb5db">&#9670;&nbsp;</a></span>dateFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> getDateTime </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> dateFormat </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Date formatting expression using a driver-appropriate function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;string[]</td><td class="paramname">$format</td><td>Format, or formats keyed by driver name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
+
+</div>
+</div>
+<a id="de5038e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de5038e">&#9670;&nbsp;</a></span>datetime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> datetime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,41 +211,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="f839ac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#f839ac1">&#9670;&nbsp;</a></span>getDateTimeFormat()</h2>
+<a id="3849cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#3849cc5">&#9670;&nbsp;</a></span>day()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> getDateTimeFormat </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$format</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns a text expression using a driver-appropriate format function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string&#160;|&#160;string[]</td><td class="paramname">$format</td><td>Format, or formats keyed by driver name. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
-
-</div>
-</div>
-<a id="112e782"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#112e782">&#9670;&nbsp;</a></span>getDay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getDay </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> day </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -229,14 +231,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="db506bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#db506bd">&#9670;&nbsp;</a></span>getDayOfWeek()</h2>
+<a id="139ce13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#139ce13">&#9670;&nbsp;</a></span>dayOfWeek()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getDayOfWeek </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> dayOfWeek </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -249,14 +251,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="ed4a3f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ed4a3f5">&#9670;&nbsp;</a></span>getDayOfYear()</h2>
+<a id="e671fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e671fc0">&#9670;&nbsp;</a></span>dayOfYear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getDayOfYear </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> dayOfYear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -269,14 +271,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="349fff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#349fff7">&#9670;&nbsp;</a></span>getHours()</h2>
+<a id="6d6e301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#6d6e301">&#9670;&nbsp;</a></span>hours()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getHours </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> hours </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -289,14 +291,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="c1259d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#c1259d9">&#9670;&nbsp;</a></span>getMinutes()</h2>
+<a id="e90d103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e90d103">&#9670;&nbsp;</a></span>minutes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getMinutes </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> minutes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -309,14 +311,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="b4e4f77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#b4e4f77">&#9670;&nbsp;</a></span>getMonth()</h2>
+<a id="431211f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#431211f">&#9670;&nbsp;</a></span>month()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getMonth </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> month </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -329,14 +331,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="c27a9f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#c27a9f9">&#9670;&nbsp;</a></span>getSeconds()</h2>
+<a id="abc0db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc0db4">&#9670;&nbsp;</a></span>seconds()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getSeconds </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> seconds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -349,14 +351,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="626bf5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#626bf5a">&#9670;&nbsp;</a></span>getTime()</h2>
+<a id="b14ee35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b14ee35">&#9670;&nbsp;</a></span>time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> getTime </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> time </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -369,14 +371,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="5701d2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#5701d2f">&#9670;&nbsp;</a></span>getTimestamp()</h2>
+<a id="b2398f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b2398f0">&#9670;&nbsp;</a></span>timestamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getTimestamp </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> timestamp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -389,14 +391,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="f483bd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#f483bd7">&#9670;&nbsp;</a></span>getWeekOfYear()</h2>
+<a id="feb7a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#feb7a44">&#9670;&nbsp;</a></span>weekOfYear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getWeekOfYear </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> weekOfYear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -409,14 +411,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="15abaa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#15abaa7">&#9670;&nbsp;</a></span>getYear()</h2>
+<a id="b50d156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b50d156">&#9670;&nbsp;</a></span>year()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getYear </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> year </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

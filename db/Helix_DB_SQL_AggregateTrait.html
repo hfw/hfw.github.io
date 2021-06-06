@@ -62,7 +62,6 @@ $(document).ready(function(){initNavTree('Helix_DB_SQL_AggregateTrait.html','');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pro-attribs">Protected Properties</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
 <a href="Helix_DB_SQL_AggregateTrait-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -76,84 +75,148 @@ $(document).ready(function(){initNavTree('Helix_DB_SQL_AggregateTrait.html','');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_SQL_AggregateTrait__inherit__graph.png" border="0" usemap="#AggregateTrait_inherit__map" alt="Inheritance graph"/></div>
 <map name="AggregateTrait_inherit__map" id="AggregateTrait_inherit__map">
-<area shape="rect" title="Produces aggregate expressions for the instance." alt="" coords="83,5,245,35"/>
-<area shape="rect" href="Helix_DB_Column.html" title="Immutable column expression." alt="" coords="72,83,155,112"/>
-<area shape="rect" href="Helix_DB_SQL_Value.html" title="Represents a value expression." alt="" coords="179,83,251,112"/>
-<area shape="rect" href="Helix_DB_SQL_Choice.html" title="Represents a CASE expression, with or without a subject expression." alt="" coords="5,160,88,189"/>
-<area shape="rect" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression." alt="" coords="113,160,215,189"/>
-<area shape="rect" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression." alt="" coords="239,160,291,189"/>
-<area shape="rect" href="Helix_DB_SQL_Text.html" title="Represents a text expression." alt="" coords="315,160,378,189"/>
+<area shape="rect" title="Produces aggregate expressions for the instance." alt="" coords="83,83,245,112"/>
+<area shape="rect" href="Helix_DB_Column.html" title="Immutable column expression." alt="" coords="72,160,155,189"/>
+<area shape="rect" href="Helix_DB_SQL_Value.html" title="Represents a value expression." alt="" coords="179,160,251,189"/>
+<area shape="rect" href="Helix_DB_SQL_AbstractTrait.html" title="A trait for other traits in this namespace." alt="" coords="88,5,240,35"/>
+<area shape="rect" href="Helix_DB_SQL_Choice.html" title="Represents a CASE expression, with or without a subject expression." alt="" coords="5,237,88,267"/>
+<area shape="rect" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression." alt="" coords="113,237,215,267"/>
+<area shape="rect" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression." alt="" coords="239,237,291,267"/>
+<area shape="rect" href="Helix_DB_SQL_Text.html" title="Represents a text expression." alt="" coords="315,237,378,267"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Produces aggregate expressions for the instance. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Properties</h2></td></tr>
-<tr class="memitem:d144aa2"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
-<a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
-<tr class="separator:d144aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:48ce91d"><td class="memItemLeft" align="right" valign="top"><a id="48ce91d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</td></tr>
-<tr class="separator:48ce91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:2abb887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#2abb887">getAvg</a> (string $aggregate='ALL')</td></tr>
-<tr class="memdesc:2abb887"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AVG(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#2abb887">More...</a><br /></td></tr>
-<tr class="separator:2abb887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:30e0475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#30e0475">getConcat</a> (string $delimiter=',')</td></tr>
-<tr class="memdesc:30e0475"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>GROUP_CONCAT($this)</code> using a delimiter.  <a href="Helix_DB_SQL_AggregateTrait.html#30e0475">More...</a><br /></td></tr>
-<tr class="separator:30e0475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3e749c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#3e749c4">getCount</a> (string $aggregate='ALL')</td></tr>
-<tr class="memdesc:3e749c4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>COUNT(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#3e749c4">More...</a><br /></td></tr>
-<tr class="separator:3e749c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:11ee476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#11ee476">getMax</a> ()</td></tr>
-<tr class="memdesc:11ee476"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MAX($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#11ee476">More...</a><br /></td></tr>
-<tr class="separator:11ee476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:0e22c07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#0e22c07">getMin</a> ()</td></tr>
-<tr class="memdesc:0e22c07"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MIN($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#0e22c07">More...</a><br /></td></tr>
-<tr class="separator:0e22c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb1332"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#abb1332">getSum</a> (string $aggregate='ALL')</td></tr>
-<tr class="memdesc:abb1332"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>SUM(ALL|DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#abb1332">More...</a><br /></td></tr>
-<tr class="separator:abb1332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fbb1c16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#fbb1c16">avg</a> ()</td></tr>
+<tr class="memdesc:fbb1c16"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AVG($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#fbb1c16">More...</a><br /></td></tr>
+<tr class="separator:fbb1c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2de0c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#d2de0c0">avgDistinct</a> ()</td></tr>
+<tr class="memdesc:d2de0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>AVG(DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#d2de0c0">More...</a><br /></td></tr>
+<tr class="separator:d2de0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342a3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#a342a3a">count</a> ()</td></tr>
+<tr class="memdesc:a342a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>COUNT($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#a342a3a">More...</a><br /></td></tr>
+<tr class="separator:a342a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0b87125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#0b87125">countDistinct</a> ()</td></tr>
+<tr class="memdesc:0b87125"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>COUNT(DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#0b87125">More...</a><br /></td></tr>
+<tr class="separator:0b87125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d08dc5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#d08dc5e">groupConcat</a> (string $delimiter=',')</td></tr>
+<tr class="memdesc:d08dc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>GROUP_CONCAT($this)</code> using a delimiter.  <a href="Helix_DB_SQL_AggregateTrait.html#d08dc5e">More...</a><br /></td></tr>
+<tr class="separator:d08dc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f44733b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#f44733b">max</a> ()</td></tr>
+<tr class="memdesc:f44733b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MAX($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#f44733b">More...</a><br /></td></tr>
+<tr class="separator:f44733b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:1471a7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#1471a7a">min</a> ()</td></tr>
+<tr class="memdesc:1471a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MIN($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#1471a7a">More...</a><br /></td></tr>
+<tr class="separator:1471a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c3ccef0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#c3ccef0">sum</a> ()</td></tr>
+<tr class="memdesc:c3ccef0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>SUM($this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#c3ccef0">More...</a><br /></td></tr>
+<tr class="separator:c3ccef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:727476b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AggregateTrait.html#727476b">sumDistinct</a> ()</td></tr>
+<tr class="memdesc:727476b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>SUM(DISTINCT $this)</code>  <a href="Helix_DB_SQL_AggregateTrait.html#727476b">More...</a><br /></td></tr>
+<tr class="separator:727476b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_Helix_DB_SQL_AbstractTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_SQL_AbstractTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_SQL_AbstractTrait.html">AbstractTrait</a></td></tr>
+<tr class="memitem:f5ddf7f inherit pub_methods_Helix_DB_SQL_AbstractTrait"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_AbstractTrait.html#f5ddf7f">__toString</a> ()</td></tr>
+<tr class="separator:f5ddf7f inherit pub_methods_Helix_DB_SQL_AbstractTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_Helix_DB_SQL_AbstractTrait"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_SQL_AbstractTrait')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_SQL_AbstractTrait.html">AbstractTrait</a></td></tr>
+<tr class="memitem:d144aa2 inherit pro_attribs_Helix_DB_SQL_AbstractTrait"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
+<a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
+<tr class="separator:d144aa2 inherit pro_attribs_Helix_DB_SQL_AbstractTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Methods</h2>
-<a id="2abb887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#2abb887">&#9670;&nbsp;</a></span>getAvg()</h2>
+<a id="fbb1c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fbb1c16">&#9670;&nbsp;</a></span>avg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getAvg </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> avg </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$aggregate</em> = <code>'ALL'</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>AVG(ALL|DISTINCT $this)</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$aggregate</td><td><code>ALL|DISTINCT</code> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p><code>AVG($this)</code> </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
-<a id="30e0475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#30e0475">&#9670;&nbsp;</a></span>getConcat()</h2>
+<a id="d2de0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d2de0c0">&#9670;&nbsp;</a></span>avgDistinct()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> getConcat </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> avgDistinct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>AVG(DISTINCT $this)</code> </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+
+</div>
+</div>
+<a id="a342a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342a3a">&#9670;&nbsp;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>COUNT($this)</code> </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+
+</div>
+</div>
+<a id="0b87125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#0b87125">&#9670;&nbsp;</a></span>countDistinct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> countDistinct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>COUNT(DISTINCT $this)</code> </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+
+</div>
+</div>
+<a id="d08dc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d08dc5e">&#9670;&nbsp;</a></span>groupConcat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Text.html">Text</a> groupConcat </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$delimiter</em> = <code>','</code></td><td>)</td>
@@ -173,41 +236,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="3e749c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#3e749c4">&#9670;&nbsp;</a></span>getCount()</h2>
+<a id="f44733b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f44733b">&#9670;&nbsp;</a></span>max()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getCount </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$aggregate</em> = <code>'ALL'</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code>COUNT(ALL|DISTINCT $this)</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$aggregate</td><td><code>ALL|DISTINCT</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
-
-</div>
-</div>
-<a id="11ee476"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#11ee476">&#9670;&nbsp;</a></span>getMax()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getMax </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> max </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -220,14 +256,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="0e22c07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#0e22c07">&#9670;&nbsp;</a></span>getMin()</h2>
+<a id="1471a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#1471a7a">&#9670;&nbsp;</a></span>min()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getMin </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> min </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -240,29 +276,42 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="abb1332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb1332">&#9670;&nbsp;</a></span>getSum()</h2>
+<a id="c3ccef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c3ccef0">&#9670;&nbsp;</a></span>sum()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> getSum </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> sum </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$aggregate</em> = <code>'ALL'</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>SUM(ALL|DISTINCT $this)</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$aggregate</td><td><code>ALL|DISTINCT</code> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p><code>SUM($this)</code> </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+
+</div>
+</div>
+<a id="727476b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#727476b">&#9670;&nbsp;</a></span>sumDistinct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> sumDistinct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>SUM(DISTINCT $this)</code> </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
 
 </div>

@@ -3,17 +3,19 @@ var annotated =
     [ "Helix", null, [
       [ "DB", null, [
         [ "SQL", null, [
+          [ "AbstractTrait", "Helix_DB_SQL_AbstractTrait.html", "Helix_DB_SQL_AbstractTrait" ],
           [ "AggregateTrait", "Helix_DB_SQL_AggregateTrait.html", "Helix_DB_SQL_AggregateTrait" ],
+          [ "CastTrait", "Helix_DB_SQL_CastTrait.html", "Helix_DB_SQL_CastTrait" ],
           [ "Choice", "Helix_DB_SQL_Choice.html", "Helix_DB_SQL_Choice" ],
           [ "ComparisonTrait", "Helix_DB_SQL_ComparisonTrait.html", "Helix_DB_SQL_ComparisonTrait" ],
           [ "DateTime", "Helix_DB_SQL_DateTime.html", null ],
           [ "DateTimeTrait", "Helix_DB_SQL_DateTimeTrait.html", "Helix_DB_SQL_DateTimeTrait" ],
           [ "Expression", "Helix_DB_SQL_Expression.html", "Helix_DB_SQL_Expression" ],
           [ "ExpressionInterface", "Helix_DB_SQL_ExpressionInterface.html", "Helix_DB_SQL_ExpressionInterface" ],
-          [ "Num", "Helix_DB_SQL_Num.html", "Helix_DB_SQL_Num" ],
+          [ "Num", "Helix_DB_SQL_Num.html", null ],
           [ "NumTrait", "Helix_DB_SQL_NumTrait.html", "Helix_DB_SQL_NumTrait" ],
           [ "Predicate", "Helix_DB_SQL_Predicate.html", "Helix_DB_SQL_Predicate" ],
-          [ "Text", "Helix_DB_SQL_Text.html", "Helix_DB_SQL_Text" ],
+          [ "Text", "Helix_DB_SQL_Text.html", null ],
           [ "TextTrait", "Helix_DB_SQL_TextTrait.html", "Helix_DB_SQL_TextTrait" ],
           [ "Value", "Helix_DB_SQL_Value.html", null ],
           [ "ValueInterface", "Helix_DB_SQL_ValueInterface.html", null ]

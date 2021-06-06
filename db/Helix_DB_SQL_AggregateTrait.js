@@ -1,11 +1,12 @@
 var Helix_DB_SQL_AggregateTrait =
 [
-    [ "$db", "Helix_DB_SQL_AggregateTrait.html#d144aa2", null ],
-    [ "__toString", "Helix_DB_SQL_AggregateTrait.html#48ce91d", null ],
-    [ "getAvg", "Helix_DB_SQL_AggregateTrait.html#2abb887", null ],
-    [ "getConcat", "Helix_DB_SQL_AggregateTrait.html#30e0475", null ],
-    [ "getCount", "Helix_DB_SQL_AggregateTrait.html#3e749c4", null ],
-    [ "getMax", "Helix_DB_SQL_AggregateTrait.html#11ee476", null ],
-    [ "getMin", "Helix_DB_SQL_AggregateTrait.html#0e22c07", null ],
-    [ "getSum", "Helix_DB_SQL_AggregateTrait.html#abb1332", null ]
+    [ "avg", "Helix_DB_SQL_AggregateTrait.html#fbb1c16", null ],
+    [ "avgDistinct", "Helix_DB_SQL_AggregateTrait.html#d2de0c0", null ],
+    [ "count", "Helix_DB_SQL_AggregateTrait.html#a342a3a", null ],
+    [ "countDistinct", "Helix_DB_SQL_AggregateTrait.html#0b87125", null ],
+    [ "groupConcat", "Helix_DB_SQL_AggregateTrait.html#d08dc5e", null ],
+    [ "max", "Helix_DB_SQL_AggregateTrait.html#f44733b", null ],
+    [ "min", "Helix_DB_SQL_AggregateTrait.html#1471a7a", null ],
+    [ "sum", "Helix_DB_SQL_AggregateTrait.html#c3ccef0", null ],
+    [ "sumDistinct", "Helix_DB_SQL_AggregateTrait.html#727476b", null ]
 ];

@@ -146,9 +146,9 @@ Public Static Methods</h2></td></tr>
 Public Methods</h2></td></tr>
 <tr class="memitem:8b4dd5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#8b4dd5b">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $proto, string $table, array $columns, array $eav=[])</td></tr>
 <tr class="separator:8b4dd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:70b1b3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#70b1b3c">find</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>, array $eavMatch=[])</td></tr>
-<tr class="memdesc:70b1b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a>.  <a href="Helix_DB_Record.html#70b1b3c">More...</a><br /></td></tr>
-<tr class="separator:70b1b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cfb2422"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#cfb2422">find</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>, array $eavMatch=[])</td></tr>
+<tr class="memdesc:cfb2422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a> that fetches instances.  <a href="Helix_DB_Record.html#cfb2422">More...</a><br /></td></tr>
+<tr class="separator:cfb2422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:93f5255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#93f5255">getAll</a> (<a class="el" href="Helix_DB_Statement.html">Statement</a> $statement)</td></tr>
 <tr class="memdesc:93f5255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches from a statement into clones of the entity prototype.  <a href="Helix_DB_Record.html#93f5255">More...</a><br /></td></tr>
 <tr class="separator:93f5255"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,12 +162,12 @@ Public Methods</h2></td></tr>
 <tr class="memitem:790b332"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#790b332">load</a> (int $id)</td></tr>
 <tr class="memdesc:790b332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all data for a given ID into a clone of the prototype.  <a href="Helix_DB_Record.html#790b332">More...</a><br /></td></tr>
 <tr class="separator:790b332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fde4b24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#fde4b24">loadAll</a> ()</td></tr>
+<tr class="memdesc:fde4b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a> that fetches instances.  <a href="Helix_DB_Record.html#fde4b24">More...</a><br /></td></tr>
+<tr class="separator:fde4b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:12fd03a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#12fd03a">save</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="memdesc:12fd03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upserts record and <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> data.  <a href="Helix_DB_Record.html#12fd03a">More...</a><br /></td></tr>
 <tr class="separator:12fd03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3a608dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#3a608dd">select</a> (array $columns=[])</td></tr>
-<tr class="memdesc:3a608dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the fetcher if the default columns are used.  <a href="Helix_DB_Record.html#3a608dd">More...</a><br /></td></tr>
-<tr class="separator:3a608dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6702635"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#6702635">setProto</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $proto)</td></tr>
 <tr class="separator:6702635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
@@ -193,6 +193,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:3111709 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:78d8eef inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#78d8eef">offsetGet</a> ($column)</td></tr>
 <tr class="separator:78d8eef inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7afa108 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#7afa108">select</a> (array $columns=[])</td></tr>
+<tr class="memdesc:7afa108 inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns in the table.  <a href="Helix_DB_Table.html#7afa108">More...</a><br /></td></tr>
+<tr class="separator:7afa108 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e501520 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Table.html">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e501520">setName</a> (string $name)</td></tr>
 <tr class="memdesc:e501520 inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone with a different name.  <a href="Helix_DB_Table.html#e501520">More...</a><br /></td></tr>
 <tr class="separator:e501520 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -451,14 +454,14 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="70b1b3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#70b1b3c">&#9670;&nbsp;</a></span>find()</h2>
+<a id="cfb2422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#cfb2422">&#9670;&nbsp;</a></span>find()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> find </td>
+          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] find </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$match</em>, </td>
@@ -477,7 +480,7 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="Helix_DB_Select.html">Select</a>. </p>
+<p>Returns a <a class="el" href="Helix_DB_Select.html">Select</a> that fetches instances. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#ce43e84" title="Generates an equality Predicate from mixed arguments.">DB::match()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -486,7 +489,7 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Select|EntityInterface[] </dd></dl>
 
 </div>
 </div>
@@ -700,6 +703,26 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="fde4b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fde4b24">&#9670;&nbsp;</a></span>loadAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] loadAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a <a class="el" href="Helix_DB_Select.html">Select</a> that fetches instances. </p>
+<dl class="section return"><dt>Returns</dt><dd>Select|EntityInterface[] </dd></dl>
+
+</div>
+</div>
 <a id="1e28fdf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#1e28fdf">&#9670;&nbsp;</a></span>loadEav()</h2>
 
@@ -858,35 +881,6 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="3a608dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#3a608dd">&#9670;&nbsp;</a></span>select()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> select </td>
-          <td>(</td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$columns</em> = <code>[]</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the fetcher if the default columns are used. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$columns</td><td>Defaults to all columns. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a> </dd></dl>
-
-<p>Reimplemented from <a class="el" href="Helix_DB_Table.html#3a608dd">Table</a>.</p>
 
 </div>
 </div>
