@@ -137,9 +137,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:3111709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:78d8eef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#78d8eef">offsetGet</a> ($column)</td></tr>
 <tr class="separator:78d8eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:7afa108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#7afa108">select</a> (array $columns=[])</td></tr>
-<tr class="memdesc:7afa108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns in the table.  <a href="Helix_DB_Table.html#7afa108">More...</a><br /></td></tr>
-<tr class="separator:7afa108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0bf3045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#0bf3045">select</a> (array $columns=[' *'])</td></tr>
+<tr class="memdesc:0bf3045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns in the table.  <a href="Helix_DB_Table.html#0bf3045">More...</a><br /></td></tr>
+<tr class="separator:0bf3045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e501520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Table.html">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e501520">setName</a> (string $name)</td></tr>
 <tr class="memdesc:e501520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone with a different name.  <a href="Helix_DB_Table.html#e501520">More...</a><br /></td></tr>
 <tr class="separator:e501520"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,9 +465,6 @@ Protected Methods</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="Helix_DB_Column.html">Column</a> [] getColumns </td>
@@ -476,13 +473,10 @@ Protected Methods</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a>[] </dd></dl>
+
+<p>Reimplemented from <a class="el" href="Helix_DB_AbstractTable.html#810b3c4">AbstractTable</a>.</p>
 
 </div>
 </div>
@@ -566,8 +560,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="7afa108"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#7afa108">&#9670;&nbsp;</a></span>select()</h2>
+<a id="0bf3045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#0bf3045">&#9670;&nbsp;</a></span>select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -576,7 +570,7 @@ Protected Methods</h2></td></tr>
           <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> array [] select </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$columns</em> = <code>[]</code></td><td>)</td>
+          <td class="paramname"><em>$columns</em> = <code>['*']</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -585,7 +579,7 @@ Protected Methods</h2></td></tr>
 <p>Returns a selection object for columns in the table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td>Defaults to all columns. </td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td></td></tr>
   </table>
   </dd>
 </dl>

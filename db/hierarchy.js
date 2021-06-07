@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "Select\\$select", "Helix_DB_Select.html#unionHelix_DB_Select__0bselect", null ],
     [ "AggregateTrait", "Helix_DB_SQL_AggregateTrait.html", [
       [ "Column", "Helix_DB_Column.html", null ],
       [ "Value", "Helix_DB_SQL_Value.html", [

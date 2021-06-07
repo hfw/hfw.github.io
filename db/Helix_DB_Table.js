@@ -14,7 +14,7 @@ var Helix_DB_Table =
     [ "getName", "Helix_DB_Table.html#1340b4b", null ],
     [ "insert", "Helix_DB_Table.html#3111709", null ],
     [ "offsetGet", "Helix_DB_Table.html#78d8eef", null ],
-    [ "select", "Helix_DB_Table.html#7afa108", null ],
+    [ "select", "Helix_DB_Table.html#0bf3045", null ],
     [ "setName", "Helix_DB_Table.html#e501520", null ],
     [ "update", "Helix_DB_Table.html#7dbc33f", null ]
 ];

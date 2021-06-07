@@ -48,6 +48,10 @@ cat <<CONFIG | ./doxygen -
     HTML_HEADER=header.html
     HTML_OUTPUT=.
     INPUT=../$1/src/ ../$1/README.md
+
+    # this has to be done because doxygen doesn't like functions named "union"
+    INLINE_SIMPLE_STRUCTS=YES
+
     JAVADOC_AUTOBRIEF=YES
     LAYOUT_FILE=layout.xml
     OUTPUT_DIRECTORY=$1

@@ -100,9 +100,9 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:0c14b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#0c14b26">$refs</a> = []</td></tr>
 <tr class="memdesc:0c14b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Columns that can be accessed by an outer query.  <a href="Helix_DB_Select.html#0c14b26">More...</a><br /></td></tr>
 <tr class="separator:0c14b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:73b36b3"><td class="memItemLeft" align="right" valign="top"><a id="73b36b3"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$table</b></td></tr>
-<tr class="separator:73b36b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f4e499d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_AbstractTable.html">AbstractTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#f4e499d">$table</a></td></tr>
+<tr class="memdesc:f4e499d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The original table given to the constructor.  <a href="Helix_DB_Select.html#f4e499d">More...</a><br /></td></tr>
+<tr class="separator:f4e499d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_Helix_DB_AbstractTable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_AbstractTable')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_AbstractTable.html">AbstractTable</a></td></tr>
 <tr class="memitem:d144aa2 inherit pro_attribs_Helix_DB_AbstractTable"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
 <a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
@@ -115,8 +115,8 @@ Public Static Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:d899c42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#d899c42">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, $table, array $columns)</td></tr>
-<tr class="separator:d899c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7d9bf74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#7d9bf74">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, $table, array $columns=[' *'])</td></tr>
+<tr class="separator:7d9bf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:37b2a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#37b2a74">__invoke</a> (array $args=[])</td></tr>
 <tr class="separator:37b2a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f5ddf7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#f5ddf7f">__toString</a> ()</td></tr>
@@ -131,6 +131,8 @@ Public Methods</h2></td></tr>
 <tr class="memitem:5854711"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#5854711">getAll</a> (array $args=[])</td></tr>
 <tr class="memdesc:5854711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes and fetches all results.  <a href="Helix_DB_Select.html#5854711">More...</a><br /></td></tr>
 <tr class="separator:5854711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:810b3c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#810b3c4">getColumns</a> ()</td></tr>
+<tr class="separator:810b3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6c48993"><td class="memItemLeft" align="right" valign="top">Generator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#6c48993">getEach</a> (array $args=[])</td></tr>
 <tr class="memdesc:6c48993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes and yields from the fetcher.  <a href="Helix_DB_Select.html#6c48993">More...</a><br /></td></tr>
 <tr class="separator:6c48993"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,21 +148,24 @@ Public Methods</h2></td></tr>
 <tr class="memitem:a9fd992"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#a9fd992">group</a> (string $column)</td></tr>
 <tr class="memdesc:a9fd992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a column to the <code>GROUP BY</code> clause.  <a href="Helix_DB_Select.html#a9fd992">More...</a><br /></td></tr>
 <tr class="separator:a9fd992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:5204901"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#5204901">having</a> (string $condition)</td></tr>
-<tr class="memdesc:5204901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a condition to the <code>HAVING</code> clause.  <a href="Helix_DB_Select.html#5204901">More...</a><br /></td></tr>
-<tr class="separator:5204901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3cc50da"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#3cc50da">intersect</a> (<a class="el" href="Helix_DB_Select.html">Select</a> $select, $all=false)</td></tr>
-<tr class="memdesc:3cc50da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>INTERSECT</code> or <code>INTERSECT ALL</code>  <a href="Helix_DB_Select.html#3cc50da">More...</a><br /></td></tr>
-<tr class="separator:3cc50da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ba4c531"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#ba4c531">having</a> (string ... $conditions)</td></tr>
+<tr class="memdesc:ba4c531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds conditions to the <code>HAVING</code> clause.  <a href="Helix_DB_Select.html#ba4c531">More...</a><br /></td></tr>
+<tr class="separator:ba4c531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9c45905"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#9c45905">intersect</a> (<a class="el" href="Helix_DB_Select.html">Select</a> $select)</td></tr>
+<tr class="memdesc:9c45905"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>INTERSECT SELECT ...</code>  <a href="Helix_DB_Select.html#9c45905">More...</a><br /></td></tr>
+<tr class="separator:9c45905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:35ff034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#35ff034">isEmpty</a> ()</td></tr>
 <tr class="memdesc:35ff034"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>NOT EXISTS (SELECT ...)</code>  <a href="Helix_DB_Select.html#35ff034">More...</a><br /></td></tr>
 <tr class="separator:35ff034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:0236ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#0236ff8">isNotEmpty</a> ()</td></tr>
 <tr class="memdesc:0236ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>EXISTS (SELECT ...)</code>  <a href="Helix_DB_Select.html#0236ff8">More...</a><br /></td></tr>
 <tr class="separator:0236ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:cc3ac71"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#cc3ac71">join</a> ($table, string $condition, string $type='INNER')</td></tr>
-<tr class="memdesc:cc3ac71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <code>JOIN</code> clause.  <a href="Helix_DB_Select.html#cc3ac71">More...</a><br /></td></tr>
-<tr class="separator:cc3ac71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f4cc8cc"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#f4cc8cc">join</a> ($table, string ... $conditions)</td></tr>
+<tr class="memdesc:f4cc8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <code>INNER JOIN $table ON $conditions</code>  <a href="Helix_DB_Select.html#f4cc8cc">More...</a><br /></td></tr>
+<tr class="separator:f4cc8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:32da02f"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#32da02f">joinLeft</a> ($table, string ... $conditions)</td></tr>
+<tr class="memdesc:32da02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <code>LEFT JOIN $table ON $conditions</code>  <a href="Helix_DB_Select.html#32da02f">More...</a><br /></td></tr>
+<tr class="separator:32da02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7a37195"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#7a37195">limit</a> (int $limit, int $offset=0)</td></tr>
 <tr class="memdesc:7a37195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <code>LIMIT</code> clause.  <a href="Helix_DB_Select.html#7a37195">More...</a><br /></td></tr>
 <tr class="separator:7a37195"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,9 +179,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:322877e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:992b88c"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#992b88c">setAlias</a> (string $alias)</td></tr>
 <tr class="separator:992b88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:fc5371b"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#fc5371b">setColumns</a> (array $expressions)</td></tr>
-<tr class="memdesc:fc5371b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles the column list and exposed reference columns.  <a href="Helix_DB_Select.html#fc5371b">More...</a><br /></td></tr>
-<tr class="separator:fc5371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dbebce6"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#dbebce6">setColumns</a> (array $expressions=[' *'])</td></tr>
+<tr class="memdesc:dbebce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles the column list and exposed reference columns.  <a href="Helix_DB_Select.html#dbebce6">More...</a><br /></td></tr>
+<tr class="separator:dbebce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:11d114b"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#11d114b">setFetcher</a> (Closure $fetcher)</td></tr>
 <tr class="separator:11d114b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:84ee718"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#84ee718">toSql</a> ()</td></tr>
@@ -185,6 +190,12 @@ Public Methods</h2></td></tr>
 <tr class="memitem:23b4d86"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#23b4d86">toSubquery</a> ()</td></tr>
 <tr class="memdesc:23b4d86"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(SELECT ...) AS ALIAS</code>  <a href="Helix_DB_Select.html#23b4d86">More...</a><br /></td></tr>
 <tr class="separator:23b4d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d27b465"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#d27b465">unionAll</a> (<a class="el" href="Helix_DB_Select.html">Select</a> $select)</td></tr>
+<tr class="memdesc:d27b465"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>UNION ALL SELECT ...</code>  <a href="Helix_DB_Select.html#d27b465">More...</a><br /></td></tr>
+<tr class="separator:d27b465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0ab3052"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Select.html#0ab3052">where</a> (string ... $conditions)</td></tr>
+<tr class="memdesc:0ab3052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds conditions to the <code>WHERE</code> clause.  <a href="Helix_DB_Select.html#0ab3052">More...</a><br /></td></tr>
+<tr class="separator:0ab3052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_DB_AbstractTable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_AbstractTable')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_AbstractTable.html">AbstractTable</a></td></tr>
 <tr class="memitem:d20e64b inherit pub_methods_Helix_DB_AbstractTable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_AbstractTable.html#d20e64b">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db)</td></tr>
 <tr class="separator:d20e64b inherit pub_methods_Helix_DB_AbstractTable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,7 +230,6 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Human-readable alias. </p>
-<p>This is initialized using <code>uniqid()</code> and the table's name. </p>
 
 </div>
 </div>
@@ -273,9 +283,33 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="f4e499d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f4e499d">&#9670;&nbsp;</a></span>$table</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_AbstractTable.html">AbstractTable</a> $table</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The original table given to the constructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor</h2>
-<a id="d899c42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#d899c42">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="7d9bf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#7d9bf74">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +330,7 @@ Public Methods</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$columns</em>&#160;</td>
+          <td class="paramname"><em>$columns</em> = <code>['*']</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -308,7 +342,7 @@ Public Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a></td><td class="paramname">$db</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$table</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="Helix_DB_AbstractTable.html" title="Uses ArrayAccess to produce Column instances.">AbstractTable</a></td><td class="paramname">$table</td><td></td></tr>
     <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td></td></tr>
   </table>
   </dd>
@@ -497,6 +531,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="810b3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#810b3c4">&#9670;&nbsp;</a></span>getColumns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_Column.html">Column</a> [] getColumns </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a>[] </dd></dl>
+
+<p>Reimplemented from <a class="el" href="Helix_DB_AbstractTable.html#810b3c4">AbstractTable</a>.</p>
+
+</div>
+</div>
 <a id="6c48993"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#6c48993">&#9670;&nbsp;</a></span>getEach()</h2>
 
@@ -624,8 +678,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="5204901"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#5204901">&#9670;&nbsp;</a></span>having()</h2>
+<a id="ba4c531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ba4c531">&#9670;&nbsp;</a></span>having()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -633,17 +687,17 @@ Public Methods</h2></td></tr>
         <tr>
           <td class="memname">$this having </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$condition</em></td><td>)</td>
+          <td class="paramtype">string ...&#160;</td>
+          <td class="paramname"><em>$conditions</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a condition to the <code>HAVING</code> clause. </p>
+<p>Adds conditions to the <code>HAVING</code> clause. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$condition</td><td></td></tr>
+    <tr><td class="paramname">string</td><td>...$conditions </td></tr>
   </table>
   </dd>
 </dl>
@@ -651,8 +705,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="3cc50da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#3cc50da">&#9670;&nbsp;</a></span>intersect()</h2>
+<a id="9c45905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#9c45905">&#9670;&nbsp;</a></span>intersect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,27 +715,19 @@ Public Methods</h2></td></tr>
           <td class="memname">$this intersect </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td>
-          <td class="paramname"><em>$select</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>$select</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$all</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>INTERSECT</code> or <code>INTERSECT ALL</code> </p>
+<p><code>INTERSECT SELECT ...</code> </p>
+<blockquote class="doxtable">
+<p>Note: MySQL does not support <code>INTERSECT</code>. An <code>INNER JOIN</code> on every column is used instead. </p>
+</blockquote>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$select</td><td></td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$all</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname"><a class="el" href="Helix_DB_Select.html#unionHelix_DB_Select__0bselect" title="UNION SELECT ...">$select</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -729,8 +775,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="cc3ac71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#cc3ac71">&#9670;&nbsp;</a></span>join()</h2>
+<a id="f4cc8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f4cc8cc">&#9670;&nbsp;</a></span>join()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -744,14 +790,8 @@ Public Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$condition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$type</em> = <code>'INNER'</code>&#160;</td>
+          <td class="paramtype">string ...&#160;</td>
+          <td class="paramname"><em>$conditions</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -761,12 +801,49 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a <code>JOIN</code> clause. </p>
+<p>Adds <code>INNER JOIN $table ON $conditions</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$table</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$condition</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td></td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">string</td><td>...$conditions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="32da02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#32da02f">&#9670;&nbsp;</a></span>joinLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this joinLeft </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string ...&#160;</td>
+          <td class="paramname"><em>$conditions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds <code>LEFT JOIN $table ON $conditions</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$table</td><td></td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">string</td><td>...$conditions </td></tr>
   </table>
   </dd>
 </dl>
@@ -911,8 +988,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="fc5371b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fc5371b">&#9670;&nbsp;</a></span>setColumns()</h2>
+<a id="dbebce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#dbebce6">&#9670;&nbsp;</a></span>setColumns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -921,15 +998,14 @@ Public Methods</h2></td></tr>
           <td class="memname">$this setColumns </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$expressions</em></td><td>)</td>
+          <td class="paramname"><em>$expressions</em> = <code>['*']</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Compiles the column list and exposed reference columns. </p>
-<p>Columns may be expressions, like <code>COUNT(*)</code></p>
-<p>Unless an alias is given for such columns, they can't be referenced externally.</p>
+<p>Columns may be expressions, like <code>COUNT(*)</code> Unless an alias is given for such expressions, they can't be referenced externally.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string[]</td><td class="paramname">$expressions</td><td>Keyed by alias if applicable. </td></tr>
@@ -1002,6 +1078,60 @@ Public Methods</h2></td></tr>
 
 <p><code>(SELECT ...) AS ALIAS</code> </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
+<a id="d27b465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d27b465">&#9670;&nbsp;</a></span>unionAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this unionAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td>
+          <td class="paramname"><em>$select</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>UNION ALL SELECT ...</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname"><a class="el" href="Helix_DB_Select.html#unionHelix_DB_Select__0bselect" title="UNION SELECT ...">$select</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="0ab3052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#0ab3052">&#9670;&nbsp;</a></span>where()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this where </td>
+          <td>(</td>
+          <td class="paramtype">string ...&#160;</td>
+          <td class="paramname"><em>$conditions</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds conditions to the <code>WHERE</code> clause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>...$conditions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
 
 </div>
 </div>
