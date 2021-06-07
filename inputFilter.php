@@ -329,6 +329,9 @@ foreach ([':warning:', ':info:'] as $label) {
     $src = str_replace(' > ' . $label, $html, $src);
 }
 
+// fix "function union"
+$src = preg_replace('/function union\b/', 'function UNION', $src);
+
 // done
 status();
 echo $src;

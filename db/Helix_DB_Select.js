@@ -32,6 +32,7 @@ var Helix_DB_Select =
     [ "setFetcher", "Helix_DB_Select.html#11d114b", null ],
     [ "toSql", "Helix_DB_Select.html#84ee718", null ],
     [ "toSubquery", "Helix_DB_Select.html#23b4d86", null ],
+    [ "UNION", "Helix_DB_Select.html#78ded58", null ],
     [ "unionAll", "Helix_DB_Select.html#d27b465", null ],
     [ "where", "Helix_DB_Select.html#0ab3052", null ]
 ];
