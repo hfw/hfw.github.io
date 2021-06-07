@@ -44,6 +44,7 @@ var hierarchy =
       [ "Column", "Helix_DB_Column.html", null ],
       [ "Text", "Helix_DB_SQL_Text.html", null ]
     ] ],
+    [ "Transaction", "Helix_DB_Transaction.html", null ],
     [ "ArrayAccess", null, [
       [ "DB", "Helix_DB.html", null ],
       [ "AbstractTable", "Helix_DB_AbstractTable.html", [

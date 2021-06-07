@@ -4,8 +4,11 @@ var Helix_DB =
     [ "$logger", "Helix_DB.html#ce2b5bb", null ],
     [ "$records", "Helix_DB.html#6544e33", null ],
     [ "$tables", "Helix_DB.html#9afb92c", null ],
+    [ "$transactions", "Helix_DB.html#38a6ab5", null ],
     [ "__construct", "Helix_DB.html#969db10", null ],
     [ "__toString", "Helix_DB.html#f5ddf7f", null ],
+    [ "beginTransaction", "Helix_DB.html#389d204", null ],
+    [ "commit", "Helix_DB.html#8e1915f", null ],
     [ "exec", "Helix_DB.html#660402d", null ],
     [ "factory", "Helix_DB.html#5c91022", null ],
     [ "getDriver", "Helix_DB.html#480bdda", null ],
@@ -17,6 +20,7 @@ var Helix_DB =
     [ "isPostgreSQL", "Helix_DB.html#6bbfe51", null ],
     [ "isSQLite", "Helix_DB.html#8b842bf", null ],
     [ "match", "Helix_DB.html#ce43e84", null ],
+    [ "newTransaction", "Helix_DB.html#2907cbe", null ],
     [ "offsetExists", "Helix_DB.html#0fdaee3", null ],
     [ "offsetGet", "Helix_DB.html#62ef696", null ],
     [ "offsetSet", "Helix_DB.html#e46b7a3", null ],
@@ -28,9 +32,11 @@ var Helix_DB =
     [ "quoteArray", "Helix_DB.html#a5b531f", null ],
     [ "quoteList", "Helix_DB.html#edb7cb0", null ],
     [ "rand", "Helix_DB.html#d9b106c", null ],
+    [ "rollBack", "Helix_DB.html#23cb168", null ],
     [ "save", "Helix_DB.html#12fd03a", null ],
     [ "setJunction", "Helix_DB.html#df401f1", null ],
     [ "setLogger", "Helix_DB.html#82c52bf", null ],
     [ "setRecord", "Helix_DB.html#c2d5b68", null ],
-    [ "sqliteCreateFunctions", "Helix_DB.html#93c6118", null ]
+    [ "sqliteCreateFunctions", "Helix_DB.html#93c6118", null ],
+    [ "transact", "Helix_DB.html#e9106ac", null ]
 ];

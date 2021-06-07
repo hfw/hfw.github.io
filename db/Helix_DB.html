@@ -98,6 +98,9 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:9afb92c"><td class="memItemLeft" align="right" valign="top"><a id="9afb92c"></a>
 <a class="el" href="Helix_DB_Table.html">Table</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>$tables</b> = []</td></tr>
 <tr class="separator:9afb92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:38a6ab5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#38a6ab5">$transactions</a> = 0</td></tr>
+<tr class="memdesc:38a6ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The count of open transactions/savepoints.  <a href="Helix_DB.html#38a6ab5">More...</a><br /></td></tr>
+<tr class="separator:38a6ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
@@ -107,6 +110,12 @@ Public Methods</h2></td></tr>
 <tr class="memitem:f5ddf7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#f5ddf7f">__toString</a> ()</td></tr>
 <tr class="memdesc:f5ddf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the driver.  <a href="Helix_DB.html#f5ddf7f">More...</a><br /></td></tr>
 <tr class="separator:f5ddf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:389d204"><td class="memItemLeft" align="right" valign="top">true&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#389d204">beginTransaction</a> ()</td></tr>
+<tr class="memdesc:389d204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows nested transactions by using <code>SAVEPOINT</code>  <a href="Helix_DB.html#389d204">More...</a><br /></td></tr>
+<tr class="separator:389d204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8e1915f"><td class="memItemLeft" align="right" valign="top">true&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#8e1915f">commit</a> ()</td></tr>
+<tr class="memdesc:8e1915f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows nested transactions by using <code>RELEASE SAVEPOINT</code>  <a href="Helix_DB.html#8e1915f">More...</a><br /></td></tr>
+<tr class="separator:8e1915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:660402d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#660402d">exec</a> ($sql)</td></tr>
 <tr class="memdesc:660402d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger.  <a href="Helix_DB.html#660402d">More...</a><br /></td></tr>
 <tr class="separator:660402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +143,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:ce43e84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#ce43e84">match</a> ($a, $b)</td></tr>
 <tr class="memdesc:ce43e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an equality <a class="el" href="">Predicate</a> from mixed arguments.  <a href="Helix_DB.html#ce43e84">More...</a><br /></td></tr>
 <tr class="separator:ce43e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2907cbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Transaction.html">Transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#2907cbe">newTransaction</a> ()</td></tr>
+<tr class="memdesc:2907cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a scoped transaction.  <a href="Helix_DB.html#2907cbe">More...</a><br /></td></tr>
+<tr class="separator:2907cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:0fdaee3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#0fdaee3">offsetExists</a> ($table)</td></tr>
 <tr class="memdesc:0fdaee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a table exists.  <a href="Helix_DB.html#0fdaee3">More...</a><br /></td></tr>
 <tr class="separator:0fdaee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +177,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:d9b106c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#d9b106c">rand</a> ()</td></tr>
 <tr class="memdesc:d9b106c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>RAND()</code> float between <code>0</code> and <code>1</code>  <a href="Helix_DB.html#d9b106c">More...</a><br /></td></tr>
 <tr class="separator:d9b106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:23cb168"><td class="memItemLeft" align="right" valign="top">true&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#23cb168">rollBack</a> ()</td></tr>
+<tr class="memdesc:23cb168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows nested transactions by using <code>ROLLBACK TO SAVEPOINT</code>  <a href="Helix_DB.html#23cb168">More...</a><br /></td></tr>
+<tr class="separator:23cb168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:12fd03a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#12fd03a">save</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="memdesc:12fd03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards to the entity's <a class="el" href="Helix_DB_Record.html">Record</a>.  <a href="Helix_DB.html#12fd03a">More...</a><br /></td></tr>
 <tr class="separator:12fd03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +191,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:c2d5b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:93c6118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#93c6118">sqliteCreateFunctions</a> (array $callbacks, bool $deterministic=true)</td></tr>
 <tr class="separator:93c6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e9106ac"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#e9106ac">transact</a> (callable $work)</td></tr>
+<tr class="memdesc:e9106ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs work within a scoped transaction.  <a href="Helix_DB.html#e9106ac">More...</a><br /></td></tr>
+<tr class="separator:e9106ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
 <a id="ce2b5bb"></a>
@@ -201,6 +219,30 @@ Public Methods</h2></td></tr>
 <p>Notified whenever a query is executed or a statement is prepared. </p>
 <p>This is a stub closure by default.</p>
 <p><code>fn($sql):void</code> </p>
+
+</div>
+</div>
+<a id="38a6ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#38a6ab5">&#9670;&nbsp;</a></span>$transactions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int $transactions = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The count of open transactions/savepoints. </p>
 
 </div>
 </div>
@@ -283,6 +325,48 @@ Public Methods</h2></td></tr>
 
 <p>Returns the driver. </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
+<a id="389d204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#389d204">&#9670;&nbsp;</a></span>beginTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">true beginTransaction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows nested transactions by using <code>SAVEPOINT</code> </p>
+<p>Use <a class="el" href="Helix_DB.html#2907cbe">DB::newTransaction()</a> to work with <a class="el" href="Helix_DB_Transaction.html">Transaction</a> instead.</p>
+<dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
+
+</div>
+</div>
+<a id="8e1915f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8e1915f">&#9670;&nbsp;</a></span>commit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">true commit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows nested transactions by using <code>RELEASE SAVEPOINT</code> </p>
+<p>Use <a class="el" href="Helix_DB.html#2907cbe">DB::newTransaction()</a> to work with <a class="el" href="Helix_DB_Transaction.html">Transaction</a> instead.</p>
+<dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
 
 </div>
 </div>
@@ -594,6 +678,26 @@ Public Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Predicate </dd></dl>
+
+</div>
+</div>
+<a id="2907cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2907cbe">&#9670;&nbsp;</a></span>newTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_Transaction.html">Transaction</a> newTransaction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a scoped transaction. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Transaction.html" title="Scoped transaction/savepoint.">Transaction</a> </dd></dl>
 
 </div>
 </div>
@@ -982,6 +1086,27 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="23cb168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#23cb168">&#9670;&nbsp;</a></span>rollBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">true rollBack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows nested transactions by using <code>ROLLBACK TO SAVEPOINT</code> </p>
+<p>Use <a class="el" href="Helix_DB.html#2907cbe">DB::newTransaction()</a> to work with <a class="el" href="Helix_DB_Transaction.html">Transaction</a> instead.</p>
+<dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
+
+</div>
+</div>
 <a id="12fd03a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#12fd03a">&#9670;&nbsp;</a></span>save()</h2>
 
@@ -1138,6 +1263,34 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="e9106ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e9106ac">&#9670;&nbsp;</a></span>transact()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mixed transact </td>
+          <td>(</td>
+          <td class="paramtype">callable&#160;</td>
+          <td class="paramname"><em>$work</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs work within a scoped transaction. </p>
+<p>The work is rolled back if an exception is thrown.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">callable</td><td class="paramname">$work</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed The return value of <code>$work</code> </dd></dl>
 
 </div>
 </div>

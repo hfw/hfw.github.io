@@ -29,7 +29,8 @@ var annotated =
         [ "Select", "Helix_DB_Select.html", "Helix_DB_Select" ],
         [ "SQL", "Helix_DB_SQL.html", "Helix_DB_SQL" ],
         [ "Statement", "Helix_DB_Statement.html", "Helix_DB_Statement" ],
-        [ "Table", "Helix_DB_Table.html", "Helix_DB_Table" ]
+        [ "Table", "Helix_DB_Table.html", "Helix_DB_Table" ],
+        [ "Transaction", "Helix_DB_Transaction.html", "Helix_DB_Transaction" ]
       ] ],
       [ "DB", "Helix_DB.html", "Helix_DB" ]
     ] ]
