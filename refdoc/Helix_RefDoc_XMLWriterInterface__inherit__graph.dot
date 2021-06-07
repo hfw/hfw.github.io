@@ -13,7 +13,7 @@ digraph "XMLWriterInterface"
   Node2 -> Node5 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
   Node5 [label="RefTrait",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1RefTrait.html",tooltip=" "];
   Node1 -> Node6 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
-  Node6 [label="MagicType",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1MagicType.html",tooltip="A ReflectionType that supports unions and other helpful things."];
+  Node6 [label="MagicType",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$classHelix_1_1RefDoc_1_1MagicType.html",tooltip="A ReflectionNamedType that supports annotated unions and other helpful things."];
   Node1 -> Node7 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
   Node7 [label="MemberInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$interfaceHelix_1_1RefDoc_1_1MemberInterface.html",tooltip="A QOL interface to keep all the member types consistent."];
   Node7 -> Node8 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];

@@ -55,14 +55,14 @@ var hierarchy =
     [ "ReflectionMethod", null, [
       [ "RefMethod", "Helix_RefDoc_RefMethod.html", null ]
     ] ],
+    [ "ReflectionNamedType", null, [
+      [ "MagicType", "Helix_RefDoc_MagicType.html", null ]
+    ] ],
     [ "ReflectionParameter", null, [
       [ "RefParam", "Helix_RefDoc_RefParam.html", null ]
     ] ],
     [ "ReflectionProperty", null, [
       [ "RefProperty", "Helix_RefDoc_RefProperty.html", null ]
-    ] ],
-    [ "ReflectionType", null, [
-      [ "MagicType", "Helix_RefDoc_MagicType.html", null ]
     ] ],
     [ "XMLWriter", null, [
       [ "RefXML", "Helix_RefDoc_RefXML.html", null ]

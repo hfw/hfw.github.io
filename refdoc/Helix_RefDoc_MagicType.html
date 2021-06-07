@@ -79,7 +79,7 @@ $(document).ready(function(){initNavTree('Helix_RefDoc_MagicType.html',''); init
 <div class="center"><img src="Helix_RefDoc_MagicType__inherit__graph.png" border="0" usemap="#MagicType_inherit__map" alt="Inheritance graph"/></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>A <code>ReflectionType</code> that supports unions and other helpful things. </p>
+<div class="textblock"><p>A <code>ReflectionNamedType</code> that supports annotated unions and other helpful things. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Protected Static Properties</h2></td></tr>
@@ -95,8 +95,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$def</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Public Static Methods</h2></td></tr>
-<tr class="memitem:5d5407a"><td class="memItemLeft" align="right" valign="top">static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_RefDoc_MagicType.html#5d5407a">from</a> (?ReflectionType $type)</td></tr>
-<tr class="separator:5d5407a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:107dd80"><td class="memItemLeft" align="right" valign="top">static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_RefDoc_MagicType.html#107dd80">from</a> (?ReflectionNamedType $type)</td></tr>
+<tr class="separator:107dd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
@@ -126,9 +126,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</
 <tr class="memitem:78b6a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_RefDoc_MagicType.html">MagicType</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_RefDoc_MagicType.html#78b6a61">getSubtypes</a> ()</td></tr>
 <tr class="memdesc:78b6a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the union component types.  <a href="Helix_RefDoc_MagicType.html#78b6a61">More...</a><br /></td></tr>
 <tr class="separator:78b6a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:cbac378"><td class="memItemLeft" align="right" valign="top"><a id="cbac378"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>isBuiltin</b> ()</td></tr>
-<tr class="separator:cbac378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df1aad3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_RefDoc_MagicType.html#df1aad3">isBuiltin</a> ()</td></tr>
+<tr class="separator:df1aad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:023fb32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_RefDoc_MagicType.html#023fb32">isUnion</a> ()</td></tr>
 <tr class="separator:023fb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d96de02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_RefDoc_MagicType.html#d96de02">write</a> (<a class="el" href="Helix_RefDoc_RefXML.html">RefXML</a> $xml)</td></tr>
@@ -261,8 +260,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</
 
 </div>
 </div>
-<a id="5d5407a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#5d5407a">&#9670;&nbsp;</a></span>from()</h2>
+<a id="107dd80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#107dd80">&#9670;&nbsp;</a></span>from()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +272,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</
         <tr>
           <td class="memname">static self from </td>
           <td>(</td>
-          <td class="paramtype">?ReflectionType&#160;</td>
+          <td class="paramtype">?ReflectionNamedType&#160;</td>
           <td class="paramname"><em>$type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -286,7 +285,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">null&#160;|&#160;ReflectionType</td><td class="paramname">$type</td><td>Defaults to <code>mixed</code> </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;ReflectionNamedType</td><td class="paramname">$type</td><td>Defaults to <code>mixed</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -310,7 +309,25 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>__toString</b> ()</
 </div><div class="memdoc">
 
 <p>Returns the union component types. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_RefDoc_MagicType.html" title="A ReflectionType that supports unions and other helpful things.">MagicType</a>[] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_RefDoc_MagicType.html" title="A ReflectionNamedType that supports annotated unions and other helpful things.">MagicType</a>[] </dd></dl>
+
+</div>
+</div>
+<a id="df1aad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#df1aad3">&#9670;&nbsp;</a></span>isBuiltin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isBuiltin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 </div>
 </div>

@@ -10,9 +10,9 @@ var Helix_RefDoc_MagicType =
     [ "allowsNull", "Helix_RefDoc_MagicType.html#9faa1be", null ],
     [ "allowsType", "Helix_RefDoc_MagicType.html#ad3f68c", null ],
     [ "count", "Helix_RefDoc_MagicType.html#2dd9bbb", null ],
-    [ "from", "Helix_RefDoc_MagicType.html#5d5407a", null ],
+    [ "from", "Helix_RefDoc_MagicType.html#107dd80", null ],
     [ "getSubtypes", "Helix_RefDoc_MagicType.html#78b6a61", null ],
-    [ "isBuiltin", "Helix_RefDoc_MagicType.html#cbac378", null ],
+    [ "isBuiltin", "Helix_RefDoc_MagicType.html#df1aad3", null ],
     [ "isUnion", "Helix_RefDoc_MagicType.html#023fb32", null ],
     [ "write", "Helix_RefDoc_MagicType.html#d96de02", null ]
 ];

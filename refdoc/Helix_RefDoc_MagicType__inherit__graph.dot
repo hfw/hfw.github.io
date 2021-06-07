@@ -3,9 +3,9 @@ digraph "MagicType"
  // LATEX_PDF_SIZE
   edge [fontname="monospace",fontsize="12",labelfontname="monospace",labelfontsize="12"];
   node [fontname="monospace",fontsize="12",shape=record];
-  Node1 [label="MagicType",height=0.2,width=0.4,color="grey75", fillcolor="#333333", style="filled", fontcolor="white",tooltip="A ReflectionType that supports unions and other helpful things."];
+  Node1 [label="MagicType",height=0.2,width=0.4,color="grey75", fillcolor="#333333", style="filled", fontcolor="white",tooltip="A ReflectionNamedType that supports annotated unions and other helpful things."];
   Node2 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
-  Node2 [label="ReflectionType",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",tooltip=" "];
+  Node2 [label="ReflectionNamedType",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",tooltip=" "];
   Node3 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
   Node3 [label="XMLWriterInterface",height=0.2,width=0.4,color="grey75", fillcolor="black",fontcolor="white", style="filled",URL="$interfaceHelix_1_1RefDoc_1_1XMLWriterInterface.html",tooltip="IoC when content being written by { graph [bgcolor="transparent"]; ."];
   Node4 -> Node1 [dir="back",color="#0090f0",fontsize="12",style="solid",fontname="monospace"];
