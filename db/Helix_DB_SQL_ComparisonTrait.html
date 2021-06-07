@@ -104,21 +104,33 @@ Public Methods</h2></td></tr>
 <tr class="memitem:18b7448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#18b7448">isFalse</a> ()</td></tr>
 <tr class="memdesc:18b7448"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this IS FALSE</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#18b7448">More...</a><br /></td></tr>
 <tr class="separator:18b7448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:5b4ac56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#5b4ac56">isGreater</a> ($arg, string $multi='ALL')</td></tr>
-<tr class="memdesc:5b4ac56"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &gt; $arg</code>, or driver-specific subquery comparison.  <a href="Helix_DB_SQL_ComparisonTrait.html#5b4ac56">More...</a><br /></td></tr>
-<tr class="separator:5b4ac56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:772d2f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#772d2f1">isGreaterOrEqual</a> ($arg, string $multi='ALL')</td></tr>
-<tr class="memdesc:772d2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &gt;= $arg</code>, or driver-specific subquery comparison.  <a href="Helix_DB_SQL_ComparisonTrait.html#772d2f1">More...</a><br /></td></tr>
-<tr class="separator:772d2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:223f4da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#223f4da">isLess</a> ($arg, string $multi='ALL')</td></tr>
-<tr class="memdesc:223f4da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &lt; $arg</code>, or driver-specific subquery comparison.  <a href="Helix_DB_SQL_ComparisonTrait.html#223f4da">More...</a><br /></td></tr>
-<tr class="separator:223f4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:5d09bf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#5d09bf6">isLessOrEqual</a> ($arg, string $multi='ALL')</td></tr>
-<tr class="memdesc:5d09bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &lt;= $arg</code>, or driver-specific subquery comparison.  <a href="Helix_DB_SQL_ComparisonTrait.html#5d09bf6">More...</a><br /></td></tr>
-<tr class="separator:5d09bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:1b5bec6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#1b5bec6">isGt</a> ($arg)</td></tr>
+<tr class="memdesc:1b5bec6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &gt; $arg</code>, or driver-specific <code>$this &gt; ALL (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#1b5bec6">More...</a><br /></td></tr>
+<tr class="separator:1b5bec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f44a99f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#f44a99f">isGtAny</a> (<a class="el" href="Helix_DB_Select.html">Select</a> $select)</td></tr>
+<tr class="memdesc:f44a99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate <code>$this &gt; ANY (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#f44a99f">More...</a><br /></td></tr>
+<tr class="separator:f44a99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cd47989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#cd47989">isGte</a> ($arg)</td></tr>
+<tr class="memdesc:cd47989"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &gt;= $arg</code>, or driver-appropriate <code>$this &gt;= ALL (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#cd47989">More...</a><br /></td></tr>
+<tr class="separator:cd47989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:616d242"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#616d242">isGteAny</a> (<a class="el" href="Helix_DB_Select.html">Select</a> $select)</td></tr>
+<tr class="memdesc:616d242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate <code>$this &gt;= ANY (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#616d242">More...</a><br /></td></tr>
+<tr class="separator:616d242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:3e80e92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#3e80e92">isLike</a> (string $pattern)</td></tr>
 <tr class="memdesc:3e80e92"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this LIKE $pattern</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#3e80e92">More...</a><br /></td></tr>
 <tr class="separator:3e80e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0b36d75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#0b36d75">isLt</a> ($arg)</td></tr>
+<tr class="memdesc:0b36d75"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &lt; $arg</code>, or driver-appropriate <code>$this &lt; ALL (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#0b36d75">More...</a><br /></td></tr>
+<tr class="separator:0b36d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:74f8a76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#74f8a76">isLtAny</a> (<a class="el" href="Helix_DB_Select.html">Select</a> $select)</td></tr>
+<tr class="memdesc:74f8a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate <code>$this &lt; ANY (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#74f8a76">More...</a><br /></td></tr>
+<tr class="separator:74f8a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9f186e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#9f186e2">isLte</a> ($arg)</td></tr>
+<tr class="memdesc:9f186e2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this &lt;= $arg</code>, or driver-appropriate <code>$this &lt;= ALL (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#9f186e2">More...</a><br /></td></tr>
+<tr class="separator:9f186e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9b680a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#9b680a5">isLteAny</a> (<a class="el" href="Helix_DB_Select.html">Select</a> $select)</td></tr>
+<tr class="memdesc:9b680a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate <code>$this &lt;= ANY (SELECT ...)</code>  <a href="Helix_DB_SQL_ComparisonTrait.html#9b680a5">More...</a><br /></td></tr>
+<tr class="separator:9b680a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:1520d9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_ComparisonTrait.html#1520d9c">isNot</a> ($arg)</td></tr>
 <tr class="memdesc:1520d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null-safe inequality.  <a href="Helix_DB_SQL_ComparisonTrait.html#1520d9c">More...</a><br /></td></tr>
 <tr class="separator:1520d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,45 +276,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="5b4ac56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#5b4ac56">&#9670;&nbsp;</a></span>isGreater()</h2>
+<a id="1b5bec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#1b5bec6">&#9670;&nbsp;</a></span>isGt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isGreater </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isGt </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>$arg</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$multi</em> = <code>'ALL'</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>$this &gt; $arg</code>, or driver-specific subquery comparison. </p>
-<ul>
-<li>MySQL: <code>$this &gt; ALL ($arg)</code> or <code>$this &gt; ANY ($arg)</code></li>
-<li>SQLite:<ul>
-<li>ALL: <code>NOT EXISTS (... WHERE $this &lt;= $arg[0])</code></li>
-<li>ANY: <code>EXISTS (... WHERE $this &gt; $arg[0])</code></li>
-</ul>
-</li>
-</ul>
+<p><code>$this &gt; $arg</code>, or driver-specific <code>$this &gt; ALL (SELECT ...)</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">number&#160;|&#160;string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$multi</td><td><code>ALL|ANY</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -310,45 +303,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="772d2f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#772d2f1">&#9670;&nbsp;</a></span>isGreaterOrEqual()</h2>
+<a id="f44a99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f44a99f">&#9670;&nbsp;</a></span>isGtAny()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isGreaterOrEqual </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isGtAny </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td>
+          <td class="paramname"><em>$select</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$multi</em> = <code>'ALL'</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>$this &gt;= $arg</code>, or driver-specific subquery comparison. </p>
-<ul>
-<li>MySQL: <code>$this &gt;= ALL ($arg)</code> or <code>$this &gt;= ANY ($arg)</code></li>
-<li>SQLite:<ul>
-<li>ALL: <code>NOT EXISTS (... WHERE $this &lt; $arg[0])</code></li>
-<li>ANY: <code>EXISTS (... WHERE $this &gt;= $arg[0])</code></li>
-</ul>
-</li>
-</ul>
+<p>Driver-appropriate <code>$this &gt; ANY (SELECT ...)</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">number&#160;|&#160;string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$multi</td><td><code>ALL|ANY</code> </td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$select</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -356,45 +330,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="223f4da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#223f4da">&#9670;&nbsp;</a></span>isLess()</h2>
+<a id="cd47989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#cd47989">&#9670;&nbsp;</a></span>isGte()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isLess </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isGte </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>$arg</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$multi</em> = <code>'ALL'</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>$this &lt; $arg</code>, or driver-specific subquery comparison. </p>
-<ul>
-<li>MySQL: <code>$this &lt; ALL ($arg)</code> or <code>$this &lt; ANY ($arg)</code></li>
-<li>SQLite:<ul>
-<li>ALL: <code>NOT EXISTS (... WHERE $this &gt;= $arg[0])</code></li>
-<li>ANY: <code>EXISTS (... WHERE $this &lt; $arg[0])</code></li>
-</ul>
-</li>
-</ul>
+<p><code>$this &gt;= $arg</code>, or driver-appropriate <code>$this &gt;= ALL (SELECT ...)</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">number&#160;|&#160;string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$multi</td><td><code>ALL|ANY</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -402,45 +357,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="5d09bf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#5d09bf6">&#9670;&nbsp;</a></span>isLessOrEqual()</h2>
+<a id="616d242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#616d242">&#9670;&nbsp;</a></span>isGteAny()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isLessOrEqual </td>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isGteAny </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td>
+          <td class="paramname"><em>$select</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$multi</em> = <code>'ALL'</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>$this &lt;= $arg</code>, or driver-specific subquery comparison. </p>
-<ul>
-<li>MySQL: <code>$this &lt;= ALL ($arg)</code> or <code>$this &lt;= ANY ($arg)</code></li>
-<li>SQLite:<ul>
-<li>ALL: <code>NOT EXISTS (... WHERE $this &gt; $arg[0])</code></li>
-<li>ANY: <code>EXISTS (... WHERE $this &lt;= $arg[0])</code></li>
-</ul>
-</li>
-</ul>
+<p>Driver-appropriate <code>$this &gt;= ANY (SELECT ...)</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">number&#160;|&#160;string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$multi</td><td><code>ALL|ANY</code> </td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$select</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -468,6 +404,114 @@ Public Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$pattern</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Predicate.html" title="Represents a logical expression that will evaluate as boolean.">Predicate</a> </dd></dl>
+
+</div>
+</div>
+<a id="0b36d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#0b36d75">&#9670;&nbsp;</a></span>isLt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isLt </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>$this &lt; $arg</code>, or driver-appropriate <code>$this &lt; ALL (SELECT ...)</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">number&#160;|&#160;string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Predicate.html" title="Represents a logical expression that will evaluate as boolean.">Predicate</a> </dd></dl>
+
+</div>
+</div>
+<a id="74f8a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#74f8a76">&#9670;&nbsp;</a></span>isLtAny()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isLtAny </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td>
+          <td class="paramname"><em>$select</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Driver-appropriate <code>$this &lt; ANY (SELECT ...)</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$select</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Predicate.html" title="Represents a logical expression that will evaluate as boolean.">Predicate</a> </dd></dl>
+
+</div>
+</div>
+<a id="9f186e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#9f186e2">&#9670;&nbsp;</a></span>isLte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isLte </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>$this &lt;= $arg</code>, or driver-appropriate <code>$this &lt;= ALL (SELECT ...)</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">number&#160;|&#160;string&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Predicate.html" title="Represents a logical expression that will evaluate as boolean.">Predicate</a> </dd></dl>
+
+</div>
+</div>
+<a id="9b680a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#9b680a5">&#9670;&nbsp;</a></span>isLteAny()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> isLteAny </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td>
+          <td class="paramname"><em>$select</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Driver-appropriate <code>$this &lt;= ANY (SELECT ...)</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$select</td><td></td></tr>
   </table>
   </dd>
 </dl>

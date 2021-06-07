@@ -21,13 +21,16 @@ var Helix_DB =
     [ "offsetGet", "Helix_DB.html#62ef696", null ],
     [ "offsetSet", "Helix_DB.html#e46b7a3", null ],
     [ "offsetUnset", "Helix_DB.html#fd4b563", null ],
+    [ "pi", "Helix_DB.html#8af20ee", null ],
     [ "prepare", "Helix_DB.html#187ddf1", null ],
     [ "query", "Helix_DB.html#e9fa9e2", null ],
     [ "quote", "Helix_DB.html#38a3ff8", null ],
     [ "quoteArray", "Helix_DB.html#a5b531f", null ],
     [ "quoteList", "Helix_DB.html#edb7cb0", null ],
+    [ "rand", "Helix_DB.html#d9b106c", null ],
     [ "save", "Helix_DB.html#12fd03a", null ],
     [ "setJunction", "Helix_DB.html#df401f1", null ],
     [ "setLogger", "Helix_DB.html#82c52bf", null ],
-    [ "setRecord", "Helix_DB.html#c2d5b68", null ]
+    [ "setRecord", "Helix_DB.html#c2d5b68", null ],
+    [ "sqliteCreateFunctions", "Helix_DB.html#93c6118", null ]
 ];

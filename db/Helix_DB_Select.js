@@ -14,6 +14,7 @@ var Helix_DB_Select =
     [ "getEach", "Helix_DB_Select.html#6c48993", null ],
     [ "getFirst", "Helix_DB_Select.html#e604955", null ],
     [ "getIterator", "Helix_DB_Select.html#2b595e4", null ],
+    [ "getResult", "Helix_DB_Select.html#49d3266", null ],
     [ "group", "Helix_DB_Select.html#a9fd992", null ],
     [ "having", "Helix_DB_Select.html#5204901", null ],
     [ "intersect", "Helix_DB_Select.html#3cc50da", null ],

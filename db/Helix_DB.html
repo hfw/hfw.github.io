@@ -144,6 +144,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:e46b7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fd4b563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#fd4b563">offsetUnset</a> ($offset)</td></tr>
 <tr class="separator:fd4b563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8af20ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#8af20ee">pi</a> ()</td></tr>
+<tr class="memdesc:8af20ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>PI()</code>  <a href="Helix_DB.html#8af20ee">More...</a><br /></td></tr>
+<tr class="separator:8af20ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:187ddf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#187ddf1">prepare</a> ($sql, $options=[])</td></tr>
 <tr class="memdesc:187ddf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger.  <a href="Helix_DB.html#187ddf1">More...</a><br /></td></tr>
 <tr class="separator:187ddf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +162,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:edb7cb0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#edb7cb0">quoteList</a> (array $values)</td></tr>
 <tr class="memdesc:edb7cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quoted, comma-separated list.  <a href="Helix_DB.html#edb7cb0">More...</a><br /></td></tr>
 <tr class="separator:edb7cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d9b106c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#d9b106c">rand</a> ()</td></tr>
+<tr class="memdesc:d9b106c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>RAND()</code> float between <code>0</code> and <code>1</code>  <a href="Helix_DB.html#d9b106c">More...</a><br /></td></tr>
+<tr class="separator:d9b106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:12fd03a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#12fd03a">save</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="memdesc:12fd03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards to the entity's <a class="el" href="Helix_DB_Record.html">Record</a>.  <a href="Helix_DB.html#12fd03a">More...</a><br /></td></tr>
 <tr class="separator:12fd03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +174,8 @@ Public Methods</h2></td></tr>
 <tr class="separator:82c52bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c2d5b68"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#c2d5b68">setRecord</a> (string $class, <a class="el" href="Helix_DB_Record.html">Record</a> $record)</td></tr>
 <tr class="separator:c2d5b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:93c6118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#93c6118">sqliteCreateFunctions</a> (array $callbacks, bool $deterministic=true)</td></tr>
+<tr class="separator:93c6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
 <a id="ce2b5bb"></a>
@@ -746,6 +754,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="8af20ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8af20ee">&#9670;&nbsp;</a></span>pi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> pi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>PI()</code> </p>
+<dl class="section return"><dt>Returns</dt><dd>Num </dd></dl>
+
+</div>
+</div>
 <a id="187ddf1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#187ddf1">&#9670;&nbsp;</a></span>prepare()</h2>
 
@@ -934,6 +962,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="d9b106c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d9b106c">&#9670;&nbsp;</a></span>rand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> rand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>RAND()</code> float between <code>0</code> and <code>1</code> </p>
+<dl class="section return"><dt>Returns</dt><dd>Num </dd></dl>
+
+</div>
+</div>
 <a id="12fd03a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#12fd03a">&#9670;&nbsp;</a></span>save()</h2>
 
@@ -1055,6 +1103,41 @@ Public Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="93c6118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#93c6118">&#9670;&nbsp;</a></span>sqliteCreateFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sqliteCreateFunctions </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$callbacks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$deterministic</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">callable[]</td><td class="paramname">$callbacks</td><td>Keyed by function name. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$deterministic</td><td>Whether the callbacks aren't random / are without side-effects. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
