@@ -35,11 +35,12 @@ var hierarchy =
         [ "Value", "Helix_DB_SQL_Value.html", null ]
       ] ]
     ] ],
+    [ "MigrationInterface", "Helix_DB_MigrationInterface.html", null ],
+    [ "Migrator", "Helix_DB_Migrator.html", null ],
     [ "NumTrait", "Helix_DB_SQL_NumTrait.html", [
       [ "Column", "Helix_DB_Column.html", null ],
       [ "Num", "Helix_DB_SQL_Num.html", null ]
     ] ],
-    [ "SQL", "Helix_DB_SQL.html", null ],
     [ "TextTrait", "Helix_DB_SQL_TextTrait.html", [
       [ "Column", "Helix_DB_Column.html", null ],
       [ "Text", "Helix_DB_SQL_Text.html", null ]
@@ -54,7 +55,8 @@ var hierarchy =
           [ "Junction", "Helix_DB_Junction.html", null ],
           [ "Record", "Helix_DB_Record.html", null ]
         ] ]
-      ] ]
+      ] ],
+      [ "Schema", "Helix_DB_Schema.html", null ]
     ] ],
     [ "Countable", null, [
       [ "Select", "Helix_DB_Select.html", null ]

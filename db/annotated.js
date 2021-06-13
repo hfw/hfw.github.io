@@ -25,9 +25,11 @@ var annotated =
         [ "EAV", "Helix_DB_EAV.html", "Helix_DB_EAV" ],
         [ "EntityInterface", "Helix_DB_EntityInterface.html", "Helix_DB_EntityInterface" ],
         [ "Junction", "Helix_DB_Junction.html", "Helix_DB_Junction" ],
+        [ "MigrationInterface", "Helix_DB_MigrationInterface.html", "Helix_DB_MigrationInterface" ],
+        [ "Migrator", "Helix_DB_Migrator.html", "Helix_DB_Migrator" ],
         [ "Record", "Helix_DB_Record.html", "Helix_DB_Record" ],
+        [ "Schema", "Helix_DB_Schema.html", "Helix_DB_Schema" ],
         [ "Select", "Helix_DB_Select.html", "Helix_DB_Select" ],
-        [ "SQL", "Helix_DB_SQL.html", "Helix_DB_SQL" ],
         [ "Statement", "Helix_DB_Statement.html", "Helix_DB_Statement" ],
         [ "Table", "Helix_DB_Table.html", "Helix_DB_Table" ],
         [ "Transaction", "Helix_DB_Transaction.html", "Helix_DB_Transaction" ]

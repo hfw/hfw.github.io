@@ -141,7 +141,7 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:0bf3045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns in the table.  <a href="Helix_DB_Table.html#0bf3045">More...</a><br /></td></tr>
 <tr class="separator:0bf3045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e501520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Table.html">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e501520">setName</a> (string $name)</td></tr>
-<tr class="memdesc:e501520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone with a different name.  <a href="Helix_DB_Table.html#e501520">More...</a><br /></td></tr>
+<tr class="memdesc:e501520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an aliased clone for joins.  <a href="Helix_DB_Table.html#e501520">More...</a><br /></td></tr>
 <tr class="separator:e501520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7dbc33f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#7dbc33f">update</a> (array $values, array $<a class="el" href="Helix_DB.html#ce43e84">match</a>)</td></tr>
 <tr class="memdesc:7dbc33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an update using arbitrary columns.  <a href="Helix_DB_Table.html#7dbc33f">More...</a><br /></td></tr>
@@ -603,8 +603,9 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a clone with a different name. </p>
+<p>Returns an aliased clone for joins. </p>
 <p>Columns are also re-qualified.</p>
+<p>If you want to rename the table in the schema, use <a class="el" href="Helix_DB_Schema.html#91de178">Schema::renameTable()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td></td></tr>
