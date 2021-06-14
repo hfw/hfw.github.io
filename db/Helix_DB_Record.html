@@ -94,12 +94,13 @@ $(document).ready(function(){initNavTree('Helix_DB_Record.html',''); initResizab
 <p>Property Annotations:</p>
 <ul>
 <li><code>@col</code> or <code>@column</code></li>
-<li><code>@eav TABLE</code></li>
+<li><code>@eav &lt;TABLE&gt;</code></li>
 </ul>
-<p>Property value types are preserved as long as they are scalar and annotated with <code>@var</code>. Types may be nullable.</p>
+<p>Property value types are preserved as long as they are scalar or annotated with <code>@var</code>. Types may be nullable.</p>
 <blockquote class="doxtable">
 <p>Annotating the types <code>String</code> (capital "S") or <code>STRING</code> (all caps) results in <code>TEXT</code> and <code>BLOB</code> </p>
 </blockquote>
+<p>@TODO Allow constraints in the <code>column</code> tag, supporting single and multi-column. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
@@ -118,6 +119,27 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:f594f1e"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#f594f1e">$types</a> = []</td></tr>
 <tr class="memdesc:f594f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar property types.  <a href="Helix_DB_Record.html#f594f1e">More...</a><br /></td></tr>
 <tr class="separator:f594f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e04da41"><td class="memItemLeft" align="right" valign="top"><a id="e04da41"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV</b> = '/\*\h*@eav\h+(?&lt;table&gt;\w+)/i'</td></tr>
+<tr class="separator:e04da41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0ff0f46"><td class="memItemLeft" align="right" valign="top"><a id="0ff0f46"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV_VAR</b> = '/\*\h*@var\h+(?&lt;type&gt;\w+)\[\]/i'</td></tr>
+<tr class="separator:0ff0f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:97c9e23"><td class="memItemLeft" align="right" valign="top"><a id="97c9e23"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_IS_COLUMN</b> = '/\*\h*@col(umn)?\b/i'</td></tr>
+<tr class="separator:97c9e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:48f702e"><td class="memItemLeft" align="right" valign="top"><a id="48f702e"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_IS_SCALAR</b> = '/^bool(ean)?|int(eger)?|float|double|string$/i'</td></tr>
+<tr class="separator:48f702e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0634e04"><td class="memItemLeft" align="right" valign="top"><a id="0634e04"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_NULL</b> = '/\b\|?null\|?\b/i'</td></tr>
+<tr class="separator:0634e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7a5bbc2"><td class="memItemLeft" align="right" valign="top"><a id="7a5bbc2"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_RECORD</b> = '/\*\h*@record\h+(?&lt;table&gt;\w+)/i'</td></tr>
+<tr class="separator:7a5bbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:31d81cd"><td class="memItemLeft" align="right" valign="top"><a id="31d81cd"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_VAR</b> = '/\*\h*@var\h+(?&lt;type&gt;\S+)/i'</td></tr>
+<tr class="separator:31d81cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#13ea20d">$_cache</a> = []</td></tr>
 <tr class="memdesc:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepared statement cache, keyed by function name.  <a href="Helix_DB_Table.html#13ea20d">More...</a><br /></td></tr>
@@ -147,17 +169,20 @@ Public Static Methods</h2></td></tr>
 Public Methods</h2></td></tr>
 <tr class="memitem:8b4dd5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#8b4dd5b">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $proto, string $table, array $columns, array $eav=[])</td></tr>
 <tr class="separator:8b4dd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:cfb2422"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#cfb2422">find</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>, array $eavMatch=[])</td></tr>
-<tr class="memdesc:cfb2422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a> that fetches instances.  <a href="Helix_DB_Record.html#cfb2422">More...</a><br /></td></tr>
-<tr class="separator:cfb2422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:93f5255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#93f5255">getAll</a> (<a class="el" href="Helix_DB_Statement.html">Statement</a> $statement)</td></tr>
-<tr class="memdesc:93f5255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches from a statement into clones of the entity prototype.  <a href="Helix_DB_Record.html#93f5255">More...</a><br /></td></tr>
-<tr class="separator:93f5255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c686b9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#c686b9a">fetchAll</a> (<a class="el" href="Helix_DB_Statement.html">Statement</a> $statement)</td></tr>
+<tr class="memdesc:c686b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches from a statement into clones of the entity prototype.  <a href="Helix_DB_Record.html#c686b9a">More...</a><br /></td></tr>
+<tr class="separator:c686b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c5a765b"><td class="memItemLeft" align="right" valign="top">Generator <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#c5a765b">fetchEach</a> (<a class="el" href="Helix_DB_Statement.html">Statement</a> $statement)</td></tr>
+<tr class="memdesc:c5a765b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches in chunks and yields each loaded entity.  <a href="Helix_DB_Record.html#c5a765b">More...</a><br /></td></tr>
+<tr class="separator:c5a765b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:42c0e36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#42c0e36">findAll</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>, array $eavMatch=[])</td></tr>
+<tr class="memdesc:42c0e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="Helix_DB_Record.html#fde4b24">loadAll()</a> except this can additionally search by <a class="el" href="Helix_DB_EAV.html">EAV</a> values.  <a href="Helix_DB_Record.html#42c0e36">More...</a><br /></td></tr>
+<tr class="separator:42c0e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dffc0a7"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#dffc0a7">findFirst</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>, array $eavMatch=[])</td></tr>
+<tr class="memdesc:dffc0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance for the first row matching the criteria.  <a href="Helix_DB_Record.html#dffc0a7">More...</a><br /></td></tr>
+<tr class="separator:dffc0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:0c03627"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#0c03627">getClass</a> ()</td></tr>
 <tr class="separator:0c03627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af970d8"><td class="memItemLeft" align="right" valign="top">Generator <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#af970d8">getEach</a> (<a class="el" href="Helix_DB_Statement.html">Statement</a> $statement)</td></tr>
-<tr class="memdesc:af970d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches in chunks and yields each loaded entity.  <a href="Helix_DB_Record.html#af970d8">More...</a><br /></td></tr>
-<tr class="separator:af970d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fe476ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EAV.html">EAV</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#fe476ed">getEav</a> ()</td></tr>
 <tr class="separator:fe476ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ff95e70"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#ff95e70">getProperties</a> ()</td></tr>
@@ -240,6 +265,9 @@ Protected Methods</h2></td></tr>
 <tr class="memitem:b6d0850"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#b6d0850">saveUpdate</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="memdesc:b6d0850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the existing row for the entity.  <a href="Helix_DB_Record.html#b6d0850">More...</a><br /></td></tr>
 <tr class="separator:b6d0850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7d75b4a"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#7d75b4a">setType</a> (string $property, $value)</td></tr>
+<tr class="memdesc:7d75b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a value from storage into the native/annotated type.  <a href="Helix_DB_Record.html#7d75b4a">More...</a><br /></td></tr>
+<tr class="separator:7d75b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:3a3a37d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#3a3a37d">setValues</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity, array $values)</td></tr>
 <tr class="separator:3a3a37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
@@ -490,14 +518,69 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="cfb2422"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#cfb2422">&#9670;&nbsp;</a></span>find()</h2>
+<a id="c686b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c686b9a">&#9670;&nbsp;</a></span>fetchAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] find </td>
+          <td class="memname"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] fetchAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td>
+          <td class="paramname"><em>$statement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetches from a statement into clones of the entity prototype. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Statement.html" title="Extends PDOStatement for fluency and logging.">Statement</a></td><td class="paramname">$statement</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s ID for storage.">EntityInterface</a>[] Keyed by ID </dd></dl>
+
+</div>
+</div>
+<a id="c5a765b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c5a765b">&#9670;&nbsp;</a></span>fetchEach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Generator <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] fetchEach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td>
+          <td class="paramname"><em>$statement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetches in chunks and yields each loaded entity. </p>
+<p>This is preferable over <a class="el" href="Helix_DB_Record.html#c686b9a">fetchAll()</a> for iterating large result sets.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Statement.html" title="Extends PDOStatement for fluency and logging.">Statement</a></td><td class="paramname">$statement</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Generator|EntityInterface[] Keyed by ID </dd></dl>
+
+</div>
+</div>
+<a id="42c0e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#42c0e36">&#9670;&nbsp;</a></span>findAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] findAll </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$match</em>, </td>
@@ -516,16 +599,54 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="Helix_DB_Select.html">Select</a> that fetches instances. </p>
+<p>Similar to <a class="el" href="Helix_DB_Record.html#fde4b24">loadAll()</a> except this can additionally search by <a class="el" href="Helix_DB_EAV.html">EAV</a> values. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#ce43e84" title="Generates an equality Predicate from mixed arguments.">DB::match()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$match</td><td><code>[property =&gt; mixed]</code> </td></tr>
-    <tr><td class="paramtype">array[]</td><td class="paramname">$eavMatch</td><td><code>[eav property =&gt; attribute =&gt; mixed]</code> </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$match</td><td><code>[property =&gt; value]</code> </td></tr>
+    <tr><td class="paramtype">array[]</td><td class="paramname">$eavMatch</td><td><code>[eav property =&gt; attribute =&gt; value]</code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Select|EntityInterface[] </dd></dl>
+
+</div>
+</div>
+<a id="dffc0a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#dffc0a7">&#9670;&nbsp;</a></span>findFirst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">null <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> findFirst </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$match</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$eavMatch</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an instance for the first row matching the criteria. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$match</td><td><code>[property =&gt; value]</code> </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$eavMatch</td><td><code>[eav property =&gt; attribute =&gt; value]</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|EntityInterface </dd></dl>
 
 </div>
 </div>
@@ -573,33 +694,6 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="93f5255"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#93f5255">&#9670;&nbsp;</a></span>getAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] getAll </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td>
-          <td class="paramname"><em>$statement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fetches from a statement into clones of the entity prototype. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB_Statement.html" title="Extends PDOStatement for fluency and logging.">Statement</a></td><td class="paramname">$statement</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s ID for storage.">EntityInterface</a>[] Keyed by ID </dd></dl>
-
-</div>
-</div>
 <a id="0c03627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#0c03627">&#9670;&nbsp;</a></span>getClass()</h2>
 
@@ -623,34 +717,6 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
-
-</div>
-</div>
-<a id="af970d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af970d8">&#9670;&nbsp;</a></span>getEach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Generator <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] getEach </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td>
-          <td class="paramname"><em>$statement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fetches in chunks and yields each loaded entity. </p>
-<p>This is preferable over <a class="el" href="Helix_DB_Record.html#93f5255">getAll()</a> for iterating large result sets.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB_Statement.html" title="Extends PDOStatement for fluency and logging.">Statement</a></td><td class="paramname">$statement</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Generator|EntityInterface[] Keyed by ID </dd></dl>
 
 </div>
 </div>
@@ -1043,6 +1109,52 @@ Protected Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="7d75b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#7d75b4a">&#9670;&nbsp;</a></span>setType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mixed setType </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a value from storage into the native/annotated type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 
 </div>
 </div>

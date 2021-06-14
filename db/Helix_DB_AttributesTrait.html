@@ -71,14 +71,14 @@ $(document).ready(function(){initNavTree('Helix_DB_AttributesTrait.html',''); in
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Forwards <code>ArrayAccess</code> to an <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> array property named <code>$attributes</code>. </p>
-<p><code>ArrayAccess</code> must be implemented by the class using this trait. The <code>$attributes</code> property must also be defined in the class, and annotated with <code>@eav TABLE</code>.</p>
+<p><code>ArrayAccess</code> must be implemented by the class using this trait. The <code>$attributes</code> property must also be defined in the class, and annotated with <code>@eav &lt;TABLE&gt;</code>.</p>
 <p>The instance must have its attributes loaded before use as an array, otherwise existing <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> data may be lost when the instance is saved. Attribute loading is done automatically by <a class="el" href="Helix_DB_Record.html">Record</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Record.html#790b332" title="Loads all data for a given ID into a clone of the prototype.">Record::load()</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
-<tr class="memitem:bb67739"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_AttributesTrait.html#bb67739">$attributes</a></td></tr>
-<tr class="memdesc:bb67739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this property with your own annotation.  <a href="Helix_DB_AttributesTrait.html#bb67739">More...</a><br /></td></tr>
+<tr class="memitem:bb67739"><td class="memItemLeft" align="right" valign="top"><a id="bb67739"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$attributes</b></td></tr>
 <tr class="separator:bb67739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -96,33 +96,6 @@ Public Methods</h2></td></tr>
 <tr class="memitem:1ce9612"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_AttributesTrait.html#1ce9612">setAttributes</a> (array $attributes)</td></tr>
 <tr class="separator:1ce9612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Properties</h2>
-<a id="bb67739"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#bb67739">&#9670;&nbsp;</a></span>$attributes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">array $attributes</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Override this property with your own annotation. </p>
-<p>The property must remain <code>null</code> when not in use.</p>
-<p>@eav EAV_TABLE </p>
-
-</div>
-</div>
 <h2 class="groupheader">Methods</h2>
 <a id="b06b8de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#b06b8de">&#9670;&nbsp;</a></span>getAttributes()</h2>

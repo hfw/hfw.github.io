@@ -89,14 +89,21 @@ $(document).ready(function(){initNavTree('Helix_DB_Junction.html',''); initResiz
 <p>Interface Annotations:</p>
 <ul>
 <li><code>@junction &lt;TABLE&gt;</code></li>
-<li><code>@foreign &lt;COLUMN&gt; &lt;CLASS&gt;</code> or <code>@for &lt;COLUMN&gt; &lt;CLASS&gt;</code> </li>
+<li><code>@foreign &lt;COLUMN&gt; &lt;CLASS FQN&gt;</code> or <code>@for &lt;COLUMN&gt; &lt;CLASS FQN&gt;</code></li>
 </ul>
+<p>@TODO Remove the <code>for</code> tag, it's vague. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
 <tr class="memitem:63fc5a8"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#63fc5a8">$classes</a> = []</td></tr>
 <tr class="memdesc:63fc5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[column =&gt; class]</code>  <a href="Helix_DB_Junction.html#63fc5a8">More...</a><br /></td></tr>
 <tr class="separator:63fc5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f951594"><td class="memItemLeft" align="right" valign="top"><a id="f951594"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_FOREIGN</b> = '/\*\h*@for(eign)?\h+(?&lt;column&gt;\w+)\h+(?&lt;class&gt;\S+)/i'</td></tr>
+<tr class="separator:f951594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:16d3814"><td class="memItemLeft" align="right" valign="top"><a id="16d3814"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_JUNCTION</b> = '/\*\h*@junction\h+(?&lt;table&gt;\w+)/i'</td></tr>
+<tr class="separator:16d3814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#13ea20d">$_cache</a> = []</td></tr>
 <tr class="memdesc:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepared statement cache, keyed by function name.  <a href="Helix_DB_Table.html#13ea20d">More...</a><br /></td></tr>
@@ -123,9 +130,9 @@ Public Static Methods</h2></td></tr>
 Public Methods</h2></td></tr>
 <tr class="memitem:cb1b125"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#cb1b125">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $table, array $classes)</td></tr>
 <tr class="separator:cb1b125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:0bebadf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#0bebadf">find</a> (string $key, array $<a class="el" href="Helix_DB.html#ce43e84">match</a>=[])</td></tr>
-<tr class="memdesc:0bebadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a> for entities referenced by a foreign key.  <a href="Helix_DB_Junction.html#0bebadf">More...</a><br /></td></tr>
-<tr class="separator:0bebadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:29d696c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#29d696c">findAll</a> (string $key, array $<a class="el" href="Helix_DB.html#ce43e84">match</a>=[])</td></tr>
+<tr class="memdesc:29d696c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a> for entities referenced by a foreign key.  <a href="Helix_DB_Junction.html#29d696c">More...</a><br /></td></tr>
+<tr class="separator:29d696c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da1be44"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#da1be44">getClass</a> (string $column)</td></tr>
 <tr class="separator:da1be44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fa47d60"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#fa47d60">getClasses</a> ()</td></tr>
@@ -305,14 +312,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="0bebadf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#0bebadf">&#9670;&nbsp;</a></span>find()</h2>
+<a id="29d696c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#29d696c">&#9670;&nbsp;</a></span>findAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] find </td>
+          <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> [] findAll </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$key</em>, </td>
