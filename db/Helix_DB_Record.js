@@ -12,7 +12,7 @@ var Helix_DB_Record =
     [ "getAll", "Helix_DB_Record.html#93f5255", null ],
     [ "getClass", "Helix_DB_Record.html#0c03627", null ],
     [ "getEach", "Helix_DB_Record.html#af970d8", null ],
-    [ "getEav", "Helix_DB_Record.html#dd36252", null ],
+    [ "getEav", "Helix_DB_Record.html#fe476ed", null ],
     [ "getProperties", "Helix_DB_Record.html#ff95e70", null ],
     [ "getProto", "Helix_DB_Record.html#44b76d2", null ],
     [ "getTypes", "Helix_DB_Record.html#0324f76", null ],

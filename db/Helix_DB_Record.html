@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('Helix_DB_Record.html',''); initResizab
 </ul>
 <p>Property value types are preserved as long as they are scalar and annotated with <code>@var</code>. Types may be nullable.</p>
 <blockquote class="doxtable">
-<p>Note: Annotating the types <code>String</code> (capital "S") or <code>STRING</code> (all caps) results in <code>TEXT</code> and <code>BLOB</code> respectfully during <a class="el" href="Helix_DB_Schema.html#bf36aa7">Schema::createRecordTable()</a> </p>
+<p>Annotating the types <code>String</code> (capital "S") or <code>STRING</code> (all caps) results in <code>TEXT</code> and <code>BLOB</code> </p>
 </blockquote>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -158,8 +158,8 @@ Public Methods</h2></td></tr>
 <tr class="memitem:af970d8"><td class="memItemLeft" align="right" valign="top">Generator <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#af970d8">getEach</a> (<a class="el" href="Helix_DB_Statement.html">Statement</a> $statement)</td></tr>
 <tr class="memdesc:af970d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches in chunks and yields each loaded entity.  <a href="Helix_DB_Record.html#af970d8">More...</a><br /></td></tr>
 <tr class="separator:af970d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dd36252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EAV.html">EAV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#dd36252">getEav</a> (string $property)</td></tr>
-<tr class="separator:dd36252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fe476ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EAV.html">EAV</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#fe476ed">getEav</a> ()</td></tr>
+<tr class="separator:fe476ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ff95e70"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#ff95e70">getProperties</a> ()</td></tr>
 <tr class="memdesc:ff95e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerated property names.  <a href="Helix_DB_Record.html#ff95e70">More...</a><br /></td></tr>
 <tr class="separator:ff95e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -654,36 +654,21 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="dd36252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#dd36252">&#9670;&nbsp;</a></span>getEav()</h2>
+<a id="fe476ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fe476ed">&#9670;&nbsp;</a></span>getEav()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_EAV.html">EAV</a> getEav </td>
+          <td class="memname"><a class="el" href="Helix_DB_EAV.html">EAV</a> [] getEav </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$property</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a>[] </dd></dl>
 
 </div>
 </div>

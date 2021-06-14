@@ -70,23 +70,26 @@ $(document).ready(function(){initNavTree('Helix_DB_MigrationInterface.html','');
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Migrations must implement this. </p>
-<p>Migration files must be contained in their own directory. The default directory is <code>migrations/</code> (see <a class="el" href="Helix_DB.html#593483b">DB::getMigrator()</a> and <a class="el" href="Helix_DB_Migrator.html#e65070d">Migrator::glob()</a>)</p>
-<p>Migration files must be named <code>&lt;SEQUENCE&gt;_&lt;CLASS&gt;.php</code>, where <code>SEQUENCE</code> is a non-zero ascending identifier, and <code>CLASS</code> is the name of the class implementing this interface. <code>SEQUENCE</code> must not contain underscores. <code>CLASS</code> on the other hand may contain underscores. The implementing class must not be namespaced. No two migrations may share the same class name. Migrations must allow construction without arguments.</p>
-<p>Standard practice is to use a date-time for <code>SEQUENCE</code>, and to name <code>CLASS</code> a description of the migration's work.</p>
-<p>Migrations can execute direct SQL or use the <a class="el" href="Helix_DB_Schema.html">Schema</a> helpers.</p>
+<p>Migration files must be contained in their own directory. The default directory is <code>migrations/default/</code></p>
+<p>Migration files must be named <code>&lt;SEQUENCE&gt;.php</code>, where <code>SEQUENCE</code> is a non-zero ascending identifier. The file must <code>return</code> an instance of this interface (e.g. an anonymous class).</p>
+<p>Standard practice is to have file names prefixed with a UTC ISO-8601 datetime, followed by a description of what they do.</p>
+<p>Migrations are given the <a class="el" href="Helix_DB_Schema.html">Schema</a> helper, but can directly execute SQL if needed.</p>
 <p>Each migration is performed within a transaction savepoint.</p>
-<p>See the test migration in <code>test/migrations/default/</code> </p>
+<p>See the test migration in <code>test/migrations/default/</code></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#593483b">DB::getMigrator()</a> </dd>
+<dd>
+<a class="el" href="Helix_DB_Migrator.html#1091bbf" title="Scans the migration directory for &lt;SEQUENCE&gt;.php files.">Migrator::glob()</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:fdf7ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_MigrationInterface.html#fdf7ae9">down</a> ($db)</td></tr>
-<tr class="separator:fdf7ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:40b77e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_MigrationInterface.html#40b77e6">up</a> ($db)</td></tr>
-<tr class="separator:40b77e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8796594"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_MigrationInterface.html#8796594">down</a> ($schema)</td></tr>
+<tr class="separator:8796594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2f85c2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_MigrationInterface.html#2f85c2e">up</a> ($schema)</td></tr>
+<tr class="separator:2f85c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Methods</h2>
-<a id="fdf7ae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fdf7ae9">&#9670;&nbsp;</a></span>down()</h2>
+<a id="8796594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8796594">&#9670;&nbsp;</a></span>down()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -95,14 +98,14 @@ Public Methods</h2></td></tr>
           <td class="memname">void down </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$db</em></td><td>)</td>
+          <td class="paramname"><em>$schema</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a></td><td class="paramname">$db</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Schema.html" title="Schema control and metadata.">Schema</a></td><td class="paramname">$schema</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -110,8 +113,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="40b77e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#40b77e6">&#9670;&nbsp;</a></span>up()</h2>
+<a id="2f85c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2f85c2e">&#9670;&nbsp;</a></span>up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,14 +123,14 @@ Public Methods</h2></td></tr>
           <td class="memname">void up </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$db</em></td><td>)</td>
+          <td class="paramname"><em>$schema</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a></td><td class="paramname">$db</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_Schema.html" title="Schema control and metadata.">Schema</a></td><td class="paramname">$schema</td><td></td></tr>
   </table>
   </dd>
 </dl>

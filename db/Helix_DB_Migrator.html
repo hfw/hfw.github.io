@@ -78,11 +78,14 @@ $(document).ready(function(){initNavTree('Helix_DB_Migrator.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_Migrator__inherit__graph.png" border="0" usemap="#Migrator_inherit__map" alt="Inheritance graph"/></div>
 <map name="Migrator_inherit__map" id="Migrator_inherit__map">
-<area shape="rect" title=" " alt="" coords="25,83,128,112"/>
+<area shape="rect" title="Migrates." alt="" coords="25,83,128,112"/>
 <area shape="rect" title="Installs a magic static factory, where the signature can be changed to match the constructor,..." alt="" coords="5,5,148,35"/>
 </map>
 </div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Description</h2>
+<div class="textblock"><p>Migrates. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_MigrationInterface.html" title="Migrations must implement this.">MigrationInterface</a> </dd></dl>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
 <tr class="memitem:d144aa2"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
@@ -105,23 +108,25 @@ Public Static Methods</h2></td></tr>
 Public Methods</h2></td></tr>
 <tr class="memitem:ce09bbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#ce09bbc">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $dir)</td></tr>
 <tr class="separator:ce09bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:8704049"><td class="memItemLeft" align="right" valign="top">false string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#8704049">down</a> (string $to=null)</td></tr>
-<tr class="memdesc:8704049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrates down within a transaction.  <a href="Helix_DB_Migrator.html#8704049">More...</a><br /></td></tr>
-<tr class="separator:8704049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2c621b4"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#2c621b4">down</a> (string $to=null)</td></tr>
+<tr class="memdesc:2c621b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrates down within a transaction.  <a href="Helix_DB_Migrator.html#2c621b4">More...</a><br /></td></tr>
+<tr class="separator:2c621b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d38bcd8"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#d38bcd8">getCurrent</a> ()</td></tr>
 <tr class="memdesc:d38bcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sequence identifier of the most recent upgrade.  <a href="Helix_DB_Migrator.html#d38bcd8">More...</a><br /></td></tr>
 <tr class="separator:d38bcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:06e6066"><td class="memItemLeft" align="right" valign="top">false string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#06e6066">up</a> (string $to=null)</td></tr>
-<tr class="memdesc:06e6066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrates up within a transaction.  <a href="Helix_DB_Migrator.html#06e6066">More...</a><br /></td></tr>
-<tr class="separator:06e6066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8276207"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#8276207">getDir</a> ()</td></tr>
+<tr class="separator:8276207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c9fb870"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#c9fb870">up</a> (string $to=null)</td></tr>
+<tr class="memdesc:c9fb870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrates up within a transaction.  <a href="Helix_DB_Migrator.html#c9fb870">More...</a><br /></td></tr>
+<tr class="separator:c9fb870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
-<tr class="memitem:6c2d933"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_MigrationInterface.html">MigrationInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#6c2d933">getMigration</a> (array $spec)</td></tr>
-<tr class="separator:6c2d933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:e65070d"><td class="memItemLeft" align="right" valign="top">array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#e65070d">glob</a> ()</td></tr>
-<tr class="memdesc:e65070d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the migration directory for <code>&lt;SEQUENCE&gt;_&lt;CLASS&gt;.php</code> files.  <a href="Helix_DB_Migrator.html#e65070d">More...</a><br /></td></tr>
-<tr class="separator:e65070d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fa14ed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_MigrationInterface.html">MigrationInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#fa14ed4">getMigration</a> (string $file)</td></tr>
+<tr class="separator:fa14ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:1091bbf"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Migrator.html#1091bbf">glob</a> ()</td></tr>
+<tr class="memdesc:1091bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the migration directory for <code>&lt;SEQUENCE&gt;.php</code> files.  <a href="Helix_DB_Migrator.html#1091bbf">More...</a><br /></td></tr>
+<tr class="separator:1091bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor</h2>
 <a id="ce09bbc"></a>
@@ -160,14 +165,14 @@ Protected Methods</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
-<a id="8704049"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#8704049">&#9670;&nbsp;</a></span>down()</h2>
+<a id="2c621b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2c621b4">&#9670;&nbsp;</a></span>down()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">false string down </td>
+          <td class="memname">null string down </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$to</em> = <code>null</code></td><td>)</td>
@@ -183,7 +188,7 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>false|string The resulting current sequence identifier. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string The resulting current sequence identifier. </dd></dl>
 
 </div>
 </div>
@@ -246,8 +251,34 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="6c2d933"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#6c2d933">&#9670;&nbsp;</a></span>getMigration()</h2>
+<a id="8276207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8276207">&#9670;&nbsp;</a></span>getDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
+<a id="fa14ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fa14ed4">&#9670;&nbsp;</a></span>getMigration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,8 +289,8 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="Helix_DB_MigrationInterface.html">MigrationInterface</a> getMigration </td>
           <td>(</td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$spec</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$file</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -279,8 +310,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="e65070d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#e65070d">&#9670;&nbsp;</a></span>glob()</h2>
+<a id="1091bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#1091bbf">&#9670;&nbsp;</a></span>glob()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +320,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">array [] glob </td>
+          <td class="memname">string [] glob </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -302,19 +333,19 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Scans the migration directory for <code>&lt;SEQUENCE&gt;_&lt;CLASS&gt;.php</code> files. </p>
-<dl class="section return"><dt>Returns</dt><dd>array[] [ file =&gt; spec array ] </dd></dl>
+<p>Scans the migration directory for <code>&lt;SEQUENCE&gt;.php</code> files. </p>
+<dl class="section return"><dt>Returns</dt><dd>string[] [ sequence =&gt; file ] </dd></dl>
 
 </div>
 </div>
-<a id="06e6066"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#06e6066">&#9670;&nbsp;</a></span>up()</h2>
+<a id="c9fb870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c9fb870">&#9670;&nbsp;</a></span>up()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">false string up </td>
+          <td class="memname">null string up </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$to</em> = <code>null</code></td><td>)</td>
@@ -330,7 +361,7 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>false|string The resulting current sequence identifier. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string The resulting current sequence identifier. </dd></dl>
 
 </div>
 </div>
