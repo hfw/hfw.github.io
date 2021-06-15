@@ -9,6 +9,7 @@ var Helix_DB_Migrator =
     [ "getCurrent", "Helix_DB_Migrator.html#d38bcd8", null ],
     [ "getDir", "Helix_DB_Migrator.html#8276207", null ],
     [ "getMigration", "Helix_DB_Migrator.html#fa14ed4", null ],
+    [ "getTable", "Helix_DB_Migrator.html#762f3ec", null ],
     [ "glob", "Helix_DB_Migrator.html#1091bbf", null ],
     [ "up", "Helix_DB_Migrator.html#c9fb870", null ]
 ];

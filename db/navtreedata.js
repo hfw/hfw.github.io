@@ -38,7 +38,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"Helix_DB_SQL_NumTrait.html#98dd0a9"
+"Helix_DB_SQL_NumTrait.html#661eece"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

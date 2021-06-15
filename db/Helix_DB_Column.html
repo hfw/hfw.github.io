@@ -77,7 +77,7 @@ $(document).ready(function(){initNavTree('Helix_DB_Column.html',''); initResizab
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_Column__inherit__graph.png" border="0" usemap="#Column_inherit__map" alt="Inheritance graph"/></div>
 <map name="Column_inherit__map" id="Column_inherit__map">
-<area shape="rect" title="Immutable column expression." alt="" coords="485,192,568,221"/>
+<area shape="rect" title="Immutable column expression." alt="" coords="485,219,568,248"/>
 <area shape="rect" href="Helix_DB_SQL_AggregateTrait.html" title="Produces aggregate expressions for the instance." alt="" coords="270,5,433,35"/>
 <area shape="rect" title="A trait for other traits in this namespace." alt="" coords="35,139,187,168"/>
 <area shape="rect" href="Helix_DB_SQL_CastTrait.html" title=" " alt="" coords="295,59,407,88"/>
@@ -86,13 +86,15 @@ $(document).ready(function(){initNavTree('Helix_DB_Column.html',''); initResizab
 <area shape="rect" href="Helix_DB_SQL_NumTrait.html" title="Produces numeric expressions for the instance." alt="" coords="300,219,403,248"/>
 <area shape="rect" href="Helix_DB_SQL_TextTrait.html" title="Produces text related expressions for the instance." alt="" coords="295,272,407,301"/>
 <area shape="rect" title="Installs a magic static factory, where the signature can be changed to match the constructor,..." alt="" coords="280,325,423,355"/>
-<area shape="rect" href="Helix_DB_SQL_ValueInterface.html" title="An expression that evaluates to a single value." alt="" coords="270,379,433,408"/>
-<area shape="rect" href="Helix_DB_SQL_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="5,379,217,408"/>
+<area shape="rect" title=" " alt="" coords="285,379,417,408"/>
+<area shape="rect" href="Helix_DB_SQL_ValueInterface.html" title="An expression that evaluates to a single value." alt="" coords="270,432,433,461"/>
+<area shape="rect" href="Helix_DB_SQL_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="5,432,217,461"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Immutable column expression. </p>
 <p>Can produce all available transformations.</p>
+<p>Read-only array access is provided for easily retrieving aggregate function results.</p>
 <dl class="immutable"><dt><b><a class="el" href="immutable.html#_immutable000001">Immutable:</a></b></dt><dd>Mutations operate on and return clones.</dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -120,6 +122,18 @@ Public Methods</h2></td></tr>
 <tr class="separator:1340b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:2950784"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Column.html#2950784">getQualifier</a> ()</td></tr>
 <tr class="separator:2950784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fca1069"><td class="memItemLeft" align="right" valign="top">true&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Column.html#fca1069">offsetExists</a> ($value)</td></tr>
+<tr class="memdesc:fca1069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregate function results are always available.  <a href="Helix_DB_Column.html#fca1069">More...</a><br /></td></tr>
+<tr class="separator:fca1069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cedf94d"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Column.html#cedf94d">offsetGet</a> ($aggregator)</td></tr>
+<tr class="memdesc:cedf94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the result of an aggregate function run over the column expression.  <a href="Helix_DB_Column.html#cedf94d">More...</a><br /></td></tr>
+<tr class="separator:cedf94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e46b7a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Column.html#e46b7a3">offsetSet</a> ($offset, $value)</td></tr>
+<tr class="memdesc:e46b7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws.  <a href="Helix_DB_Column.html#e46b7a3">More...</a><br /></td></tr>
+<tr class="separator:e46b7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fd4b563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Column.html#fd4b563">offsetUnset</a> ($offset)</td></tr>
+<tr class="memdesc:fd4b563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws.  <a href="Helix_DB_Column.html#fd4b563">More...</a><br /></td></tr>
+<tr class="separator:fd4b563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a01f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> scalar[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Column.html#a5a01f5">select</a> ()</td></tr>
 <tr class="memdesc:a5a01f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a> for the column's values.  <a href="Helix_DB_Column.html#a5a01f5">More...</a><br /></td></tr>
 <tr class="separator:a5a01f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -566,6 +580,161 @@ Public Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
+<a id="fca1069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fca1069">&#9670;&nbsp;</a></span>offsetExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">true offsetExists </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aggregate function results are always available. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
+
+</div>
+</div>
+<a id="cedf94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#cedf94d">&#9670;&nbsp;</a></span>offsetGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">null string offsetGet </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$aggregator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the result of an aggregate function run over the column expression. </p>
+<p>Example: <code>min</code> returns the result of <code>SELECT MIN($this) FROM $this-&gt;qualifier</code></p>
+<dl class="section see"><dt>See also</dt><dd>AggregateTrait </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$aggregator</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string </dd></dl>
+
+</div>
+</div>
+<a id="e46b7a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e46b7a3">&#9670;&nbsp;</a></span>offsetSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">offsetSet </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Throws. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">LogicException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="fd4b563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fd4b563">&#9670;&nbsp;</a></span>offsetUnset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">offsetUnset </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Throws. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">LogicException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

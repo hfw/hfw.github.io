@@ -44,7 +44,7 @@ var Helix_DB_Schema =
     [ "renameTable", "Helix_DB_Schema.html#91de178", null ],
     [ "sortColumns", "Helix_DB_Schema.html#fd32099", null ],
     [ "toColumnDefinitions", "Helix_DB_Schema.html#057ada8", null ],
-    [ "toForeignKeyConstraint", "Helix_DB_Schema.html#6c2c82f", null ],
+    [ "toForeignKeyConstraint", "Helix_DB_Schema.html#adc9bcf", null ],
     [ "toForeignKeyConstraint_name", "Helix_DB_Schema.html#77cdc85", null ],
     [ "toPrimaryKeyConstraint", "Helix_DB_Schema.html#e0decca", null ],
     [ "toPrimaryKeyConstraint_name", "Helix_DB_Schema.html#938a738", null ],

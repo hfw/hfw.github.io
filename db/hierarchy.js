@@ -56,6 +56,7 @@ var hierarchy =
           [ "Record", "Helix_DB_Record.html", null ]
         ] ]
       ] ],
+      [ "Column", "Helix_DB_Column.html", null ],
       [ "Schema", "Helix_DB_Schema.html", null ]
     ] ],
     [ "Countable", null, [

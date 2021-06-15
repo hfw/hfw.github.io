@@ -72,13 +72,15 @@ $(document).ready(function(){initNavTree('Helix_DB_MigrationInterface.html','');
 <div class="textblock"><p>Migrations must implement this. </p>
 <p>Migration files must be contained in their own directory. The default directory is <code>migrations/default/</code></p>
 <p>Migration files must be named <code>&lt;SEQUENCE&gt;.php</code>, where <code>SEQUENCE</code> is a non-zero ascending identifier. The file must <code>return</code> an instance of this interface (e.g. an anonymous class).</p>
-<p>Standard practice is to have file names prefixed with a UTC ISO-8601 datetime, followed by a description of what they do.</p>
+<p>Good practice is to have file names start with an ISO/UTC datetime, followed by a description of what they do.</p>
 <p>Migrations are given the <a class="el" href="Helix_DB_Schema.html">Schema</a> helper, but can directly execute SQL if needed.</p>
 <p>Each migration is performed within a transaction savepoint.</p>
-<p>See the test migration in <code>test/migrations/default/</code></p>
+<p>See the test migrations in <code>test/migrations/default/</code>, and the migration helper script in <code>bin/</code></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#593483b">DB::getMigrator()</a> </dd>
 <dd>
-<a class="el" href="Helix_DB_Migrator.html#1091bbf" title="Scans the migration directory for &lt;SEQUENCE&gt;.php files.">Migrator::glob()</a> </dd></dl>
+<a class="el" href="Helix_DB_Migrator.html#1091bbf" title="Scans the migration directory for &lt;SEQUENCE&gt;.php files.">Migrator::glob()</a> </dd>
+<dd>
+<a class="el" href="Helix_DB_Schema.html#14f4f86">Schema::getDb()</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
