@@ -184,6 +184,9 @@ int[]&#160;</td><td class="memItemRight" valign="bottom"><b>$colDefs</b></td></t
 <tr class="memitem:6eb3dcc"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#6eb3dcc">PHP_TYPES</a></td></tr>
 <tr class="memdesc:6eb3dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps native/annotated types to <code>T_CONST</code> values.  <a href="Helix_DB_Schema.html#6eb3dcc">More...</a><br /></td></tr>
 <tr class="separator:6eb3dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:131ec9d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#131ec9d">SCHEMA_TYPES</a></td></tr>
+<tr class="memdesc:131ec9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps column types reported by the database into PHP native/annotated types.  <a href="Helix_DB_Schema.html#131ec9d">More...</a><br /></td></tr>
+<tr class="separator:131ec9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:9d1781d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#9d1781d">T_MASK</a> = 0x00FF</td></tr>
 <tr class="memdesc:9d1781d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower-byte mask (column storage type).  <a href="Helix_DB_Schema.html#9d1781d">More...</a><br /></td></tr>
 <tr class="separator:9d1781d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,6 +215,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:c5677cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#c5677cd">dropTable</a> (string $table)</td></tr>
 <tr class="memdesc:c5677cd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>DROP TABLE IF EXISTS $table</code>  <a href="Helix_DB_Schema.html#c5677cd">More...</a><br /></td></tr>
 <tr class="separator:c5677cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0d11dc4"><td class="memItemLeft" align="right" valign="top">array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#0d11dc4">getColumnInfo</a> (string $table)</td></tr>
+<tr class="memdesc:0d11dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns column metadata in an associative array.  <a href="Helix_DB_Schema.html#0d11dc4">More...</a><br /></td></tr>
+<tr class="separator:0d11dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:14f4f86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#14f4f86">getDb</a> ()</td></tr>
 <tr class="separator:14f4f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:07ddcca"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_DB_Table.html">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#07ddcca">getTable</a> (string $name)</td></tr>
@@ -374,14 +380,14 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,  </div>
+<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,   </div>
 <div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <span class="stringliteral">&#39;T_FLOAT&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,   </div>
 <div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <span class="stringliteral">&#39;T_STRING&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;T_TEXT&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;T_TEXT&#39;</span>,   </div>
+<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,   </div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>Maps native/annotated types to <code>T_CONST</code> names. </p>
@@ -410,17 +416,57 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#4dada82">self::T_BOOL</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#4dada82">self::T_BOOL</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#eec4aae">self::T_FLOAT</a>,</div>
+<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#4dada82">self::T_BOOL</a>,  </div>
+<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#eec4aae">self::T_FLOAT</a>,  </div>
 <div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#eec4aae">self::T_FLOAT</a>,</div>
 <div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#5c6f814">self::T_INT</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#5c6f814">self::T_INT</a>,</div>
+<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#5c6f814">self::T_INT</a>,   </div>
 <div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#ba3429d">self::T_STRING</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#9c14207">self::T_TEXT</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#c213f11">self::T_BLOB</a></div>
+<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#9c14207">self::T_TEXT</a>,   </div>
+<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#c213f11">self::T_BLOB</a>    </div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>Maps native/annotated types to <code>T_CONST</code> values. </p>
+
+</div>
+</div>
+<a id="131ec9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#131ec9d">&#9670;&nbsp;</a></span>SCHEMA_TYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SCHEMA_TYPES</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;BOOLEAN&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;BIGINT&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,  </div>
+<div class="line">        <span class="stringliteral">&#39;INTEGER&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>, </div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;DOUBLE PRECISION&#39;</span> =&gt; <span class="stringliteral">&#39;float&#39;</span>,</div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;VARCHAR(255)&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;TEXT&#39;</span> =&gt; <span class="stringliteral">&#39;String&#39;</span>,</div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;BLOB&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>,     </div>
+<div class="line">        <span class="stringliteral">&#39;LONGBLOB&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>, </div>
+<div class="line">    ]</div>
+</div><!-- fragment -->
+<p>Maps column types reported by the database into PHP native/annotated types. </p>
 
 </div>
 </div>
@@ -852,6 +898,39 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="">self</a> </dd></dl>
+
+</div>
+</div>
+<a id="0d11dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#0d11dc4">&#9670;&nbsp;</a></span>getColumnInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">array [] getColumnInfo </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns column metadata in an associative array. </p>
+<p>Elements are:</p><ul>
+<li><code>name</code></li>
+<li><code>type</code>: PHP native/annotated type (as a string)</li>
+<li><code>nullable</code>: boolean</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array[] Keyed by name. </dd></dl>
 
 </div>
 </div>
