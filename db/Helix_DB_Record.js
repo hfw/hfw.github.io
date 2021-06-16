@@ -1,10 +1,13 @@
 var Helix_DB_Record =
 [
     [ "$eav", "Helix_DB_Record.html#2177d2d", null ],
+    [ "$hydration", "Helix_DB_Record.html#e764b0f", null ],
     [ "$nullable", "Helix_DB_Record.html#027c7e1", null ],
     [ "$properties", "Helix_DB_Record.html#bb24f1b", null ],
     [ "$proto", "Helix_DB_Record.html#2f0e87b", null ],
     [ "$types", "Helix_DB_Record.html#f594f1e", null ],
+    [ "$utc", "Helix_DB_Record.html#8695334", null ],
+    [ "DEHYDRATE_AS", "Helix_DB_Record.html#ddfcc26", null ],
     [ "RX_EAV", "Helix_DB_Record.html#e04da41", null ],
     [ "RX_EAV_VAR", "Helix_DB_Record.html#0ff0f46", null ],
     [ "RX_IS_COLUMN", "Helix_DB_Record.html#97c9e23", null ],
@@ -23,8 +26,10 @@ var Helix_DB_Record =
     [ "getEav", "Helix_DB_Record.html#fe476ed", null ],
     [ "getProperties", "Helix_DB_Record.html#ff95e70", null ],
     [ "getProto", "Helix_DB_Record.html#44b76d2", null ],
+    [ "getType", "Helix_DB_Record.html#767a2f1", null ],
     [ "getTypes", "Helix_DB_Record.html#0324f76", null ],
     [ "getValues", "Helix_DB_Record.html#aaef9e8", null ],
+    [ "getValues_dehydrate", "Helix_DB_Record.html#354b608", null ],
     [ "isNullable", "Helix_DB_Record.html#30e2220", null ],
     [ "load", "Helix_DB_Record.html#790b332", null ],
     [ "loadAll", "Helix_DB_Record.html#fde4b24", null ],
@@ -35,5 +40,6 @@ var Helix_DB_Record =
     [ "saveUpdate", "Helix_DB_Record.html#b6d0850", null ],
     [ "setProto", "Helix_DB_Record.html#6702635", null ],
     [ "setType", "Helix_DB_Record.html#7d75b4a", null ],
+    [ "setType_hydrate", "Helix_DB_Record.html#5fb6488", null ],
     [ "setValues", "Helix_DB_Record.html#3a3a37d", null ]
 ];

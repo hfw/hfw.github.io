@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('Helix_DB_Record.html',''); initResizab
 <li><code>@col</code> or <code>@column</code></li>
 <li><code>@eav &lt;TABLE&gt;</code></li>
 </ul>
-<p>Property value types are preserved as long as they are scalar or annotated with <code>@var</code>. Types may be nullable.</p>
+<p>Property types are preserved. Properties which are objects can be dehydrated/rehydrated if they're strictly typed. Strict typing is preferred, but annotations and finally default values are used as fallbacks.</p>
 <blockquote class="doxtable">
 <p>Annotating the types <code>String</code> (capital "S") or <code>STRING</code> (all caps) results in <code>TEXT</code> and <code>BLOB</code> </p>
 </blockquote>
@@ -107,6 +107,9 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:2177d2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EAV.html">EAV</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#2177d2d">$eav</a> = []</td></tr>
 <tr class="memdesc:2177d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[property =&gt; <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a>]</code>  <a href="Helix_DB_Record.html#2177d2d">More...</a><br /></td></tr>
 <tr class="separator:2177d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e764b0f"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#e764b0f">$hydration</a> = []</td></tr>
+<tr class="memdesc:e764b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The specific classes used to hydrate classed properties, like <code>DateTime</code>.  <a href="Helix_DB_Record.html#e764b0f">More...</a><br /></td></tr>
+<tr class="separator:e764b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:027c7e1"><td class="memItemLeft" align="right" valign="top">bool[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#027c7e1">$nullable</a> = []</td></tr>
 <tr class="memdesc:027c7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[ property =&gt; is nullable ]</code>  <a href="Helix_DB_Record.html#027c7e1">More...</a><br /></td></tr>
 <tr class="separator:027c7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +122,11 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:f594f1e"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#f594f1e">$types</a> = []</td></tr>
 <tr class="memdesc:f594f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar property types.  <a href="Helix_DB_Record.html#f594f1e">More...</a><br /></td></tr>
 <tr class="separator:f594f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8695334"><td class="memItemLeft" align="right" valign="top"><a id="8695334"></a>
+DateTimeZone DateTimeZone&#160;</td><td class="memItemRight" valign="bottom"><b>$utc</b></td></tr>
+<tr class="separator:8695334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ddfcc26"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#ddfcc26">DEHYDRATE_AS</a></td></tr>
+<tr class="separator:ddfcc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e04da41"><td class="memItemLeft" align="right" valign="top"><a id="e04da41"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV</b> = '/\*\h*@eav\h+(?&lt;table&gt;\w+)/i'</td></tr>
 <tr class="separator:e04da41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +198,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:ff95e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:44b76d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#44b76d2">getProto</a> ()</td></tr>
 <tr class="separator:44b76d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:767a2f1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#767a2f1">getType</a> (string $property)</td></tr>
+<tr class="memdesc:767a2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a native/annotated property type.  <a href="Helix_DB_Record.html#767a2f1">More...</a><br /></td></tr>
+<tr class="separator:767a2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:0324f76"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#0324f76">getTypes</a> ()</td></tr>
 <tr class="memdesc:0324f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the native/annotated property types.  <a href="Helix_DB_Record.html#0324f76">More...</a><br /></td></tr>
 <tr class="separator:0324f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +265,9 @@ Public Methods</h2></td></tr>
 Protected Methods</h2></td></tr>
 <tr class="memitem:aaef9e8"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#aaef9e8">getValues</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="separator:aaef9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:354b608"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#354b608">getValues_dehydrate</a> (string $to, string $from, $hydrated)</td></tr>
+<tr class="memdesc:354b608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dehydrates a complex property's value for storage in a scalar column.  <a href="Helix_DB_Record.html#354b608">More...</a><br /></td></tr>
+<tr class="separator:354b608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:1e28fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#1e28fdf">loadEav</a> (array $entities)</td></tr>
 <tr class="memdesc:1e28fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads and sets all <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> properties for an array of entities keyed by ID.  <a href="Helix_DB_Record.html#1e28fdf">More...</a><br /></td></tr>
 <tr class="separator:1e28fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +282,9 @@ Protected Methods</h2></td></tr>
 <tr class="memitem:7d75b4a"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#7d75b4a">setType</a> (string $property, $value)</td></tr>
 <tr class="memdesc:7d75b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a value from storage into the native/annotated type.  <a href="Helix_DB_Record.html#7d75b4a">More...</a><br /></td></tr>
 <tr class="separator:7d75b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:5fb6488"><td class="memItemLeft" align="right" valign="top">array object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#5fb6488">setType_hydrate</a> (string $to, string $from, $dehydrated)</td></tr>
+<tr class="memdesc:5fb6488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hydrates a complex value from scalar storage.  <a href="Helix_DB_Record.html#5fb6488">More...</a><br /></td></tr>
+<tr class="separator:5fb6488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:3a3a37d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#3a3a37d">setValues</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity, array $values)</td></tr>
 <tr class="separator:3a3a37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
@@ -297,6 +314,31 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>[property =&gt; <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a>]</code> </p>
+
+</div>
+</div>
+<a id="e764b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e764b0f">&#9670;&nbsp;</a></span>$hydration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] $hydration = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The specific classes used to hydrate classed properties, like <code>DateTime</code>. </p>
+<p><code>[ property =&gt; class ]</code> </p>
 
 </div>
 </div>
@@ -402,6 +444,36 @@ Protected Methods</h2></td></tr>
 <li><code>string</code></li>
 </ul>
 <p><code>[property =&gt; type]</code> </p>
+
+</div>
+</div>
+<a id="ddfcc26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ddfcc26">&#9670;&nbsp;</a></span>DEHYDRATE_AS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const DEHYDRATE_AS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        <span class="stringliteral">&#39;array&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>, </div>
+<div class="line">        <span class="stringliteral">&#39;object&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        stdClass::class =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        DateTime::class =&gt; <span class="stringliteral">&#39;DateTime&#39;</span>,</div>
+<div class="line">        DateTimeImmutable::class =&gt; <span class="stringliteral">&#39;DateTime&#39;</span>,</div>
+<div class="line">    ]</div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Schema.html#c580f64" title="Maps native/annotated types to T_CONST names.">Schema::T_CONST_NAMES</a> </dd></dl>
 
 </div>
 </div>
@@ -784,6 +856,42 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="767a2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#767a2f1">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getType </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a native/annotated property type. </p>
+<p>This doesn't include whether the property is nullable. Use <a class="el" href="Helix_DB_Record.html#30e2220">Record::isNullable()</a> for that.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
 <a id="0324f76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#0324f76">&#9670;&nbsp;</a></span>getTypes()</h2>
 
@@ -808,7 +916,7 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the native/annotated property types. </p>
-<p>This doesn't include whether the property is nullable. Use <a class="el" href="Helix_DB_Record.html#30e2220">isNullable()</a> for that.</p>
+<p>This doesn't include whether the properties are nullable. Use <a class="el" href="Helix_DB_Record.html#30e2220">Record::isNullable()</a> for that.</p>
 <dl class="section return"><dt>Returns</dt><dd>string[] </dd></dl>
 
 </div>
@@ -843,6 +951,60 @@ Protected Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+
+</div>
+</div>
+<a id="354b608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#354b608">&#9670;&nbsp;</a></span>getValues_dehydrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scalar getValues_dehydrate </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$hydrated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dehydrates a complex property's value for storage in a scalar column. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Record.html#5fb6488" title="Hydrates a complex value from scalar storage.">Record::setType_hydrate()</a> inverse</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$to</td><td>The storage type. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$from</td><td>The strict type from the class definition. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;object</td><td class="paramname">$hydrated</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>scalar </dd></dl>
 
 </div>
 </div>
@@ -1155,6 +1317,60 @@ Protected Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
+
+</div>
+</div>
+<a id="5fb6488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#5fb6488">&#9670;&nbsp;</a></span>setType_hydrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">array object setType_hydrate </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$dehydrated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hydrates a complex value from scalar storage. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Record.html#354b608" title="Dehydrates a complex property&#39;s value for storage in a scalar column.">Record::getValues_dehydrate()</a> inverse</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$to</td><td>The strict type from the class definition. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$from</td><td>The storage type. </td></tr>
+    <tr><td class="paramtype">scalar</td><td class="paramname">$dehydrated</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array|object </dd></dl>
 
 </div>
 </div>

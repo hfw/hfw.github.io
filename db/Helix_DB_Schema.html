@@ -88,76 +88,84 @@ $(document).ready(function(){initNavTree('Helix_DB_Schema.html',''); initResizab
 <div class="textblock"><p><a class="el" href="Helix_DB_Schema.html" title="Schema control and metadata.">Schema</a> control and metadata. </p>
 <p>The column definition constants are two bytes each, used in bitwise composition.</p><ul>
 <li>The high-byte (<code>&lt;I_CONST&gt;</code>) is used for the specific index type.<ul>
-<li>Descending index priority. For example, <code>I_PRIMARY</code> is <code>0x8000</code> (highest bit)</li>
+<li>Ascending index priority. For example, <code>I_AUTOINCREMENT</code> is <code>0xff00</code></li>
 </ul>
 </li>
 <li>The low-byte (<code>&lt;T_CONST&gt;</code>) is used for the specific storage type.<ul>
-<li>Inverse size complexity. For example, <code>BOOL</code> is <code>0x0080</code>, and <code>T_BLOB</code> is <code>0x0002</code></li>
-<li>The final bit <code>0x0001</code> flags nullability.</li>
-<li>Bit <code>0x0010</code> is reserved for future use (probably <code>DateTime</code>).</li>
+<li>The final bit <code>0x01</code> flags <code>NOT NULL</code></li>
 </ul>
 </li>
 <li>The literal values may change in the future, do not hard code them.</li>
-<li>The values may expand to use a total of 4 or 8 bytes to accommodate more stuff. </li>
+<li>The values may expand to use a total of 4 or 8 bytes to accommodate more stuff.</li>
 </ul>
+<p>Definition constants are never returned by this class' methods. The methods can only receive them. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Properties</h2></td></tr>
-<tr class="memitem:2202042"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#2202042">I_PRIMARY</a> = 0x8000</td></tr>
+<tr class="memitem:e323db3"><td class="memItemLeft" align="right" valign="top"><a id="e323db3"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>DATETIME_FORMAT</b> = 'Y-m-d H:i:s'</td></tr>
+<tr class="separator:e323db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2202042"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#2202042">I_PRIMARY</a> = 0xfe00</td></tr>
 <tr class="memdesc:2202042"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;I_CONST&gt;</code>: <a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> is the primary key.  <a href="Helix_DB_Schema.html#2202042">More...</a><br /></td></tr>
 <tr class="separator:2202042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:7d7d08b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#7d7d08b">I_UNIQUE</a> = 0x2000</td></tr>
+<tr class="memitem:7d7d08b"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#7d7d08b">I_UNIQUE</a> = 0xfd00</td></tr>
 <tr class="memdesc:7d7d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;I_CONST&gt;</code>: <a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> is unique.  <a href="Helix_DB_Schema.html#7d7d08b">More...</a><br /></td></tr>
 <tr class="separator:7d7d08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:8eb4825"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#8eb4825">PHP_TYPE_NAMES</a></td></tr>
-<tr class="memdesc:8eb4825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps native/annotated types to <code>T_CONST</code> names.  <a href="Helix_DB_Schema.html#8eb4825">More...</a><br /></td></tr>
-<tr class="separator:8eb4825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb9b8a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#aeb9b8a">T_AUTOINCREMENT</a> = self::I_AUTOINCREMENT | self::T_INT_STRICT</td></tr>
+<tr class="memitem:aeb9b8a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#aeb9b8a">T_AUTOINCREMENT</a> = self::I_AUTOINCREMENT | self::T_INT</td></tr>
 <tr class="memdesc:aeb9b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: <a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> is the primary key and auto-increments (8-byte signed integer).  <a href="Helix_DB_Schema.html#aeb9b8a">More...</a><br /></td></tr>
 <tr class="separator:aeb9b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:c213f11"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#c213f11">T_BLOB</a> = 0x0002</td></tr>
+<tr class="memitem:c213f11"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#c213f11">T_BLOB</a> = 0x03</td></tr>
 <tr class="memdesc:c213f11"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: Arbitrary binary data up to 4GiB.  <a href="Helix_DB_Schema.html#c213f11">More...</a><br /></td></tr>
 <tr class="separator:c213f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ff7e525"><td class="memItemLeft" align="right" valign="top"><a id="ff7e525"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>T_BLOB_STRICT</b> = self::T_BLOB | self::T_STRICT</td></tr>
-<tr class="separator:ff7e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:4dada82"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#4dada82">T_BOOL</a> = 0x0080</td></tr>
+<tr class="memitem:5922563"><td class="memItemLeft" align="right" valign="top"><a id="5922563"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>T_BLOB_NULL</b> = 0x02</td></tr>
+<tr class="separator:5922563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4dada82"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#4dada82">T_BOOL</a> = 0xff</td></tr>
 <tr class="memdesc:4dada82"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: Boolean analog (numeric).  <a href="Helix_DB_Schema.html#4dada82">More...</a><br /></td></tr>
 <tr class="separator:4dada82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:9c6490e"><td class="memItemLeft" align="right" valign="top"><a id="9c6490e"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>T_BOOL_STRICT</b> = self::T_BOOL | self::T_STRICT</td></tr>
-<tr class="separator:9c6490e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:eec4aae"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#eec4aae">T_FLOAT</a> = 0x0020</td></tr>
+<tr class="memitem:e546da6"><td class="memItemLeft" align="right" valign="top"><a id="e546da6"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>T_BOOL_NULL</b> = 0xfe</td></tr>
+<tr class="separator:e546da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c580f64"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#c580f64">T_CONST_NAMES</a></td></tr>
+<tr class="memdesc:c580f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps native/annotated types to <code>T_CONST</code> names.  <a href="Helix_DB_Schema.html#c580f64">More...</a><br /></td></tr>
+<tr class="separator:c580f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:458dd78"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#458dd78">T_DATETIME</a> = 0xf9</td></tr>
+<tr class="memdesc:458dd78"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: Native <code>DATETIME</code> type, stored as <code>YYYY-MM-DD hh:mm:ss</code> UTC.  <a href="Helix_DB_Schema.html#458dd78">More...</a><br /></td></tr>
+<tr class="separator:458dd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:1ab9b02"><td class="memItemLeft" align="right" valign="top"><a id="1ab9b02"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>T_DATETIME_NULL</b> = 0xf8</td></tr>
+<tr class="separator:1ab9b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eec4aae"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#eec4aae">T_FLOAT</a> = 0xfb</td></tr>
 <tr class="memdesc:eec4aae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: 8-byte IEEE floating point number.  <a href="Helix_DB_Schema.html#eec4aae">More...</a><br /></td></tr>
 <tr class="separator:eec4aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d7e95f6"><td class="memItemLeft" align="right" valign="top"><a id="d7e95f6"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>T_FLOAT_STRICT</b> = self::T_FLOAT | self::T_STRICT</td></tr>
-<tr class="separator:d7e95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:5c6f814"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#5c6f814">T_INT</a> = 0x0040</td></tr>
+<tr class="memitem:ec870a6"><td class="memItemLeft" align="right" valign="top"><a id="ec870a6"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>T_FLOAT_NULL</b> = 0xfa</td></tr>
+<tr class="separator:ec870a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:5c6f814"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#5c6f814">T_INT</a> = 0xfd</td></tr>
 <tr class="memdesc:5c6f814"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: 8-byte signed integer.  <a href="Helix_DB_Schema.html#5c6f814">More...</a><br /></td></tr>
 <tr class="separator:5c6f814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d7a12ad"><td class="memItemLeft" align="right" valign="top"><a id="d7a12ad"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>T_INT_STRICT</b> = self::T_INT | self::T_STRICT</td></tr>
-<tr class="separator:d7a12ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ba3429d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#ba3429d">T_STRING</a> = 0x0008</td></tr>
+<tr class="memitem:12f8d82"><td class="memItemLeft" align="right" valign="top"><a id="12f8d82"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>T_INT_NULL</b> = 0xfc</td></tr>
+<tr class="separator:12f8d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ba3429d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#ba3429d">T_STRING</a> = 0xf7</td></tr>
 <tr class="memdesc:ba3429d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: UTF-8 up to 255 bytes.  <a href="Helix_DB_Schema.html#ba3429d">More...</a><br /></td></tr>
 <tr class="separator:ba3429d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f62f8ee"><td class="memItemLeft" align="right" valign="top"><a id="f62f8ee"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>T_STRING_STRICT</b> = self::T_STRING | self::T_STRICT</td></tr>
-<tr class="separator:f62f8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:9c14207"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#9c14207">T_TEXT</a> = 0x0004</td></tr>
+<tr class="memitem:cb69985"><td class="memItemLeft" align="right" valign="top"><a id="cb69985"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>T_STRING_NULL</b> = 0xf6</td></tr>
+<tr class="separator:cb69985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9c14207"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#9c14207">T_TEXT</a> = 0x05</td></tr>
 <tr class="memdesc:9c14207"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: UTF-8 up to 64KiB.  <a href="Helix_DB_Schema.html#9c14207">More...</a><br /></td></tr>
 <tr class="separator:9c14207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:c514a2a"><td class="memItemLeft" align="right" valign="top"><a id="c514a2a"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>T_TEXT_STRICT</b> = self::T_TEXT | self::T_STRICT</td></tr>
-<tr class="separator:c514a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ef0e122"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#ef0e122">TABLE_FOREIGN</a> = 1</td></tr>
+<tr class="memitem:c1e0543"><td class="memItemLeft" align="right" valign="top"><a id="c1e0543"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>T_TEXT_NULL</b> = 0x04</td></tr>
+<tr class="separator:c1e0543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ef0e122"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#ef0e122">TABLE_FOREIGN</a> = 2</td></tr>
 <tr class="memdesc:ef0e122"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;TABLE_CONST&gt;</code>: Associative foreign keys.  <a href="Helix_DB_Schema.html#ef0e122">More...</a><br /></td></tr>
 <tr class="separator:ef0e122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e6962cc"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#e6962cc">TABLE_PRIMARY</a> = 0</td></tr>
 <tr class="memdesc:e6962cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;TABLE_CONST&gt;</code>: Multi-column primary key.  <a href="Helix_DB_Schema.html#e6962cc">More...</a><br /></td></tr>
 <tr class="separator:e6962cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:1ec79ef"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#1ec79ef">TABLE_UNIQUE</a> = 2</td></tr>
+<tr class="memitem:1ec79ef"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#1ec79ef">TABLE_UNIQUE</a> = 1</td></tr>
 <tr class="memdesc:1ec79ef"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;TABLE_CONST&gt;</code>: Groups of columns are unique together.  <a href="Helix_DB_Schema.html#1ec79ef">More...</a><br /></td></tr>
 <tr class="separator:1ec79ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -175,22 +183,19 @@ int[]&#160;</td><td class="memItemRight" valign="bottom"><b>$colDefs</b></td></t
 <tr class="memitem:71520c6"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#71520c6">COLUMN_DEFINITIONS</a></td></tr>
 <tr class="memdesc:71520c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-specific schema phrases.  <a href="Helix_DB_Schema.html#71520c6">More...</a><br /></td></tr>
 <tr class="separator:71520c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a223d38"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#a223d38">I_AUTOINCREMENT</a> = 0x4000 | self::I_PRIMARY</td></tr>
+<tr class="memitem:a223d38"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#a223d38">I_AUTOINCREMENT</a> = 0xff00</td></tr>
 <tr class="memdesc:a223d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial definition for <code>T_AUTOINCREMENT</code>, use that in compositions instead of this.  <a href="Helix_DB_Schema.html#a223d38">More...</a><br /></td></tr>
 <tr class="separator:a223d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a695c30"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#a695c30">I_MASK</a> = 0xFF00</td></tr>
+<tr class="memitem:a695c30"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#a695c30">I_MASK</a> = 0xff00</td></tr>
 <tr class="memdesc:a695c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher byte mask (column index type).  <a href="Helix_DB_Schema.html#a695c30">More...</a><br /></td></tr>
 <tr class="separator:a695c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6eb3dcc"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#6eb3dcc">PHP_TYPES</a></td></tr>
-<tr class="memdesc:6eb3dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps native/annotated types to <code>T_CONST</code> values.  <a href="Helix_DB_Schema.html#6eb3dcc">More...</a><br /></td></tr>
+<tr class="memdesc:6eb3dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps column types reported by the database into PHP native/annotated types.  <a href="Helix_DB_Schema.html#6eb3dcc">More...</a><br /></td></tr>
 <tr class="separator:6eb3dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:131ec9d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#131ec9d">SCHEMA_TYPES</a></td></tr>
-<tr class="memdesc:131ec9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps column types reported by the database into PHP native/annotated types.  <a href="Helix_DB_Schema.html#131ec9d">More...</a><br /></td></tr>
-<tr class="separator:131ec9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:9d1781d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#9d1781d">T_MASK</a> = 0x00FF</td></tr>
+<tr class="memitem:9d1781d"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#9d1781d">T_MASK</a> = 0xff</td></tr>
 <tr class="memdesc:9d1781d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower-byte mask (column storage type).  <a href="Helix_DB_Schema.html#9d1781d">More...</a><br /></td></tr>
 <tr class="separator:9d1781d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:6517d10"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#6517d10">T_STRICT</a> = 0x0001</td></tr>
+<tr class="memitem:6517d10"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#6517d10">T_STRICT</a> = 0x01</td></tr>
 <tr class="memdesc:6517d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags whether a type is <code>NOT NULL</code>  <a href="Helix_DB_Schema.html#6517d10">More...</a><br /></td></tr>
 <tr class="separator:6517d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -203,9 +208,9 @@ Public Static Methods</h2></td></tr>
 Public Methods</h2></td></tr>
 <tr class="memitem:d20e64b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#d20e64b">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db)</td></tr>
 <tr class="separator:d20e64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:fce220e"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#fce220e">addColumn</a> (string $table, string $column, int $type=self::T_STRING)</td></tr>
-<tr class="memdesc:fce220e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>ALTER TABLE $table ADD COLUMN $column ...</code>  <a href="Helix_DB_Schema.html#fce220e">More...</a><br /></td></tr>
-<tr class="separator:fce220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9301349"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#9301349">addColumn</a> (string $table, string $column, int $type=self::T_STRING_NULL)</td></tr>
+<tr class="memdesc:9301349"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>ALTER TABLE $table ADD COLUMN $column ...</code>  <a href="Helix_DB_Schema.html#9301349">More...</a><br /></td></tr>
+<tr class="separator:9301349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e5f6c8a"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#e5f6c8a">createTable</a> (string $table, array $columns, array $constraints=[])</td></tr>
 <tr class="memdesc:e5f6c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CREATE TABLE $table ...</code>  <a href="Helix_DB_Schema.html#e5f6c8a">More...</a><br /></td></tr>
 <tr class="separator:e5f6c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,7 +254,7 @@ Protected Methods</h2></td></tr>
 <tr class="memitem:adc9bcf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#adc9bcf">toForeignKeyConstraint</a> (string $table, string $local, int $type, <a class="el" href="Helix_DB_Column.html">Column</a> $foreign)</td></tr>
 <tr class="separator:adc9bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:77cdc85"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#77cdc85">toForeignKeyConstraint_name</a> (string $table, string $column)</td></tr>
-<tr class="memdesc:77cdc85"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>FK_TABLE__COLUMN__COLUMN__COLUMN</code>  <a href="Helix_DB_Schema.html#77cdc85">More...</a><br /></td></tr>
+<tr class="memdesc:77cdc85"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>FK_TABLE__COLUMN</code>  <a href="Helix_DB_Schema.html#77cdc85">More...</a><br /></td></tr>
 <tr class="separator:77cdc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e0decca"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#e0decca">toPrimaryKeyConstraint</a> (string $table, array $columns)</td></tr>
 <tr class="separator:e0decca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,7 +302,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const I_AUTOINCREMENT = 0x4000 | self::I_PRIMARY</td>
+          <td class="memname">const I_AUTOINCREMENT = 0xff00</td>
         </tr>
       </table>
   </td>
@@ -321,7 +326,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const I_MASK = 0xFF00</td>
+          <td class="memname">const I_MASK = 0xff00</td>
         </tr>
       </table>
   </td>
@@ -342,7 +347,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const I_PRIMARY = 0x8000</td>
+          <td class="memname">const I_PRIMARY = 0xfe00</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -358,40 +363,12 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const I_UNIQUE = 0x2000</td>
+          <td class="memname">const I_UNIQUE = 0xfd00</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>&lt;I_CONST&gt;</code>: <a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> is unique. </p>
-
-</div>
-</div>
-<a id="8eb4825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#8eb4825">&#9670;&nbsp;</a></span>PHP_TYPE_NAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const PHP_TYPE_NAMES</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,  </div>
-<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,   </div>
-<div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <span class="stringliteral">&#39;T_FLOAT&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,   </div>
-<div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <span class="stringliteral">&#39;T_STRING&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;T_TEXT&#39;</span>,   </div>
-<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,   </div>
-<div class="line">    ]</div>
-</div><!-- fragment -->
-<p>Maps native/annotated types to <code>T_CONST</code> names. </p>
-<p>This is used when generating migrations on the command-line. </p>
 
 </div>
 </div>
@@ -415,41 +392,6 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#4dada82">self::T_BOOL</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#4dada82">self::T_BOOL</a>,  </div>
-<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#eec4aae">self::T_FLOAT</a>,  </div>
-<div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#eec4aae">self::T_FLOAT</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#5c6f814">self::T_INT</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#5c6f814">self::T_INT</a>,   </div>
-<div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#ba3429d">self::T_STRING</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#9c14207">self::T_TEXT</a>,   </div>
-<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <a class="code" href="Helix_DB_Schema.html#c213f11">self::T_BLOB</a>    </div>
-<div class="line">    ]</div>
-</div><!-- fragment -->
-<p>Maps native/annotated types to <code>T_CONST</code> values. </p>
-
-</div>
-</div>
-<a id="131ec9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#131ec9d">&#9670;&nbsp;</a></span>SCHEMA_TYPES</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const SCHEMA_TYPES</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        </div>
 <div class="line">        <span class="stringliteral">&#39;BOOLEAN&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
 <div class="line">        </div>
@@ -460,13 +402,16 @@ Protected Methods</h2></td></tr>
 <div class="line">        </div>
 <div class="line">        <span class="stringliteral">&#39;VARCHAR(255)&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
 <div class="line">        </div>
-<div class="line">        <span class="stringliteral">&#39;TEXT&#39;</span> =&gt; <span class="stringliteral">&#39;String&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;TEXT&#39;</span> =&gt; <span class="stringliteral">&#39;String&#39;</span>,     </div>
 <div class="line">        </div>
 <div class="line">        <span class="stringliteral">&#39;BLOB&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>,     </div>
 <div class="line">        <span class="stringliteral">&#39;LONGBLOB&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>, </div>
+<div class="line">        </div>
+<div class="line">        <span class="stringliteral">&#39;DATETIME&#39;</span> =&gt; <span class="stringliteral">&#39;DateTime&#39;</span>,</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>Maps column types reported by the database into PHP native/annotated types. </p>
+<p>This is used by <a class="el" href="Helix_DB_Schema.html#0d11dc4">Schema::getColumnInfo()</a> </p>
 
 </div>
 </div>
@@ -477,7 +422,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const T_AUTOINCREMENT = self::I_AUTOINCREMENT | self::T_INT_STRICT</td>
+          <td class="memname">const T_AUTOINCREMENT = self::I_AUTOINCREMENT | self::T_INT</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -493,7 +438,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const T_BLOB = 0x0002</td>
+          <td class="memname">const T_BLOB = 0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -509,12 +454,57 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const T_BOOL = 0x0080</td>
+          <td class="memname">const T_BOOL = 0xff</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>&lt;T_CONST&gt;</code>: Boolean analog (numeric). </p>
+
+</div>
+</div>
+<a id="c580f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c580f64">&#9670;&nbsp;</a></span>T_CONST_NAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T_CONST_NAMES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,      </div>
+<div class="line">        <span class="stringliteral">&#39;DateTime&#39;</span> =&gt; <span class="stringliteral">&#39;T_DATETIME&#39;</span>, </div>
+<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,       </div>
+<div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <span class="stringliteral">&#39;T_FLOAT&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,       </div>
+<div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <span class="stringliteral">&#39;T_STRING&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;T_TEXT&#39;</span>,       </div>
+<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,       </div>
+<div class="line">    ]</div>
+</div><!-- fragment -->
+<p>Maps native/annotated types to <code>T_CONST</code> names. </p>
+<p>This is used when generating migrations on the command-line. </p>
+
+</div>
+</div>
+<a id="458dd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#458dd78">&#9670;&nbsp;</a></span>T_DATETIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T_DATETIME = 0xf9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>&lt;T_CONST&gt;</code>: Native <code>DATETIME</code> type, stored as <code>YYYY-MM-DD hh:mm:ss</code> UTC. </p>
 
 </div>
 </div>
@@ -525,7 +515,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const T_FLOAT = 0x0020</td>
+          <td class="memname">const T_FLOAT = 0xfb</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -541,7 +531,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const T_INT = 0x0040</td>
+          <td class="memname">const T_INT = 0xfd</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -560,7 +550,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const T_MASK = 0x00FF</td>
+          <td class="memname">const T_MASK = 0xff</td>
         </tr>
       </table>
   </td>
@@ -584,7 +574,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const T_STRICT = 0x0001</td>
+          <td class="memname">const T_STRICT = 0x01</td>
         </tr>
       </table>
   </td>
@@ -605,7 +595,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const T_STRING = 0x0008</td>
+          <td class="memname">const T_STRING = 0xf7</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -621,7 +611,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const T_TEXT = 0x0004</td>
+          <td class="memname">const T_TEXT = 0x05</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -637,7 +627,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const TABLE_FOREIGN = 1</td>
+          <td class="memname">const TABLE_FOREIGN = 2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -669,7 +659,7 @@ Protected Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const TABLE_UNIQUE = 2</td>
+          <td class="memname">const TABLE_UNIQUE = 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -704,8 +694,8 @@ Protected Methods</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
-<a id="fce220e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fce220e">&#9670;&nbsp;</a></span>addColumn()</h2>
+<a id="9301349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#9301349">&#9670;&nbsp;</a></span>addColumn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -726,7 +716,7 @@ Protected Methods</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$type</em> = <code>self::T_STRING</code>&#160;</td>
+          <td class="paramname"><em>$type</em> = <code>self::T_STRING_NULL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -923,6 +913,7 @@ Protected Methods</h2></td></tr>
 <li><code>type</code>: PHP native/annotated type (as a string)</li>
 <li><code>nullable</code>: boolean</li>
 </ul>
+<p>The returned <code>type</code> can be used to get a <code>T_CONST</code> name from <a class="el" href="Helix_DB_Schema.html#c580f64">Schema::T_CONST_NAMES</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
@@ -1369,7 +1360,7 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><code>FK_TABLE__COLUMN__COLUMN__COLUMN</code> </p>
+<p><code>FK_TABLE__COLUMN</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
@@ -1563,12 +1554,6 @@ Protected Methods</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aHelix_DB_Schema_html_5c6f814"><div class="ttname"><a href="Helix_DB_Schema.html#5c6f814">Helix\DB\Schema\T_INT</a></div><div class="ttdeci">const T_INT</div><div class="ttdoc">&lt;T_CONST&gt;: 8-byte signed integer.</div><div class="ttdef"><b>Definition:</b> Schema.php:90</div></div>
-<div class="ttc" id="aHelix_DB_Schema_html_ba3429d"><div class="ttname"><a href="Helix_DB_Schema.html#ba3429d">Helix\DB\Schema\T_STRING</a></div><div class="ttdeci">const T_STRING</div><div class="ttdoc">&lt;T_CONST&gt;: UTF-8 up to 255 bytes.</div><div class="ttdef"><b>Definition:</b> Schema.php:102</div></div>
-<div class="ttc" id="aHelix_DB_Schema_html_4dada82"><div class="ttname"><a href="Helix_DB_Schema.html#4dada82">Helix\DB\Schema\T_BOOL</a></div><div class="ttdeci">const T_BOOL</div><div class="ttdoc">&lt;T_CONST&gt;: Boolean analog (numeric).</div><div class="ttdef"><b>Definition:</b> Schema.php:84</div></div>
-<div class="ttc" id="aHelix_DB_Schema_html_9c14207"><div class="ttname"><a href="Helix_DB_Schema.html#9c14207">Helix\DB\Schema\T_TEXT</a></div><div class="ttdeci">const T_TEXT</div><div class="ttdoc">&lt;T_CONST&gt;: UTF-8 up to 64KiB.</div><div class="ttdef"><b>Definition:</b> Schema.php:108</div></div>
-<div class="ttc" id="aHelix_DB_Schema_html_eec4aae"><div class="ttname"><a href="Helix_DB_Schema.html#eec4aae">Helix\DB\Schema\T_FLOAT</a></div><div class="ttdeci">const T_FLOAT</div><div class="ttdoc">&lt;T_CONST&gt;: 8-byte IEEE floating point number.</div><div class="ttdef"><b>Definition:</b> Schema.php:96</div></div>
-<div class="ttc" id="aHelix_DB_Schema_html_c213f11"><div class="ttname"><a href="Helix_DB_Schema.html#c213f11">Helix\DB\Schema\T_BLOB</a></div><div class="ttdeci">const T_BLOB</div><div class="ttdoc">&lt;T_CONST&gt;: Arbitrary binary data up to 4GiB.</div><div class="ttdef"><b>Definition:</b> Schema.php:114</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
