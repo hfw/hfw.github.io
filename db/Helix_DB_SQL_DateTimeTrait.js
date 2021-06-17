@@ -7,6 +7,7 @@ var Helix_DB_SQL_DateTimeTrait =
     [ "dayOfWeek", "Helix_DB_SQL_DateTimeTrait.html#139ce13", null ],
     [ "dayOfYear", "Helix_DB_SQL_DateTimeTrait.html#e671fc0", null ],
     [ "hours", "Helix_DB_SQL_DateTimeTrait.html#6d6e301", null ],
+    [ "iso8601", "Helix_DB_SQL_DateTimeTrait.html#995c497", null ],
     [ "minutes", "Helix_DB_SQL_DateTimeTrait.html#e90d103", null ],
     [ "month", "Helix_DB_SQL_DateTimeTrait.html#431211f", null ],
     [ "seconds", "Helix_DB_SQL_DateTimeTrait.html#abc0db4", null ],
