@@ -12,6 +12,8 @@ var Helix_DB_SQL_DateTimeTrait =
     [ "seconds", "Helix_DB_SQL_DateTimeTrait.html#abc0db4", null ],
     [ "time", "Helix_DB_SQL_DateTimeTrait.html#b14ee35", null ],
     [ "timestamp", "Helix_DB_SQL_DateTimeTrait.html#b2398f0", null ],
+    [ "toLocalTz", "Helix_DB_SQL_DateTimeTrait.html#a21426f", null ],
+    [ "toUtc", "Helix_DB_SQL_DateTimeTrait.html#c1531fe", null ],
     [ "weekOfYear", "Helix_DB_SQL_DateTimeTrait.html#feb7a44", null ],
     [ "year", "Helix_DB_SQL_DateTimeTrait.html#b50d156", null ]
 ];

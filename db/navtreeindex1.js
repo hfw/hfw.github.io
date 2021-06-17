@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"Helix_DB_SQL_NumTrait.html#4c6d449":[3,0,0,0,9,3],
+"Helix_DB_SQL_NumTrait.html#13aa91a":[3,0,0,0,9,23],
 "Helix_DB_SQL_NumTrait.html#c6b99c5":[3,0,0,0,9,6],
 "Helix_DB_SQL_NumTrait.html#488ea13":[3,0,0,0,9,17],
 "Helix_DB_SQL_NumTrait.html#96237ea":[3,0,0,0,9,2],
@@ -33,9 +35,10 @@ var NAVTREEINDEX1 =
 "Helix_DB_SQL_TextTrait.html#3498059":[3,0,0,0,12,2],
 "Helix_DB_SQL_TextTrait.html#72bdf38":[3,0,0,0,12,0],
 "Helix_DB_SQL_TextTrait.html#42e4ca4":[3,0,0,0,12,1],
+"Helix_DB_SQL_TextTrait.html#e84ac9b":[3,0,0,0,12,7],
 "Helix_DB_SQL_TextTrait.html#a2ca7b0":[3,0,0,0,12,4],
 "Helix_DB_SQL_TextTrait.html#6568bf4":[3,0,0,0,12,3],
-"Helix_DB_SQL_TextTrait.html#8de0e5d":[3,0,0,0,12,7],
+"Helix_DB_SQL_TextTrait.html#8de0e5d":[3,0,0,0,12,8],
 "Helix_DB_SQL_TextTrait.html#d207ac1":[3,0,0,0,12,5],
 "Helix_DB_SQL_Value.html":[3,0,0,0,13],
 "Helix_DB_Schema.html":[3,0,0,10],

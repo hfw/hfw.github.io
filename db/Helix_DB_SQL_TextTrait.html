@@ -107,6 +107,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:cc61b3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_TextTrait.html#cc61b3a">substr</a> (int $start, int $<a class="el" href="Helix_DB_SQL_TextTrait.html#42e4ca4">length</a>=null)</td></tr>
 <tr class="memdesc:cc61b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substring.  <a href="Helix_DB_SQL_TextTrait.html#cc61b3a">More...</a><br /></td></tr>
 <tr class="separator:cc61b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e84ac9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_TextTrait.html#e84ac9b">toDateTime</a> ()</td></tr>
+<tr class="memdesc:e84ac9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpret the expression as a datetime.  <a href="Helix_DB_SQL_TextTrait.html#e84ac9b">More...</a><br /></td></tr>
+<tr class="separator:e84ac9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:8de0e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_TextTrait.html#8de0e5d">upper</a> ()</td></tr>
 <tr class="memdesc:8de0e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uppercase.  <a href="Helix_DB_SQL_TextTrait.html#8de0e5d">More...</a><br /></td></tr>
 <tr class="separator:8de0e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,6 +301,36 @@ Public Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
+
+</div>
+</div>
+<a id="e84ac9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e84ac9b">&#9670;&nbsp;</a></span>toDateTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_DateTime.html">DateTime</a> toDateTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interpret the expression as a datetime. </p>
+<blockquote class="doxtable">
+<p>Warning: If the expression is in the local timezone you should chain this with <a class="el" href="Helix_DB_SQL_DateTimeTrait.html#c1531fe">DateTime::toUtc()</a> </p>
+</blockquote>
+<p>SQLite:</p><ul>
+<li>The expression's value must conform to one of any <code>time-value</code> formats.</li>
+<li><a href="https://www.sqlite.org/lang_datefunc.html">https://www.sqlite.org/lang_datefunc.html</a></li>
+</ul>
+<p>MySQL:</p><ul>
+<li>The expression's value must conform to <code>YYYY-MM-DD hh:mm:ss</code></li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression.">DateTime</a> </dd></dl>
 
 </div>
 </div>

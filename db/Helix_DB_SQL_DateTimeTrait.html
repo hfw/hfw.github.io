@@ -126,6 +126,12 @@ Public Methods</h2></td></tr>
 <tr class="memitem:b2398f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#b2398f0">timestamp</a> ()</td></tr>
 <tr class="memdesc:b2398f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unix timestamp.  <a href="Helix_DB_SQL_DateTimeTrait.html#b2398f0">More...</a><br /></td></tr>
 <tr class="separator:b2398f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21426f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#a21426f">toLocalTz</a> ()</td></tr>
+<tr class="memdesc:a21426f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the timezone from UTC to the local timezone.  <a href="Helix_DB_SQL_DateTimeTrait.html#a21426f">More...</a><br /></td></tr>
+<tr class="separator:a21426f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c1531fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#c1531fe">toUtc</a> ()</td></tr>
+<tr class="memdesc:c1531fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the timezone from the local timezone to UTC.  <a href="Helix_DB_SQL_DateTimeTrait.html#c1531fe">More...</a><br /></td></tr>
+<tr class="separator:c1531fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:feb7a44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_SQL_DateTimeTrait.html#feb7a44">weekOfYear</a> ()</td></tr>
 <tr class="memdesc:feb7a44"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>53</code>  <a href="Helix_DB_SQL_DateTimeTrait.html#feb7a44">More...</a><br /></td></tr>
 <tr class="separator:feb7a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -378,6 +384,59 @@ Public Methods</h2></td></tr>
 
 <p>Unix timestamp. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+
+</div>
+</div>
+<a id="a21426f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21426f">&#9670;&nbsp;</a></span>toLocalTz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_DateTime.html">DateTime</a> toLocalTz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the timezone from UTC to the local timezone. </p>
+<ul>
+<li>SQLite: Uses the operating system's timezone.</li>
+<li>MySQL: Uses PHP's timezone.</li>
+</ul>
+<blockquote class="doxtable">
+<p>Warning: Chaining this multiple times will further change the timezone offset. </p>
+</blockquote>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression.">DateTime</a> </dd></dl>
+
+</div>
+</div>
+<a id="c1531fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c1531fe">&#9670;&nbsp;</a></span>toUtc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_DB_SQL_DateTime.html">DateTime</a> toUtc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the timezone from the local timezone to UTC. </p>
+<blockquote class="doxtable">
+<p>Warning: Datetimes are already stored and retrieved as UTC. Only use this if you know the expression is in the local timezone. </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>Warning: Chaining this multiple times will further change the timezone offset. </p>
+</blockquote>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression.">DateTime</a> </dd></dl>
 
 </div>
 </div>

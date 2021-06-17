@@ -7,5 +7,6 @@ var Helix_DB_SQL_TextTrait =
     [ "replace", "Helix_DB_SQL_TextTrait.html#a2ca7b0", null ],
     [ "size", "Helix_DB_SQL_TextTrait.html#d207ac1", null ],
     [ "substr", "Helix_DB_SQL_TextTrait.html#cc61b3a", null ],
+    [ "toDateTime", "Helix_DB_SQL_TextTrait.html#e84ac9b", null ],
     [ "upper", "Helix_DB_SQL_TextTrait.html#8de0e5d", null ]
 ];
