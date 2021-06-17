@@ -127,7 +127,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>T_BLOB_NULL</b> = 0x
 const&#160;</td><td class="memItemRight" valign="bottom"><b>T_BOOL_NULL</b> = 0xfe</td></tr>
 <tr class="separator:e546da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c580f64"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#c580f64">T_CONST_NAMES</a></td></tr>
-<tr class="memdesc:c580f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps native/annotated types to <code>T_CONST</code> names.  <a href="Helix_DB_Schema.html#c580f64">More...</a><br /></td></tr>
+<tr class="memdesc:c580f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps storage types to <code>T_CONST</code> names.  <a href="Helix_DB_Schema.html#c580f64">More...</a><br /></td></tr>
 <tr class="separator:c580f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:458dd78"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#458dd78">T_DATETIME</a> = 0xf9</td></tr>
 <tr class="memdesc:458dd78"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>&lt;T_CONST&gt;</code>: Native <code>DATETIME</code> type, stored as <code>YYYY-MM-DD hh:mm:ss</code> UTC.  <a href="Helix_DB_Schema.html#458dd78">More...</a><br /></td></tr>
@@ -476,19 +476,17 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;T_BOOL&#39;</span>,      </div>
-<div class="line">        <span class="stringliteral">&#39;DateTime&#39;</span> =&gt; <span class="stringliteral">&#39;T_DATETIME&#39;</span>, </div>
-<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,       </div>
+<div class="line">        <span class="stringliteral">&#39;DateTime&#39;</span> =&gt; <span class="stringliteral">&#39;T_DATETIME&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <span class="stringliteral">&#39;T_FLOAT&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;T_INT&#39;</span>,       </div>
 <div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <span class="stringliteral">&#39;T_STRING&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;T_TEXT&#39;</span>,       </div>
-<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,       </div>
+<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;T_TEXT&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;T_BLOB&#39;</span>,</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
-<p>Maps native/annotated types to <code>T_CONST</code> names. </p>
-<p>This is used when generating migrations on the command-line. </p>
+<p>Maps storage types to <code>T_CONST</code> names. </p>
+<p>Resolved storage types in <a class="el" href="Helix_DB_Record.html">Record</a> are keys here.</p>
+<p>This is also used when generating migrations on the command-line. </p>
 
 </div>
 </div>

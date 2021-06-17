@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('Helix_DB_EAV.html',''); initResizable(
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
 <tr class="memitem:40a0ac8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#40a0ac8">$type</a></td></tr>
-<tr class="memdesc:40a0ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PHP-native scalar type for the <code>value</code> column (implied nullable).  <a href="Helix_DB_EAV.html#40a0ac8">More...</a><br /></td></tr>
+<tr class="memdesc:40a0ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scalar storage type for the <code>value</code> column (implied <code>NOT NULL</code>).  <a href="Helix_DB_EAV.html#40a0ac8">More...</a><br /></td></tr>
 <tr class="separator:40a0ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#13ea20d">$_cache</a> = []</td></tr>
@@ -128,12 +128,12 @@ Public Methods</h2></td></tr>
 <tr class="separator:1cada5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:400bb5a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#400bb5a">getType</a> ()</td></tr>
 <tr class="separator:400bb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:7c788ed"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#7c788ed">load</a> (int $id)</td></tr>
-<tr class="memdesc:7c788ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an entity's attributes.  <a href="Helix_DB_EAV.html#7c788ed">More...</a><br /></td></tr>
-<tr class="separator:7c788ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:78a3323"><td class="memItemLeft" align="right" valign="top">array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#78a3323">loadAll</a> (array $ids)</td></tr>
-<tr class="memdesc:78a3323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns associative attribute-value arrays for the given IDs.  <a href="Helix_DB_EAV.html#78a3323">More...</a><br /></td></tr>
-<tr class="separator:78a3323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e2ec08c"><td class="memItemLeft" align="right" valign="top">scalar[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#e2ec08c">load</a> (int $id)</td></tr>
+<tr class="memdesc:e2ec08c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an entity's attributes.  <a href="Helix_DB_EAV.html#e2ec08c">More...</a><br /></td></tr>
+<tr class="separator:e2ec08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:0ca866b"><td class="memItemLeft" align="right" valign="top">scalar[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#0ca866b">loadAll</a> (array $ids)</td></tr>
+<tr class="memdesc:0ca866b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns associative attribute-value arrays for the given IDs.  <a href="Helix_DB_EAV.html#0ca866b">More...</a><br /></td></tr>
+<tr class="separator:0ca866b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:83aeaf7"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#83aeaf7">save</a> (int $id, array $values)</td></tr>
 <tr class="memdesc:83aeaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upserts an entity's attributes with those given.  <a href="Helix_DB_EAV.html#83aeaf7">More...</a><br /></td></tr>
 <tr class="separator:83aeaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,8 +183,8 @@ Public Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
-<tr class="memitem:44bf71e"><td class="memItemLeft" align="right" valign="top">null scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#44bf71e">setType</a> ($value)</td></tr>
-<tr class="separator:44bf71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8b279ae"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#8b279ae">setType</a> ($value)</td></tr>
+<tr class="separator:8b279ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:ecd600e inherit pro_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#ecd600e">cache</a> (string $key, Closure $<a class="el" href="Helix_DB.html#187ddf1">prepare</a>)</td></tr>
 <tr class="memdesc:ecd600e inherit pro_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches a prepared statement.  <a href="Helix_DB_Table.html#ecd600e">More...</a><br /></td></tr>
@@ -211,7 +211,7 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The PHP-native scalar type for the <code>value</code> column (implied nullable). </p>
+<p>The scalar storage type for the <code>value</code> column (implied <code>NOT NULL</code>). </p>
 
 </div>
 </div>
@@ -394,14 +394,14 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="7c788ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#7c788ed">&#9670;&nbsp;</a></span>load()</h2>
+<a id="e2ec08c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e2ec08c">&#9670;&nbsp;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">array load </td>
+          <td class="memname">scalar [] load </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$id</em></td><td>)</td>
@@ -417,18 +417,18 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>array <code>[attribute =&gt; value]</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>scalar[] <code>[attribute =&gt; value]</code> </dd></dl>
 
 </div>
 </div>
-<a id="78a3323"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#78a3323">&#9670;&nbsp;</a></span>loadAll()</h2>
+<a id="0ca866b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#0ca866b">&#9670;&nbsp;</a></span>loadAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">array [] loadAll </td>
+          <td class="memname">scalar [][] loadAll </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$ids</em></td><td>)</td>
@@ -444,7 +444,7 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>array[] `[id =&gt; attribute =&gt; value] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>scalar[][] `[id =&gt; attribute =&gt; value] </dd></dl>
 
 </div>
 </div>
@@ -476,6 +476,7 @@ Protected Methods</h2></td></tr>
 
 <p>Upserts an entity's attributes with those given. </p>
 <p>Stored attributes not given here are pruned.</p>
+<p><code>NULL</code> attributes are also pruned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$id</td><td></td></tr>
@@ -487,8 +488,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="44bf71e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#44bf71e">&#9670;&nbsp;</a></span>setType()</h2>
+<a id="8b279ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8b279ae">&#9670;&nbsp;</a></span>setType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,7 +498,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">null scalar setType </td>
+          <td class="memname">scalar setType </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$value</em></td><td>)</td>
@@ -512,11 +513,11 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+    <tr><td class="paramtype">scalar</td><td class="paramname">$value</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>null|scalar </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>scalar </dd></dl>
 
 </div>
 </div>

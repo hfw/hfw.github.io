@@ -6,8 +6,8 @@ var Helix_DB_EAV =
     [ "factory", "Helix_DB_EAV.html#9fca692", null ],
     [ "findAll", "Helix_DB_EAV.html#1cada5c", null ],
     [ "getType", "Helix_DB_EAV.html#400bb5a", null ],
-    [ "load", "Helix_DB_EAV.html#7c788ed", null ],
-    [ "loadAll", "Helix_DB_EAV.html#78a3323", null ],
+    [ "load", "Helix_DB_EAV.html#e2ec08c", null ],
+    [ "loadAll", "Helix_DB_EAV.html#0ca866b", null ],
     [ "save", "Helix_DB_EAV.html#83aeaf7", null ],
-    [ "setType", "Helix_DB_EAV.html#44bf71e", null ]
+    [ "setType", "Helix_DB_EAV.html#8b279ae", null ]
 ];

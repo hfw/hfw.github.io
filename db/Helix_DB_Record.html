@@ -62,6 +62,7 @@ $(document).ready(function(){initNavTree('Helix_DB_Record.html',''); initResizab
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-attribs">Public Properties</a> &#124;
 <a href="#pro-attribs">Protected Properties</a> &#124;
 <a href="#pub-static-methods">Public Static Methods</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
@@ -102,6 +103,12 @@ $(document).ready(function(){initNavTree('Helix_DB_Record.html',''); initResizab
 </blockquote>
 <p>@TODO Allow constraints in the <code>column</code> tag, supporting single and multi-column. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Properties</h2></td></tr>
+<tr class="memitem:b2dc14c"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#b2dc14c">SCALARS</a></td></tr>
+<tr class="memdesc:b2dc14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps annotated/native scalar types to storage types acceptable for <code>settype()</code>  <a href="Helix_DB_Record.html#b2dc14c">More...</a><br /></td></tr>
+<tr class="separator:b2dc14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
 <tr class="memitem:2177d2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EAV.html">EAV</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#2177d2d">$eav</a> = []</td></tr>
@@ -120,12 +127,13 @@ Protected Properties</h2></td></tr>
 <tr class="memdesc:2f0e87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boilerplate instance of the class, to clone and populate.  <a href="Helix_DB_Record.html#2f0e87b">More...</a><br /></td></tr>
 <tr class="separator:2f0e87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f594f1e"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#f594f1e">$types</a> = []</td></tr>
-<tr class="memdesc:f594f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar property types.  <a href="Helix_DB_Record.html#f594f1e">More...</a><br /></td></tr>
+<tr class="memdesc:f594f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage types.  <a href="Helix_DB_Record.html#f594f1e">More...</a><br /></td></tr>
 <tr class="separator:f594f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:8695334"><td class="memItemLeft" align="right" valign="top"><a id="8695334"></a>
 DateTimeZone DateTimeZone&#160;</td><td class="memItemRight" valign="bottom"><b>$utc</b></td></tr>
 <tr class="separator:8695334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ddfcc26"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#ddfcc26">DEHYDRATE_AS</a></td></tr>
+<tr class="memdesc:ddfcc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps complex types to storage types.  <a href="Helix_DB_Record.html#ddfcc26">More...</a><br /></td></tr>
 <tr class="separator:ddfcc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e04da41"><td class="memItemLeft" align="right" valign="top"><a id="e04da41"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV</b> = '/\*\h*@eav\h+(?&lt;table&gt;\w+)/i'</td></tr>
@@ -136,11 +144,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV_VAR</b> = '/\
 <tr class="memitem:97c9e23"><td class="memItemLeft" align="right" valign="top"><a id="97c9e23"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_IS_COLUMN</b> = '/\*\h*@col(umn)?\b/i'</td></tr>
 <tr class="separator:97c9e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:48f702e"><td class="memItemLeft" align="right" valign="top"><a id="48f702e"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_IS_SCALAR</b> = '/^bool(ean)?|int(eger)?|float|double|string$/i'</td></tr>
-<tr class="separator:48f702e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:0634e04"><td class="memItemLeft" align="right" valign="top"><a id="0634e04"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_NULL</b> = '/\b\|?null\|?\b/i'</td></tr>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_NULL</b> = '/(\bnull\|)|(\|null\b)/i'</td></tr>
 <tr class="separator:0634e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7a5bbc2"><td class="memItemLeft" align="right" valign="top"><a id="7a5bbc2"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_RECORD</b> = '/\*\h*@record\h+(?&lt;table&gt;\w+)/i'</td></tr>
@@ -168,6 +173,7 @@ Public Static Methods</h2></td></tr>
 <tr class="memitem:6e94e70"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#6e94e70">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db, <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $proto, string $table, array $columns, array $eav=[])</td></tr>
 <tr class="separator:6e94e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c67b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Helix_DB_Record.html">Record</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#af3c67b">fromClass</a> (<a class="el" href="Helix_DB.html">DB</a> $db, $class)</td></tr>
+<tr class="memdesc:af3c67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs record-access from an annotated class.  <a href="Helix_DB_Record.html#af3c67b">More...</a><br /></td></tr>
 <tr class="separator:af3c67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Public Static Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:366b2a5 inherit pub_static_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#366b2a5">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $name, array $columns)</td></tr>
@@ -175,8 +181,8 @@ Public Static Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:8b4dd5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#8b4dd5b">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $proto, string $table, array $columns, array $eav=[])</td></tr>
-<tr class="separator:8b4dd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c170c86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#c170c86">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $proto, string $table, array $properties, array $eav=[])</td></tr>
+<tr class="separator:c170c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c686b9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#c686b9a">fetchAll</a> (<a class="el" href="Helix_DB_Statement.html">Statement</a> $statement)</td></tr>
 <tr class="memdesc:c686b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches from a statement into clones of the entity prototype.  <a href="Helix_DB_Record.html#c686b9a">More...</a><br /></td></tr>
 <tr class="separator:c686b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,6 +269,22 @@ Public Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
+<tr class="memitem:97a99a6"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#97a99a6">__construct_getType</a> (string $prop, ReflectionProperty $rProp)</td></tr>
+<tr class="memdesc:97a99a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a property's storage type during <a class="el" href="Helix_DB_Record.html#c170c86">Record::__construct()</a>.  <a href="Helix_DB_Record.html#97a99a6">More...</a><br /></td></tr>
+<tr class="separator:97a99a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:6afca0b"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#6afca0b">__construct_getType_fromReflection</a> (string $prop, ReflectionProperty $rProp)</td></tr>
+<tr class="memdesc:6afca0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This also sets <a class="el" href="Helix_DB_Record.html#e764b0f">Record::$hydration</a> for complex types.  <a href="Helix_DB_Record.html#6afca0b">More...</a><br /></td></tr>
+<tr class="separator:6afca0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b5c7358"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#b5c7358">__construct_getType_fromVar</a> (string $prop, ReflectionProperty $rProp)</td></tr>
+<tr class="memdesc:b5c7358"><td class="mdescLeft">&#160;</td><td class="mdescRight">This also sets <a class="el" href="Helix_DB_Record.html#e764b0f">Record::$hydration</a> for complex types ONLY IF <code>@var</code> uses a FQN.  <a href="Helix_DB_Record.html#b5c7358">More...</a><br /></td></tr>
+<tr class="separator:b5c7358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7c56989"><td class="memItemLeft" align="right" valign="top">null bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#7c56989">__construct_isNullable</a> (string $prop, ReflectionProperty $rProp)</td></tr>
+<tr class="memdesc:7c56989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a property's nullability during <a class="el" href="Helix_DB_Record.html#c170c86">Record::__construct()</a>.  <a href="Helix_DB_Record.html#7c56989">More...</a><br /></td></tr>
+<tr class="separator:7c56989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c3a6c6a"><td class="memItemLeft" align="right" valign="top">null bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#c3a6c6a">__construct_isNullable_fromReflection</a> (string $prop, ReflectionProperty $rProp)</td></tr>
+<tr class="separator:c3a6c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f6cad40"><td class="memItemLeft" align="right" valign="top">null bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#f6cad40">__construct_isNullable_fromVar</a> (string $prop, ReflectionProperty $rProp)</td></tr>
+<tr class="separator:f6cad40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef9e8"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#aaef9e8">getValues</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="separator:aaef9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:354b608"><td class="memItemLeft" align="right" valign="top">scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#354b608">getValues_dehydrate</a> (string $to, string $from, $hydrated)</td></tr>
@@ -411,7 +433,6 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A boilerplate instance of the class, to clone and populate. </p>
-<p>This defaults to a naively created instance without invoking the constructor. </p>
 
 </div>
 </div>
@@ -435,14 +456,7 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Scalar property types. </p>
-<p>Types may be nullable.</p>
-<ul>
-<li><code>bool</code></li>
-<li><code>float</code> or <code>double</code></li>
-<li><code>int</code></li>
-<li><code>string</code></li>
-</ul>
+<p>Storage types. </p>
 <p><code>[property =&gt; type]</code> </p>
 
 </div>
@@ -467,19 +481,53 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">        <span class="stringliteral">&#39;array&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>, </div>
-<div class="line">        <span class="stringliteral">&#39;object&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
-<div class="line">        stdClass::class =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;array&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>, </div>
+<div class="line">        <span class="stringliteral">&#39;object&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>, </div>
+<div class="line">        stdClass::class =&gt; <span class="stringliteral">&#39;STRING&#39;</span>, </div>
 <div class="line">        DateTime::class =&gt; <span class="stringliteral">&#39;DateTime&#39;</span>,</div>
 <div class="line">        DateTimeImmutable::class =&gt; <span class="stringliteral">&#39;DateTime&#39;</span>,</div>
 <div class="line">    ]</div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Schema.html#c580f64" title="Maps native/annotated types to T_CONST names.">Schema::T_CONST_NAMES</a> </dd></dl>
+</div><!-- fragment -->
+<p>Maps complex types to storage types. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Schema.html#c580f64" title="Maps storage types to T_CONST names.">Schema::T_CONST_NAMES</a> keys </dd></dl>
+
+</div>
+</div>
+<a id="b2dc14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b2dc14c">&#9670;&nbsp;</a></span>SCALARS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SCALARS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;float&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;false&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <span class="stringliteral">&#39;float&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;number&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;scalar&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;String&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;true&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
+<div class="line">    ]</div>
+</div><!-- fragment -->
+<p>Maps annotated/native scalar types to storage types acceptable for <code>settype()</code> </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Schema.html#c580f64" title="Maps storage types to T_CONST names.">Schema::T_CONST_NAMES</a> keys </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor</h2>
-<a id="8b4dd5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#8b4dd5b">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="c170c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c170c86">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +554,7 @@ Protected Methods</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$columns</em>, </td>
+          <td class="paramname"><em>$properties</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -526,7 +574,7 @@ Protected Methods</h2></td></tr>
     <tr><td class="paramtype"><a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a></td><td class="paramname">$db</td><td></td></tr>
     <tr><td class="paramtype"><a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s ID for storage.">EntityInterface</a></td><td class="paramname">$proto</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
-    <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td>Property names. </td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$properties</td><td>Property names. </td></tr>
     <tr><td class="paramtype"><a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a>[]</td><td class="paramname">$eav</td><td>Keyed by property name. </td></tr>
   </table>
   </dd>
@@ -535,6 +583,280 @@ Protected Methods</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
+<a id="97a99a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#97a99a6">&#9670;&nbsp;</a></span>__construct_getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null string __construct_getType </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReflectionProperty&#160;</td>
+          <td class="paramname"><em>$rProp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolves a property's storage type during <a class="el" href="Helix_DB_Record.html#c170c86">Record::__construct()</a>. </p>
+<p>Returns <code>null</code> for unknown. The constructor will fall back to checking the class default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">ReflectionProperty</td><td class="paramname">$rProp</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string Storage type, or <code>null</code> for unknown. </dd></dl>
+
+</div>
+</div>
+<a id="6afca0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#6afca0b">&#9670;&nbsp;</a></span>__construct_getType_fromReflection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null string __construct_getType_fromReflection </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReflectionProperty&#160;</td>
+          <td class="paramname"><em>$rProp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This also sets <a class="el" href="Helix_DB_Record.html#e764b0f">Record::$hydration</a> for complex types. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">ReflectionProperty</td><td class="paramname">$rProp</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string </dd></dl>
+
+</div>
+</div>
+<a id="b5c7358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b5c7358">&#9670;&nbsp;</a></span>__construct_getType_fromVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null string __construct_getType_fromVar </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReflectionProperty&#160;</td>
+          <td class="paramname"><em>$rProp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This also sets <a class="el" href="Helix_DB_Record.html#e764b0f">Record::$hydration</a> for complex types ONLY IF <code>@var</code> uses a FQN. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">ReflectionProperty</td><td class="paramname">$rProp</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string </dd></dl>
+
+</div>
+</div>
+<a id="7c56989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#7c56989">&#9670;&nbsp;</a></span>__construct_isNullable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null bool __construct_isNullable </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReflectionProperty&#160;</td>
+          <td class="paramname"><em>$rProp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolves a property's nullability during <a class="el" href="Helix_DB_Record.html#c170c86">Record::__construct()</a>. </p>
+<p>Returns <code>null</code> for unknown. The constructor will fall back to checking the class default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">ReflectionProperty</td><td class="paramname">$rProp</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|bool </dd></dl>
+
+</div>
+</div>
+<a id="c3a6c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c3a6c6a">&#9670;&nbsp;</a></span>__construct_isNullable_fromReflection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null bool __construct_isNullable_fromReflection </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReflectionProperty&#160;</td>
+          <td class="paramname"><em>$rProp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">ReflectionProperty</td><td class="paramname">$rProp</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|bool </dd></dl>
+
+</div>
+</div>
+<a id="f6cad40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f6cad40">&#9670;&nbsp;</a></span>__construct_isNullable_fromVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null bool __construct_isNullable_fromVar </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReflectionProperty&#160;</td>
+          <td class="paramname"><em>$rProp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">ReflectionProperty</td><td class="paramname">$rProp</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|bool </dd></dl>
+
+</div>
+</div>
 <a id="6e94e70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#6e94e70">&#9670;&nbsp;</a></span>factory()</h2>
 
@@ -755,10 +1077,13 @@ Protected Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructs record-access from an annotated class. </p>
+<p>If a prototype isn't given for <code>$class</code>, this defaults to creating an instance via reflection (without invoking the constructor).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a></td><td class="paramname">$db</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s ID for storage.">EntityInterface</a></td><td class="paramname">$class</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s ID for storage.">EntityInterface</a></td><td class="paramname">$class</td><td>Class or prototype instance. </td></tr>
   </table>
   </dd>
 </dl>
