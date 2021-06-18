@@ -52,7 +52,11 @@ var hierarchy =
     ] ],
     [ "MigrationInterface", "Helix_DB_MigrationInterface.html", null ],
     [ "Migrator", "Helix_DB_Migrator.html", null ],
-    [ "NumCastTrait", "Helix_DB_Fluent_Num_NumCastTrait.html", [
+    [ "NumCastFloatTrait", "Helix_DB_Fluent_Num_NumCastFloatTrait.html", [
+      [ "Text", "Helix_DB_Fluent_Text.html", null ],
+      [ "Value", "Helix_DB_Fluent_Value.html", null ]
+    ] ],
+    [ "NumCastIntTrait", "Helix_DB_Fluent_Num_NumCastIntTrait.html", [
       [ "NumTrait", "Helix_DB_Fluent_Num_NumTrait.html", null ],
       [ "Text", "Helix_DB_Fluent_Text.html", null ],
       [ "Value", "Helix_DB_Fluent_Value.html", null ]

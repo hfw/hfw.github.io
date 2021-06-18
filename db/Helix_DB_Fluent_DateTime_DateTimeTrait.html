@@ -75,17 +75,17 @@ $(document).ready(function(){initNavTree('Helix_DB_Fluent_DateTime_DateTimeTrait
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_Fluent_DateTime_DateTimeTrait__inherit__graph.png" border="0" usemap="#DateTimeTrait_inherit__map" alt="Inheritance graph"/></div>
 <map name="DateTimeTrait_inherit__map" id="DateTimeTrait_inherit__map">
-<area shape="rect" title="Produces datetime related expressions for the instance." alt="" coords="29,237,181,267"/>
+<area shape="rect" title="Date&#45;time expression manipulation." alt="" coords="29,237,181,267"/>
 <area shape="rect" href="Helix_DB_Column.html" title="Immutable column expression." alt="" coords="5,315,88,344"/>
-<area shape="rect" href="Helix_DB_Fluent_DateTime.html" title="Represents a date&#45;time expression." alt="" coords="113,315,215,344"/>
-<area shape="rect" href="Helix_DB_Fluent_Value_ValueTrait.html" title="Produces type&#45;independent expressions for the instance." alt="" coords="44,160,167,189"/>
-<area shape="rect" title="A trait for other traits in this namespace." alt="" coords="29,5,181,35"/>
-<area shape="rect" href="Helix_DB_Fluent_Value_AggregateTrait.html" title="Produces aggregate expressions for the instance." alt="" coords="24,83,187,112"/>
-<area shape="rect" href="Helix_DB_Fluent_Value_ComparisonTrait.html" title="Produces comparative expressions for the instance." alt="" coords="211,83,383,112"/>
+<area shape="rect" href="Helix_DB_Fluent_DateTime.html" title="A date&#45;time expression." alt="" coords="113,315,215,344"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_ValueTrait.html" title="Type&#45;agnostic functions." alt="" coords="44,160,167,189"/>
+<area shape="rect" title="A boilerplate trait for fluency traits in this namespace." alt="" coords="29,5,181,35"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_AggregateTrait.html" title="Aggregation functions." alt="" coords="24,83,187,112"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_ComparisonTrait.html" title="Comparative functions." alt="" coords="211,83,383,112"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Produces datetime related expressions for the instance. </p>
+<div class="textblock"><p>Date-time expression manipulation. </p>
 <p>Each DBMS has its own quirks with dates, which is beyond the scope of this library.</p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://sqlite.org/lang_datefunc.html">https://sqlite.org/lang_datefunc.html</a> </dd>
 <dd>
@@ -261,7 +261,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>YYYY-MM-DD</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>YYYY-MM-DD hh:mm:ss</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>01</code> to <code>31</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>0</code> to <code>6</code> (Sunday is <code>0</code>) </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -368,7 +368,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>001</code> to <code>366</code> (365 + 1 during leap year) </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>00</code> to <code>23</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Public Methods</h2></td></tr>
 
 <p>ISO-8601 compatible datetime string, offset <code>Z</code> (UTC/Zulu) </p>
 <p><a href="https://en.wikipedia.org/wiki/ISO_8601">https://en.wikipedia.org/wiki/ISO_8601</a></p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>00</code> to <code>59</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>01</code> to <code>12</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>00</code> to <code>59</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>00:00:00</code> to <code>23:59:59</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="Represents a text expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unix timestamp. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -536,7 +536,7 @@ Public Methods</h2></td></tr>
 <blockquote class="doxtable">
 <p>Warning: Chaining this multiple times will further change the timezone offset. </p>
 </blockquote>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_DateTime.html" title="Represents a date-time expression.">DateTime</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_DateTime.html" title="A date-time expression.">DateTime</a> </dd></dl>
 
 </div>
 </div>
@@ -562,7 +562,7 @@ Public Methods</h2></td></tr>
 <blockquote class="doxtable">
 <p>Warning: Chaining this multiple times will further change the timezone offset. </p>
 </blockquote>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_DateTime.html" title="Represents a date-time expression.">DateTime</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_DateTime.html" title="A date-time expression.">DateTime</a> </dd></dl>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>00</code> to <code>53</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>
@@ -602,7 +602,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>YYYY</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression.">Num</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Num.html" title="A numeric expression.">Num</a> </dd></dl>
 
 </div>
 </div>

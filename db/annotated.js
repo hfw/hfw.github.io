@@ -9,7 +9,8 @@ var annotated =
           ] ],
           [ "Num", null, [
             [ "BaseConversionTrait", "Helix_DB_Fluent_Num_BaseConversionTrait.html", "Helix_DB_Fluent_Num_BaseConversionTrait" ],
-            [ "NumCastTrait", "Helix_DB_Fluent_Num_NumCastTrait.html", "Helix_DB_Fluent_Num_NumCastTrait" ],
+            [ "NumCastFloatTrait", "Helix_DB_Fluent_Num_NumCastFloatTrait.html", "Helix_DB_Fluent_Num_NumCastFloatTrait" ],
+            [ "NumCastIntTrait", "Helix_DB_Fluent_Num_NumCastIntTrait.html", "Helix_DB_Fluent_Num_NumCastIntTrait" ],
             [ "NumTrait", "Helix_DB_Fluent_Num_NumTrait.html", "Helix_DB_Fluent_Num_NumTrait" ]
           ] ],
           [ "Text", null, [

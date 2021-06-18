@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"Helix_DB_Migrator.html#d4d7d2d":[3,0,0,8,2],
 "Helix_DB_Migrator.html#762f3ec":[3,0,0,8,9],
 "Helix_DB_Record.html":[3,0,0,9],
 "Helix_DB_Record.html#7c56989":[3,0,0,9,19],

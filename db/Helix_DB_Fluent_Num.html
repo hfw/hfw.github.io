@@ -74,24 +74,23 @@ $(document).ready(function(){initNavTree('Helix_DB_Fluent_Num.html',''); initRes
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_Fluent_Num__inherit__graph.png" border="0" usemap="#Num_inherit__map" alt="Inheritance graph"/></div>
 <map name="Num_inherit__map" id="Num_inherit__map">
-<area shape="rect" title="Represents a numeric expression." alt="" coords="896,139,948,168"/>
+<area shape="rect" title="A numeric expression." alt="" coords="896,139,948,168"/>
 <area shape="rect" href="Helix_DB_Fluent_Expression.html" title="A literal expression, exempt from being quoted." alt="" coords="705,59,828,88"/>
 <area shape="rect" title="Installs a magic static factory, where the signature can be changed to match the constructor,..." alt="" coords="460,5,603,35"/>
 <area shape="rect" href="Helix_DB_Fluent_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="425,59,637,88"/>
 <area shape="rect" href="Helix_DB_Fluent_ValueInterface.html" title="An expression that evaluates to a single value." alt="" coords="685,112,848,141"/>
-<area shape="rect" href="Helix_DB_Fluent_Num_NumTrait.html" title="Produces numeric expressions for the instance." alt="" coords="715,165,818,195"/>
-<area shape="rect" href="Helix_DB_Fluent_Value_ValueTrait.html" title="Produces type&#45;independent expressions for the instance." alt="" coords="470,112,593,141"/>
-<area shape="rect" title="A trait for other traits in this namespace." alt="" coords="5,140,157,169"/>
-<area shape="rect" href="Helix_DB_Fluent_Value_AggregateTrait.html" title="Produces aggregate expressions for the instance." alt="" coords="210,60,373,89"/>
-<area shape="rect" href="Helix_DB_Fluent_Value_ComparisonTrait.html" title="Produces comparative expressions for the instance." alt="" coords="205,113,377,143"/>
-<area shape="rect" href="Helix_DB_Fluent_Num_BaseConversionTrait.html" title="Convert a numeric expression to other bases." alt="" coords="425,165,637,195"/>
-<area shape="rect" href="Helix_DB_Fluent_Num_NumCastTrait.html" title=" " alt="" coords="220,217,363,247"/>
-<area shape="rect" href="Helix_DB_Fluent_Text_TextCastTrait.html" title=" " alt="" coords="691,244,843,273"/>
+<area shape="rect" href="Helix_DB_Fluent_Num_NumTrait.html" title="Numeric expression manipulation." alt="" coords="715,165,818,195"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_ValueTrait.html" title="Type&#45;agnostic functions." alt="" coords="470,112,593,141"/>
+<area shape="rect" title="A boilerplate trait for fluency traits in this namespace." alt="" coords="5,140,157,169"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_AggregateTrait.html" title="Aggregation functions." alt="" coords="210,60,373,89"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_ComparisonTrait.html" title="Comparative functions." alt="" coords="205,113,377,143"/>
+<area shape="rect" href="Helix_DB_Fluent_Num_BaseConversionTrait.html" title="Further manipulate the expression in a different numeric base." alt="" coords="425,165,637,195"/>
+<area shape="rect" href="Helix_DB_Fluent_Num_NumCastIntTrait.html" title="Further manipulate the expression as an integer." alt="" coords="205,217,377,247"/>
+<area shape="rect" href="Helix_DB_Fluent_Text_TextCastTrait.html" title="Further manipulate the expression as a character string." alt="" coords="691,244,843,273"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Represents a numeric expression. </p>
-<p>Produces various transformations. </p>
+<div class="textblock"><p>A numeric expression. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -310,16 +309,13 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$expression</b></td
 <tr class="memitem:402d24f inherit pub_methods_Helix_DB_Fluent_Num_BaseConversionTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Num_BaseConversionTrait.html#402d24f">toBase8</a> (int $from=10)</td></tr>
 <tr class="memdesc:402d24f inherit pub_methods_Helix_DB_Fluent_Num_BaseConversionTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert from an arbitrary base to base 8.  <a href="Helix_DB_Fluent_Num_BaseConversionTrait.html#402d24f">More...</a><br /></td></tr>
 <tr class="separator:402d24f inherit pub_methods_Helix_DB_Fluent_Num_BaseConversionTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_Helix_DB_Fluent_Num_NumCastTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_Fluent_Num_NumCastTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_Fluent_Num_NumCastTrait.html">NumCastTrait</a></td></tr>
-<tr class="memitem:e02b291 inherit pub_methods_Helix_DB_Fluent_Num_NumCastTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Num_NumCastTrait.html#e02b291">toFloat</a> ()</td></tr>
-<tr class="memdesc:e02b291 inherit pub_methods_Helix_DB_Fluent_Num_NumCastTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts the expression as a floating point number.  <a href="Helix_DB_Fluent_Num_NumCastTrait.html#e02b291">More...</a><br /></td></tr>
-<tr class="separator:e02b291 inherit pub_methods_Helix_DB_Fluent_Num_NumCastTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3050a94 inherit pub_methods_Helix_DB_Fluent_Num_NumCastTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Num_NumCastTrait.html#3050a94">toInt</a> ()</td></tr>
-<tr class="memdesc:3050a94 inherit pub_methods_Helix_DB_Fluent_Num_NumCastTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts the expression as a signed integer.  <a href="Helix_DB_Fluent_Num_NumCastTrait.html#3050a94">More...</a><br /></td></tr>
-<tr class="separator:3050a94 inherit pub_methods_Helix_DB_Fluent_Num_NumCastTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_Helix_DB_Fluent_Num_NumCastIntTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_Fluent_Num_NumCastIntTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_Fluent_Num_NumCastIntTrait.html">NumCastIntTrait</a></td></tr>
+<tr class="memitem:3050a94 inherit pub_methods_Helix_DB_Fluent_Num_NumCastIntTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Num_NumCastIntTrait.html#3050a94">toInt</a> ()</td></tr>
+<tr class="memdesc:3050a94 inherit pub_methods_Helix_DB_Fluent_Num_NumCastIntTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts the expression as a signed integer.  <a href="Helix_DB_Fluent_Num_NumCastIntTrait.html#3050a94">More...</a><br /></td></tr>
+<tr class="separator:3050a94 inherit pub_methods_Helix_DB_Fluent_Num_NumCastIntTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_DB_Fluent_Text_TextCastTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_Fluent_Text_TextCastTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_Fluent_Text_TextCastTrait.html">TextCastTrait</a></td></tr>
 <tr class="memitem:168f8b9 inherit pub_methods_Helix_DB_Fluent_Text_TextCastTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Text_TextCastTrait.html#168f8b9">toText</a> ()</td></tr>
-<tr class="memdesc:168f8b9 inherit pub_methods_Helix_DB_Fluent_Text_TextCastTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts the expression to a character string.  <a href="Helix_DB_Fluent_Text_TextCastTrait.html#168f8b9">More...</a><br /></td></tr>
+<tr class="memdesc:168f8b9 inherit pub_methods_Helix_DB_Fluent_Text_TextCastTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts the expression as a character string.  <a href="Helix_DB_Fluent_Text_TextCastTrait.html#168f8b9">More...</a><br /></td></tr>
 <tr class="separator:168f8b9 inherit pub_methods_Helix_DB_Fluent_Text_TextCastTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
