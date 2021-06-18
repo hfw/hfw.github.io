@@ -2,22 +2,34 @@ var annotated =
 [
     [ "Helix", null, [
       [ "DB", null, [
-        [ "SQL", null, [
-          [ "AggregateTrait", "Helix_DB_SQL_AggregateTrait.html", "Helix_DB_SQL_AggregateTrait" ],
-          [ "CastTrait", "Helix_DB_SQL_CastTrait.html", "Helix_DB_SQL_CastTrait" ],
-          [ "Choice", "Helix_DB_SQL_Choice.html", "Helix_DB_SQL_Choice" ],
-          [ "ComparisonTrait", "Helix_DB_SQL_ComparisonTrait.html", "Helix_DB_SQL_ComparisonTrait" ],
-          [ "DateTime", "Helix_DB_SQL_DateTime.html", null ],
-          [ "DateTimeTrait", "Helix_DB_SQL_DateTimeTrait.html", "Helix_DB_SQL_DateTimeTrait" ],
-          [ "Expression", "Helix_DB_SQL_Expression.html", "Helix_DB_SQL_Expression" ],
-          [ "ExpressionInterface", "Helix_DB_SQL_ExpressionInterface.html", "Helix_DB_SQL_ExpressionInterface" ],
-          [ "Num", "Helix_DB_SQL_Num.html", null ],
-          [ "NumTrait", "Helix_DB_SQL_NumTrait.html", "Helix_DB_SQL_NumTrait" ],
-          [ "Predicate", "Helix_DB_SQL_Predicate.html", "Helix_DB_SQL_Predicate" ],
-          [ "Text", "Helix_DB_SQL_Text.html", null ],
-          [ "TextTrait", "Helix_DB_SQL_TextTrait.html", "Helix_DB_SQL_TextTrait" ],
-          [ "Value", "Helix_DB_SQL_Value.html", null ],
-          [ "ValueInterface", "Helix_DB_SQL_ValueInterface.html", null ]
+        [ "Fluent", null, [
+          [ "DateTime", null, [
+            [ "DateTimeCastTrait", "Helix_DB_Fluent_DateTime_DateTimeCastTrait.html", "Helix_DB_Fluent_DateTime_DateTimeCastTrait" ],
+            [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", "Helix_DB_Fluent_DateTime_DateTimeTrait" ]
+          ] ],
+          [ "Num", null, [
+            [ "BaseConversionTrait", "Helix_DB_Fluent_Num_BaseConversionTrait.html", "Helix_DB_Fluent_Num_BaseConversionTrait" ],
+            [ "NumCastTrait", "Helix_DB_Fluent_Num_NumCastTrait.html", "Helix_DB_Fluent_Num_NumCastTrait" ],
+            [ "NumTrait", "Helix_DB_Fluent_Num_NumTrait.html", "Helix_DB_Fluent_Num_NumTrait" ]
+          ] ],
+          [ "Text", null, [
+            [ "TextCastTrait", "Helix_DB_Fluent_Text_TextCastTrait.html", "Helix_DB_Fluent_Text_TextCastTrait" ],
+            [ "TextTrait", "Helix_DB_Fluent_Text_TextTrait.html", "Helix_DB_Fluent_Text_TextTrait" ]
+          ] ],
+          [ "Value", null, [
+            [ "AggregateTrait", "Helix_DB_Fluent_Value_AggregateTrait.html", "Helix_DB_Fluent_Value_AggregateTrait" ],
+            [ "ComparisonTrait", "Helix_DB_Fluent_Value_ComparisonTrait.html", "Helix_DB_Fluent_Value_ComparisonTrait" ],
+            [ "ValueTrait", "Helix_DB_Fluent_Value_ValueTrait.html", "Helix_DB_Fluent_Value_ValueTrait" ]
+          ] ],
+          [ "Choice", "Helix_DB_Fluent_Choice.html", "Helix_DB_Fluent_Choice" ],
+          [ "DateTime", "Helix_DB_Fluent_DateTime.html", null ],
+          [ "Expression", "Helix_DB_Fluent_Expression.html", "Helix_DB_Fluent_Expression" ],
+          [ "ExpressionInterface", "Helix_DB_Fluent_ExpressionInterface.html", "Helix_DB_Fluent_ExpressionInterface" ],
+          [ "Num", "Helix_DB_Fluent_Num.html", null ],
+          [ "Predicate", "Helix_DB_Fluent_Predicate.html", "Helix_DB_Fluent_Predicate" ],
+          [ "Text", "Helix_DB_Fluent_Text.html", null ],
+          [ "Value", "Helix_DB_Fluent_Value.html", null ],
+          [ "ValueInterface", "Helix_DB_Fluent_ValueInterface.html", null ]
         ] ],
         [ "AbstractTable", "Helix_DB_AbstractTable.html", "Helix_DB_AbstractTable" ],
         [ "AttributesTrait", "Helix_DB_AttributesTrait.html", "Helix_DB_AttributesTrait" ],

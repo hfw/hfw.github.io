@@ -111,7 +111,7 @@ Public Static Methods</h2></td></tr>
 <tr class="memitem:07e25e5"><td class="memItemLeft" align="right" valign="top">static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#07e25e5">fromConfig</a> (string $connection='default', string $file='db.config.php')</td></tr>
 <tr class="memdesc:07e25e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance using a configuration file.  <a href="Helix_DB.html#07e25e5">More...</a><br /></td></tr>
 <tr class="separator:07e25e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:9b08c54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Helix_DB_SQL_ExpressionInterface.html">ExpressionInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#9b08c54">marks</a> ($count)</td></tr>
+<tr class="memitem:9b08c54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Helix_DB_Fluent_ExpressionInterface.html">ExpressionInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#9b08c54">marks</a> ($count)</td></tr>
 <tr class="memdesc:9b08c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of <code>?</code> placeholders.  <a href="Helix_DB.html#9b08c54">More...</a><br /></td></tr>
 <tr class="separator:9b08c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:35bf04f"><td class="memItemLeft" align="right" valign="top">static string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#35bf04f">slots</a> (array $columns)</td></tr>
@@ -160,7 +160,7 @@ Public Methods</h2></td></tr>
 <tr class="separator:6bbfe51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:8b842bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#8b842bf">isSQLite</a> ()</td></tr>
 <tr class="separator:8b842bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ce43e84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#ce43e84">match</a> ($a, $b)</td></tr>
+<tr class="memitem:ce43e84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#ce43e84">match</a> ($a, $b)</td></tr>
 <tr class="memdesc:ce43e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an equality <a class="el" href="">Predicate</a> from mixed arguments.  <a href="Helix_DB.html#ce43e84">More...</a><br /></td></tr>
 <tr class="separator:ce43e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:2907cbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Transaction.html">Transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#2907cbe">newTransaction</a> ()</td></tr>
@@ -176,7 +176,7 @@ Public Methods</h2></td></tr>
 <tr class="separator:e46b7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fd4b563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#fd4b563">offsetUnset</a> ($offset)</td></tr>
 <tr class="separator:fd4b563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:8af20ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#8af20ee">pi</a> ()</td></tr>
+<tr class="memitem:8af20ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#8af20ee">pi</a> ()</td></tr>
 <tr class="memdesc:8af20ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>PI()</code>  <a href="Helix_DB.html#8af20ee">More...</a><br /></td></tr>
 <tr class="separator:8af20ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:187ddf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#187ddf1">prepare</a> ($sql, $options=[])</td></tr>
@@ -185,7 +185,7 @@ Public Methods</h2></td></tr>
 <tr class="memitem:e9fa9e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#e9fa9e2">query</a> ($sql, $mode=PDO::ATTR_DEFAULT_FETCH_MODE, $arg3=null, array $ctorargs=[])</td></tr>
 <tr class="memdesc:e9fa9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger and executes.  <a href="Helix_DB.html#e9fa9e2">More...</a><br /></td></tr>
 <tr class="separator:e9fa9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:38a3ff8"><td class="memItemLeft" align="right" valign="top">string <a class="el" href="Helix_DB_SQL_ExpressionInterface.html">ExpressionInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#38a3ff8">quote</a> ($value, $type=self::PARAM_STR)</td></tr>
+<tr class="memitem:38a3ff8"><td class="memItemLeft" align="right" valign="top">string <a class="el" href="Helix_DB_Fluent_ExpressionInterface.html">ExpressionInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#38a3ff8">quote</a> ($value, $type=self::PARAM_STR)</td></tr>
 <tr class="memdesc:38a3ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quotes a value, with special considerations.  <a href="Helix_DB.html#38a3ff8">More...</a><br /></td></tr>
 <tr class="separator:38a3ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b531f"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#a5b531f">quoteArray</a> (array $values)</td></tr>
@@ -194,7 +194,7 @@ Public Methods</h2></td></tr>
 <tr class="memitem:edb7cb0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#edb7cb0">quoteList</a> (array $values)</td></tr>
 <tr class="memdesc:edb7cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quoted, comma-separated list.  <a href="Helix_DB.html#edb7cb0">More...</a><br /></td></tr>
 <tr class="separator:edb7cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d9b106c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_SQL_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#d9b106c">rand</a> ()</td></tr>
+<tr class="memitem:d9b106c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#d9b106c">rand</a> ()</td></tr>
 <tr class="memdesc:d9b106c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>RAND()</code> float between <code>0</code> and <code>1</code>  <a href="Helix_DB.html#d9b106c">More...</a><br /></td></tr>
 <tr class="separator:d9b106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:23cb168"><td class="memItemLeft" align="right" valign="top">true&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#23cb168">rollBack</a> ()</td></tr>
@@ -758,7 +758,7 @@ Public Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="Helix_DB_SQL_ExpressionInterface.html">ExpressionInterface</a> [] marks </td>
+          <td class="memname">static <a class="el" href="Helix_DB_Fluent_ExpressionInterface.html">ExpressionInterface</a> [] marks </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$count</em></td><td>)</td>
@@ -790,7 +790,7 @@ Public Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Predicate.html">Predicate</a> match </td>
+          <td class="memname"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a> match </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$a</em>, </td>
@@ -1003,7 +1003,7 @@ Public Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> pi </td>
+          <td class="memname"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a> pi </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1113,7 +1113,7 @@ Public Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="Helix_DB_SQL_ExpressionInterface.html">ExpressionInterface</a> quote </td>
+          <td class="memname">string <a class="el" href="Helix_DB_Fluent_ExpressionInterface.html">ExpressionInterface</a> quote </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$value</em>, </td>
@@ -1211,7 +1211,7 @@ Public Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_SQL_Num.html">Num</a> rand </td>
+          <td class="memname"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a> rand </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

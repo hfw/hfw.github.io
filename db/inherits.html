@@ -94,36 +94,40 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <area shape="rect" href="Helix_DB_Statement.html" title="Extends PDOStatement for fluency and logging." alt="" coords="196,5,308,35"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#TextTrait" alt=""/>
-<map name="TextTrait" id="TextTrait">
-<area shape="rect" title=" " alt="" coords="5,244,137,273"/>
-<area shape="rect" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema." alt="" coords="270,5,313,35"/>
-<area shape="rect" href="Helix_DB_AbstractTable.html" title="Uses ArrayAccess to produce Column instances." alt="" coords="215,429,367,459"/>
-<area shape="rect" href="Helix_DB_Column.html" title="Immutable column expression." alt="" coords="680,299,763,328"/>
-<area shape="rect" href="Helix_DB_Schema.html" title="Schema control and metadata." alt="" coords="250,112,333,141"/>
-<area shape="rect" href="Helix_DB_Select.html" title="Represents a SELECT query." alt="" coords="490,165,573,195"/>
-<area shape="rect" href="Helix_DB_Table.html" title="Table manipulation using arrays." alt="" coords="495,536,567,565"/>
-<area shape="rect" href="Helix_DB_EAV.html" title="Array storage in an extension table." alt="" coords="695,589,747,619"/>
-<area shape="rect" href="Helix_DB_Junction.html" title="Represents a junction table, derived from an annotated interface." alt="" coords="670,483,773,512"/>
-<area shape="rect" href="Helix_DB_Record.html" title="Represents an &quot;active record&quot; table, derived from an annotated class implementing EntityInterface." alt="" coords="680,536,763,565"/>
-<area shape="rect" title=" " alt="" coords="235,219,347,248"/>
-<area shape="rect" title=" " alt="" coords="195,165,387,195"/>
-<area shape="rect" title=" " alt="" coords="45,5,97,35"/>
-<area shape="rect" href="Helix_DB_SQL_AggregateTrait.html" title="Produces aggregate expressions for the instance." alt="" coords="450,272,613,301"/>
-<area shape="rect" href="Helix_DB_SQL_Value.html" title="Represents a value expression." alt="" coords="685,232,757,261"/>
-<area shape="rect" href="Helix_DB_SQL_Choice.html" title="Represents a CASE expression, with or without a subject expression." alt="" coords="835,232,918,261"/>
-<area shape="rect" href="Helix_DB_SQL_DateTime.html" title="Represents a DateTime expression." alt="" coords="825,163,928,192"/>
-<area shape="rect" href="Helix_DB_SQL_Num.html" title="Represents a numeric expression." alt="" coords="851,308,903,337"/>
-<area shape="rect" href="Helix_DB_SQL_Text.html" title="Represents a text expression." alt="" coords="845,392,908,421"/>
-<area shape="rect" href="Helix_DB_SQL_CastTrait.html" title=" " alt="" coords="475,325,587,355"/>
-<area shape="rect" href="Helix_DB_SQL_ComparisonTrait.html" title="Produces comparative expressions for the instance." alt="" coords="445,219,617,248"/>
-<area shape="rect" href="Helix_DB_SQL_DateTimeTrait.html" title="Produces datetime related expressions for the instance." alt="" coords="455,112,607,141"/>
-<area shape="rect" href="Helix_DB_SQL_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="185,59,397,88"/>
-<area shape="rect" href="Helix_DB_SQL_Expression.html" title="A literal expression, exempt from being quoted." alt="" coords="470,5,593,35"/>
-<area shape="rect" href="Helix_DB_SQL_ValueInterface.html" title="An expression that evaluates to a single value." alt="" coords="450,59,613,88"/>
-<area shape="rect" href="Helix_DB_SQL_Predicate.html" title="Represents a logical expression that will evaluate as boolean." alt="" coords="665,32,777,61"/>
-<area shape="rect" href="Helix_DB_SQL_NumTrait.html" title="Produces numeric expressions for the instance." alt="" coords="480,429,583,459"/>
-<area shape="rect" href="Helix_DB_SQL_TextTrait.html" title="Produces text related expressions for the instance." alt="" coords="475,483,587,512"/>
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#TextCastTrait" alt=""/>
+<map name="TextCastTrait" id="TextCastTrait">
+<area shape="rect" title=" " alt="" coords="25,192,157,221"/>
+<area shape="rect" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema." alt="" coords="310,5,353,35"/>
+<area shape="rect" href="Helix_DB_AbstractTable.html" title="Uses ArrayAccess to produce Column instances." alt="" coords="255,219,407,248"/>
+<area shape="rect" href="Helix_DB_Column.html" title="Immutable column expression." alt="" coords="740,376,823,405"/>
+<area shape="rect" href="Helix_DB_Schema.html" title="Schema control and metadata." alt="" coords="290,165,373,195"/>
+<area shape="rect" href="Helix_DB_Select.html" title="Represents a SELECT query." alt="" coords="540,139,623,168"/>
+<area shape="rect" href="Helix_DB_Table.html" title="Table manipulation using arrays." alt="" coords="545,219,617,248"/>
+<area shape="rect" href="Helix_DB_EAV.html" title="Array storage in an extension table." alt="" coords="755,165,807,195"/>
+<area shape="rect" href="Helix_DB_Junction.html" title="Represents a junction table, derived from an annotated interface." alt="" coords="730,219,833,248"/>
+<area shape="rect" href="Helix_DB_Record.html" title="Represents an &quot;active record&quot; table, derived from an annotated class implementing EntityInterface." alt="" coords="740,272,823,301"/>
+<area shape="rect" title=" " alt="" coords="275,59,387,88"/>
+<area shape="rect" title=" " alt="" coords="235,112,427,141"/>
+<area shape="rect" title=" " alt="" coords="65,5,117,35"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_AggregateTrait.html" title="Produces aggregate expressions for the instance." alt="" coords="10,456,173,485"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_ValueTrait.html" title="Produces type&#45;independent expressions for the instance." alt="" coords="270,483,393,512"/>
+<area shape="rect" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html" title="Produces datetime related expressions for the instance." alt="" coords="505,323,657,352"/>
+<area shape="rect" href="Helix_DB_Fluent_Num_NumTrait.html" title="Produces numeric expressions for the instance." alt="" coords="530,429,633,459"/>
+<area shape="rect" href="Helix_DB_Fluent_Text_TextTrait.html" title="Produces text related expressions for the instance." alt="" coords="525,376,637,405"/>
+<area shape="rect" href="Helix_DB_Fluent_Value.html" title="Represents a typeless value expression." alt="" coords="745,693,817,723"/>
+<area shape="rect" href="Helix_DB_Fluent_DateTime.html" title="Represents a date&#45;time expression." alt="" coords="730,480,833,509"/>
+<area shape="rect" href="Helix_DB_Fluent_Num.html" title="Represents a numeric expression." alt="" coords="755,533,807,563"/>
+<area shape="rect" href="Helix_DB_Fluent_Text.html" title="Represents a text expression." alt="" coords="750,640,813,669"/>
+<area shape="rect" href="Helix_DB_Fluent_Choice.html" title="Represents a CASE expression, with or without a subject expression." alt="" coords="885,693,968,723"/>
+<area shape="rect" href="Helix_DB_Fluent_Num_BaseConversionTrait.html" title="Convert a numeric expression to other bases." alt="" coords="225,376,437,405"/>
+<area shape="rect" href="Helix_DB_Fluent_Value_ComparisonTrait.html" title="Produces comparative expressions for the instance." alt="" coords="5,509,177,539"/>
+<area shape="rect" href="Helix_DB_Fluent_DateTime_DateTimeCastTrait.html" title=" " alt="" coords="485,693,677,723"/>
+<area shape="rect" href="Helix_DB_Fluent_ExpressionInterface.html" title="Marks the instance as a literal SQL expression, exempt from being quoted." alt="" coords="225,429,437,459"/>
+<area shape="rect" href="Helix_DB_Fluent_Expression.html" title="A literal expression, exempt from being quoted." alt="" coords="520,589,643,619"/>
+<area shape="rect" href="Helix_DB_Fluent_ValueInterface.html" title="An expression that evaluates to a single value." alt="" coords="500,483,663,512"/>
+<area shape="rect" href="Helix_DB_Fluent_Predicate.html" title="Represents a logical expression that will evaluate as boolean." alt="" coords="725,587,837,616"/>
+<area shape="rect" href="Helix_DB_Fluent_Num_NumCastTrait.html" title=" " alt="" coords="260,641,403,671"/>
+<area shape="rect" href="Helix_DB_Fluent_Text_TextCastTrait.html" title=" " alt="" coords="505,536,657,565"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_6.png" border="0" usemap="#Transaction" alt=""/>
