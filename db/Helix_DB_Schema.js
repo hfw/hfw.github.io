@@ -35,7 +35,7 @@ var Helix_DB_Schema =
     [ "addColumn", "Helix_DB_Schema.html#9301349", null ],
     [ "createTable", "Helix_DB_Schema.html#e5f6c8a", null ],
     [ "dropColumn", "Helix_DB_Schema.html#4ee02d3", null ],
-    [ "dropTable", "Helix_DB_Schema.html#c5677cd", null ],
+    [ "dropTable", "Helix_DB_Schema.html#85a594b", null ],
     [ "factory", "Helix_DB_Schema.html#bf01e11", null ],
     [ "getColumnInfo", "Helix_DB_Schema.html#0d11dc4", null ],
     [ "getDb", "Helix_DB_Schema.html#14f4f86", null ],
