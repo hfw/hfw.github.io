@@ -1,5 +1,6 @@
 var Helix_DB_Fluent_Text_TextTrait =
 [
+    [ "concat", "Helix_DB_Fluent_Text_TextTrait.html#e2cfd1a", null ],
     [ "hex", "Helix_DB_Fluent_Text_TextTrait.html#72bdf38", null ],
     [ "length", "Helix_DB_Fluent_Text_TextTrait.html#42e4ca4", null ],
     [ "lower", "Helix_DB_Fluent_Text_TextTrait.html#3498059", null ],
