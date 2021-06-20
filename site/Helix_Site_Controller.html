@@ -69,6 +69,17 @@ $(document).ready(function(){initNavTree('Helix_Site_Controller.html',''); initR
 <div class="title">Controller</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Controller:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="Helix_Site_Controller__inherit__graph.png" border="0" usemap="#Controller_inherit__map" alt="Inheritance graph"/></div>
+<map name="Controller_inherit__map" id="Controller_inherit__map">
+<area shape="rect" title="A controller." alt="" coords="10,83,133,112"/>
+<area shape="rect" title=" " alt="" coords="5,5,137,35"/>
+</map>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>A controller. </p>
 </div><table class="memberdecls">
@@ -77,9 +88,9 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:b235289"><td class="memItemLeft" align="right" valign="top">array array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#b235289">$extra</a></td></tr>
 <tr class="memdesc:b235289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extra arguments from the router.  <a href="Helix_Site_Controller.html#b235289">More...</a><br /></td></tr>
 <tr class="separator:b235289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:94cf0c8"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#94cf0c8">$path</a></td></tr>
-<tr class="memdesc:94cf0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path's regex match from routing.  <a href="Helix_Site_Controller.html#94cf0c8">More...</a><br /></td></tr>
-<tr class="separator:94cf0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d5fa92f"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#d5fa92f">$path</a></td></tr>
+<tr class="memdesc:d5fa92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path's regex match from routing.  <a href="Helix_Site_Controller.html#d5fa92f">More...</a><br /></td></tr>
+<tr class="separator:d5fa92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e0b4c9f"><td class="memItemLeft" align="right" valign="top"><a id="e0b4c9f"></a>
 <a class="el" href="Helix_Site.html">Site</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$site</b></td></tr>
 <tr class="separator:e0b4c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +111,14 @@ Public Methods</h2></td></tr>
 <tr class="memitem:e3515bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#e3515bd">head</a> ()</td></tr>
 <tr class="memdesc:e3515bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles <code>HEAD</code>  <a href="Helix_Site_Controller.html#e3515bd">More...</a><br /></td></tr>
 <tr class="separator:e3515bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e729914"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#e729914">offsetExists</a> ($offset)</td></tr>
+<tr class="separator:e729914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d7b197f"><td class="memItemLeft" align="right" valign="top">null mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#d7b197f">offsetGet</a> ($offset)</td></tr>
+<tr class="separator:d7b197f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d173d58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#d173d58">offsetSet</a> ($offset, $value)</td></tr>
+<tr class="separator:d173d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:05d90d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#05d90d1">offsetUnset</a> ($offset)</td></tr>
+<tr class="separator:05d90d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:b826a63"><td class="memItemLeft" align="right" valign="top">void string <a class="el" href="Helix_Site_View.html">View</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Controller.html#b826a63">post</a> ()</td></tr>
 <tr class="memdesc:b826a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles <code>POST</code>  <a href="Helix_Site_Controller.html#b826a63">More...</a><br /></td></tr>
 <tr class="separator:b826a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +157,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="94cf0c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#94cf0c8">&#9670;&nbsp;</a></span>$path</h2>
+<a id="d5fa92f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d5fa92f">&#9670;&nbsp;</a></span>$path</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +167,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string [] $path</td>
+          <td class="memname">array $path</td>
         </tr>
       </table>
   </td>
@@ -159,6 +178,7 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The path's regex match from routing. </p>
+<p><code>ArrayAccess</code> forwards to this. </p>
 
 </div>
 </div>
@@ -310,6 +330,115 @@ Protected Methods</h2></td></tr>
 
 <p>Handles <code>HEAD</code> </p>
 <p>This stub returns from <a class="el" href="Helix_Site_Controller.html#1c51ca2">Controller::get()</a> </p>
+
+</div>
+</div>
+<a id="e729914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e729914">&#9670;&nbsp;</a></span>offsetExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool offsetExists </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="d7b197f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d7b197f">&#9670;&nbsp;</a></span>offsetGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">null mixed offsetGet </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|mixed Coalesces to <code>null</code> </dd></dl>
+
+</div>
+</div>
+<a id="d173d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d173d58">&#9670;&nbsp;</a></span>offsetSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void offsetSet </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="05d90d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#05d90d1">&#9670;&nbsp;</a></span>offsetUnset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void offsetUnset </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
