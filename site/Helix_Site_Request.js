@@ -24,7 +24,7 @@ var Helix_Site_Request =
     [ "isPost", "Helix_Site_Request.html#9f85ce7", null ],
     [ "offsetExists", "Helix_Site_Request.html#2e80172", null ],
     [ "offsetGet", "Helix_Site_Request.html#267e611", null ],
-    [ "offsetSet", "Helix_Site_Request.html#f39bf0a", null ],
-    [ "offsetUnset", "Helix_Site_Request.html#bfaf0d9", null ],
+    [ "offsetSet", "Helix_Site_Request.html#1c344cf", null ],
+    [ "offsetUnset", "Helix_Site_Request.html#26f56ea", null ],
     [ "setProxies", "Helix_Site_Request.html#f8d7d98", null ]
 ];

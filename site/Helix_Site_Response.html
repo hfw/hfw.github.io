@@ -107,18 +107,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$code</b> = 404</td></
 Public Methods</h2></td></tr>
 <tr class="memitem:875870f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#875870f">__construct</a> (<a class="el" href="Helix_Site.html">Site</a> $site)</td></tr>
 <tr class="separator:875870f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:8015322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#8015322">_onRender</a> ()</td></tr>
-<tr class="memdesc:8015322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Injects headers before content is put in PHP's SAPI write buffer.  <a href="Helix_Site_Response.html#8015322">More...</a><br /></td></tr>
-<tr class="separator:8015322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#aa40637">_onShutdown</a> ()</td></tr>
-<tr class="memdesc:aa40637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders an error if nothing was written to the SAPI yet.  <a href="Helix_Site_Response.html#aa40637">More...</a><br /></td></tr>
-<tr class="separator:aa40637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:e075145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#e075145">error</a> (Throwable $error=null)</td></tr>
-<tr class="memdesc:e075145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders an error and exits.  <a href="Helix_Site_Response.html#e075145">More...</a><br /></td></tr>
-<tr class="separator:e075145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:39b0a60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#39b0a60">file</a> (string $path, bool $download=false)</td></tr>
-<tr class="memdesc:39b0a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a file (or requested range) and exits.  <a href="Helix_Site_Response.html#39b0a60">More...</a><br /></td></tr>
-<tr class="separator:39b0a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e41c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#a0e41c2">error_exit</a> (Throwable $error=null)</td></tr>
+<tr class="memdesc:a0e41c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders an error and exits.  <a href="Helix_Site_Response.html#a0e41c2">More...</a><br /></td></tr>
+<tr class="separator:a0e41c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fd01ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#fd01ebd">file_exit</a> (string $path, bool $download=false)</td></tr>
+<tr class="memdesc:fd01ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a file (or requested range) and exits.  <a href="Helix_Site_Response.html#fd01ebd">More...</a><br /></td></tr>
+<tr class="separator:fd01ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:48ffabf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#48ffabf">getCode</a> ()</td></tr>
 <tr class="separator:48ffabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d5789d8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#d5789d8">getId</a> ()</td></tr>
@@ -131,9 +125,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:58f0b28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#58f0b28">isModified</a> ()</td></tr>
 <tr class="memdesc:58f0b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the response body would be considered fresh.  <a href="Helix_Site_Response.html#58f0b28">More...</a><br /></td></tr>
 <tr class="separator:58f0b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:99287e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#99287e6">mixed</a> ($content)</td></tr>
-<tr class="memdesc:99287e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders mixed content and exits.  <a href="Helix_Site_Response.html#99287e6">More...</a><br /></td></tr>
-<tr class="separator:99287e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:25e7bce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#25e7bce">mixed_exit</a> ($content)</td></tr>
+<tr class="memdesc:25e7bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders mixed content and exits.  <a href="Helix_Site_Response.html#25e7bce">More...</a><br /></td></tr>
+<tr class="separator:25e7bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:2e80172"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#2e80172">offsetExists</a> ($key)</td></tr>
 <tr class="separator:2e80172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:267e611"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#267e611">offsetGet</a> ($key)</td></tr>
@@ -142,9 +136,12 @@ Public Methods</h2></td></tr>
 <tr class="separator:f39bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:bfaf0d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#bfaf0d9">offsetUnset</a> ($key)</td></tr>
 <tr class="separator:bfaf0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ca41172"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#ca41172">redirect</a> (string $location, $code=302)</td></tr>
-<tr class="memdesc:ca41172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issues a redirect and exits.  <a href="Helix_Site_Response.html#ca41172">More...</a><br /></td></tr>
-<tr class="separator:ca41172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4d36f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#4d36f65">redirect_exit</a> (string $location, int $code=302)</td></tr>
+<tr class="memdesc:4d36f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issues a redirect and exits.  <a href="Helix_Site_Response.html#4d36f65">More...</a><br /></td></tr>
+<tr class="separator:4d36f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:003ca6c"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#003ca6c">setCacheTtl</a> ($ttl)</td></tr>
+<tr class="memdesc:003ca6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how long the response can be cached by the client.  <a href="Helix_Site_Response.html#003ca6c">More...</a><br /></td></tr>
+<tr class="separator:003ca6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5b6b53f"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#5b6b53f">setCode</a> (int $code)</td></tr>
 <tr class="separator:5b6b53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e00ecb6"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#e00ecb6">setTimestamp</a> (int $timestamp)</td></tr>
@@ -153,9 +150,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:2c9ce44"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#2c9ce44">touch</a> (int $timestamp)</td></tr>
 <tr class="memdesc:2c9ce44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the modification time if the given one is greater.  <a href="Helix_Site_Response.html#2c9ce44">More...</a><br /></td></tr>
 <tr class="separator:2c9ce44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:c4d4a4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#c4d4a4c">view</a> (<a class="el" href="Helix_Site_ViewableInterface.html">ViewableInterface</a> $view)</td></tr>
-<tr class="memdesc:c4d4a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a view and exits.  <a href="Helix_Site_Response.html#c4d4a4c">More...</a><br /></td></tr>
-<tr class="separator:c4d4a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bcc91f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Response.html#bcc91f5">view_exit</a> (<a class="el" href="Helix_Site_View.html">View</a> $view)</td></tr>
+<tr class="memdesc:bcc91f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a view and exits.  <a href="Helix_Site_Response.html#bcc91f5">More...</a><br /></td></tr>
+<tr class="separator:bcc91f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
 <a id="8c6f4ca"></a>
@@ -179,7 +176,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        <span class="stringliteral">&#39;Accept-Ranges&#39;</span> =&gt; <span class="stringliteral">&#39;none&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;Cache-Control&#39;</span> =&gt; <span class="stringliteral">&#39;no-cache&#39;</span></div>
+<div class="line">        <span class="stringliteral">&#39;Cache-Control&#39;</span> =&gt; <span class="stringliteral">&#39;no-store&#39;</span></div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>Associative values and/or enumerated literal headers. </p>
@@ -261,55 +258,14 @@ Public Methods</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
-<a id="8015322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#8015322">&#9670;&nbsp;</a></span>_onRender()</h2>
+<a id="a0e41c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e41c2">&#9670;&nbsp;</a></span>error_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void _onRender </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Injects headers before content is put in PHP's SAPI write buffer. </p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="aa40637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40637">&#9670;&nbsp;</a></span>_onShutdown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _onShutdown </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Renders an error if nothing was written to the SAPI yet. </p>
-<p>Logs the response to the SAPI handler if the site is in dev mode.</p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="e075145"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#e075145">&#9670;&nbsp;</a></span>error()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void error </td>
+          <td class="memname">void error_exit </td>
           <td>(</td>
           <td class="paramtype">Throwable&#160;</td>
           <td class="paramname"><em>$error</em> = <code>null</code></td><td>)</td>
@@ -321,21 +277,21 @@ Public Methods</h2></td></tr>
 <p>Renders an error and exits. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Throwable</td><td class="paramname">$error</td><td>Defaults to an <code><a class="el" href="Helix_Site_Error.html" title="An HTTP error with a user friendly message.">Error</a></code> with the current response code. </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;Throwable</td><td class="paramname">$error</td><td>Defaults to an <a class="el" href="Helix_Site_HttpError.html">HttpError</a> with the current response code. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="39b0a60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#39b0a60">&#9670;&nbsp;</a></span>file()</h2>
+<a id="fd01ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fd01ebd">&#9670;&nbsp;</a></span>file_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void file </td>
+          <td class="memname">void file_exit </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$path</em>, </td>
@@ -475,14 +431,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="99287e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#99287e6">&#9670;&nbsp;</a></span>mixed()</h2>
+<a id="25e7bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#25e7bce">&#9670;&nbsp;</a></span>mixed_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mixed </td>
+          <td class="memname">void mixed_exit </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$content</em></td><td>)</td>
@@ -610,14 +566,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="ca41172"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ca41172">&#9670;&nbsp;</a></span>redirect()</h2>
+<a id="4d36f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#4d36f65">&#9670;&nbsp;</a></span>redirect_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">redirect </td>
+          <td class="memname">void redirect_exit </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$location</em>, </td>
@@ -625,7 +581,7 @@ Public Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$code</em> = <code>302</code>&#160;</td>
         </tr>
         <tr>
@@ -644,6 +600,33 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="003ca6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#003ca6c">&#9670;&nbsp;</a></span>setCacheTtl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this setCacheTtl </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$ttl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies how long the response can be cached by the client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;DateTimeInterface</td><td class="paramname">$ttl</td><td>Zero or negative time means "don't cache" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
 
 </div>
 </div>
@@ -726,16 +709,16 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="c4d4a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#c4d4a4c">&#9670;&nbsp;</a></span>view()</h2>
+<a id="bcc91f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#bcc91f5">&#9670;&nbsp;</a></span>view_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void view </td>
+          <td class="memname">void view_exit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="Helix_Site_ViewableInterface.html">ViewableInterface</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="Helix_Site_View.html">View</a>&#160;</td>
           <td class="paramname"><em>$view</em></td><td>)</td>
           <td></td>
         </tr>
@@ -743,9 +726,10 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Renders a view and exits. </p>
+<p>If the request is <code>HEAD</code> this skips rendering content and only outputs headers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_Site_ViewableInterface.html" title="The instance can render content.">ViewableInterface</a></td><td class="paramname">$view</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_Site_View.html" title="Renders a template with data.">View</a></td><td class="paramname">$view</td><td></td></tr>
   </table>
   </dd>
 </dl>

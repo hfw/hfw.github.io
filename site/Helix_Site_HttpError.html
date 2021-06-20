@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>hfw/site: ViewableInterface</title>
+    <title>hfw/site: HttpError</title>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="generator" content="Doxygen 1.8.17"/>
@@ -55,82 +55,84 @@
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:91d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('Helix_Site_ViewableInterface.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('Helix_Site_HttpError.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-attribs">Public Properties</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
-<a href="Helix_Site_ViewableInterface-members.html">List of all members</a>  </div>
+<a href="Helix_Site_HttpError-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ViewableInterface</div>  </div>
+<div class="title">HttpError</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ViewableInterface:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for HttpError:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="Helix_Site_ViewableInterface__inherit__graph.png" border="0" usemap="#ViewableInterface_inherit__map" alt="Inheritance graph"/></div>
-<map name="ViewableInterface_inherit__map" id="ViewableInterface_inherit__map">
-<area shape="rect" title="The instance can render content." alt="" coords="5,5,197,35"/>
-<area shape="rect" href="Helix_Site_View.html" title="Renders a template with data." alt="" coords="70,83,133,112"/>
+<div class="center"><img src="Helix_Site_HttpError__inherit__graph.png" border="0" usemap="#HttpError_inherit__map" alt="Inheritance graph"/></div>
+<map name="HttpError_inherit__map" id="HttpError_inherit__map">
+<area shape="rect" title="An HTTP error with a user friendly message." alt="" coords="41,83,153,112"/>
+<area shape="rect" title=" " alt="" coords="5,5,188,35"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>The instance can render content. </p>
+<div class="textblock"><p>An HTTP error with a user friendly message. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Properties</h2></td></tr>
+<tr class="memitem:922dedb"><td class="memItemLeft" align="right" valign="top"><a id="922dedb"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGES</b></td></tr>
+<tr class="separator:922dedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:543605b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_ViewableInterface.html#543605b">getContent</a> ()</td></tr>
-<tr class="memdesc:543605b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what would be rendered.  <a href="Helix_Site_ViewableInterface.html#543605b">More...</a><br /></td></tr>
-<tr class="separator:543605b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:b0a5040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_ViewableInterface.html#b0a5040">render</a> ()</td></tr>
-<tr class="memdesc:b0a5040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly outputs content.  <a href="Helix_Site_ViewableInterface.html#b0a5040">More...</a><br /></td></tr>
-<tr class="separator:b0a5040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:60958a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_HttpError.html#60958a6">__construct</a> (int $code, string $message=null, Throwable $previous=null)</td></tr>
+<tr class="separator:60958a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Methods</h2>
-<a id="543605b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#543605b">&#9670;&nbsp;</a></span>getContent()</h2>
+<h2 class="groupheader">Constructor</h2>
+<a id="60958a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#60958a6">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string getContent </td>
+          <td class="memname">__construct </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$code</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns what would be rendered. </p>
-<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
-
-<p>Implemented in <a class="el" href="Helix_Site_View.html#543605b">View</a>.</p>
-
-</div>
-</div>
-<a id="b0a5040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#b0a5040">&#9670;&nbsp;</a></span>render()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void render </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$message</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Throwable&#160;</td>
+          <td class="paramname"><em>$previous</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Directly outputs content. </p>
-
-<p>Implemented in <a class="el" href="Helix_Site_View.html#b0a5040">View</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$code</td><td><code>4xx|5xx</code> </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$message</td><td>Defaults to the standard description. </td></tr>
+    <tr><td class="paramtype">Throwable&#160;|&#160;null</td><td class="paramname">$previous</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -140,7 +142,7 @@ Public Methods</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
     <ul>
-        <li class="navelem"><b>Helix</b></li><li class="navelem"><b>Site</b></li><li class="navelem"><a class="el" href="Helix_Site_ViewableInterface.html">ViewableInterface</a></li>
+        <li class="navelem"><b>Helix</b></li><li class="navelem"><b>Site</b></li><li class="navelem"><a class="el" href="Helix_Site_HttpError.html">HttpError</a></li>
         <li class="footer">
             <a href="https://github.com/hfw/site" target="_blank">https://github.com/hfw/site</a>
             |

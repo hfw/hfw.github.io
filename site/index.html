@@ -65,8 +65,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Route requests without overhead and respond as you like.</p>
-<p><a href="https://www.php.net"><img src="https://img.shields.io/badge/PHP-~7.3-666999" alt="" class="inline"/></a> <a href="https://packagist.org/packages/hfw/site"><img src="https://img.shields.io/badge/packagist-a50" alt="" class="inline"/></a> <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-black" alt="" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/site"><img src="https://scrutinizer-ci.com/g/hfw/site/badges/quality-score.png?b=master" alt="" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/site"><img src="https://scrutinizer-ci.com/g/hfw/site/badges/build.png?b=master" alt="" class="inline"/></a></p>
-<p><a href="https://hfw.github.io/site/inherits.html"><img src="classes.png" alt="" class="inline"/></a></p>
+<p><a href="https://www.php.net"><img src="https://img.shields.io/badge/PHP-&gt;=7.4-666999" alt="" class="inline"/></a> <a href="https://packagist.org/packages/hfw/site"><img src="https://img.shields.io/badge/packagist-a50" alt="" class="inline"/></a> <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-black" alt="" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/site"><img src="https://scrutinizer-ci.com/g/hfw/site/badges/quality-score.png?b=master" alt="" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/site"><img src="https://scrutinizer-ci.com/g/hfw/site/badges/build.png?b=master" alt="" class="inline"/></a></p>
 <p>Documentation: <a href="https://hfw.github.io/site">https://hfw.github.io/site</a></p>
 <div class="fragment"><div class="line">composer require hfw/site</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md0"></a>
@@ -74,18 +73,13 @@ Web I/O</h1>
 <h2><a class="anchor" id="autotoc_md1"></a>
 &lt;tt&gt;index.php&lt;/tt&gt;</h2>
 <div class="fragment"><div class="line">&lt;?php</div>
-<div class="line"> </div>
 <div class="line">include <span class="stringliteral">&#39;vendor/autoload.php&#39;</span>;</div>
-<div class="line"> </div>
 <div class="line">use <a class="code" href="Helix_Site.html">Helix\Site</a>;</div>
 <div class="line">use <a class="code" href="Helix_Site_View.html">Helix\Site\View</a>;</div>
-<div class="line"> </div>
 <div class="line">$site = <span class="keyword">new</span> Site;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// &quot;GET /&quot;</span></div>
-<div class="line">$site-&gt;get(<span class="charliteral">&#39;/&#39;</span>, <span class="keyword">function</span>() {</div>
-<div class="line">    <span class="keywordflow">return</span> <span class="stringliteral">&#39;Hello World!&#39;</span>;</div>
-<div class="line">});</div>
+<div class="line">$site-&gt;get(<span class="charliteral">&#39;/&#39;</span>, fn() =&gt; <span class="stringliteral">&#39;Hello World&#39;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// &quot;GET /foo/123&quot; (regex)</span></div>
 <div class="line">$site-&gt;get(<span class="stringliteral">&#39;#^/foo/(?&lt;id&gt;[0-9]+)$#&#39;</span>, <span class="keyword">function</span>(array $path) {</div>
@@ -96,9 +90,6 @@ Web I/O</h1>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
 &lt;tt&gt;view/foo.phtml&lt;/tt&gt;</h2>
 <div class="fragment"><div class="line">&lt;?php</div>
-<div class="line"> </div>
-<div class="line">use <a class="code" href="Helix_Site_View.html">Helix\Site\View</a>;</div>
-<div class="line"> </div>
 <div class="line">echo $id;</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md3"></a>
 Under the Hood</h2>
@@ -109,9 +100,9 @@ Under the Hood</h2>
 </ul>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Views</h2>
-<p><code>View</code> instances merely <code>include</code> their templates (<code>phtml</code> files). Within the scope of those files, <code>$this</code> refers to the <code>View</code> instance itself. Any data given to the view is converted to variables via <code>extract()</code> prior to and in the same scope as the template inclusion. Data can also be accessed via <code>ArrayAccess</code>.</p>
+<p><code>View</code> instances merely <code>include</code> their templates (<code>.phtml</code> files).</p>
+<p>Within the scope of those files, <code>$this</code> refers to the <code>View</code> instance itself. Any data given to the view is converted to variables via <code>extract()</code> in the same scope as the template inclusion. Data can also be accessed via <code>ArrayAccess</code>.</p>
 <p>By convention, templates should be stored in the <code>view</code> directory in the document root.</p>
-<p>Any <code>ViewableInterface</code> can be returned from a controller to be rendered, as well as plain strings.</p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 nginx config</h2>
 <div class="fragment"><div class="line">server {</div>
@@ -124,8 +115,8 @@ nginx config</h2>
 </div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aHelix_Site_html"><div class="ttname"><a href="Helix_Site.html">Helix\Site</a></div><div class="ttdoc">Routing and error handling.</div><div class="ttdef"><b>Definition:</b> Site.php:15</div></div>
-<div class="ttc" id="aHelix_Site_View_html"><div class="ttname"><a href="Helix_Site_View.html">Helix\Site\View</a></div><div class="ttdoc">Renders a template with data.</div><div class="ttdef"><b>Definition:</b> View.php:10</div></div>
+<div class="ttc" id="aHelix_Site_html"><div class="ttname"><a href="Helix_Site.html">Helix\Site</a></div><div class="ttdoc">Routing and error handling.</div><div class="ttdef"><b>Definition:</b> Site.php:16</div></div>
+<div class="ttc" id="aHelix_Site_View_html"><div class="ttname"><a href="Helix_Site_View.html">Helix\Site\View</a></div><div class="ttdoc">Renders a template with data.</div><div class="ttdef"><b>Definition:</b> View.php:11</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

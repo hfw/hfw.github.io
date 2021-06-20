@@ -74,9 +74,6 @@ $(document).ready(function(){initNavTree('Helix_Site.html',''); initResizable();
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
-<tr class="memitem:6878960"><td class="memItemLeft" align="right" valign="top"><a id="6878960"></a>
-<a class="el" href="Helix_Site_Auth.html">Auth</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$auth</b></td></tr>
-<tr class="separator:6878960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:25635ad"><td class="memItemLeft" align="right" valign="top"><a id="25635ad"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$dev</b> = false</td></tr>
 <tr class="separator:25635ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,48 +83,47 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$dev</b> = false</td>
 <tr class="memitem:c04f104"><td class="memItemLeft" align="right" valign="top"><a id="c04f104"></a>
 <a class="el" href="Helix_Site_Response.html">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$response</b></td></tr>
 <tr class="separator:c04f104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074fc8"><td class="memItemLeft" align="right" valign="top"><a id="a074fc8"></a>
+<a class="el" href="Helix_Site_Session.html">Session</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td></tr>
+<tr class="separator:a074fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr class="memitem:5f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#5f39685">__construct</a> ()</td></tr>
 <tr class="memdesc:5f39685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the system for routing, error handling, and output.  <a href="Helix_Site.html#5f39685">More...</a><br /></td></tr>
 <tr class="separator:5f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ea1bad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#ea1bad8">_onException</a> (Throwable $error)</td></tr>
-<tr class="memdesc:ea1bad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles uncaught exceptions and exits.  <a href="Helix_Site.html#ea1bad8">More...</a><br /></td></tr>
-<tr class="separator:ea1bad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:142b270"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#142b270">_onRaise</a> (int $code, string $message, string $file, int $line)</td></tr>
-<tr class="memdesc:142b270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles raised PHP errors by throwing or logging them, depending on whether they're in <code>error_reporting()</code>  <a href="Helix_Site.html#142b270">More...</a><br /></td></tr>
-<tr class="separator:142b270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:5abc58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#5abc58d">delete</a> (string $path, callable $controller)</td></tr>
-<tr class="memdesc:5abc58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>DELETE</code>  <a href="Helix_Site.html#5abc58d">More...</a><br /></td></tr>
-<tr class="separator:5abc58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:b3d4a6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#b3d4a6b">get</a> (string $path, callable $controller)</td></tr>
-<tr class="memdesc:b3d4a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>GET</code> and <code>HEAD</code>  <a href="Helix_Site.html#b3d4a6b">More...</a><br /></td></tr>
-<tr class="separator:b3d4a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:6c72320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Site_Auth.html">Auth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#6c72320">getAuth</a> ()</td></tr>
-<tr class="separator:6c72320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8663438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#8663438">delete</a> (string $path, $controller, array $extra=[])</td></tr>
+<tr class="memdesc:8663438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>DELETE</code>  <a href="Helix_Site.html#8663438">More...</a><br /></td></tr>
+<tr class="separator:8663438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2bed385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#2bed385">get</a> (string $path, $controller, array $extra=[])</td></tr>
+<tr class="memdesc:2bed385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>GET</code> and <code>HEAD</code>  <a href="Helix_Site.html#2bed385">More...</a><br /></td></tr>
+<tr class="separator:2bed385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:3def2e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Site_Request.html">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#3def2e6">getRequest</a> ()</td></tr>
 <tr class="separator:3def2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:297104d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Site_Response.html">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#297104d">getResponse</a> ()</td></tr>
 <tr class="separator:297104d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c19f694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Site_Session.html">Session</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#c19f694">getSession</a> ()</td></tr>
+<tr class="separator:c19f694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dc36653"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#dc36653">isDev</a> ()</td></tr>
 <tr class="separator:dc36653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5e9cb1c"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#5e9cb1c">log</a> ($code, string $message)</td></tr>
 <tr class="separator:5e9cb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:1128473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#1128473">post</a> (string $path, callable $controller)</td></tr>
-<tr class="memdesc:1128473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>POST</code>  <a href="Helix_Site.html#1128473">More...</a><br /></td></tr>
-<tr class="separator:1128473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d2c96c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#d2c96c4">put</a> (string $path, callable $controller)</td></tr>
-<tr class="memdesc:d2c96c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>PUT</code>  <a href="Helix_Site.html#d2c96c4">More...</a><br /></td></tr>
-<tr class="separator:d2c96c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d7cccc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#d7cccc4">post</a> (string $path, $controller, array $extra=[])</td></tr>
+<tr class="memdesc:d7cccc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>POST</code>  <a href="Helix_Site.html#d7cccc4">More...</a><br /></td></tr>
+<tr class="separator:d7cccc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:90eb0e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#90eb0e8">put</a> (string $path, $controller, array $extra=[])</td></tr>
+<tr class="memdesc:90eb0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes <code>PUT</code>  <a href="Helix_Site.html#90eb0e8">More...</a><br /></td></tr>
+<tr class="separator:90eb0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:23a1769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#23a1769">route</a> (array $methods, string $path, $controller, array $extra)</td></tr>
+<tr class="memdesc:23a1769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a controller if the HTTP method and path match, and exits.  <a href="Helix_Site.html#23a1769">More...</a><br /></td></tr>
+<tr class="separator:23a1769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6980ea1"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#6980ea1">setDev</a> (bool $dev)</td></tr>
 <tr class="separator:6980ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
-<tr class="memitem:386a773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#386a773">route</a> (array $methods, string $path, callable $controller)</td></tr>
-<tr class="memdesc:386a773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes a controller if the HTTP method and path match, and exits.  <a href="Helix_Site.html#386a773">More...</a><br /></td></tr>
-<tr class="separator:386a773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2755efc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site.html#2755efc">route_call_exit</a> (array $path, $controller, array $extra)</td></tr>
+<tr class="separator:2755efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor</h2>
 <a id="5f39685"></a>
@@ -150,92 +146,8 @@ Protected Methods</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
-<a id="ea1bad8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ea1bad8">&#9670;&nbsp;</a></span>_onException()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _onException </td>
-          <td>(</td>
-          <td class="paramtype">Throwable&#160;</td>
-          <td class="paramname"><em>$error</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handles uncaught exceptions and exits. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">Throwable</td><td class="paramname">$error</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="142b270"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#142b270">&#9670;&nbsp;</a></span>_onRaise()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_onRaise </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$message</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$line</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handles raised PHP errors by throwing or logging them, depending on whether they're in <code>error_reporting()</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$code</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$file</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$line</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">ErrorException</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="5abc58d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#5abc58d">&#9670;&nbsp;</a></span>delete()</h2>
+<a id="8663438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8663438">&#9670;&nbsp;</a></span>delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,8 +161,14 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable&#160;</td>
-          <td class="paramname"><em>$controller</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$extra</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -264,16 +182,16 @@ Protected Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
-    <tr><td class="paramtype">callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extra</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="b3d4a6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#b3d4a6b">&#9670;&nbsp;</a></span>get()</h2>
+<a id="2bed385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2bed385">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,8 +205,14 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable&#160;</td>
-          <td class="paramname"><em>$controller</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$extra</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -302,37 +226,11 @@ Protected Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
-    <tr><td class="paramtype">callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extra</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="6c72320"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#6c72320">&#9670;&nbsp;</a></span>getAuth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_Site_Auth.html">Auth</a> getAuth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Site_Auth.html" title="Authentication.">Auth</a> </dd></dl>
 
 </div>
 </div>
@@ -367,12 +265,30 @@ Protected Methods</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Helix_Site_Response.html">Response</a> getResponse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Site_Response.html" title="The response.">Response</a> </dd></dl>
+
+</div>
+</div>
+<a id="c19f694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c19f694">&#9670;&nbsp;</a></span>getSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_Site_Response.html">Response</a> getResponse </td>
+          <td class="memname"><a class="el" href="Helix_Site_Session.html">Session</a> getSession </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -384,7 +300,7 @@ Protected Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Site_Response.html" title="The response.">Response</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Site_Session.html" title="The session.">Session</a> </dd></dl>
 
 </div>
 </div>
@@ -450,8 +366,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="1128473"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#1128473">&#9670;&nbsp;</a></span>post()</h2>
+<a id="d7cccc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d7cccc4">&#9670;&nbsp;</a></span>post()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -465,8 +381,14 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable&#160;</td>
-          <td class="paramname"><em>$controller</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$extra</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -480,15 +402,16 @@ Protected Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
-    <tr><td class="paramtype">callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extra</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="d2c96c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#d2c96c4">&#9670;&nbsp;</a></span>put()</h2>
+<a id="90eb0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#90eb0e8">&#9670;&nbsp;</a></span>put()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -502,8 +425,14 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable&#160;</td>
-          <td class="paramname"><em>$controller</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$extra</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -517,22 +446,19 @@ Protected Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
-    <tr><td class="paramtype">callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extra</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="386a773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#386a773">&#9670;&nbsp;</a></span>route()</h2>
+<a id="23a1769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#23a1769">&#9670;&nbsp;</a></span>route()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void route </td>
@@ -549,8 +475,63 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable&#160;</td>
-          <td class="paramname"><em>$controller</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$extra</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invokes a controller if the HTTP method and path match, and exits. </p>
+<p>Absolute paths must start with <code>/</code>, all other paths are treated as regular expressions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string[]</td><td class="paramname">$methods</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$controller</td><td><a class="el" href="Helix_Site_Controller.html" title="A controller.">Controller</a> class, or callable. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extra</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="2755efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2755efc">&#9670;&nbsp;</a></span>route_call_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void route_call_exit </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$extra</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -564,18 +545,23 @@ Protected Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Invokes a controller if the HTTP method and path match, and exits. </p>
-<p>Absolute paths must start with <code>/</code>, all other paths are treated as regular expressions.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string[]</td><td class="paramname">$methods</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
-    <tr><td class="paramtype">callable</td><td class="paramname">$controller</td><td><code>(string[] $match, <a class="el" href="Helix_Site.html" title="Routing and error handling.">Site</a> $site):mixed</code> </td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$path</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$controller</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extra</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_Site_Controller.html#ca5a837" title="Handles DELETE">Controller::delete()</a> </dd>
+<dd>
+<a class="el" href="Helix_Site_Controller.html#1c51ca2" title="Handles GET">Controller::get()</a> </dd>
+<dd>
+<a class="el" href="Helix_Site_Controller.html#b826a63" title="Handles POST">Controller::post()</a> </dd>
+<dd>
+<a class="el" href="Helix_Site_Controller.html#3c0ed56" title="Handles PUT">Controller::put()</a> </dd>
+<dd>
+<a class="el" href="Helix_Site_Controller.html#d9fde4b" title="Throws HTTP 501 Not Implemented as a catch-all for any unimplemented non-standard request methods.">Controller::__call()</a> </dd></dl>
 
 </div>
 </div>

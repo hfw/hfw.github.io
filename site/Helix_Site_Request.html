@@ -102,6 +102,9 @@ Protected Properties</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
+<tr class="memitem:5f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#5f39685">__construct</a> ()</td></tr>
+<tr class="memdesc:5f39685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs using CGI data.  <a href="Helix_Site_Request.html#5f39685">More...</a><br /></td></tr>
+<tr class="separator:5f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f5ddf7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#f5ddf7f">__toString</a> ()</td></tr>
 <tr class="separator:f5ddf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66af62"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#a66af62">getArgs</a> ()</td></tr>
@@ -143,12 +146,12 @@ Public Methods</h2></td></tr>
 <tr class="memitem:267e611"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#267e611">offsetGet</a> ($key)</td></tr>
 <tr class="memdesc:267e611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a request header.  <a href="Helix_Site_Request.html#267e611">More...</a><br /></td></tr>
 <tr class="separator:267e611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f39bf0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#f39bf0a">offsetSet</a> ($key, $value)</td></tr>
-<tr class="memdesc:f39bf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <a href="Helix_Site_Request.html#f39bf0a">More...</a><br /></td></tr>
-<tr class="separator:f39bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:bfaf0d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#bfaf0d9">offsetUnset</a> ($key)</td></tr>
-<tr class="memdesc:bfaf0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <a href="Helix_Site_Request.html#bfaf0d9">More...</a><br /></td></tr>
-<tr class="separator:bfaf0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:1c344cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#1c344cf">offsetSet</a> ($key, $value)</td></tr>
+<tr class="memdesc:1c344cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws.  <a href="Helix_Site_Request.html#1c344cf">More...</a><br /></td></tr>
+<tr class="separator:1c344cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:26f56ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#26f56ea">offsetUnset</a> ($key)</td></tr>
+<tr class="memdesc:26f56ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws.  <a href="Helix_Site_Request.html#26f56ea">More...</a><br /></td></tr>
+<tr class="separator:26f56ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f8d7d98"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_Request.html#f8d7d98">setProxies</a> (array $proxies)</td></tr>
 <tr class="separator:f8d7d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -272,6 +275,26 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Trust client IP forwarding from these proxies. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor</h2>
+<a id="5f39685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#5f39685">&#9670;&nbsp;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs using CGI data. </p>
 
 </div>
 </div>
@@ -734,14 +757,17 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="f39bf0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#f39bf0a">&#9670;&nbsp;</a></span>offsetSet()</h2>
+<a id="1c344cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#1c344cf">&#9670;&nbsp;</a></span>offsetSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">offsetSet </td>
+          <td class="memname">void offsetSet </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$key</em>, </td>
@@ -758,9 +784,14 @@ Public Methods</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Does nothing. </p>
+<p>Throws. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$key</td><td></td></tr>
@@ -768,29 +799,49 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">LogicException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="bfaf0d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#bfaf0d9">&#9670;&nbsp;</a></span>offsetUnset()</h2>
+<a id="26f56ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#26f56ea">&#9670;&nbsp;</a></span>offsetUnset()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">offsetUnset </td>
+          <td class="memname">void offsetUnset </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Does nothing. </p>
+<p>Throws. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">LogicException</td><td></td></tr>
   </table>
   </dd>
 </dl>

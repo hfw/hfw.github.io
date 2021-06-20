@@ -75,9 +75,8 @@ $(document).ready(function(){initNavTree('Helix_Site_View.html',''); initResizab
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_Site_View__inherit__graph.png" border="0" usemap="#View_inherit__map" alt="Inheritance graph"/></div>
 <map name="View_inherit__map" id="View_inherit__map">
-<area shape="rect" title="Renders a template with data." alt="" coords="133,83,196,112"/>
+<area shape="rect" title="Renders a template with data." alt="" coords="40,83,103,112"/>
 <area shape="rect" title=" " alt="" coords="5,5,137,35"/>
-<area shape="rect" href="Helix_Site_ViewableInterface.html" title="The instance can render content." alt="" coords="162,5,354,35"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
@@ -85,6 +84,9 @@ $(document).ready(function(){initNavTree('Helix_Site_View.html',''); initResizab
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
+<tr class="memitem:34de4ff"><td class="memItemLeft" align="right" valign="top"><a id="34de4ff"></a>
+int DateTimeInterface&#160;</td><td class="memItemRight" valign="bottom"><b>$cacheTtl</b> = 0</td></tr>
+<tr class="separator:34de4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:b77bf12"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#b77bf12">$data</a> = []</td></tr>
 <tr class="memdesc:b77bf12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracted to variables upon render.  <a href="Helix_Site_View.html#b77bf12">More...</a><br /></td></tr>
 <tr class="separator:b77bf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,7 +101,11 @@ Public Methods</h2></td></tr>
 <tr class="separator:8270e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f5ddf7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#f5ddf7f">__toString</a> ()</td></tr>
 <tr class="separator:f5ddf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d018b51"><td class="memItemLeft" align="right" valign="top">int DateTimeInterface&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#d018b51">getCacheTtl</a> ()</td></tr>
+<tr class="memdesc:d018b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum TTL, considering the instance itself and any nested views.  <a href="Helix_Site_View.html#d018b51">More...</a><br /></td></tr>
+<tr class="separator:d018b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:543605b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#543605b">getContent</a> ()</td></tr>
+<tr class="memdesc:543605b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what would be rendered.  <a href="Helix_Site_View.html#543605b">More...</a><br /></td></tr>
 <tr class="separator:543605b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e729914"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#e729914">offsetExists</a> ($offset)</td></tr>
 <tr class="separator:e729914"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,8 +116,10 @@ Public Methods</h2></td></tr>
 <tr class="memitem:26f56ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#26f56ea">offsetUnset</a> ($key)</td></tr>
 <tr class="separator:26f56ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:b0a5040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#b0a5040">render</a> ()</td></tr>
-<tr class="memdesc:b0a5040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts <code>$data</code> to variables, and includes the template.  <a href="Helix_Site_View.html#b0a5040">More...</a><br /></td></tr>
+<tr class="memdesc:b0a5040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly outputs content.  <a href="Helix_Site_View.html#b0a5040">More...</a><br /></td></tr>
 <tr class="separator:b0a5040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:39fc7b6"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Site_View.html#39fc7b6">setCacheTtl</a> ($cacheTtl)</td></tr>
+<tr class="separator:39fc7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
 <a id="b77bf12"></a>
@@ -157,6 +165,26 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="d018b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d018b51">&#9670;&nbsp;</a></span>getCacheTtl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DateTimeInterface getCacheTtl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The minimum TTL, considering the instance itself and any nested views. </p>
+<dl class="section return"><dt>Returns</dt><dd>int|DateTimeInterface </dd></dl>
+
+</div>
+</div>
 <a id="543605b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#543605b">&#9670;&nbsp;</a></span>getContent()</h2>
 
@@ -171,9 +199,9 @@ Public Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Implements <a class="el" href="Helix_Site_ViewableInterface.html#543605b">ViewableInterface</a>.</p>
+<p>Returns what would be rendered. </p>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
 </div>
@@ -301,11 +329,33 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Extracts <code>$data</code> to variables, and includes the template. </p>
-<p><code>$this</code> within the template references the view instance.</p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Directly outputs content. </p>
+<p>Extracts <code>$data</code> to variables, and includes the template. <code>$this</code> within the template references the view instance. </p>
 
-<p>Implements <a class="el" href="Helix_Site_ViewableInterface.html#b0a5040">ViewableInterface</a>.</p>
+</div>
+</div>
+<a id="39fc7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#39fc7b6">&#9670;&nbsp;</a></span>setCacheTtl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this setCacheTtl </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$cacheTtl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;DateTimeInterface</td><td class="paramname">$cacheTtl</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
 
 </div>
 </div>
