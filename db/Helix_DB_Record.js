@@ -8,6 +8,7 @@ var Helix_DB_Record =
     [ "$types", "Helix_DB_Record.html#f594f1e", null ],
     [ "$utc", "Helix_DB_Record.html#8695334", null ],
     [ "DEHYDRATE_AS", "Helix_DB_Record.html#ddfcc26", null ],
+    [ "EAV_BATCH_LOAD", "Helix_DB_Record.html#1ce31ba", null ],
     [ "RX_EAV", "Helix_DB_Record.html#e04da41", null ],
     [ "RX_EAV_VAR", "Helix_DB_Record.html#0ff0f46", null ],
     [ "RX_IS_COLUMN", "Helix_DB_Record.html#97c9e23", null ],

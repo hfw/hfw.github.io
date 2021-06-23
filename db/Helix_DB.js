@@ -25,6 +25,7 @@ var Helix_DB =
     [ "marks", "Helix_DB.html#9b08c54", null ],
     [ "match", "Helix_DB.html#ce43e84", null ],
     [ "newTransaction", "Helix_DB.html#2907cbe", null ],
+    [ "now", "Helix_DB.html#cfded23", null ],
     [ "offsetExists", "Helix_DB.html#0fdaee3", null ],
     [ "offsetGet", "Helix_DB.html#62ef696", null ],
     [ "offsetSet", "Helix_DB.html#e46b7a3", null ],
@@ -44,5 +45,6 @@ var Helix_DB =
     [ "slots", "Helix_DB.html#35bf04f", null ],
     [ "slotsEqual", "Helix_DB.html#872af1b", null ],
     [ "sqliteCreateFunctions", "Helix_DB.html#93c6118", null ],
+    [ "today", "Helix_DB.html#56950cf", null ],
     [ "transact", "Helix_DB.html#e9106ac", null ]
 ];

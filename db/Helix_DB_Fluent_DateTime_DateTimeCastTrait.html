@@ -109,14 +109,14 @@ Public Methods</h2></td></tr>
 
 <p>Interpret the expression as a datetime. </p>
 <blockquote class="doxtable">
-<p>Warning: If the expression is in the local timezone you should chain this with <a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#c1531fe">DateTime::toUtc()</a> </p>
+<p>Warning: If the expression's value is in the local timezone you should chain this with <a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#c1531fe">DateTime::toUtc()</a> </p>
 </blockquote>
 <p>SQLite:</p><ul>
 <li>The expression's value must conform to one of any <code>time-value</code> formats.</li>
 <li><a href="https://www.sqlite.org/lang_datefunc.html">https://www.sqlite.org/lang_datefunc.html</a></li>
 </ul>
 <p>MySQL:</p><ul>
-<li>The expression's value must conform to <code>YYYY-MM-DD hh:mm:ss</code></li>
+<li>The expression's value must conform to <code>YYYY-MM-DD</code> or <code>YYYY-MM-DD hh:mm:ss</code></li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_DateTime.html" title="A date-time expression.">DateTime</a> </dd></dl>
 

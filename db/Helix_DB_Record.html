@@ -62,7 +62,6 @@ $(document).ready(function(){initNavTree('Helix_DB_Record.html',''); initResizab
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Properties</a> &#124;
 <a href="#pro-attribs">Protected Properties</a> &#124;
 <a href="#pub-static-methods">Public Static Methods</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
@@ -103,12 +102,6 @@ $(document).ready(function(){initNavTree('Helix_DB_Record.html',''); initResizab
 </blockquote>
 <p>@TODO Allow constraints in the <code>column</code> tag, supporting single and multi-column. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Properties</h2></td></tr>
-<tr class="memitem:b2dc14c"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#b2dc14c">SCALARS</a></td></tr>
-<tr class="memdesc:b2dc14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps annotated/native scalar types to storage types acceptable for <code>settype()</code>  <a href="Helix_DB_Record.html#b2dc14c">More...</a><br /></td></tr>
-<tr class="separator:b2dc14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
 <tr class="memitem:2177d2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EAV.html">EAV</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#2177d2d">$eav</a> = []</td></tr>
@@ -135,6 +128,9 @@ DateTimeZone DateTimeZone&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:ddfcc26"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#ddfcc26">DEHYDRATE_AS</a></td></tr>
 <tr class="memdesc:ddfcc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps complex types to storage types.  <a href="Helix_DB_Record.html#ddfcc26">More...</a><br /></td></tr>
 <tr class="separator:ddfcc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:1ce31ba"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#1ce31ba">EAV_BATCH_LOAD</a> = 256</td></tr>
+<tr class="memdesc:1ce31ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of entities to load <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> entries for at a time, during <a class="el" href="Helix_DB_Record.html#c5a765b">Record::fetchEach()</a> iteration.  <a href="Helix_DB_Record.html#1ce31ba">More...</a><br /></td></tr>
+<tr class="separator:1ce31ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e04da41"><td class="memItemLeft" align="right" valign="top"><a id="e04da41"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV</b> = '/\*\h*@eav\h+(?&lt;table&gt;\w+)/i'</td></tr>
 <tr class="separator:e04da41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +149,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_RECORD</b> = '/\*
 <tr class="memitem:31d81cd"><td class="memItemLeft" align="right" valign="top"><a id="31d81cd"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_VAR</b> = '/\*\h*@var\h+(?&lt;type&gt;\S+)/i'</td></tr>
 <tr class="separator:31d81cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b2dc14c"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record.html#b2dc14c">SCALARS</a></td></tr>
+<tr class="memdesc:b2dc14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps annotated/native scalar types to storage types acceptable for <code>settype()</code>  <a href="Helix_DB_Record.html#b2dc14c">More...</a><br /></td></tr>
+<tr class="separator:b2dc14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#13ea20d">$_cache</a> = []</td></tr>
 <tr class="memdesc:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepared statement cache, keyed by function name.  <a href="Helix_DB_Table.html#13ea20d">More...</a><br /></td></tr>
@@ -493,31 +492,64 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="1ce31ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#1ce31ba">&#9670;&nbsp;</a></span>EAV_BATCH_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const EAV_BATCH_LOAD = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of entities to load <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> entries for at a time, during <a class="el" href="Helix_DB_Record.html#c5a765b">Record::fetchEach()</a> iteration. </p>
+
+</div>
+</div>
 <a id="b2dc14c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#b2dc14c">&#9670;&nbsp;</a></span>SCALARS</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const SCALARS</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        <span class="stringliteral">&#39;bool&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;float&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;false&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;boolean&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,    </div>
+<div class="line">        <span class="stringliteral">&#39;double&#39;</span> =&gt; <span class="stringliteral">&#39;float&#39;</span>,    </div>
+<div class="line">        <span class="stringliteral">&#39;false&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,      </div>
 <div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <span class="stringliteral">&#39;float&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;int&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;number&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;scalar&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;integer&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,     </div>
+<div class="line">        <span class="stringliteral">&#39;NULL&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,     </div>
+<div class="line">        <span class="stringliteral">&#39;number&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,   </div>
+<div class="line">        <span class="stringliteral">&#39;scalar&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,   </div>
 <div class="line">        <span class="stringliteral">&#39;string&#39;</span> =&gt; <span class="stringliteral">&#39;string&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;String&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;true&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;String&#39;</span> =&gt; <span class="stringliteral">&#39;String&#39;</span>,   </div>
+<div class="line">        <span class="stringliteral">&#39;STRING&#39;</span> =&gt; <span class="stringliteral">&#39;STRING&#39;</span>,   </div>
+<div class="line">        <span class="stringliteral">&#39;true&#39;</span> =&gt; <span class="stringliteral">&#39;bool&#39;</span>,       </div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>Maps annotated/native scalar types to storage types acceptable for <code>settype()</code> </p>
@@ -1440,7 +1472,7 @@ Protected Methods</h2></td></tr>
 <p>Loads and sets all <a class="el" href="Helix_DB_EAV.html" title="Array storage in an extension table.">EAV</a> properties for an array of entities keyed by ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s ID for storage.">EntityInterface</a>[]</td><td class="paramname">$entities</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s ID for storage.">EntityInterface</a>[]</td><td class="paramname">$entities</td><td>Keyed by ID </td></tr>
   </table>
   </dd>
 </dl>
