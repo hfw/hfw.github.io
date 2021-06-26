@@ -26,7 +26,7 @@ var Helix_DB_Fluent_DateTime_DateTimeTrait =
     [ "iso8601", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#995c497", null ],
     [ "julian", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#ea09a2c", null ],
     [ "minutes", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#e90d103", null ],
-    [ "modify", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#dda523d", null ],
+    [ "modify", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#6fec6e9", null ],
     [ "month", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#431211f", null ],
     [ "seconds", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#abc0db4", null ],
     [ "subDay", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#87971f9", null ],
@@ -41,8 +41,7 @@ var Helix_DB_Fluent_DateTime_DateTimeTrait =
     [ "subYears", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#0422830", null ],
     [ "time", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#b14ee35", null ],
     [ "timestamp", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#b2398f0", null ],
-    [ "toLocalTz", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#a21426f", null ],
-    [ "toUtc", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#c1531fe", null ],
+    [ "toUTC", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#8f96c56", null ],
     [ "weekOfYear", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#feb7a44", null ],
     [ "year", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#b50d156", null ]
 ];

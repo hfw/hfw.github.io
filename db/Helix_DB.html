@@ -87,12 +87,15 @@ $(document).ready(function(){initNavTree('Helix_DB.html',''); initResizable(); }
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
+<tr class="memitem:07d55f2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#07d55f2">$driver</a></td></tr>
+<tr class="memdesc:07d55f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The driver's name.  <a href="Helix_DB.html#07d55f2">More...</a><br /></td></tr>
+<tr class="separator:07d55f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:86c2f9f"><td class="memItemLeft" align="right" valign="top"><a id="86c2f9f"></a>
 <a class="el" href="Helix_DB_Junction.html">Junction</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>$junctions</b> = []</td></tr>
 <tr class="separator:86c2f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ce2b5bb"><td class="memItemLeft" align="right" valign="top">Closure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#ce2b5bb">$logger</a></td></tr>
-<tr class="memdesc:ce2b5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notified whenever a query is executed or a statement is prepared.  <a href="Helix_DB.html#ce2b5bb">More...</a><br /></td></tr>
-<tr class="separator:ce2b5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2881c0"><td class="memItemLeft" align="right" valign="top">callable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#d2881c0">$logger</a></td></tr>
+<tr class="memdesc:d2881c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notified whenever a query is executed or a statement is prepared.  <a href="Helix_DB.html#d2881c0">More...</a><br /></td></tr>
+<tr class="separator:d2881c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6b82851"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#6b82851">$migrations</a> = 'migrations/default'</td></tr>
 <tr class="memdesc:6b82851"><td class="mdescLeft">&#160;</td><td class="mdescRight">The migrations directory for this connection.  <a href="Helix_DB.html#6b82851">More...</a><br /></td></tr>
 <tr class="separator:6b82851"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,10 +112,10 @@ Protected Properties</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Public Static Methods</h2></td></tr>
 <tr class="memitem:07e25e5"><td class="memItemLeft" align="right" valign="top">static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#07e25e5">fromConfig</a> (string $connection='default', string $file='db.config.php')</td></tr>
-<tr class="memdesc:07e25e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance using a configuration file.  <a href="Helix_DB.html#07e25e5">More...</a><br /></td></tr>
+<tr class="memdesc:07e25e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new connection using a configuration file.  <a href="Helix_DB.html#07e25e5">More...</a><br /></td></tr>
 <tr class="separator:07e25e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:9b08c54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Helix_DB_Fluent_ExpressionInterface.html">ExpressionInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#9b08c54">marks</a> ($count)</td></tr>
-<tr class="memdesc:9b08c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of <code>?</code> placeholders.  <a href="Helix_DB.html#9b08c54">More...</a><br /></td></tr>
+<tr class="memdesc:9b08c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of <code>?</code> placeholder expressions.  <a href="Helix_DB.html#9b08c54">More...</a><br /></td></tr>
 <tr class="separator:9b08c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:35bf04f"><td class="memItemLeft" align="right" valign="top">static string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#35bf04f">slots</a> (array $columns)</td></tr>
 <tr class="memdesc:35bf04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an array of columns to <code>:named</code> placeholders for prepared queries.  <a href="Helix_DB.html#35bf04f">More...</a><br /></td></tr>
@@ -126,7 +129,7 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:969db10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets various attributes to streamline operations.  <a href="Helix_DB.html#969db10">More...</a><br /></td></tr>
 <tr class="separator:969db10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f5ddf7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#f5ddf7f">__toString</a> ()</td></tr>
-<tr class="memdesc:f5ddf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the driver.  <a href="Helix_DB.html#f5ddf7f">More...</a><br /></td></tr>
+<tr class="memdesc:f5ddf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The driver's name.  <a href="Helix_DB.html#f5ddf7f">More...</a><br /></td></tr>
 <tr class="separator:f5ddf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:389d204"><td class="memItemLeft" align="right" valign="top">true&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#389d204">beginTransaction</a> ()</td></tr>
 <tr class="memdesc:389d204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows nested transactions by using <code>SAVEPOINT</code>  <a href="Helix_DB.html#389d204">More...</a><br /></td></tr>
@@ -135,18 +138,18 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:8e1915f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows nested transactions by using <code>RELEASE SAVEPOINT</code>  <a href="Helix_DB.html#8e1915f">More...</a><br /></td></tr>
 <tr class="separator:8e1915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:660402d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#660402d">exec</a> ($sql)</td></tr>
-<tr class="memdesc:660402d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger.  <a href="Helix_DB.html#660402d">More...</a><br /></td></tr>
+<tr class="memdesc:660402d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger and executes.  <a href="Helix_DB.html#660402d">More...</a><br /></td></tr>
 <tr class="separator:660402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5c91022"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#5c91022">factory</a> (string $class,... $args)</td></tr>
 <tr class="memdesc:5c91022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Central point of object creation.  <a href="Helix_DB.html#5c91022">More...</a><br /></td></tr>
 <tr class="separator:5c91022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:480bdda"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#480bdda">getDriver</a> ()</td></tr>
 <tr class="separator:480bdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:0e422d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Junction.html">Junction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#0e422d4">getJunction</a> ($interface)</td></tr>
-<tr class="memdesc:0e422d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Junction.html">Junction</a> access object based on an annotated interface.  <a href="Helix_DB.html#0e422d4">More...</a><br /></td></tr>
-<tr class="separator:0e422d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:88507d6"><td class="memItemLeft" align="right" valign="top">Closure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#88507d6">getLogger</a> ()</td></tr>
-<tr class="separator:88507d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9776b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Junction.html">Junction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#a9776b5">getJunction</a> (string $interface)</td></tr>
+<tr class="memdesc:a9776b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Junction.html">Junction</a> access object based on an annotated interface.  <a href="Helix_DB.html#a9776b5">More...</a><br /></td></tr>
+<tr class="separator:a9776b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:058ff81"><td class="memItemLeft" align="right" valign="top">callable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#058ff81">getLogger</a> ()</td></tr>
+<tr class="separator:058ff81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:593483b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Migrator.html">Migrator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#593483b">getMigrator</a> ()</td></tr>
 <tr class="separator:593483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e17b2d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Record.html">Record</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#e17b2d0">getRecord</a> ($class)</td></tr>
@@ -160,6 +163,8 @@ Public Methods</h2></td></tr>
 <tr class="separator:6bbfe51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:8b842bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#8b842bf">isSQLite</a> ()</td></tr>
 <tr class="separator:8b842bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cf2be03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#cf2be03">log</a> (string $sql)</td></tr>
+<tr class="separator:cf2be03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ce43e84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#ce43e84">match</a> ($a, $b)</td></tr>
 <tr class="memdesc:ce43e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an equality <a class="el" href="">Predicate</a> from mixed arguments.  <a href="Helix_DB.html#ce43e84">More...</a><br /></td></tr>
 <tr class="separator:ce43e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,17 +181,19 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:62ef696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a table by name.  <a href="Helix_DB.html#62ef696">More...</a><br /></td></tr>
 <tr class="separator:62ef696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e46b7a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#e46b7a3">offsetSet</a> ($offset, $value)</td></tr>
+<tr class="memdesc:e46b7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws.  <a href="Helix_DB.html#e46b7a3">More...</a><br /></td></tr>
 <tr class="separator:e46b7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fd4b563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#fd4b563">offsetUnset</a> ($offset)</td></tr>
+<tr class="memdesc:fd4b563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws.  <a href="Helix_DB.html#fd4b563">More...</a><br /></td></tr>
 <tr class="separator:fd4b563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:8af20ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#8af20ee">pi</a> ()</td></tr>
 <tr class="memdesc:8af20ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>PI()</code>  <a href="Helix_DB.html#8af20ee">More...</a><br /></td></tr>
 <tr class="separator:8af20ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:187ddf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#187ddf1">prepare</a> ($sql, $options=[])</td></tr>
-<tr class="memdesc:187ddf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger.  <a href="Helix_DB.html#187ddf1">More...</a><br /></td></tr>
+<tr class="memdesc:187ddf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger and prepares a statement.  <a href="Helix_DB.html#187ddf1">More...</a><br /></td></tr>
 <tr class="separator:187ddf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e9fa9e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#e9fa9e2">query</a> ($sql, $mode=PDO::ATTR_DEFAULT_FETCH_MODE, $arg3=null, array $ctorargs=[])</td></tr>
-<tr class="memdesc:e9fa9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger and executes.  <a href="Helix_DB.html#e9fa9e2">More...</a><br /></td></tr>
+<tr class="memdesc:e9fa9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the logger and queries.  <a href="Helix_DB.html#e9fa9e2">More...</a><br /></td></tr>
 <tr class="separator:e9fa9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:38a3ff8"><td class="memItemLeft" align="right" valign="top">string <a class="el" href="Helix_DB_Fluent_ExpressionInterface.html">ExpressionInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#38a3ff8">quote</a> ($value, $type=self::PARAM_STR)</td></tr>
 <tr class="memdesc:38a3ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quotes a value, with special considerations.  <a href="Helix_DB.html#38a3ff8">More...</a><br /></td></tr>
@@ -206,14 +213,14 @@ Public Methods</h2></td></tr>
 <tr class="memitem:12fd03a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#12fd03a">save</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="memdesc:12fd03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards to the entity's <a class="el" href="Helix_DB_Record.html">Record</a>.  <a href="Helix_DB.html#12fd03a">More...</a><br /></td></tr>
 <tr class="separator:12fd03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:df401f1"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#df401f1">setJunction</a> (string $interface, <a class="el" href="Helix_DB_Junction.html">Junction</a> $junction)</td></tr>
-<tr class="separator:df401f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:82c52bf"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#82c52bf">setLogger</a> (Closure $logger)</td></tr>
-<tr class="separator:82c52bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:58bd55b"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#58bd55b">setLogger</a> (callable $logger)</td></tr>
+<tr class="separator:58bd55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c2d5b68"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#c2d5b68">setRecord</a> (string $class, <a class="el" href="Helix_DB_Record.html">Record</a> $record)</td></tr>
+<tr class="memdesc:c2d5b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a <a class="el" href="Helix_DB_Record.html">Record</a> for a third-party class that cannot be annotated.  <a href="Helix_DB.html#c2d5b68">More...</a><br /></td></tr>
 <tr class="separator:c2d5b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:93c6118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#93c6118">sqliteCreateFunctions</a> (array $callbacks, bool $deterministic=true)</td></tr>
-<tr class="separator:93c6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2796893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#2796893">sqliteCreateFunctions</a> (array $callables, bool $deterministic=true)</td></tr>
+<tr class="memdesc:2796893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create multiple SQLite functions at a time.  <a href="Helix_DB.html#2796893">More...</a><br /></td></tr>
+<tr class="separator:2796893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:56950cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#56950cf">today</a> ()</td></tr>
 <tr class="memdesc:56950cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An expression for the current date at midnight.  <a href="Helix_DB.html#56950cf">More...</a><br /></td></tr>
 <tr class="separator:56950cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,8 +229,8 @@ Public Methods</h2></td></tr>
 <tr class="separator:e9106ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
-<a id="ce2b5bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ce2b5bb">&#9670;&nbsp;</a></span>$logger</h2>
+<a id="07d55f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#07d55f2">&#9670;&nbsp;</a></span>$driver</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +239,35 @@ Public Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Closure $logger</td>
+          <td class="memname">string $driver</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The driver's name. </p>
+<ul>
+<li>mysql</li>
+<li>sqlite </li>
+</ul>
+
+</div>
+</div>
+<a id="d2881c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d2881c0">&#9670;&nbsp;</a></span>$logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">callable $logger</td>
         </tr>
       </table>
   </td>
@@ -243,8 +278,8 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notified whenever a query is executed or a statement is prepared. </p>
-<p>This is a stub closure by default.</p>
-<p><code>fn($sql):void</code> </p>
+<p>This is a stub-closure by default.</p>
+<p><code>fn($sql): void</code> </p>
 
 </div>
 </div>
@@ -375,7 +410,7 @@ Public Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the driver. </p>
+<p>The driver's name. </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
@@ -438,7 +473,7 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Notifies the logger. </p>
+<p>Notifies the logger and executes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
@@ -523,7 +558,7 @@ Public Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns an instance using a configuration file. </p>
+<p>Returns a new connection using a configuration file. </p>
 <p>See <code>db.config.php</code> in the <code>test</code> directory for an example.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -562,8 +597,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="0e422d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#0e422d4">&#9670;&nbsp;</a></span>getJunction()</h2>
+<a id="a9776b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9776b5">&#9670;&nbsp;</a></span>getJunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +606,7 @@ Public Methods</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="Helix_DB_Junction.html">Junction</a> getJunction </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$interface</em></td><td>)</td>
           <td></td>
         </tr>
@@ -589,21 +624,29 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="88507d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#88507d6">&#9670;&nbsp;</a></span>getLogger()</h2>
+<a id="058ff81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#058ff81">&#9670;&nbsp;</a></span>getLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Closure getLogger </td>
+          <td class="memname">callable getLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Closure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>callable </dd></dl>
 
 </div>
 </div>
@@ -754,6 +797,30 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="cf2be03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#cf2be03">&#9670;&nbsp;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$sql</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="9b08c54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#9b08c54">&#9670;&nbsp;</a></span>marks()</h2>
 
@@ -778,7 +845,7 @@ Public Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns an array of <code>?</code> placeholders. </p>
+<p>Returns an array of <code>?</code> placeholder expressions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;array&#160;|&#160;Countable</td><td class="paramname">$count</td><td></td></tr>
@@ -968,6 +1035,8 @@ Public Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Throws. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">$offset</td><td></td></tr>
@@ -1007,6 +1076,8 @@ Public Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Throws. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">$offset</td><td></td></tr>
@@ -1068,7 +1139,7 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Notifies the logger. </p>
+<p>Notifies the logger and prepares a statement. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
@@ -1118,13 +1189,13 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Notifies the logger and executes. </p>
+<p>Notifies the logger and queries. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td></td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$arg3</td><td>Optional. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$ctorargs</td><td>Optional. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$arg3</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$ctorargs</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1298,44 +1369,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="df401f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#df401f1">&#9670;&nbsp;</a></span>setJunction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$this setJunction </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$interface</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="Helix_DB_Junction.html">Junction</a>&#160;</td>
-          <td class="paramname"><em>$junction</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$interface</td><td></td></tr>
-    <tr><td class="paramtype"><a class="el" href="Helix_DB_Junction.html" title="Represents a junction table, derived from an annotated interface.">Junction</a></td><td class="paramname">$junction</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
-
-</div>
-</div>
-<a id="82c52bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#82c52bf">&#9670;&nbsp;</a></span>setLogger()</h2>
+<a id="58bd55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#58bd55b">&#9670;&nbsp;</a></span>setLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1343,7 +1378,7 @@ Public Methods</h2></td></tr>
         <tr>
           <td class="memname">$this setLogger </td>
           <td>(</td>
-          <td class="paramtype">Closure&#160;</td>
+          <td class="paramtype">callable&#160;</td>
           <td class="paramname"><em>$logger</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1351,7 +1386,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Closure</td><td class="paramname">$logger</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$logger</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1384,6 +1419,8 @@ Public Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Installs a <a class="el" href="Helix_DB_Record.html">Record</a> for a third-party class that cannot be annotated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$class</td><td></td></tr>
@@ -1464,8 +1501,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="93c6118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#93c6118">&#9670;&nbsp;</a></span>sqliteCreateFunctions()</h2>
+<a id="2796893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2796893">&#9670;&nbsp;</a></span>sqliteCreateFunctions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1474,7 +1511,7 @@ Public Methods</h2></td></tr>
           <td class="memname">void sqliteCreateFunctions </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$callbacks</em>, </td>
+          <td class="paramname"><em>$callables</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1489,10 +1526,12 @@ Public Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Create multiple SQLite functions at a time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">callable[]</td><td class="paramname">$callbacks</td><td>Keyed by function name. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$deterministic</td><td>Whether the callbacks aren't random / are without side-effects. </td></tr>
+    <tr><td class="paramtype">callable[]</td><td class="paramname">$callables</td><td>Keyed by function name. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$deterministic</td><td>Whether the callables aren't random / are without side-effects. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1539,7 +1578,7 @@ Public Methods</h2></td></tr>
 <p>The work is rolled back if an exception is thrown.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">callable</td><td class="paramname">$work</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$work</td><td><code>fn(): mixed</code> </td></tr>
   </table>
   </dd>
 </dl>
