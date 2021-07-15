@@ -89,9 +89,8 @@ $(document).ready(function(){initNavTree('Helix_DB_Junction.html',''); initResiz
 <p>Interface Annotations:</p>
 <ul>
 <li><code>@junction &lt;TABLE&gt;</code></li>
-<li><code>@foreign &lt;COLUMN&gt; &lt;CLASS FQN&gt;</code> or <code>@for &lt;COLUMN&gt; &lt;CLASS FQN&gt;</code></li>
+<li><code>@foreign &lt;COLUMN&gt; &lt;CLASS FQN&gt;</code> </li>
 </ul>
-<p>@TODO Remove the <code>for</code> tag, it's vague. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Properties</h2></td></tr>
@@ -99,7 +98,7 @@ Protected Properties</h2></td></tr>
 <tr class="memdesc:63fc5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[column =&gt; class]</code>  <a href="Helix_DB_Junction.html#63fc5a8">More...</a><br /></td></tr>
 <tr class="separator:63fc5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f951594"><td class="memItemLeft" align="right" valign="top"><a id="f951594"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_FOREIGN</b> = '/\*\h*@for(eign)?\h+(?&lt;column&gt;\w+)\h+(?&lt;class&gt;\S+)/i'</td></tr>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_FOREIGN</b> = '/\*\h*@foreign\h+(?&lt;column&gt;\w+)\h+(?&lt;class&gt;\S+)/i'</td></tr>
 <tr class="separator:f951594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:16d3814"><td class="memItemLeft" align="right" valign="top"><a id="16d3814"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_JUNCTION</b> = '/\*\h*@junction\h+(?&lt;table&gt;\w+)/i'</td></tr>
@@ -145,7 +144,7 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:a6fea23"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>INSERT IGNORE</code> to link entities.  <a href="Helix_DB_Junction.html#a6fea23">More...</a><br /></td></tr>
 <tr class="separator:a6fea23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f6ec9cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#f6ec9cd">unlink</a> (array $ids)</td></tr>
-<tr class="memdesc:f6ec9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for <a class="el" href="Helix_DB_Table.html#409ea77">delete()</a>.  <a href="Helix_DB_Junction.html#f6ec9cd">More...</a><br /></td></tr>
+<tr class="memdesc:f6ec9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typed alias for <a class="el" href="Helix_DB_Table.html#409ea77">delete()</a>.  <a href="Helix_DB_Junction.html#f6ec9cd">More...</a><br /></td></tr>
 <tr class="separator:f6ec9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:f5ddf7f inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#f5ddf7f">__toString</a> ()</td></tr>
@@ -168,9 +167,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:3111709 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:78d8eef inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#78d8eef">offsetGet</a> ($column)</td></tr>
 <tr class="separator:78d8eef inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:0bf3045 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#0bf3045">select</a> (array $columns=[' *'])</td></tr>
-<tr class="memdesc:0bf3045 inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns in the table.  <a href="Helix_DB_Table.html#0bf3045">More...</a><br /></td></tr>
-<tr class="separator:0bf3045 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f6265e7 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#f6265e7">select</a> ($expressions=[' *'])</td></tr>
+<tr class="memdesc:f6265e7 inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns or expressions in the table.  <a href="Helix_DB_Table.html#f6265e7">More...</a><br /></td></tr>
+<tr class="separator:f6265e7 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e501520 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Table.html">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e501520">setName</a> (string $name)</td></tr>
 <tr class="memdesc:e501520 inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an aliased clone for joins.  <a href="Helix_DB_Table.html#e501520">More...</a><br /></td></tr>
 <tr class="separator:e501520 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,11 +515,11 @@ Additional Inherited Members</h2></td></tr>
 <p><code>INSERT IGNORE</code> to link entities. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>Keyed by column. </td></tr>
+    <tr><td class="paramtype">int[]&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a>[]</td><td class="paramname">$ids</td><td>Keyed by column </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int Rows affected. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int Rows affected </dd></dl>
 
 </div>
 </div>
@@ -540,10 +539,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Alias for <a class="el" href="Helix_DB_Table.html#409ea77">delete()</a>. </p>
+<p>Typed alias for <a class="el" href="Helix_DB_Table.html#409ea77">delete()</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$ids</td><td>Keyed by <a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> </td></tr>
+    <tr><td class="paramtype">int[]&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a>[]</td><td class="paramname">$ids</td><td>Keyed by column </td></tr>
   </table>
   </dd>
 </dl>

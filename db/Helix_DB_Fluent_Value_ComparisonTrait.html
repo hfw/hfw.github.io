@@ -96,13 +96,13 @@ $(document).ready(function(){initNavTree('Helix_DB_Fluent_Value_ComparisonTrait.
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr class="memitem:08df9ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#08df9ff">is</a> ($arg)</td></tr>
-<tr class="memdesc:08df9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null-safe equality.  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#08df9ff">More...</a><br /></td></tr>
+<tr class="memdesc:08df9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null-safe type-strict equality.  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#08df9ff">More...</a><br /></td></tr>
 <tr class="separator:08df9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:94d1c68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#94d1c68">isBetween</a> ($<a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#1471a7a">min</a>, $<a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#f44733b">max</a>)</td></tr>
 <tr class="memdesc:94d1c68"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this BETWEEN $min AND $max</code> (inclusive)  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#94d1c68">More...</a><br /></td></tr>
 <tr class="separator:94d1c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:679d44f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#679d44f">isEqual</a> ($arg)</td></tr>
-<tr class="memdesc:679d44f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this = $arg</code> or <code>$this IN ($arg)</code>  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#679d44f">More...</a><br /></td></tr>
+<tr class="memdesc:679d44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="Helix_DB.html#ce43e84">DB::match()</a>.  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#679d44f">More...</a><br /></td></tr>
 <tr class="separator:679d44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:18b7448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#18b7448">isFalse</a> ()</td></tr>
 <tr class="memdesc:18b7448"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this IS FALSE</code>  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#18b7448">More...</a><br /></td></tr>
@@ -135,7 +135,7 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:9b680a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate <code>$this &lt;= ANY (SELECT ...)</code>  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#9b680a5">More...</a><br /></td></tr>
 <tr class="separator:9b680a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:1520d9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#1520d9c">isNot</a> ($arg)</td></tr>
-<tr class="memdesc:1520d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null-safe inequality.  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#1520d9c">More...</a><br /></td></tr>
+<tr class="memdesc:1520d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null-safe type-strict inequality.  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#1520d9c">More...</a><br /></td></tr>
 <tr class="separator:1520d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:35c474b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#35c474b">isNotBetween</a> ($<a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#1471a7a">min</a>, $<a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#f44733b">max</a>)</td></tr>
 <tr class="memdesc:35c474b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this NOT BETWEEN $min AND $max</code> (inclusive)  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#35c474b">More...</a><br /></td></tr>
@@ -179,14 +179,14 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Null-safe equality. </p>
+<p>Null-safe type-strict equality. </p>
 <ul>
 <li>Mysql: <code>$this &lt;=&gt; $arg</code>, or <code>$this &lt;=&gt; ANY ($arg)</code></li>
 <li>SQLite: <code>$this IS $arg</code>, or <code>EXISTS (... WHERE $this IS $arg[0])</code></li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">null&#160;|&#160;scalar&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;scalar&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a>&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a>&#160;|&#160;<a class="el" href="Helix_DB_Fluent_ValueInterface.html" title="An expression that evaluates to a single value.">ValueInterface</a></td><td class="paramname">$arg</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -248,10 +248,10 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><code>$this = $arg</code> or <code>$this IN ($arg)</code> </p>
+<p>See <a class="el" href="Helix_DB.html#ce43e84">DB::match()</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">scalar&#160;|&#160;array&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;scalar&#160;|&#160;array&#160;|&#160;Closure&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a>&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a>&#160;|&#160;<a class="el" href="Helix_DB_Fluent_ValueInterface.html" title="An expression that evaluates to a single value.">ValueInterface</a></td><td class="paramname">$arg</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -538,10 +538,10 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Null-safe inequality. </p>
+<p>Null-safe type-strict inequality. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">null&#160;|&#160;scalar&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;scalar&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a>&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a>&#160;|&#160;<a class="el" href="Helix_DB_Fluent_ValueInterface.html" title="An expression that evaluates to a single value.">ValueInterface</a></td><td class="paramname">$arg</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -606,7 +606,7 @@ Public Methods</h2></td></tr>
 <p><code>$this &lt;&gt; $arg</code> or <code>$this NOT IN ($arg)</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">scalar&#160;|&#160;array&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a></td><td class="paramname">$arg</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;scalar&#160;|&#160;array&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a>&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a>&#160;|&#160;<a class="el" href="Helix_DB_Fluent_ValueInterface.html" title="An expression that evaluates to a single value.">ValueInterface</a></td><td class="paramname">$arg</td><td></td></tr>
   </table>
   </dd>
 </dl>

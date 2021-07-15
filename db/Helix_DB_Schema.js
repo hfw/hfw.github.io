@@ -33,9 +33,12 @@ var Helix_DB_Schema =
     [ "TABLE_UNIQUE", "Helix_DB_Schema.html#1ec79ef", null ],
     [ "__construct", "Helix_DB_Schema.html#d20e64b", null ],
     [ "addColumn", "Helix_DB_Schema.html#9301349", null ],
+    [ "addUniqueConstraint", "Helix_DB_Schema.html#f377dbe", null ],
     [ "createTable", "Helix_DB_Schema.html#e5f6c8a", null ],
     [ "dropColumn", "Helix_DB_Schema.html#4ee02d3", null ],
+    [ "dropIndex", "Helix_DB_Schema.html#d4da4bb", null ],
     [ "dropTable", "Helix_DB_Schema.html#85a594b", null ],
+    [ "dropUniqueConstraint", "Helix_DB_Schema.html#deb4252", null ],
     [ "factory", "Helix_DB_Schema.html#bf01e11", null ],
     [ "getColumnInfo", "Helix_DB_Schema.html#0d11dc4", null ],
     [ "getDb", "Helix_DB_Schema.html#14f4f86", null ],
@@ -52,6 +55,5 @@ var Helix_DB_Schema =
     [ "toForeignKeyConstraint_name", "Helix_DB_Schema.html#77cdc85", null ],
     [ "toPrimaryKeyConstraint", "Helix_DB_Schema.html#e0decca", null ],
     [ "toPrimaryKeyConstraint_name", "Helix_DB_Schema.html#938a738", null ],
-    [ "toUniqueKeyConstraint", "Helix_DB_Schema.html#e845615", null ],
     [ "toUniqueKeyConstraint_name", "Helix_DB_Schema.html#91641b6", null ]
 ];

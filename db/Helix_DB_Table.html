@@ -137,9 +137,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:3111709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:78d8eef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#78d8eef">offsetGet</a> ($column)</td></tr>
 <tr class="separator:78d8eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:0bf3045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#0bf3045">select</a> (array $columns=[' *'])</td></tr>
-<tr class="memdesc:0bf3045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns in the table.  <a href="Helix_DB_Table.html#0bf3045">More...</a><br /></td></tr>
-<tr class="separator:0bf3045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f6265e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#f6265e7">select</a> ($expressions=[' *'])</td></tr>
+<tr class="memdesc:f6265e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a selection object for columns or expressions in the table.  <a href="Helix_DB_Table.html#f6265e7">More...</a><br /></td></tr>
+<tr class="separator:f6265e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e501520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Table.html">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e501520">setName</a> (string $name)</td></tr>
 <tr class="memdesc:e501520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an aliased clone for joins.  <a href="Helix_DB_Table.html#e501520">More...</a><br /></td></tr>
 <tr class="separator:e501520"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,7 +404,7 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Executes a deletion using arbitrary columns. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#ce43e84" title="Generates an equality Predicate from mixed arguments.">DB::match()</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#ce43e84" title="Null-safe equality Predicate from mixed arguments.">DB::match()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$match</td><td></td></tr>
@@ -550,7 +550,7 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$column</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -560,8 +560,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="0bf3045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#0bf3045">&#9670;&nbsp;</a></span>select()</h2>
+<a id="f6265e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f6265e7">&#9670;&nbsp;</a></span>select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,17 +569,17 @@ Protected Methods</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="Helix_DB_Select.html">Select</a> array [] select </td>
           <td>(</td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$columns</em> = <code>['*']</code></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$expressions</em> = <code>['*']</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a selection object for columns in the table. </p>
+<p>Returns a selection object for columns or expressions in the table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;string[]</td><td class="paramname">$expressions</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -643,7 +643,7 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Executes an update using arbitrary columns. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#ce43e84" title="Generates an equality Predicate from mixed arguments.">DB::match()</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#ce43e84" title="Null-safe equality Predicate from mixed arguments.">DB::match()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$values</td><td></td></tr>

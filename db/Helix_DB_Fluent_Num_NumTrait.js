@@ -2,7 +2,7 @@ var Helix_DB_Fluent_Num_NumTrait =
 [
     [ "abs", "Helix_DB_Fluent_Num_NumTrait.html#3f4ca9f", null ],
     [ "acos", "Helix_DB_Fluent_Num_NumTrait.html#6b744f7", null ],
-    [ "add", "Helix_DB_Fluent_Num_NumTrait.html#96237ea", null ],
+    [ "add", "Helix_DB_Fluent_Num_NumTrait.html#19707e3", null ],
     [ "asin", "Helix_DB_Fluent_Num_NumTrait.html#4c6d449", null ],
     [ "atan", "Helix_DB_Fluent_Num_NumTrait.html#661eece", null ],
     [ "bAnd", "Helix_DB_Fluent_Num_NumTrait.html#4eedec8", null ],
@@ -13,7 +13,7 @@ var Helix_DB_Fluent_Num_NumTrait =
     [ "ceil", "Helix_DB_Fluent_Num_NumTrait.html#85018f4", null ],
     [ "cos", "Helix_DB_Fluent_Num_NumTrait.html#c6b99c5", null ],
     [ "degrees", "Helix_DB_Fluent_Num_NumTrait.html#302c9f1", null ],
-    [ "div", "Helix_DB_Fluent_Num_NumTrait.html#ad37cf2", null ],
+    [ "div", "Helix_DB_Fluent_Num_NumTrait.html#5111eaf", null ],
     [ "exp", "Helix_DB_Fluent_Num_NumTrait.html#e86620e", null ],
     [ "floor", "Helix_DB_Fluent_Num_NumTrait.html#e8ee0e9", null ],
     [ "isEven", "Helix_DB_Fluent_Num_NumTrait.html#4c93325", null ],
@@ -25,7 +25,7 @@ var Helix_DB_Fluent_Num_NumTrait =
     [ "log10", "Helix_DB_Fluent_Num_NumTrait.html#488ea13", null ],
     [ "log2", "Helix_DB_Fluent_Num_NumTrait.html#5645308", null ],
     [ "mod", "Helix_DB_Fluent_Num_NumTrait.html#1998d34", null ],
-    [ "mul", "Helix_DB_Fluent_Num_NumTrait.html#4963583", null ],
+    [ "mul", "Helix_DB_Fluent_Num_NumTrait.html#2c0a1f4", null ],
     [ "pow", "Helix_DB_Fluent_Num_NumTrait.html#f585e0b", null ],
     [ "radians", "Helix_DB_Fluent_Num_NumTrait.html#dba6750", null ],
     [ "root", "Helix_DB_Fluent_Num_NumTrait.html#a433616", null ],
@@ -33,6 +33,6 @@ var Helix_DB_Fluent_Num_NumTrait =
     [ "sign", "Helix_DB_Fluent_Num_NumTrait.html#1ded1bf", null ],
     [ "sin", "Helix_DB_Fluent_Num_NumTrait.html#abf2518", null ],
     [ "sqrt", "Helix_DB_Fluent_Num_NumTrait.html#5de98aa", null ],
-    [ "sub", "Helix_DB_Fluent_Num_NumTrait.html#0fcaf50", null ],
+    [ "sub", "Helix_DB_Fluent_Num_NumTrait.html#96bdd9c", null ],
     [ "tan", "Helix_DB_Fluent_Num_NumTrait.html#98dd0a9", null ]
 ];

@@ -211,6 +211,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:9301349"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#9301349">addColumn</a> (string $table, string $column, int $type=self::T_STRING_NULL)</td></tr>
 <tr class="memdesc:9301349"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>ALTER TABLE $table ADD COLUMN $column ...</code>  <a href="Helix_DB_Schema.html#9301349">More...</a><br /></td></tr>
 <tr class="separator:9301349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f377dbe"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#f377dbe">addUniqueConstraint</a> (string $table, array $columns)</td></tr>
+<tr class="memdesc:f377dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate constraint creation.  <a href="Helix_DB_Schema.html#f377dbe">More...</a><br /></td></tr>
+<tr class="separator:f377dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e5f6c8a"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#e5f6c8a">createTable</a> (string $table, array $columns, array $constraints=[])</td></tr>
 <tr class="memdesc:e5f6c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CREATE TABLE $table ...</code>  <a href="Helix_DB_Schema.html#e5f6c8a">More...</a><br /></td></tr>
 <tr class="separator:e5f6c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +223,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:85a594b"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#85a594b">dropTable</a> (string $table)</td></tr>
 <tr class="memdesc:85a594b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>DROP TABLE IF EXISTS $table</code>  <a href="Helix_DB_Schema.html#85a594b">More...</a><br /></td></tr>
 <tr class="separator:85a594b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deb4252"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#deb4252">dropUniqueConstraint</a> (string $table, array $columns)</td></tr>
+<tr class="memdesc:deb4252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate constraint deletion.  <a href="Helix_DB_Schema.html#deb4252">More...</a><br /></td></tr>
+<tr class="separator:deb4252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:0d11dc4"><td class="memItemLeft" align="right" valign="top">array[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#0d11dc4">getColumnInfo</a> (string $table)</td></tr>
 <tr class="memdesc:0d11dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns column metadata in an associative array.  <a href="Helix_DB_Schema.html#0d11dc4">More...</a><br /></td></tr>
 <tr class="separator:0d11dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +252,9 @@ Public Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
+<tr class="memitem:d4da4bb"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#d4da4bb">dropIndex</a> (string $table, string $name)</td></tr>
+<tr class="memdesc:d4da4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver-appropriate index deletion.  <a href="Helix_DB_Schema.html#d4da4bb">More...</a><br /></td></tr>
+<tr class="separator:d4da4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fd32099"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#fd32099">sortColumns</a> (array $types)</td></tr>
 <tr class="memdesc:fd32099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts according to index priority, storage size/complexity, and name.  <a href="Helix_DB_Schema.html#fd32099">More...</a><br /></td></tr>
 <tr class="separator:fd32099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,8 +270,6 @@ Protected Methods</h2></td></tr>
 <tr class="memitem:938a738"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#938a738">toPrimaryKeyConstraint_name</a> (string $table, array $columns)</td></tr>
 <tr class="memdesc:938a738"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>PK_TABLE__COLUMN__COLUMN__COLUMN</code>  <a href="Helix_DB_Schema.html#938a738">More...</a><br /></td></tr>
 <tr class="separator:938a738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:e845615"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#e845615">toUniqueKeyConstraint</a> (string $table, array $columns)</td></tr>
-<tr class="separator:e845615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:91641b6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Schema.html#91641b6">toUniqueKeyConstraint_name</a> (string $table, array $columns)</td></tr>
 <tr class="memdesc:91641b6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>UQ_TABLE__COLUMN__COLUMN__COLUMN</code>  <a href="Helix_DB_Schema.html#91641b6">More...</a><br /></td></tr>
 <tr class="separator:91641b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -737,6 +744,44 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="f377dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f377dbe">&#9670;&nbsp;</a></span>addUniqueConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this addUniqueConstraint </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Driver-appropriate constraint creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
 <a id="e5f6c8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#e5f6c8a">&#9670;&nbsp;</a></span>createTable()</h2>
 
@@ -825,10 +870,57 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>ALTER TABLE $table DROP COLUMN $column</code> </p>
+<p>SQLite does not support this, so it's skipped. It's beyond the scope of this method (for now) to do table recreation for SQLite.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="d4da4bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d4da4bb">&#9670;&nbsp;</a></span>dropIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this dropIndex </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Driver-appropriate index deletion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -856,6 +948,44 @@ Protected Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="deb4252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#deb4252">&#9670;&nbsp;</a></span>dropUniqueConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this dropUniqueConstraint </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Driver-appropriate constraint deletion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1450,50 +1580,6 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>PK_TABLE__COLUMN__COLUMN__COLUMN</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
-    <tr><td class="paramtype">string[]</td><td class="paramname">$columns</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
-
-</div>
-</div>
-<a id="e845615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#e845615">&#9670;&nbsp;</a></span>toUniqueKeyConstraint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string toUniqueKeyConstraint </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$table</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$columns</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
