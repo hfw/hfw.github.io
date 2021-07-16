@@ -97,12 +97,9 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:63fc5a8"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#63fc5a8">$classes</a> = []</td></tr>
 <tr class="memdesc:63fc5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[column =&gt; class]</code>  <a href="Helix_DB_Junction.html#63fc5a8">More...</a><br /></td></tr>
 <tr class="separator:63fc5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:f951594"><td class="memItemLeft" align="right" valign="top"><a id="f951594"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_FOREIGN</b> = '/\*\h*@foreign\h+(?&lt;column&gt;\w+)\h+(?&lt;class&gt;\S+)/i'</td></tr>
-<tr class="separator:f951594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:16d3814"><td class="memItemLeft" align="right" valign="top"><a id="16d3814"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_JUNCTION</b> = '/\*\h*@junction\h+(?&lt;table&gt;\w+)/i'</td></tr>
-<tr class="separator:16d3814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b41576d"><td class="memItemLeft" align="right" valign="top"><a id="b41576d"></a>
+<a class="el" href="Helix_DB_Reflection.html">Reflection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$ref</b></td></tr>
+<tr class="separator:b41576d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Protected Properties inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
 <tr class="memitem:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Statement.html">Statement</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#13ea20d">$_cache</a> = []</td></tr>
 <tr class="memdesc:13ea20d inherit pro_attribs_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepared statement cache, keyed by function name.  <a href="Helix_DB_Table.html#13ea20d">More...</a><br /></td></tr>
@@ -120,15 +117,16 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Public Static Methods</h2></td></tr>
-<tr class="memitem:fc44d77"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#fc44d77">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $table, array $classes)</td></tr>
-<tr class="separator:fc44d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:e8df8fc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Helix_DB_Junction.html">Junction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#e8df8fc">fromInterface</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $interface)</td></tr>
-<tr class="separator:e8df8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7f31a02"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#7f31a02">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $interface)</td></tr>
+<tr class="separator:7f31a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Public Static Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
+<tr class="memitem:366b2a5 inherit pub_static_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">magic static self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#366b2a5">factory</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $name, array $columns)</td></tr>
+<tr class="separator:366b2a5 inherit pub_static_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:cb1b125"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#cb1b125">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $table, array $classes)</td></tr>
-<tr class="separator:cb1b125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:336cb51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#336cb51">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $interface)</td></tr>
+<tr class="separator:336cb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:29d696c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a> <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Junction.html#29d696c">findAll</a> (string $key, array $<a class="el" href="Helix_DB.html#ce43e84">match</a>=[])</td></tr>
 <tr class="memdesc:29d696c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="Helix_DB_Select.html">Select</a> for entities referenced by a foreign key.  <a href="Helix_DB_Junction.html#29d696c">More...</a><br /></td></tr>
 <tr class="separator:29d696c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +145,8 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:f6ec9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typed alias for <a class="el" href="Helix_DB_Table.html#409ea77">delete()</a>.  <a href="Helix_DB_Junction.html#f6ec9cd">More...</a><br /></td></tr>
 <tr class="separator:f6ec9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_DB_Table"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_Table')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_Table.html">Table</a></td></tr>
+<tr class="memitem:bf4c572 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#bf4c572">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, string $name, array $columns)</td></tr>
+<tr class="separator:bf4c572 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f5ddf7f inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#f5ddf7f">__toString</a> ()</td></tr>
 <tr class="memdesc:f5ddf7f inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the table name.  <a href="Helix_DB_Table.html#f5ddf7f">More...</a><br /></td></tr>
 <tr class="separator:f5ddf7f inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,8 +221,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor</h2>
-<a id="cb1b125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#cb1b125">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="336cb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#336cb51">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,13 +237,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$table</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$classes</em>&#160;</td>
+          <td class="paramname"><em>$interface</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -255,19 +249,16 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a></td><td class="paramname">$db</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td></td></tr>
-    <tr><td class="paramtype">string[]</td><td class="paramname">$classes</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$interface</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="Helix_DB_Table.html#bf4c572">Table</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
-<a id="fc44d77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fc44d77">&#9670;&nbsp;</a></span>factory()</h2>
+<a id="7f31a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#7f31a02">&#9670;&nbsp;</a></span>factory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,13 +276,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$table</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$classes</em>&#160;</td>
+          <td class="paramname"><em>$interface</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -306,8 +291,6 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="">self</a> </dd></dl>
-
-<p>Reimplemented from <a class="el" href="Helix_DB_Table.html#366b2a5">Table</a>.</p>
 
 </div>
 </div>
@@ -347,50 +330,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Select|EntityInterface[] </dd></dl>
-
-</div>
-</div>
-<a id="e8df8fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#e8df8fc">&#9670;&nbsp;</a></span>fromInterface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="Helix_DB_Junction.html">Junction</a> fromInterface </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="Helix_DB.html">DB</a>&#160;</td>
-          <td class="paramname"><em>$db</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$interface</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a></td><td class="paramname">$db</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$interface</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Junction.html" title="Represents a junction table, derived from an annotated interface.">Junction</a> </dd></dl>
 
 </div>
 </div>

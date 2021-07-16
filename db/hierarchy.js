@@ -61,6 +61,7 @@ var hierarchy =
       [ "Text", "Helix_DB_Fluent_Text.html", null ],
       [ "Value", "Helix_DB_Fluent_Value.html", null ]
     ] ],
+    [ "Reflection", "Helix_DB_Reflection.html", null ],
     [ "TextCastTrait", "Helix_DB_Fluent_Text_TextCastTrait.html", [
       [ "DateTime", "Helix_DB_Fluent_DateTime.html", null ],
       [ "Num", "Helix_DB_Fluent_Num.html", null ],

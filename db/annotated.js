@@ -41,6 +41,7 @@ var annotated =
         [ "MigrationInterface", "Helix_DB_MigrationInterface.html", "Helix_DB_MigrationInterface" ],
         [ "Migrator", "Helix_DB_Migrator.html", "Helix_DB_Migrator" ],
         [ "Record", "Helix_DB_Record.html", "Helix_DB_Record" ],
+        [ "Reflection", "Helix_DB_Reflection.html", "Helix_DB_Reflection" ],
         [ "Schema", "Helix_DB_Schema.html", "Helix_DB_Schema" ],
         [ "Select", "Helix_DB_Select.html", "Helix_DB_Select" ],
         [ "Statement", "Helix_DB_Statement.html", "Helix_DB_Statement" ],
