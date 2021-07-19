@@ -25,7 +25,6 @@ var Helix_DB =
     [ "isSQLite", "Helix_DB.html#8b842bf", null ],
     [ "log", "Helix_DB.html#cf2be03", null ],
     [ "marks", "Helix_DB.html#9b08c54", null ],
-    [ "match", "Helix_DB.html#ce43e84", null ],
     [ "newTransaction", "Helix_DB.html#2907cbe", null ],
     [ "now", "Helix_DB.html#cfded23", null ],
     [ "offsetExists", "Helix_DB.html#0fdaee3", null ],

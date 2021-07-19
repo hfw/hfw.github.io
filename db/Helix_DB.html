@@ -165,9 +165,6 @@ Public Methods</h2></td></tr>
 <tr class="separator:8b842bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:cf2be03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#cf2be03">log</a> (string $sql)</td></tr>
 <tr class="separator:cf2be03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ce43e84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#ce43e84">match</a> ($a, $b)</td></tr>
-<tr class="memdesc:ce43e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null-safe equality <a class="el" href="">Predicate</a> from mixed arguments.  <a href="Helix_DB.html#ce43e84">More...</a><br /></td></tr>
-<tr class="separator:ce43e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:2907cbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Transaction.html">Transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#2907cbe">newTransaction</a> ()</td></tr>
 <tr class="memdesc:2907cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a scoped transaction.  <a href="Helix_DB.html#2907cbe">More...</a><br /></td></tr>
 <tr class="separator:2907cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -853,50 +850,6 @@ Public Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ExpressionInterface[] </dd></dl>
-
-</div>
-</div>
-<a id="ce43e84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ce43e84">&#9670;&nbsp;</a></span>match()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a> match </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Null-safe equality <a class="el" href="">Predicate</a> from mixed arguments. </p>
-<p>If <code>$a</code> is an integer (enumerated item), returns <code>$b</code> as a <a class="el" href="">Predicate</a></p>
-<p>If <code>$b</code> is a closure, returns from <code>$b($a, <a class="el" href="Helix_DB.html" title="Extends PDO and acts as a central access point for the schema.">DB</a> $this)</code></p>
-<p>If <code>$b</code> is an <a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>, the ID is used.</p>
-<p>If <code>$b</code> is an array, returns <code>$a IN (...quoted $b)</code></p>
-<p>If <code>$b</code> is a <a class="el" href="Helix_DB_Select.html">Select</a>, returns <code>$a IN ($b-&gt;toSql())</code></p>
-<p>Otherwise predicates <code>$a = quoted $b</code></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">scalar</td><td class="paramname">$a</td><td></td></tr>
-    <tr><td class="paramtype">null&#160;|&#160;scalar&#160;|&#160;array&#160;|&#160;Closure&#160;|&#160;<a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a>&#160;|&#160;<a class="el" href="Helix_DB_Select.html" title="Represents a SELECT query.">Select</a>&#160;|&#160;ValueInterface</td><td class="paramname">$b</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Predicate </dd></dl>
 
 </div>
 </div>

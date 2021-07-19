@@ -123,8 +123,8 @@ Public Methods</h2></td></tr>
 <tr class="memitem:6429a99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#6429a99">exists</a> (int $id, string $attribute)</td></tr>
 <tr class="memdesc:6429a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an entity has an attribute.  <a href="Helix_DB_EAV.html#6429a99">More...</a><br /></td></tr>
 <tr class="separator:6429a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:1cada5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#1cada5c">findAll</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>)</td></tr>
-<tr class="memdesc:1cada5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pivots and self-joins to return a <a class="el" href="Helix_DB_Select.html">Select</a> for the <code>entity</code> column, matching on attribute and value.  <a href="Helix_DB_EAV.html#1cada5c">More...</a><br /></td></tr>
+<tr class="memitem:1cada5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Select.html">Select</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#1cada5c">findAll</a> (array $match)</td></tr>
+<tr class="memdesc:1cada5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-joins to return a <a class="el" href="Helix_DB_Select.html">Select</a> for the <code>entity</code> column, matching on attribute and value.  <a href="Helix_DB_EAV.html#1cada5c">More...</a><br /></td></tr>
 <tr class="separator:1cada5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:400bb5a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_EAV.html#400bb5a">getType</a> ()</td></tr>
 <tr class="separator:400bb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +146,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:02fac5c inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#02fac5c">apply</a> (array $values)</td></tr>
 <tr class="memdesc:02fac5c inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>INSERT IGNORE</code>  <a href="Helix_DB_Table.html#02fac5c">More...</a><br /></td></tr>
 <tr class="separator:02fac5c inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:e29b1c3 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e29b1c3">count</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>=[])</td></tr>
+<tr class="memitem:e29b1c3 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e29b1c3">count</a> (array $match=[])</td></tr>
 <tr class="separator:e29b1c3 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:409ea77 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#409ea77">delete</a> (array $<a class="el" href="Helix_DB.html#ce43e84">match</a>)</td></tr>
+<tr class="memitem:409ea77 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#409ea77">delete</a> (array $match)</td></tr>
 <tr class="memdesc:409ea77 inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a deletion using arbitrary columns.  <a href="Helix_DB_Table.html#409ea77">More...</a><br /></td></tr>
 <tr class="separator:409ea77 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:810b3c4 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Column.html">Column</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#810b3c4">getColumns</a> ()</td></tr>
@@ -166,7 +166,7 @@ Public Methods</h2></td></tr>
 <tr class="memitem:e501520 inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Table.html">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#e501520">setName</a> (string $name)</td></tr>
 <tr class="memdesc:e501520 inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an aliased clone for joins.  <a href="Helix_DB_Table.html#e501520">More...</a><br /></td></tr>
 <tr class="separator:e501520 inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:7dbc33f inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#7dbc33f">update</a> (array $values, array $<a class="el" href="Helix_DB.html#ce43e84">match</a>)</td></tr>
+<tr class="memitem:7dbc33f inherit pub_methods_Helix_DB_Table"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Table.html#7dbc33f">update</a> (array $values, array $match)</td></tr>
 <tr class="memdesc:7dbc33f inherit pub_methods_Helix_DB_Table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an update using arbitrary columns.  <a href="Helix_DB_Table.html#7dbc33f">More...</a><br /></td></tr>
 <tr class="separator:7dbc33f inherit pub_methods_Helix_DB_Table"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_DB_AbstractTable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_DB_AbstractTable')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_DB_AbstractTable.html">AbstractTable</a></td></tr>
@@ -356,8 +356,8 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pivots and self-joins to return a <a class="el" href="Helix_DB_Select.html">Select</a> for the <code>entity</code> column, matching on attribute and value. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB.html#ce43e84" title="Null-safe equality Predicate from mixed arguments.">DB::match()</a></dd></dl>
+<p>Self-joins to return a <a class="el" href="Helix_DB_Select.html">Select</a> for the <code>entity</code> column, matching on attribute and value. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_DB_Fluent_Predicate.html#58480e6" title="Null-safe equality Predicate from mixed arguments.">Predicate::match()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$match</td><td><code>[attribute =&gt; value]</code>. If empty, selects all IDs for entities having at least one attribute. </td></tr>
