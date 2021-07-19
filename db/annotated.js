@@ -13,9 +13,9 @@ var annotated =
             [ "NumCastIntTrait", "Helix_DB_Fluent_Num_NumCastIntTrait.html", "Helix_DB_Fluent_Num_NumCastIntTrait" ],
             [ "NumTrait", "Helix_DB_Fluent_Num_NumTrait.html", "Helix_DB_Fluent_Num_NumTrait" ]
           ] ],
-          [ "Text", null, [
-            [ "TextCastTrait", "Helix_DB_Fluent_Text_TextCastTrait.html", "Helix_DB_Fluent_Text_TextCastTrait" ],
-            [ "TextTrait", "Helix_DB_Fluent_Text_TextTrait.html", "Helix_DB_Fluent_Text_TextTrait" ]
+          [ "Str", null, [
+            [ "StrCastTrait", "Helix_DB_Fluent_Str_StrCastTrait.html", "Helix_DB_Fluent_Str_StrCastTrait" ],
+            [ "StrTrait", "Helix_DB_Fluent_Str_StrTrait.html", "Helix_DB_Fluent_Str_StrTrait" ]
           ] ],
           [ "Value", null, [
             [ "AggregateTrait", "Helix_DB_Fluent_Value_AggregateTrait.html", "Helix_DB_Fluent_Value_AggregateTrait" ],
@@ -26,9 +26,10 @@ var annotated =
           [ "DateTime", "Helix_DB_Fluent_DateTime.html", null ],
           [ "Expression", "Helix_DB_Fluent_Expression.html", "Helix_DB_Fluent_Expression" ],
           [ "ExpressionInterface", "Helix_DB_Fluent_ExpressionInterface.html", "Helix_DB_Fluent_ExpressionInterface" ],
+          [ "FactoryFormatTrait", "Helix_DB_Fluent_FactoryFormatTrait.html", "Helix_DB_Fluent_FactoryFormatTrait" ],
           [ "Num", "Helix_DB_Fluent_Num.html", null ],
           [ "Predicate", "Helix_DB_Fluent_Predicate.html", "Helix_DB_Fluent_Predicate" ],
-          [ "Text", "Helix_DB_Fluent_Text.html", null ],
+          [ "Str", "Helix_DB_Fluent_Str.html", null ],
           [ "Value", "Helix_DB_Fluent_Value.html", null ],
           [ "ValueInterface", "Helix_DB_Fluent_ValueInterface.html", null ]
         ] ],

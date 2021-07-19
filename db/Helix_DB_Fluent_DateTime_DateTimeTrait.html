@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('Helix_DB_Fluent_DateTime_DateTimeTrait
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Date-time expression manipulation. </p>
-<p>Each DBMS has its own quirks with dates, which is beyond the scope of this library.</p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://sqlite.org/lang_datefunc.html">https://sqlite.org/lang_datefunc.html</a> </dd>
 <dd>
 <a href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format">https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format</a> </dd></dl>
@@ -116,9 +115,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:5767d7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#5767d7c">date</a> ()</td></tr>
 <tr class="memdesc:5767d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY-MM-DD</code>  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#5767d7c">More...</a><br /></td></tr>
 <tr class="separator:5767d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:1ffb5db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#1ffb5db">dateFormat</a> ($format)</td></tr>
-<tr class="memdesc:1ffb5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date formatting expression using a driver-appropriate function.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#1ffb5db">More...</a><br /></td></tr>
-<tr class="separator:1ffb5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ed65890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Str.html">Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#ed65890">dateFormat</a> ($format)</td></tr>
+<tr class="memdesc:ed65890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date formatting expression using a driver-appropriate function.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#ed65890">More...</a><br /></td></tr>
+<tr class="separator:ed65890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:869d755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#869d755">datetime</a> ()</td></tr>
 <tr class="memdesc:869d755"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>YYYY-MM-DD hh:mm:ss</code>  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#869d755">More...</a><br /></td></tr>
 <tr class="separator:869d755"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,7 +143,7 @@ Public Methods</h2></td></tr>
 <tr class="memdesc:e6daa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date-time difference (<code>$x - $this</code>) in fractional months elapsed.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#e6daa36">More...</a><br /></td></tr>
 <tr class="separator:e6daa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:883aa04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#883aa04">diffSeconds</a> (<a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a> $x=null)</td></tr>
-<tr class="memdesc:883aa04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date-time difference (<code>$x - $this</code>) in whole seconds elapsed (rounded).  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#883aa04">More...</a><br /></td></tr>
+<tr class="memdesc:883aa04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date-time difference (<code>$x - $this</code>) in fractional seconds elapsed.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#883aa04">More...</a><br /></td></tr>
 <tr class="separator:883aa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:6e26687"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#6e26687">diffYears</a> (<a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a> $x=null)</td></tr>
 <tr class="memdesc:6e26687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date-time difference (<code>$x - $this</code>) in fractional years elapsed.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#6e26687">More...</a><br /></td></tr>
@@ -152,9 +151,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:6d6e301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#6d6e301">hours</a> ()</td></tr>
 <tr class="memdesc:6d6e301"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>23</code>  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#6d6e301">More...</a><br /></td></tr>
 <tr class="separator:6d6e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:995c497"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#995c497">iso8601</a> ()</td></tr>
-<tr class="memdesc:995c497"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISO-8601 compatible datetime string, offset <code>Z</code> (UTC/Zulu)  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#995c497">More...</a><br /></td></tr>
-<tr class="separator:995c497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8650d90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Str.html">Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#8650d90">iso8601</a> ()</td></tr>
+<tr class="memdesc:8650d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISO-8601 compatible datetime string, offset <code>Z</code> (UTC/Zulu)  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#8650d90">More...</a><br /></td></tr>
+<tr class="separator:8650d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ea09a2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#ea09a2c">julian</a> ()</td></tr>
 <tr class="memdesc:ea09a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Julian day number (fractional).  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#ea09a2c">More...</a><br /></td></tr>
 <tr class="separator:ea09a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,9 +189,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:c4d8674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:0422830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#0422830">subYears</a> (int $years)</td></tr>
 <tr class="separator:0422830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:b14ee35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#b14ee35">time</a> ()</td></tr>
-<tr class="memdesc:b14ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00:00:00</code> to <code>23:59:59</code>  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#b14ee35">More...</a><br /></td></tr>
-<tr class="separator:b14ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d78f8ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Str.html">Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#d78f8ba">time</a> ()</td></tr>
+<tr class="memdesc:d78f8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00:00:00</code> to <code>23:59:59</code>  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#d78f8ba">More...</a><br /></td></tr>
+<tr class="separator:d78f8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:b2398f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#b2398f0">timestamp</a> ()</td></tr>
 <tr class="memdesc:b2398f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unix timestamp.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#b2398f0">More...</a><br /></td></tr>
 <tr class="separator:b2398f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,9 +221,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:0b87125 inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#0b87125">countDistinct</a> ()</td></tr>
 <tr class="memdesc:0b87125 inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>COUNT(DISTINCT $this)</code>  <a href="Helix_DB_Fluent_Value_AggregateTrait.html#0b87125">More...</a><br /></td></tr>
 <tr class="separator:0b87125 inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d08dc5e inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#d08dc5e">groupConcat</a> (string $delimiter=',')</td></tr>
-<tr class="memdesc:d08dc5e inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>GROUP_CONCAT($this)</code> using a delimiter.  <a href="Helix_DB_Fluent_Value_AggregateTrait.html#d08dc5e">More...</a><br /></td></tr>
-<tr class="separator:d08dc5e inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e6bd541 inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Str.html">Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#e6bd541">groupConcat</a> (string $delimiter=',')</td></tr>
+<tr class="memdesc:e6bd541 inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>GROUP_CONCAT($this)</code> using a delimiter.  <a href="Helix_DB_Fluent_Value_AggregateTrait.html#e6bd541">More...</a><br /></td></tr>
+<tr class="separator:e6bd541 inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:f44733b inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_AggregateTrait.html#f44733b">max</a> ()</td></tr>
 <tr class="memdesc:f44733b inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MAX($this)</code>  <a href="Helix_DB_Fluent_Value_AggregateTrait.html#f44733b">More...</a><br /></td></tr>
 <tr class="separator:f44733b inherit pub_methods_Helix_DB_Fluent_Value_AggregateTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -549,14 +548,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="1ffb5db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#1ffb5db">&#9670;&nbsp;</a></span>dateFormat()</h2>
+<a id="ed65890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ed65890">&#9670;&nbsp;</a></span>dateFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a> dateFormat </td>
+          <td class="memname"><a class="el" href="Helix_DB_Fluent_Str.html">Str</a> dateFormat </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$format</em></td><td>)</td>
@@ -572,7 +571,7 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Str.html" title="A character string expression.">Str</a> </dd></dl>
 
 </div>
 </div>
@@ -781,7 +780,7 @@ Public Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Date-time difference (<code>$x - $this</code>) in whole seconds elapsed (rounded). </p>
+<p>Date-time difference (<code>$x - $this</code>) in fractional seconds elapsed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="Helix_DB_Fluent_DateTime.html" title="A date-time expression.">DateTime</a></td><td class="paramname">$x</td><td>Defaults to the current time. </td></tr>
@@ -839,14 +838,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="995c497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#995c497">&#9670;&nbsp;</a></span>iso8601()</h2>
+<a id="8650d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8650d90">&#9670;&nbsp;</a></span>iso8601()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a> iso8601 </td>
+          <td class="memname"><a class="el" href="Helix_DB_Fluent_Str.html">Str</a> iso8601 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -856,7 +855,7 @@ Public Methods</h2></td></tr>
 
 <p>ISO-8601 compatible datetime string, offset <code>Z</code> (UTC/Zulu) </p>
 <p><a href="https://en.wikipedia.org/wiki/ISO_8601">https://en.wikipedia.org/wiki/ISO_8601</a></p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Str.html" title="A character string expression.">Str</a> </dd></dl>
 
 </div>
 </div>
@@ -951,8 +950,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Applies date-time modifiers. </p>
-<p>Each argument can be zero, positive, or negative.</p>
-<p><code>$s</code> can also be a <code>DateInterval</code> or <code>DateInterval</code> description (e.g. <code>"+1 day"</code>). If so, the rest of the arguments are ignored.</p>
+<p><code>$s</code> can be a <code>DateInterval</code> or <code>DateInterval</code> description (e.g. <code>"+1 day"</code>). If so, the rest of the arguments are ignored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;string&#160;|&#160;DateInterval</td><td class="paramname">$s</td><td>Seconds, or <code>DateInterval</code> related </td></tr>
@@ -1230,14 +1228,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="b14ee35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#b14ee35">&#9670;&nbsp;</a></span>time()</h2>
+<a id="d78f8ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d78f8ba">&#9670;&nbsp;</a></span>time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Fluent_Text.html">Text</a> time </td>
+          <td class="memname"><a class="el" href="Helix_DB_Fluent_Str.html">Str</a> time </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1246,7 +1244,7 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>00:00:00</code> to <code>23:59:59</code> </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Text.html" title="A character string expression.">Text</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Str.html" title="A character string expression.">Str</a> </dd></dl>
 
 </div>
 </div>

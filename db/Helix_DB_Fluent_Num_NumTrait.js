@@ -20,6 +20,7 @@ var Helix_DB_Fluent_Num_NumTrait =
     [ "isNegative", "Helix_DB_Fluent_Num_NumTrait.html#f72759e", null ],
     [ "isOdd", "Helix_DB_Fluent_Num_NumTrait.html#d2a4d12", null ],
     [ "isPositive", "Helix_DB_Fluent_Num_NumTrait.html#fd0e9ff", null ],
+    [ "isZero", "Helix_DB_Fluent_Num_NumTrait.html#fc910b6", null ],
     [ "ln", "Helix_DB_Fluent_Num_NumTrait.html#5bd20c1", null ],
     [ "log", "Helix_DB_Fluent_Num_NumTrait.html#e3a70fe", null ],
     [ "log10", "Helix_DB_Fluent_Num_NumTrait.html#488ea13", null ],

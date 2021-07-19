@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"Helix_DB_Fluent_Value_ComparisonTrait.html#7633756":[3,0,0,0,3,1,15],
+"Helix_DB_Fluent_Value_ComparisonTrait.html#1d4b7f4":[3,0,0,0,3,1,16],
+"Helix_DB_Fluent_Value_ComparisonTrait.html#74f8a76":[3,0,0,0,3,1,10],
+"Helix_DB_Fluent_Value_ComparisonTrait.html#616d242":[3,0,0,0,3,1,7],
 "Helix_DB_Fluent_Value_ComparisonTrait.html#cd47989":[3,0,0,0,3,1,6],
 "Helix_DB_Fluent_Value_ComparisonTrait.html#94d1c68":[3,0,0,0,3,1,1],
 "Helix_DB_Fluent_Value_ComparisonTrait.html#35c474b":[3,0,0,0,3,1,14],
@@ -241,7 +245,7 @@ var NAVTREEINDEX1 =
 "Helix_DB_EntityInterface.html#3ebb6b6":[3,0,0,5,0],
 "Helix_DB_Fluent_ExpressionInterface.html":[3,0,0,0,7],
 "Helix_DB_Fluent_ExpressionInterface.html#f5ddf7f":[3,0,0,0,7,0],
-"Helix_DB_Fluent_ValueInterface.html":[3,0,0,0,12],
+"Helix_DB_Fluent_ValueInterface.html":[3,0,0,0,13],
 "Helix_DB_MigrationInterface.html":[3,0,0,7],
 "Helix_DB_MigrationInterface.html#2f85c2e":[3,0,0,7,1],
 "Helix_DB_MigrationInterface.html#8796594":[3,0,0,7,0],
