@@ -195,15 +195,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:edb7cb0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#edb7cb0">quoteList</a> (array $values)</td></tr>
 <tr class="memdesc:edb7cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quoted, comma-separated list.  <a href="Helix_DB.html#edb7cb0">More...</a><br /></td></tr>
 <tr class="separator:edb7cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d9b106c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#d9b106c">rand</a> ()</td></tr>
-<tr class="memdesc:d9b106c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>RAND()</code> float between <code>0</code> and <code>1</code>  <a href="Helix_DB.html#d9b106c">More...</a><br /></td></tr>
-<tr class="separator:d9b106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:23cb168"><td class="memItemLeft" align="right" valign="top">true&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#23cb168">rollBack</a> ()</td></tr>
 <tr class="memdesc:23cb168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows nested transactions by using <code>ROLLBACK TO SAVEPOINT</code>  <a href="Helix_DB.html#23cb168">More...</a><br /></td></tr>
 <tr class="separator:23cb168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:12fd03a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#12fd03a">save</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
-<tr class="memdesc:12fd03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards to the entity's <a class="el" href="Helix_DB_Record.html">Record</a>.  <a href="Helix_DB.html#12fd03a">More...</a><br /></td></tr>
-<tr class="separator:12fd03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:58bd55b"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#58bd55b">setLogger</a> (callable $logger)</td></tr>
 <tr class="separator:58bd55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c2d5b68"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#c2d5b68">setRecord</a> (string $class, <a class="el" href="Helix_DB_Record.html">Record</a> $record)</td></tr>
@@ -212,9 +206,6 @@ Public Methods</h2></td></tr>
 <tr class="memitem:2796893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#2796893">sqliteCreateFunctions</a> (array $callables, bool $deterministic=true)</td></tr>
 <tr class="memdesc:2796893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create multiple SQLite functions at a time.  <a href="Helix_DB.html#2796893">More...</a><br /></td></tr>
 <tr class="separator:2796893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:56950cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#56950cf">today</a> ()</td></tr>
-<tr class="memdesc:56950cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An expression for the current date at midnight.  <a href="Helix_DB.html#56950cf">More...</a><br /></td></tr>
-<tr class="separator:56950cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e9106ac"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB.html#e9106ac">transact</a> (callable $work)</td></tr>
 <tr class="memdesc:e9106ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs work within a scoped transaction.  <a href="Helix_DB.html#e9106ac">More...</a><br /></td></tr>
 <tr class="separator:e9106ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1208,26 +1199,6 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="d9b106c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#d9b106c">&#9670;&nbsp;</a></span>rand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a> rand </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code>RAND()</code> float between <code>0</code> and <code>1</code> </p>
-<dl class="section return"><dt>Returns</dt><dd>Num </dd></dl>
-
-</div>
-</div>
 <a id="23cb168"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#23cb168">&#9670;&nbsp;</a></span>rollBack()</h2>
 
@@ -1246,33 +1217,6 @@ Public Methods</h2></td></tr>
 <p>Allows nested transactions by using <code>ROLLBACK TO SAVEPOINT</code> </p>
 <p>Use <a class="el" href="Helix_DB.html#2907cbe">DB::newTransaction()</a> to work with <a class="el" href="Helix_DB_Transaction.html">Transaction</a> instead.</p>
 <dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
-
-</div>
-</div>
-<a id="12fd03a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#12fd03a">&#9670;&nbsp;</a></span>save()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int save </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a>&#160;</td>
-          <td class="paramname"><em>$entity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Forwards to the entity's <a class="el" href="Helix_DB_Record.html">Record</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="Helix_DB_EntityInterface.html" title="Exposes the object&#39;s auto-increment ID.">EntityInterface</a></td><td class="paramname">$entity</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int ID </dd></dl>
 
 </div>
 </div>
@@ -1442,26 +1386,6 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="56950cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#56950cf">&#9670;&nbsp;</a></span>today()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a> today </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An expression for the current date at midnight. </p>
-<dl class="section return"><dt>Returns</dt><dd>DateTime </dd></dl>
 
 </div>
 </div>

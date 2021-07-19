@@ -22,6 +22,8 @@ var Helix_DB_Fluent_DateTime_DateTimeTrait =
     [ "diffMonths", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#e6daa36", null ],
     [ "diffSeconds", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#883aa04", null ],
     [ "diffYears", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#6e26687", null ],
+    [ "firstDayOfMonth", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#532d4c8", null ],
+    [ "firstDayOfYear", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#f4c6eab", null ],
     [ "hours", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#6d6e301", null ],
     [ "iso8601", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#8650d90", null ],
     [ "julian", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#ea09a2c", null ],

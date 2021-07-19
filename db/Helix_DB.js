@@ -35,14 +35,11 @@ var Helix_DB =
     [ "quote", "Helix_DB.html#38a3ff8", null ],
     [ "quoteArray", "Helix_DB.html#a5b531f", null ],
     [ "quoteList", "Helix_DB.html#edb7cb0", null ],
-    [ "rand", "Helix_DB.html#d9b106c", null ],
     [ "rollBack", "Helix_DB.html#23cb168", null ],
-    [ "save", "Helix_DB.html#12fd03a", null ],
     [ "setLogger", "Helix_DB.html#58bd55b", null ],
     [ "setRecord", "Helix_DB.html#c2d5b68", null ],
     [ "slots", "Helix_DB.html#35bf04f", null ],
     [ "slotsEqual", "Helix_DB.html#872af1b", null ],
     [ "sqliteCreateFunctions", "Helix_DB.html#2796893", null ],
-    [ "today", "Helix_DB.html#56950cf", null ],
     [ "transact", "Helix_DB.html#e9106ac", null ]
 ];
