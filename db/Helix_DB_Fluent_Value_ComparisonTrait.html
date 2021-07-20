@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('Helix_DB_Fluent_Value_ComparisonTrait.
 <area shape="rect" href="Helix_DB_Fluent_DateTime.html" title="A date&#45;time expression." alt="" coords="288,315,391,344"/>
 <area shape="rect" href="Helix_DB_Fluent_Num.html" title="A numeric expression." alt="" coords="28,315,80,344"/>
 <area shape="rect" href="Helix_DB_Fluent_Str.html" title="A character string expression." alt="" coords="104,315,156,344"/>
-<area shape="rect" href="Helix_DB_Fluent_Choice.html" title="A CASE expression, with or without a subject expression." alt="" coords="430,315,513,344"/>
+<area shape="rect" href="Helix_DB_Fluent_Branch.html" title="A CASE expression, with or without a subject expression." alt="" coords="430,315,513,344"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
@@ -158,9 +158,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:ad13c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Predicate.html">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#ad13c5e">isRegExp</a> (string $pattern)</td></tr>
 <tr class="memdesc:ad13c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>$this REGEXP $pattern</code>  <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#ad13c5e">More...</a><br /></td></tr>
 <tr class="separator:ad13c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3272b9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Choice.html">Choice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#3272b9b">switch</a> (array $values=[])</td></tr>
-<tr class="memdesc:3272b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CASE $this ... </code> <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#3272b9b">More...</a><br /></td></tr>
-<tr class="separator:3272b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:455092b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Branch.html">Branch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_Value_ComparisonTrait.html#455092b">switch</a> (array $values=[])</td></tr>
+<tr class="memdesc:455092b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CASE $this ... </code> <a href="Helix_DB_Fluent_Value_ComparisonTrait.html#455092b">More...</a><br /></td></tr>
+<tr class="separator:455092b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Methods</h2>
 <a id="08df9ff"></a>
@@ -735,14 +735,14 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="3272b9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#3272b9b">&#9670;&nbsp;</a></span>switch()</h2>
+<a id="455092b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#455092b">&#9670;&nbsp;</a></span>switch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Helix_DB_Fluent_Choice.html">Choice</a> switch </td>
+          <td class="memname"><a class="el" href="Helix_DB_Fluent_Branch.html">Branch</a> switch </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$values</em> = <code>[]</code></td><td>)</td>
@@ -754,7 +754,7 @@ Public Methods</h2></td></tr>
 <p><code>CASE $this ... </code></p>
 <p>END</p>
 <p><img src="../warning.png" alt="" class="inline"/> If <code>$values</code> are given, the keys are quoted as literal values. </p><blockquote class="doxtable">
-<p>Omit <code>$values</code> and use <a class="el" href="Helix_DB_Fluent_Choice.html#ca2b7f9">Choice::when()</a> if you need expressions for the <code>WHEN</code> clause. </p>
+<p>Omit <code>$values</code> and use <a class="el" href="Helix_DB_Fluent_Branch.html#ca2b7f9">Branch::when()</a> if you need expressions for the <code>WHEN</code> clause. </p>
 </blockquote>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -762,7 +762,7 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Choice.html" title="A CASE expression, with or without a subject expression.">Choice</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_Branch.html" title="A CASE expression, with or without a subject expression.">Branch</a> </dd></dl>
 
 </div>
 </div>

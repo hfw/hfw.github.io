@@ -22,7 +22,7 @@ var annotated =
             [ "ComparisonTrait", "Helix_DB_Fluent_Value_ComparisonTrait.html", "Helix_DB_Fluent_Value_ComparisonTrait" ],
             [ "ValueTrait", "Helix_DB_Fluent_Value_ValueTrait.html", "Helix_DB_Fluent_Value_ValueTrait" ]
           ] ],
-          [ "Choice", "Helix_DB_Fluent_Choice.html", "Helix_DB_Fluent_Choice" ],
+          [ "Branch", "Helix_DB_Fluent_Branch.html", "Helix_DB_Fluent_Branch" ],
           [ "DateTime", "Helix_DB_Fluent_DateTime.html", "Helix_DB_Fluent_DateTime" ],
           [ "Expression", "Helix_DB_Fluent_Expression.html", "Helix_DB_Fluent_Expression" ],
           [ "ExpressionInterface", "Helix_DB_Fluent_ExpressionInterface.html", "Helix_DB_Fluent_ExpressionInterface" ],

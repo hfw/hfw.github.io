@@ -15,7 +15,7 @@ var hierarchy =
           [ "Str", "Helix_DB_Fluent_Str.html", null ]
         ] ],
         [ "Value", "Helix_DB_Fluent_Value.html", [
-          [ "Choice", "Helix_DB_Fluent_Choice.html", null ]
+          [ "Branch", "Helix_DB_Fluent_Branch.html", null ]
         ] ]
       ] ]
     ] ],

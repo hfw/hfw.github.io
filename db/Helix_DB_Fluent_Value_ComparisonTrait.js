@@ -21,5 +21,5 @@ var Helix_DB_Fluent_Value_ComparisonTrait =
     [ "isNotRegExp", "Helix_DB_Fluent_Value_ComparisonTrait.html#e1f9125", null ],
     [ "isNull", "Helix_DB_Fluent_Value_ComparisonTrait.html#8c2c02b", null ],
     [ "isRegExp", "Helix_DB_Fluent_Value_ComparisonTrait.html#ad13c5e", null ],
-    [ "switch", "Helix_DB_Fluent_Value_ComparisonTrait.html#3272b9b", null ]
+    [ "switch", "Helix_DB_Fluent_Value_ComparisonTrait.html#455092b", null ]
 ];
