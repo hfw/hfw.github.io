@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"Helix_DB_Fluent_Value_ComparisonTrait.html#9ffe042":[3,0,0,0,3,1,17],
 "Helix_DB_Fluent_Value_ComparisonTrait.html#3e80e92":[3,0,0,0,3,1,8],
 "Helix_DB_Fluent_Value_ComparisonTrait.html#e1f9125":[3,0,0,0,3,1,18],
 "Helix_DB_Fluent_Value_ComparisonTrait.html#7633756":[3,0,0,0,3,1,15],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "Helix_DB_Fluent_ExpressionInterface.html":[3,0,0,0,7],
 "Helix_DB_Fluent_ExpressionInterface.html#f5ddf7f":[3,0,0,0,7,0],
 "Helix_DB_Fluent_ValueInterface.html":[3,0,0,0,13],
-"Helix_DB_MigrationInterface.html":[3,0,0,7]
+"Helix_DB_MigrationInterface.html":[3,0,0,7],
+"Helix_DB_MigrationInterface.html#2f85c2e":[3,0,0,7,1]
 };

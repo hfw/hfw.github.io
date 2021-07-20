@@ -1,6 +1,5 @@
 var Helix_DB =
 [
-    [ "$driver", "Helix_DB.html#07d55f2", null ],
     [ "$junctions", "Helix_DB.html#86c2f9f", null ],
     [ "$logger", "Helix_DB.html#d2881c0", null ],
     [ "$migrations", "Helix_DB.html#6b82851", null ],
@@ -8,7 +7,8 @@ var Helix_DB =
     [ "$schema", "Helix_DB.html#c43e720", null ],
     [ "$transactions", "Helix_DB.html#38a6ab5", null ],
     [ "__construct", "Helix_DB.html#969db10", null ],
-    [ "__toString", "Helix_DB.html#f5ddf7f", null ],
+    [ "__construct_mysql", "Helix_DB.html#3068ae4", null ],
+    [ "__construct_sqlite", "Helix_DB.html#8299fd7", null ],
     [ "beginTransaction", "Helix_DB.html#389d204", null ],
     [ "commit", "Helix_DB.html#8e1915f", null ],
     [ "exec", "Helix_DB.html#660402d", null ],
@@ -24,7 +24,7 @@ var Helix_DB =
     [ "isPostgreSQL", "Helix_DB.html#6bbfe51", null ],
     [ "isSQLite", "Helix_DB.html#8b842bf", null ],
     [ "log", "Helix_DB.html#cf2be03", null ],
-    [ "marks", "Helix_DB.html#9b08c54", null ],
+    [ "marks", "Helix_DB.html#775a871", null ],
     [ "newTransaction", "Helix_DB.html#2907cbe", null ],
     [ "offsetExists", "Helix_DB.html#0fdaee3", null ],
     [ "offsetGet", "Helix_DB.html#62ef696", null ],
@@ -39,7 +39,6 @@ var Helix_DB =
     [ "setLogger", "Helix_DB.html#58bd55b", null ],
     [ "setRecord", "Helix_DB.html#c2d5b68", null ],
     [ "slots", "Helix_DB.html#35bf04f", null ],
-    [ "slotsEqual", "Helix_DB.html#872af1b", null ],
     [ "sqliteCreateFunctions", "Helix_DB.html#2796893", null ],
     [ "transact", "Helix_DB.html#e9106ac", null ]
 ];
