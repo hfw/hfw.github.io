@@ -26,7 +26,6 @@ var annotated =
           [ "DateTime", "Helix_DB_Fluent_DateTime.html", "Helix_DB_Fluent_DateTime" ],
           [ "Expression", "Helix_DB_Fluent_Expression.html", "Helix_DB_Fluent_Expression" ],
           [ "ExpressionInterface", "Helix_DB_Fluent_ExpressionInterface.html", "Helix_DB_Fluent_ExpressionInterface" ],
-          [ "FactoryFormatTrait", "Helix_DB_Fluent_FactoryFormatTrait.html", "Helix_DB_Fluent_FactoryFormatTrait" ],
           [ "Num", "Helix_DB_Fluent_Num.html", "Helix_DB_Fluent_Num" ],
           [ "Predicate", "Helix_DB_Fluent_Predicate.html", "Helix_DB_Fluent_Predicate" ],
           [ "Str", "Helix_DB_Fluent_Str.html", null ],

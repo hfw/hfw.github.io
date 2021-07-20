@@ -50,11 +50,6 @@ var hierarchy =
       ] ],
       [ "Select", "Helix_DB_Select.html", null ]
     ] ],
-    [ "FactoryFormatTrait", "Helix_DB_Fluent_FactoryFormatTrait.html", [
-      [ "DateTime", "Helix_DB_Fluent_DateTime.html", null ],
-      [ "Num", "Helix_DB_Fluent_Num.html", null ],
-      [ "Str", "Helix_DB_Fluent_Str.html", null ]
-    ] ],
     [ "MigrationInterface", "Helix_DB_MigrationInterface.html", null ],
     [ "Migrator", "Helix_DB_Migrator.html", null ],
     [ "NumCastFloatTrait", "Helix_DB_Fluent_Num_NumCastFloatTrait.html", [
