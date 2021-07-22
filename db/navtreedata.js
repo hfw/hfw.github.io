@@ -38,8 +38,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"Helix_DB_Fluent_Value_ComparisonTrait.html#3e80e92",
-"Helix_DB_MigrationInterface.html#8796594"
+"Helix_DB_Fluent_Value_AggregateTrait.html#a342a3a",
+"Helix_DB_EntityInterface.html#1fcd14b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
