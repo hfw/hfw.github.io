@@ -137,7 +137,6 @@ var NAVTREEINDEX0 =
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#5767d7c":[3,0,0,0,0,1,10],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#f4c6eab":[3,0,0,0,0,1,23],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#0422830":[3,0,0,0,0,1,40],
-"Helix_DB_Fluent_DateTime_DateTimeTrait.html#8f96c56":[3,0,0,0,0,1,43],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#62ad757":[3,0,0,0,0,1,3],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#82c2347":[3,0,0,0,0,1,0],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#e50a02a":[3,0,0,0,0,1,33],
@@ -153,6 +152,7 @@ var NAVTREEINDEX0 =
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#196622f":[3,0,0,0,0,1,17],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#ed65890":[3,0,0,0,0,1,11],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#e6daa36":[3,0,0,0,0,1,19],
+"Helix_DB_Fluent_DateTime_DateTimeTrait.html#bf32790":[3,0,0,0,0,1,43],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#e90d103":[3,0,0,0,0,1,27],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#139ce13":[3,0,0,0,0,1,14],
 "Helix_DB_Fluent_DateTime_DateTimeTrait.html#6fec6e9":[3,0,0,0,0,1,28],
@@ -165,6 +165,7 @@ var NAVTREEINDEX0 =
 "Helix_DB_Fluent_Expression.html#f5ddf7f":[3,0,0,0,6,3],
 "Helix_DB_Fluent_Num.html":[3,0,0,0,8],
 "Helix_DB_Fluent_Num.html#49fd211":[3,0,0,0,8,0],
+"Helix_DB_Fluent_Num.html#e84ac9b":[3,0,0,0,8,2],
 "Helix_DB_Fluent_Num.html#0064641":[3,0,0,0,8,1],
 "Helix_DB_Fluent_Num_BaseConversionTrait.html":[3,0,0,0,1,0],
 "Helix_DB_Fluent_Num_BaseConversionTrait.html#6581437":[3,0,0,0,1,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "Helix_DB_Fluent_Value_AggregateTrait.html#d2de0c0":[3,0,0,0,3,0,1],
 "Helix_DB_Fluent_Value_ComparisonTrait.html":[3,0,0,0,3,1],
 "Helix_DB_Fluent_Value_ComparisonTrait.html#9ffe042":[3,0,0,0,3,1,17],
-"Helix_DB_Fluent_Value_ComparisonTrait.html#3e80e92":[3,0,0,0,3,1,8],
-"Helix_DB_Fluent_Value_ComparisonTrait.html#e1f9125":[3,0,0,0,3,1,18]
+"Helix_DB_Fluent_Value_ComparisonTrait.html#3e80e92":[3,0,0,0,3,1,8]
 };

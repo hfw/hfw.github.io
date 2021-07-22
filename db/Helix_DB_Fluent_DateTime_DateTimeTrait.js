@@ -43,7 +43,7 @@ var Helix_DB_Fluent_DateTime_DateTimeTrait =
     [ "subYears", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#0422830", null ],
     [ "time", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#d78f8ba", null ],
     [ "timestamp", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#b2398f0", null ],
-    [ "toUTC", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#8f96c56", null ],
+    [ "toUTC", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#bf32790", null ],
     [ "weekOfYear", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#feb7a44", null ],
     [ "year", "Helix_DB_Fluent_DateTime_DateTimeTrait.html#b50d156", null ]
 ];

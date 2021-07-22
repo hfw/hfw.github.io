@@ -201,9 +201,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:b2398f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#b2398f0">timestamp</a> ()</td></tr>
 <tr class="memdesc:b2398f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unix timestamp.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#b2398f0">More...</a><br /></td></tr>
 <tr class="separator:b2398f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:8f96c56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#8f96c56">toUTC</a> ()</td></tr>
-<tr class="memdesc:8f96c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the timezone from the local timezone to UTC.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#8f96c56">More...</a><br /></td></tr>
-<tr class="separator:8f96c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bf32790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#bf32790">toUTC</a> (string $mysqlLocalTz=null)</td></tr>
+<tr class="memdesc:bf32790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the timezone from local to UTC.  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#bf32790">More...</a><br /></td></tr>
+<tr class="separator:bf32790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:feb7a44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_Fluent_Num.html">Num</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#feb7a44">weekOfYear</a> ()</td></tr>
 <tr class="memdesc:feb7a44"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>00</code> to <code>53</code>  <a href="Helix_DB_Fluent_DateTime_DateTimeTrait.html#feb7a44">More...</a><br /></td></tr>
 <tr class="separator:feb7a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1314,8 +1314,8 @@ Public Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="8f96c56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#8f96c56">&#9670;&nbsp;</a></span>toUTC()</h2>
+<a id="bf32790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#bf32790">&#9670;&nbsp;</a></span>toUTC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1323,19 +1323,27 @@ Public Methods</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="Helix_DB_Fluent_DateTime.html">DateTime</a> toUTC </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$mysqlLocalTz</em> = <code>null</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the timezone from the local timezone to UTC. </p>
+<p>Changes the timezone from local to UTC. </p>
+<p>SQLite uses the system's timezone as the "local" timezone, whereas MySQL allows you to specify it.</p>
 <blockquote class="doxtable">
 <p>Warning: Datetimes are already stored and retrieved as UTC. Only use this if you know the expression is in the local timezone. </p>
 </blockquote>
 <blockquote class="doxtable">
 <p>Warning: Chaining this multiple times will further change the timezone offset. </p>
 </blockquote>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$mysqlLocalTz</td><td>The "local" timezone name or offset given to MySQL. Defaults to PHP's current timezone. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_DB_Fluent_DateTime.html" title="A date-time expression.">DateTime</a> </dd></dl>
 
 </div>
