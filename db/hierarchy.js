@@ -64,7 +64,9 @@ var hierarchy =
       [ "Str", "Helix_DB_Fluent_Str.html", null ],
       [ "Value", "Helix_DB_Fluent_Value.html", null ]
     ] ],
-    [ "Reflection", "Helix_DB_Reflection.html", null ],
+    [ "Reflection", "Helix_DB_Reflection.html", [
+      [ "Serializer", "Helix_DB_Record_Serializer.html", null ]
+    ] ],
     [ "StrCastTrait", "Helix_DB_Fluent_Str_StrCastTrait.html", [
       [ "DateTime", "Helix_DB_Fluent_DateTime.html", null ],
       [ "Num", "Helix_DB_Fluent_Num.html", null ],

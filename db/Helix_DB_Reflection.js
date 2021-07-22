@@ -1,9 +1,11 @@
 var Helix_DB_Reflection =
 [
     [ "$class", "Helix_DB_Reflection.html#692b74c", null ],
+    [ "$columns", "Helix_DB_Reflection.html#47ff24c", null ],
     [ "$db", "Helix_DB_Reflection.html#d144aa2", null ],
     [ "$defaults", "Helix_DB_Reflection.html#719011a", null ],
-    [ "$props", "Helix_DB_Reflection.html#6849294", null ],
+    [ "$properties", "Helix_DB_Reflection.html#bb24f1b", null ],
+    [ "$unique", "Helix_DB_Reflection.html#3c7811a", null ],
     [ "RX_EAV", "Helix_DB_Reflection.html#e04da41", null ],
     [ "RX_EAV_VAR", "Helix_DB_Reflection.html#0ff0f46", null ],
     [ "RX_FOREIGN", "Helix_DB_Reflection.html#f951594", null ],
@@ -21,12 +23,14 @@ var Helix_DB_Reflection =
     [ "getForeignClasses", "Helix_DB_Reflection.html#331d04b", null ],
     [ "getJunctionTable", "Helix_DB_Reflection.html#afa70de", null ],
     [ "getRecordTable", "Helix_DB_Reflection.html#998836f", null ],
-    [ "getType", "Helix_DB_Reflection.html#46257b9", null ],
-    [ "getType_reflection", "Helix_DB_Reflection.html#53ac236", null ],
-    [ "getType_var", "Helix_DB_Reflection.html#e777662", null ],
+    [ "getType", "Helix_DB_Reflection.html#767a2f1", null ],
+    [ "getType_reflection", "Helix_DB_Reflection.html#e1d7f1e", null ],
+    [ "getType_var", "Helix_DB_Reflection.html#2bf4f1c", null ],
     [ "getUnique", "Helix_DB_Reflection.html#eb3b7aa", null ],
-    [ "getValue", "Helix_DB_Reflection.html#587141d", null ],
-    [ "isNullable", "Helix_DB_Reflection.html#fa407db", null ],
+    [ "getUniqueGroup", "Helix_DB_Reflection.html#fc9f7ff", null ],
+    [ "getValue", "Helix_DB_Reflection.html#5d0fb89", null ],
+    [ "isNullable", "Helix_DB_Reflection.html#30e2220", null ],
+    [ "isUnique", "Helix_DB_Reflection.html#4b391d5", null ],
     [ "newProto", "Helix_DB_Reflection.html#cfb8a4b", null ],
-    [ "setValue", "Helix_DB_Reflection.html#d1c2f09", null ]
+    [ "setValue", "Helix_DB_Reflection.html#602705c", null ]
 ];

@@ -1,14 +1,8 @@
 var Helix_DB_Record =
 [
-    [ "$dehydrate", "Helix_DB_Record.html#6cc28c2", null ],
     [ "$eav", "Helix_DB_Record.html#2177d2d", null ],
-    [ "$hydrate", "Helix_DB_Record.html#c7376d1", null ],
-    [ "$nullable", "Helix_DB_Record.html#027c7e1", null ],
     [ "$proto", "Helix_DB_Record.html#2f0e87b", null ],
-    [ "$ref", "Helix_DB_Record.html#b41576d", null ],
-    [ "$types", "Helix_DB_Record.html#f594f1e", null ],
-    [ "$unique", "Helix_DB_Record.html#50de9f7", null ],
-    [ "$utc", "Helix_DB_Record.html#8695334", null ],
+    [ "$serializer", "Helix_DB_Record.html#867a502", null ],
     [ "EAV_BATCH_LOAD", "Helix_DB_Record.html#1ce31ba", null ],
     [ "__construct", "Helix_DB_Record.html#75f99f5", null ],
     [ "factory", "Helix_DB_Record.html#4e03ac3", null ],
@@ -19,14 +13,6 @@ var Helix_DB_Record =
     [ "getClass", "Helix_DB_Record.html#0c03627", null ],
     [ "getEav", "Helix_DB_Record.html#fe476ed", null ],
     [ "getProto", "Helix_DB_Record.html#44b76d2", null ],
-    [ "getType", "Helix_DB_Record.html#767a2f1", null ],
-    [ "getTypes", "Helix_DB_Record.html#0324f76", null ],
-    [ "getUnique", "Helix_DB_Record.html#eb3b7aa", null ],
-    [ "getUniqueGroup", "Helix_DB_Record.html#fc9f7ff", null ],
-    [ "getValues", "Helix_DB_Record.html#aaef9e8", null ],
-    [ "getValues_dehydrate", "Helix_DB_Record.html#dfbe76d", null ],
-    [ "isNullable", "Helix_DB_Record.html#30e2220", null ],
-    [ "isUnique", "Helix_DB_Record.html#4b391d5", null ],
     [ "load", "Helix_DB_Record.html#2732fe6", null ],
     [ "loadAll", "Helix_DB_Record.html#fde4b24", null ],
     [ "loadEav", "Helix_DB_Record.html#1e28fdf", null ],
@@ -34,8 +20,5 @@ var Helix_DB_Record =
     [ "saveEav", "Helix_DB_Record.html#3ac3c3a", null ],
     [ "saveInsert", "Helix_DB_Record.html#27a4abf", null ],
     [ "saveUpdate", "Helix_DB_Record.html#b6d0850", null ],
-    [ "setProto", "Helix_DB_Record.html#6702635", null ],
-    [ "setType", "Helix_DB_Record.html#7d75b4a", null ],
-    [ "setType_hydrate", "Helix_DB_Record.html#5fb6488", null ],
-    [ "setValues", "Helix_DB_Record.html#3a3a37d", null ]
+    [ "setProto", "Helix_DB_Record.html#6702635", null ]
 ];

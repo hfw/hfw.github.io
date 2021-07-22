@@ -33,6 +33,9 @@ var annotated =
           [ "Value", "Helix_DB_Fluent_Value.html", null ],
           [ "ValueInterface", "Helix_DB_Fluent_ValueInterface.html", null ]
         ] ],
+        [ "Record", null, [
+          [ "Serializer", "Helix_DB_Record_Serializer.html", "Helix_DB_Record_Serializer" ]
+        ] ],
         [ "AbstractTable", "Helix_DB_AbstractTable.html", "Helix_DB_AbstractTable" ],
         [ "AttributesTrait", "Helix_DB_AttributesTrait.html", "Helix_DB_AttributesTrait" ],
         [ "Column", "Helix_DB_Column.html", "Helix_DB_Column" ],

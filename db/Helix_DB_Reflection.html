@@ -79,15 +79,17 @@ $(document).ready(function(){initNavTree('Helix_DB_Reflection.html',''); initRes
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_DB_Reflection__inherit__graph.png" border="0" usemap="#Reflection_inherit__map" alt="Inheritance graph"/></div>
 <map name="Reflection_inherit__map" id="Reflection_inherit__map">
-<area shape="rect" title="Interprets classes and annotations." alt="" coords="15,83,138,112"/>
+<area shape="rect" title="Interprets classes and annotations, and manipulates objects." alt="" coords="15,83,138,112"/>
+<area shape="rect" href="Helix_DB_Record_Serializer.html" title="Converts an entity&#39;s values to/from storage types." alt="" coords="15,160,138,189"/>
 <area shape="rect" title="Installs a magic static factory, where the signature can be changed to match the constructor,..." alt="" coords="5,5,148,35"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
-<div class="textblock"><p>Interprets classes and annotations. </p>
+<div class="textblock"><p>Interprets classes and annotations, and manipulates objects. </p>
 <blockquote class="doxtable">
 <p>Programmer's Note: Manipulating subclasses through a parent's reflection is allowed. </p>
 </blockquote>
+<p>@TODO Allow column aliasing. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Properties</h2></td></tr>
@@ -100,15 +102,21 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:692b74c"><td class="memItemLeft" align="right" valign="top"><a id="692b74c"></a>
 ReflectionClass&#160;</td><td class="memItemRight" valign="bottom"><b>$class</b></td></tr>
 <tr class="separator:692b74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:47ff24c"><td class="memItemLeft" align="right" valign="top"><a id="47ff24c"></a>
+string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$columns</b></td></tr>
+<tr class="separator:47ff24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d144aa2"><td class="memItemLeft" align="right" valign="top"><a id="d144aa2"></a>
 <a class="el" href="Helix_DB.html">DB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$db</b></td></tr>
 <tr class="separator:d144aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:719011a"><td class="memItemLeft" align="right" valign="top"><a id="719011a"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$defaults</b> = []</td></tr>
 <tr class="separator:719011a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:6849294"><td class="memItemLeft" align="right" valign="top"><a id="6849294"></a>
-ReflectionProperty[]&#160;</td><td class="memItemRight" valign="bottom"><b>$props</b> = []</td></tr>
-<tr class="separator:6849294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bb24f1b"><td class="memItemLeft" align="right" valign="top"><a id="bb24f1b"></a>
+ReflectionProperty[]&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b> = []</td></tr>
+<tr class="separator:bb24f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:3c7811a"><td class="memItemLeft" align="right" valign="top"><a id="3c7811a"></a>
+string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$unique</b></td></tr>
+<tr class="separator:3c7811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e04da41"><td class="memItemLeft" align="right" valign="top"><a id="e04da41"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV</b> = '/\*\h*@eav\h+(?&lt;table&gt;\w+)/i'</td></tr>
 <tr class="separator:e04da41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,27 +166,36 @@ Public Methods</h2></td></tr>
 <tr class="separator:afa70de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:998836f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#998836f">getRecordTable</a> ()</td></tr>
 <tr class="separator:998836f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:46257b9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#46257b9">getType</a> (string $column)</td></tr>
-<tr class="memdesc:46257b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar storage type, or FQN of a complex type.  <a href="Helix_DB_Reflection.html#46257b9">More...</a><br /></td></tr>
-<tr class="separator:46257b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:767a2f1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#767a2f1">getType</a> (string $property)</td></tr>
+<tr class="memdesc:767a2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar storage type, or FQN of a complex type.  <a href="Helix_DB_Reflection.html#767a2f1">More...</a><br /></td></tr>
+<tr class="separator:767a2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:eb3b7aa"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#eb3b7aa">getUnique</a> ()</td></tr>
 <tr class="memdesc:eb3b7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> groupings for unique constraints.  <a href="Helix_DB_Reflection.html#eb3b7aa">More...</a><br /></td></tr>
 <tr class="separator:eb3b7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:587141d"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#587141d">getValue</a> (object $object, string $prop)</td></tr>
-<tr class="separator:587141d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:fa407db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#fa407db">isNullable</a> (string $column)</td></tr>
-<tr class="separator:fa407db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fc9f7ff"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#fc9f7ff">getUniqueGroup</a> (string $property)</td></tr>
+<tr class="memdesc:fc9f7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared identifier if a property is part of a multi-column unique-key.  <a href="Helix_DB_Reflection.html#fc9f7ff">More...</a><br /></td></tr>
+<tr class="separator:fc9f7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:5d0fb89"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#5d0fb89">getValue</a> (object $object, string $property)</td></tr>
+<tr class="memdesc:5d0fb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets and returns a value through reflection.  <a href="Helix_DB_Reflection.html#5d0fb89">More...</a><br /></td></tr>
+<tr class="separator:5d0fb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:30e2220"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#30e2220">isNullable</a> (string $property)</td></tr>
+<tr class="memdesc:30e2220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a property allows <code>NULL</code> as a value.  <a href="Helix_DB_Reflection.html#30e2220">More...</a><br /></td></tr>
+<tr class="separator:30e2220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4b391d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#4b391d5">isUnique</a> (string $property)</td></tr>
+<tr class="memdesc:4b391d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a property has a unique-key constraint of its own.  <a href="Helix_DB_Reflection.html#4b391d5">More...</a><br /></td></tr>
+<tr class="separator:4b391d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:cfb8a4b"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#cfb8a4b">newProto</a> ()</td></tr>
 <tr class="separator:cfb8a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d1c2f09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#d1c2f09">setValue</a> (object $object, string $prop, $value)</td></tr>
-<tr class="separator:d1c2f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:602705c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#602705c">setValue</a> (object $object, string $property, $value)</td></tr>
+<tr class="memdesc:602705c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value through reflection.  <a href="Helix_DB_Reflection.html#602705c">More...</a><br /></td></tr>
+<tr class="separator:602705c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
-<tr class="memitem:53ac236"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#53ac236">getType_reflection</a> (string $column)</td></tr>
-<tr class="separator:53ac236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:e777662"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#e777662">getType_var</a> (string $column)</td></tr>
-<tr class="separator:e777662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e1d7f1e"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#e1d7f1e">getType_reflection</a> (string $property)</td></tr>
+<tr class="separator:e1d7f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2bf4f1c"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#2bf4f1c">getType_var</a> (string $property)</td></tr>
+<tr class="separator:2bf4f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Properties</h2>
 <a id="b2dc14c"></a>
@@ -247,6 +264,8 @@ Protected Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented in <a class="el" href="Helix_DB_Record_Serializer.html#75f99f5">Serializer</a>.</p>
 
 </div>
 </div>
@@ -382,8 +401,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="46257b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#46257b9">&#9670;&nbsp;</a></span>getType()</h2>
+<a id="767a2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#767a2f1">&#9670;&nbsp;</a></span>getType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +411,7 @@ Protected Methods</h2></td></tr>
           <td class="memname">string getType </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$column</em></td><td>)</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -401,7 +420,7 @@ Protected Methods</h2></td></tr>
 <p>Scalar storage type, or FQN of a complex type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -409,8 +428,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="53ac236"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#53ac236">&#9670;&nbsp;</a></span>getType_reflection()</h2>
+<a id="e1d7f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e1d7f1e">&#9670;&nbsp;</a></span>getType_reflection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +441,7 @@ Protected Methods</h2></td></tr>
           <td class="memname">null string getType_reflection </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$column</em></td><td>)</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -434,7 +453,7 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -442,8 +461,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="e777662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#e777662">&#9670;&nbsp;</a></span>getType_var()</h2>
+<a id="2bf4f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2bf4f1c">&#9670;&nbsp;</a></span>getType_var()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +474,7 @@ Protected Methods</h2></td></tr>
           <td class="memname">null string getType_var </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$column</em></td><td>)</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -467,7 +486,7 @@ Protected Methods</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -500,8 +519,43 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="587141d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#587141d">&#9670;&nbsp;</a></span>getValue()</h2>
+<a id="fc9f7ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#fc9f7ff">&#9670;&nbsp;</a></span>getUniqueGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">null string getUniqueGroup </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The shared identifier if a property is part of a multi-column unique-key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string The shared identifier, or nothing. </dd></dl>
+
+</div>
+</div>
+<a id="5d0fb89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#5d0fb89">&#9670;&nbsp;</a></span>getValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,7 +570,7 @@ Protected Methods</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$prop</em>&#160;</td>
+          <td class="paramname"><em>$property</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -525,10 +579,12 @@ Protected Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets and returns a value through reflection. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$object</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -536,8 +592,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="fa407db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fa407db">&#9670;&nbsp;</a></span>isNullable()</h2>
+<a id="30e2220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#30e2220">&#9670;&nbsp;</a></span>isNullable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,14 +602,51 @@ Protected Methods</h2></td></tr>
           <td class="memname">bool isNullable </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$column</em></td><td>)</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Whether a property allows <code>NULL</code> as a value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="4b391d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#4b391d5">&#9670;&nbsp;</a></span>isUnique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isUnique </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether a property has a unique-key constraint of its own. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -579,14 +672,14 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="d1c2f09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#d1c2f09">&#9670;&nbsp;</a></span>setValue()</h2>
+<a id="602705c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#602705c">&#9670;&nbsp;</a></span>setValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">setValue </td>
+          <td class="memname">void setValue </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>$object</em>, </td>
@@ -595,7 +688,7 @@ Protected Methods</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$prop</em>, </td>
+          <td class="paramname"><em>$property</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -610,10 +703,12 @@ Protected Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets a value through reflection. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$object</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$prop</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
     <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
   </table>
   </dd>
