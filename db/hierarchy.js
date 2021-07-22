@@ -31,6 +31,9 @@ var hierarchy =
       [ "Str", "Helix_DB_Fluent_Str.html", null ],
       [ "Value", "Helix_DB_Fluent_Value.html", null ]
     ] ],
+    [ "DateTimeModifyTrait", "Helix_DB_Fluent_DateTime_DateTimeModifyTrait.html", [
+      [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", null ]
+    ] ],
     [ "EntityInterface", "Helix_DB_EntityInterface.html", null ],
     [ "ExpressionInterface", "Helix_DB_Fluent_ExpressionInterface.html", [
       [ "Expression", "Helix_DB_Fluent_Expression.html", [

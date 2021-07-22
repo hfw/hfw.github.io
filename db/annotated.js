@@ -5,6 +5,7 @@ var annotated =
         [ "Fluent", null, [
           [ "DateTime", null, [
             [ "DateTimeCastTrait", "Helix_DB_Fluent_DateTime_DateTimeCastTrait.html", "Helix_DB_Fluent_DateTime_DateTimeCastTrait" ],
+            [ "DateTimeModifyTrait", "Helix_DB_Fluent_DateTime_DateTimeModifyTrait.html", "Helix_DB_Fluent_DateTime_DateTimeModifyTrait" ],
             [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", "Helix_DB_Fluent_DateTime_DateTimeTrait" ]
           ] ],
           [ "Num", null, [
