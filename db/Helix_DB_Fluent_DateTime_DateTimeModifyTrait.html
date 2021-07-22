@@ -545,6 +545,9 @@ Public Methods</h2></td></tr>
 
 <p>Applies date-time modifiers. </p>
 <p><code>$s</code> can be a <code>DateInterval</code> or <code>DateInterval</code> description (e.g. <code>"+1 day"</code>). If so, the rest of the arguments are ignored.</p>
+<blockquote class="doxtable">
+<p>Note: Modifiers are processed from greatest-to-least interval scope, meaning years are applied first and seconds are applied last. </p>
+</blockquote>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;string&#160;|&#160;DateInterval</td><td class="paramname">$s</td><td>Seconds, or <code>DateInterval</code> related </td></tr>
