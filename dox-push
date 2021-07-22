@@ -1,0 +1,6 @@
+#!/bin/bash -eu
+./dox "${1}"
+git status
+git add .
+git commit -a -m "${1}"
+git push
