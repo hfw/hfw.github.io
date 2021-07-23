@@ -39,7 +39,7 @@ var NAVTREEINDEX =
 [
 ".html",
 "Helix_DB_Fluent_Value_AggregateTrait.html#fbb1c16",
-"Helix_DB_Fluent_ExpressionInterface.html"
+"index.html#autotoc_md3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

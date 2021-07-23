@@ -114,9 +114,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$defaults</b> = []</
 <tr class="memitem:bb24f1b"><td class="memItemLeft" align="right" valign="top"><a id="bb24f1b"></a>
 ReflectionProperty[]&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b> = []</td></tr>
 <tr class="separator:bb24f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3c7811a"><td class="memItemLeft" align="right" valign="top"><a id="3c7811a"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$unique</b></td></tr>
-<tr class="separator:3c7811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e04da41"><td class="memItemLeft" align="right" valign="top"><a id="e04da41"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_EAV</b> = '/\*\h*@eav\h+(?&lt;table&gt;\w+)/i'</td></tr>
 <tr class="separator:e04da41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,8 +136,11 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_NULL</b> = '/(\bn
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_RECORD</b> = '/\*\h*@record\h+(?&lt;table&gt;\w+)/i'</td></tr>
 <tr class="separator:7a5bbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c79905c"><td class="memItemLeft" align="right" valign="top"><a id="c79905c"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_UNIQUE</b> = '/\*\h*@unique(\h+(?&lt;ident&gt;[a-z_]+))?/i'</td></tr>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_UNIQUE</b> = '/^\h*\*\h*@unique\h*$/im'</td></tr>
 <tr class="separator:c79905c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:9351448"><td class="memItemLeft" align="right" valign="top"><a id="9351448"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_UNIQUE_GROUP</b> = '/^\h*\*\h*@unique\h+(?&lt;ident&gt;[a-z_]+)\h*$/im'</td></tr>
+<tr class="separator:9351448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:31d81cd"><td class="memItemLeft" align="right" valign="top"><a id="31d81cd"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>RX_VAR</b> = '/\*\h*@var\h+(?&lt;type&gt;\S+)/i'</td></tr>
 <tr class="separator:31d81cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,7 +155,6 @@ Public Methods</h2></td></tr>
 <tr class="memitem:75f99f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#75f99f5">__construct</a> (<a class="el" href="Helix_DB.html">DB</a> $db, $class)</td></tr>
 <tr class="separator:75f99f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dc14720"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#dc14720">getColumns</a> ()</td></tr>
-<tr class="memdesc:dc14720"><td class="mdescLeft">&#160;</td><td class="mdescRight">@TODO allow aliasing  <a href="Helix_DB_Reflection.html#dc14720">More...</a><br /></td></tr>
 <tr class="separator:dc14720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fe476ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_DB_EAV.html">EAV</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#fe476ed">getEav</a> ()</td></tr>
 <tr class="separator:fe476ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,21 +168,24 @@ Public Methods</h2></td></tr>
 <tr class="memitem:767a2f1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#767a2f1">getType</a> (string $property)</td></tr>
 <tr class="memdesc:767a2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar storage type, or FQN of a complex type.  <a href="Helix_DB_Reflection.html#767a2f1">More...</a><br /></td></tr>
 <tr class="separator:767a2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:eb3b7aa"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#eb3b7aa">getUnique</a> ()</td></tr>
-<tr class="memdesc:eb3b7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> groupings for unique constraints.  <a href="Helix_DB_Reflection.html#eb3b7aa">More...</a><br /></td></tr>
-<tr class="separator:eb3b7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:fc9f7ff"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#fc9f7ff">getUniqueGroup</a> (string $property)</td></tr>
-<tr class="memdesc:fc9f7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared identifier if a property is part of a multi-column unique-key.  <a href="Helix_DB_Reflection.html#fc9f7ff">More...</a><br /></td></tr>
-<tr class="separator:fc9f7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b9ca121"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#b9ca121">getUnique</a> ()</td></tr>
+<tr class="memdesc:b9ca121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Columns with their own individual unique constraints.  <a href="Helix_DB_Reflection.html#b9ca121">More...</a><br /></td></tr>
+<tr class="separator:b9ca121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8423a70"><td class="memItemLeft" align="right" valign="top">string[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#8423a70">getUniqueGroups</a> ()</td></tr>
+<tr class="memdesc:8423a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Table-level (multi-column) constraints are grouped under an arbitrary shared identifier.  <a href="Helix_DB_Reflection.html#8423a70">More...</a><br /></td></tr>
+<tr class="separator:8423a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5d0fb89"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#5d0fb89">getValue</a> (object $object, string $property)</td></tr>
 <tr class="memdesc:5d0fb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets and returns a value through reflection.  <a href="Helix_DB_Reflection.html#5d0fb89">More...</a><br /></td></tr>
 <tr class="separator:5d0fb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cbebb5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#cbebb5c">isColumn</a> (string $property)</td></tr>
+<tr class="separator:cbebb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:30e2220"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#30e2220">isNullable</a> (string $property)</td></tr>
 <tr class="memdesc:30e2220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a property allows <code>NULL</code> as a value.  <a href="Helix_DB_Reflection.html#30e2220">More...</a><br /></td></tr>
 <tr class="separator:30e2220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:4b391d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#4b391d5">isUnique</a> (string $property)</td></tr>
-<tr class="memdesc:4b391d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a property has a unique-key constraint of its own.  <a href="Helix_DB_Reflection.html#4b391d5">More...</a><br /></td></tr>
-<tr class="separator:4b391d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c0d0cc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#c0d0cc4">isUnique</a> (string $column)</td></tr>
+<tr class="separator:c0d0cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e0a6bcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#e0a6bcd">isUniqueMulti</a> (string $column, &amp;$ident=null)</td></tr>
+<tr class="separator:e0a6bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:cfb8a4b"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#cfb8a4b">newProto</a> ()</td></tr>
 <tr class="separator:cfb8a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:602705c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#602705c">setValue</a> (object $object, string $property, $value)</td></tr>
@@ -312,6 +314,9 @@ Protected Methods</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string [] getColumns </td>
@@ -320,9 +325,12 @@ Protected Methods</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>@TODO allow aliasing </p>
 <dl class="section return"><dt>Returns</dt><dd>string[] </dd></dl>
 
 </div>
@@ -494,14 +502,14 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="eb3b7aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#eb3b7aa">&#9670;&nbsp;</a></span>getUnique()</h2>
+<a id="b9ca121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b9ca121">&#9670;&nbsp;</a></span>getUnique()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">array getUnique </td>
+          <td class="memname">string [] getUnique </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -509,48 +517,29 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="Helix_DB_Column.html" title="Immutable column expression.">Column</a> groupings for unique constraints. </p>
-<ul>
-<li>Column-level constraints are enumerated names.</li>
-<li>Table-level (multi-column) constraints are names grouped under an arbitrary shared identifier.</li>
-</ul>
-<p>&lsquo;[ 'foo&rsquo;, 'my_multi'=&gt;['bar','baz'], ... ]`</p>
-<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+<p>Columns with their own individual unique constraints. </p>
+<dl class="section return"><dt>Returns</dt><dd>string[] </dd></dl>
 
 </div>
 </div>
-<a id="fc9f7ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fc9f7ff">&#9670;&nbsp;</a></span>getUniqueGroup()</h2>
+<a id="8423a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8423a70">&#9670;&nbsp;</a></span>getUniqueGroups()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">null string getUniqueGroup </td>
+          <td class="memname">string [][] getUniqueGroups </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$property</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>The shared identifier if a property is part of a multi-column unique-key. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>null|string The shared identifier, or nothing. </dd></dl>
+<p>Table-level (multi-column) constraints are grouped under an arbitrary shared identifier. </p>
+<p><code>[ shared identifier =&gt; [ col, ... ], ... ]</code></p>
+<dl class="section return"><dt>Returns</dt><dd>string[][] </dd></dl>
 
 </div>
 </div>
@@ -592,6 +581,31 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="cbebb5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#cbebb5c">&#9670;&nbsp;</a></span>isColumn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isColumn </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$property</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
 <a id="30e2220"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#30e2220">&#9670;&nbsp;</a></span>isNullable()</h2>
 
@@ -619,34 +633,60 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="4b391d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#4b391d5">&#9670;&nbsp;</a></span>isUnique()</h2>
+<a id="c0d0cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#c0d0cc4">&#9670;&nbsp;</a></span>isUnique()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool isUnique </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$property</em></td><td>)</td>
+          <td class="paramname"><em>$column</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Whether a property has a unique-key constraint of its own. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$property</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="e0a6bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e0a6bcd">&#9670;&nbsp;</a></span>isUniqueMulti()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isUniqueMulti </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;&#160;</td>
+          <td class="paramname"><em>$ident</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
+    <tr><td class="paramtype">void</td><td class="paramname">$ident</td><td>Updated to the group identifier. </td></tr>
   </table>
   </dd>
 </dl>
