@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"Helix_DB_Fluent_Str_StrTrait.html#35ff034":[3,0,0,0,2,1,2],
+"Helix_DB_Fluent_Str_StrTrait.html#6568bf4":[3,0,0,0,2,1,6],
+"Helix_DB_Fluent_Str_StrTrait.html#cc633a6":[3,0,0,0,2,1,0],
 "Helix_DB_Fluent_Str_StrTrait.html#4306c9a":[3,0,0,0,2,1,1],
 "Helix_DB_Fluent_Str_StrTrait.html#16cd9c6":[3,0,0,0,2,1,5],
 "Helix_DB_Fluent_Str_StrTrait.html#d207ac1":[3,0,0,0,2,1,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "Helix_DB_Table.html#366b2a5":[3,0,0,15,9],
 "Helix_DB_Transaction.html":[3,0,0,16],
 "Helix_DB_Transaction.html#bf01e11":[3,0,0,16,5],
-"Helix_DB_Transaction.html#50bd2fc":[3,0,0,16,0],
-"Helix_DB_Transaction.html#b024dad":[3,0,0,16,6],
-"Helix_DB_Transaction.html#ce0c758":[3,0,0,16,3],
-"Helix_DB_Transaction.html#8e1915f":[3,0,0,16,4]
+"Helix_DB_Transaction.html#50bd2fc":[3,0,0,16,0]
 };

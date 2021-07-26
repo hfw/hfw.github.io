@@ -4,9 +4,13 @@ var annotated =
       [ "DB", null, [
         [ "Fluent", null, [
           [ "DateTime", null, [
+            [ "DateTimeAddTrait", "Helix_DB_Fluent_DateTime_DateTimeAddTrait.html", "Helix_DB_Fluent_DateTime_DateTimeAddTrait" ],
             [ "DateTimeCastTrait", "Helix_DB_Fluent_DateTime_DateTimeCastTrait.html", "Helix_DB_Fluent_DateTime_DateTimeCastTrait" ],
+            [ "DateTimeDiffTrait", "Helix_DB_Fluent_DateTime_DateTimeDiffTrait.html", "Helix_DB_Fluent_DateTime_DateTimeDiffTrait" ],
+            [ "DateTimeFormatTrait", "Helix_DB_Fluent_DateTime_DateTimeFormatTrait.html", "Helix_DB_Fluent_DateTime_DateTimeFormatTrait" ],
             [ "DateTimeModifyTrait", "Helix_DB_Fluent_DateTime_DateTimeModifyTrait.html", "Helix_DB_Fluent_DateTime_DateTimeModifyTrait" ],
-            [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", "Helix_DB_Fluent_DateTime_DateTimeTrait" ]
+            [ "DateTimeSubTrait", "Helix_DB_Fluent_DateTime_DateTimeSubTrait.html", "Helix_DB_Fluent_DateTime_DateTimeSubTrait" ],
+            [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", null ]
           ] ],
           [ "Num", null, [
             [ "BaseConversionTrait", "Helix_DB_Fluent_Num_BaseConversionTrait.html", "Helix_DB_Fluent_Num_BaseConversionTrait" ],

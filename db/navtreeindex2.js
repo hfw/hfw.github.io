@@ -1,11 +1,14 @@
 var NAVTREEINDEX2 =
 {
+"Helix_DB_Transaction.html#b024dad":[3,0,0,16,6],
+"Helix_DB_Transaction.html#ce0c758":[3,0,0,16,3],
+"Helix_DB_Transaction.html#8e1915f":[3,0,0,16,4],
 "Helix_DB_Transaction.html#d144aa2":[3,0,0,16,1],
 "Helix_DB_Transaction.html#d20e64b":[3,0,0,16,2],
 "hierarchy.html":[2],
 "immutable.html":[1],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md0":[0,0],
 "index.html#autotoc_md1":[0,1],
 "index.html#autotoc_md2":[0,2],

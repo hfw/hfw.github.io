@@ -31,8 +31,18 @@ var hierarchy =
       [ "Str", "Helix_DB_Fluent_Str.html", null ],
       [ "Value", "Helix_DB_Fluent_Value.html", null ]
     ] ],
-    [ "DateTimeModifyTrait", "Helix_DB_Fluent_DateTime_DateTimeModifyTrait.html", [
-      [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", null ]
+    [ "DateTimeFormatTrait", "Helix_DB_Fluent_DateTime_DateTimeFormatTrait.html", [
+      [ "DateTimeDiffTrait", "Helix_DB_Fluent_DateTime_DateTimeDiffTrait.html", [
+        [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", null ]
+      ] ],
+      [ "DateTimeModifyTrait", "Helix_DB_Fluent_DateTime_DateTimeModifyTrait.html", [
+        [ "DateTimeAddTrait", "Helix_DB_Fluent_DateTime_DateTimeAddTrait.html", [
+          [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", null ]
+        ] ],
+        [ "DateTimeSubTrait", "Helix_DB_Fluent_DateTime_DateTimeSubTrait.html", [
+          [ "DateTimeTrait", "Helix_DB_Fluent_DateTime_DateTimeTrait.html", null ]
+        ] ]
+      ] ]
     ] ],
     [ "EntityInterface", "Helix_DB_EntityInterface.html", null ],
     [ "ExpressionInterface", "Helix_DB_Fluent_ExpressionInterface.html", [
