@@ -90,6 +90,9 @@ Protected Properties</h2></td></tr>
 <tr class="memitem:240702d"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record_Serializer.html#240702d">$dehydrate</a></td></tr>
 <tr class="memdesc:240702d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps complex types to storage types.  <a href="Helix_DB_Record_Serializer.html#240702d">More...</a><br /></td></tr>
 <tr class="separator:240702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:5e44d31"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record_Serializer.html#5e44d31">$foreign</a> = []</td></tr>
+<tr class="memdesc:5e44d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties that are foreign keys to other entities.  <a href="Helix_DB_Record_Serializer.html#5e44d31">More...</a><br /></td></tr>
+<tr class="separator:5e44d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c7376d1"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record_Serializer.html#c7376d1">$hydrate</a> = []</td></tr>
 <tr class="memdesc:c7376d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The specific classes used to hydrate classed properties, like <code>DateTime</code>.  <a href="Helix_DB_Record_Serializer.html#c7376d1">More...</a><br /></td></tr>
 <tr class="separator:c7376d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +156,8 @@ Public Methods</h2></td></tr>
 <tr class="memitem:f458726"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record_Serializer.html#f458726">export</a> (<a class="el" href="Helix_DB_EntityInterface.html">EntityInterface</a> $entity)</td></tr>
 <tr class="memdesc:f458726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an entity's property values, dehydrating if needed.  <a href="Helix_DB_Record_Serializer.html#f458726">More...</a><br /></td></tr>
 <tr class="separator:f458726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eef6f37"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record_Serializer.html#eef6f37">getForeign</a> ()</td></tr>
+<tr class="separator:eef6f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:5ca579b"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record_Serializer.html#5ca579b">getStorageTypes</a> ()</td></tr>
 <tr class="memdesc:5ca579b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scalar storage types of all properties.  <a href="Helix_DB_Record_Serializer.html#5ca579b">More...</a><br /></td></tr>
 <tr class="separator:5ca579b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,11 +211,6 @@ Protected Methods</h2></td></tr>
 <tr class="memitem:308fffe"><td class="memItemLeft" align="right" valign="top">array object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Record_Serializer.html#308fffe">hydrate</a> (string $to, string $from, $dehydrated)</td></tr>
 <tr class="memdesc:308fffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hydrates a complex value from scalar storage.  <a href="Helix_DB_Record_Serializer.html#308fffe">More...</a><br /></td></tr>
 <tr class="separator:308fffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_Helix_DB_Reflection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_Helix_DB_Reflection')"><img src="closed.png" alt="-"/>&#160;Protected Methods inherited from <a class="el" href="Helix_DB_Reflection.html">Reflection</a></td></tr>
-<tr class="memitem:e1d7f1e inherit pro_methods_Helix_DB_Reflection"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#e1d7f1e">getType_reflection</a> (string $property)</td></tr>
-<tr class="separator:e1d7f1e inherit pro_methods_Helix_DB_Reflection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:2bf4f1c inherit pro_methods_Helix_DB_Reflection"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_DB_Reflection.html#2bf4f1c">getType_var</a> (string $property)</td></tr>
-<tr class="separator:2bf4f1c inherit pro_methods_Helix_DB_Reflection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -257,6 +257,31 @@ Additional Inherited Members</h2></td></tr>
 <a class="el" href="Helix_DB_Record_Serializer.html#308fffe" title="Hydrates a complex value from scalar storage.">Serializer::hydrate()</a> </dd>
 <dd>
 <a class="el" href="Helix_DB_Schema.html#c580f64" title="Maps storage types to T_CONST names.">Schema::T_CONST_NAMES</a> </dd></dl>
+
+</div>
+</div>
+<a id="5e44d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#5e44d31">&#9670;&nbsp;</a></span>$foreign</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] $foreign = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Properties that are foreign keys to other entities. </p>
+<p><code>[ property =&gt; foreign entity class ]</code> </p>
 
 </div>
 </div>
@@ -427,6 +452,32 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+
+</div>
+</div>
+<a id="eef6f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#eef6f37">&#9670;&nbsp;</a></span>getForeign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] getForeign </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>string[] </dd></dl>
 
 </div>
 </div>

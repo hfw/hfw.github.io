@@ -24,8 +24,6 @@ var Helix_DB_Reflection =
     [ "getJunctionTable", "Helix_DB_Reflection.html#afa70de", null ],
     [ "getRecordTable", "Helix_DB_Reflection.html#998836f", null ],
     [ "getType", "Helix_DB_Reflection.html#767a2f1", null ],
-    [ "getType_reflection", "Helix_DB_Reflection.html#e1d7f1e", null ],
-    [ "getType_var", "Helix_DB_Reflection.html#2bf4f1c", null ],
     [ "getUnique", "Helix_DB_Reflection.html#b9ca121", null ],
     [ "getUniqueGroups", "Helix_DB_Reflection.html#8423a70", null ],
     [ "getValue", "Helix_DB_Reflection.html#5d0fb89", null ],
