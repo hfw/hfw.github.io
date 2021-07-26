@@ -1,5 +1,14 @@
 var NAVTREEINDEX1 =
 {
+"Helix_DB_Fluent_Str_StrTrait.html#4306c9a":[3,0,0,0,2,1,1],
+"Helix_DB_Fluent_Str_StrTrait.html#16cd9c6":[3,0,0,0,2,1,5],
+"Helix_DB_Fluent_Str_StrTrait.html#d207ac1":[3,0,0,0,2,1,9],
+"Helix_DB_Fluent_Value.html":[3,0,0,0,11],
+"Helix_DB_Fluent_Value_AggregateTrait.html":[3,0,0,0,3,0],
+"Helix_DB_Fluent_Value_AggregateTrait.html#e6bd541":[3,0,0,0,3,0,4],
+"Helix_DB_Fluent_Value_AggregateTrait.html#f44733b":[3,0,0,0,3,0,5],
+"Helix_DB_Fluent_Value_AggregateTrait.html#0b87125":[3,0,0,0,3,0,3],
+"Helix_DB_Fluent_Value_AggregateTrait.html#c3ccef0":[3,0,0,0,3,0,7],
 "Helix_DB_Fluent_Value_AggregateTrait.html#fbb1c16":[3,0,0,0,3,0,0],
 "Helix_DB_Fluent_Value_AggregateTrait.html#a342a3a":[3,0,0,0,3,0,2],
 "Helix_DB_Fluent_Value_AggregateTrait.html#727476b":[3,0,0,0,3,0,8],
@@ -240,14 +249,5 @@ var NAVTREEINDEX1 =
 "Helix_DB_Transaction.html#50bd2fc":[3,0,0,16,0],
 "Helix_DB_Transaction.html#b024dad":[3,0,0,16,6],
 "Helix_DB_Transaction.html#ce0c758":[3,0,0,16,3],
-"Helix_DB_Transaction.html#8e1915f":[3,0,0,16,4],
-"Helix_DB_Transaction.html#d144aa2":[3,0,0,16,1],
-"Helix_DB_Transaction.html#d20e64b":[3,0,0,16,2],
-"hierarchy.html":[2],
-"immutable.html":[1],
-"index.html":[0],
-"index.html":[],
-"index.html#autotoc_md0":[0,0],
-"index.html#autotoc_md1":[0,1],
-"index.html#autotoc_md2":[0,2]
+"Helix_DB_Transaction.html#8e1915f":[3,0,0,16,4]
 };
