@@ -126,9 +126,6 @@ var hierarchy =
     [ "RuntimeException", null, [
       [ "AsanaError", "Helix_Asana_Api_AsanaError.html", null ]
     ] ],
-    [ "Serializable", null, [
-      [ "Data", "Helix_Asana_Base_Data.html", null ]
-    ] ],
     [ "ServiceProvider", null, [
       [ "AsanaServiceProvider", "Helix_Asana_Api_Laravel_AsanaServiceProvider.html", null ]
     ] ]

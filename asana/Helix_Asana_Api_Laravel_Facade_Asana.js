@@ -19,6 +19,7 @@ var Helix_Asana_Api_Laravel_Facade_Asana =
     [ "getTaskWebhook", "Helix_Asana_Api_Laravel_Facade_Asana.html#289a4f0", null ],
     [ "getTeam", "Helix_Asana_Api_Laravel_Facade_Asana.html#29f2e16", null ],
     [ "getUser", "Helix_Asana_Api_Laravel_Facade_Asana.html#6486379", null ],
+    [ "getUserByEmail", "Helix_Asana_Api_Laravel_Facade_Asana.html#a02f997", null ],
     [ "getWebhookEvent", "Helix_Asana_Api_Laravel_Facade_Asana.html#c581b0f", null ],
     [ "getWorkspace", "Helix_Asana_Api_Laravel_Facade_Asana.html#dbf1121", null ]
 ];

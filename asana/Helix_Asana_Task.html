@@ -78,18 +78,17 @@ $(document).ready(function(){initNavTree('Helix_Asana_Task.html',''); initResiza
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_Asana_Task__inherit__graph.png" border="0" usemap="#Task_inherit__map" alt="Inheritance graph"/></div>
 <map name="Task_inherit__map" id="Task_inherit__map">
-<area shape="rect" title="A task." alt="" coords="543,237,605,267"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity.html" title="A resource with a GID." alt="" coords="166,160,329,189"/>
-<area shape="rect" href="Helix_Asana_Base_Data.html" title="A data object with support for annotated magic methods." alt="" coords="159,83,221,112"/>
+<area shape="rect" title="A task." alt="" coords="449,237,512,267"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity.html" title="A resource with a GID." alt="" coords="73,160,235,189"/>
+<area shape="rect" href="Helix_Asana_Base_Data.html" title="A data object with support for annotated magic methods." alt="" coords="65,83,128,112"/>
 <area shape="rect" title=" " alt="" coords="5,5,188,35"/>
-<area shape="rect" title=" " alt="" coords="212,5,355,35"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CrudTrait.html" title="Adds CRUD methods to entities." alt="" coords="382,160,494,189"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CreateTrait.html" title="Adds create() to entities." alt="" coords="245,83,377,112"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_UpdateTrait.html" title="Adds update() to entities." alt="" coords="401,83,533,112"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DeleteTrait.html" title="Adds delete() to entities." alt="" coords="557,83,689,112"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DateTrait.html" title="Adds date helpers." alt="" coords="518,160,630,189"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html" title="Adds helpers to entities with fields that have to mutated through POST after creation." alt="" coords="655,160,837,189"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_SyncTrait.html" title="Adds event syncing to entities." alt="" coords="862,160,974,189"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CrudTrait.html" title="Adds CRUD methods to entities." alt="" coords="289,160,401,189"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CreateTrait.html" title="Adds create() to entities." alt="" coords="152,83,284,112"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_UpdateTrait.html" title="Adds update() to entities." alt="" coords="308,83,440,112"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DeleteTrait.html" title="Adds delete() to entities." alt="" coords="464,83,596,112"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DateTrait.html" title="Adds date helpers." alt="" coords="425,160,537,189"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html" title="Adds helpers to entities with fields that have to mutated through POST after creation." alt="" coords="561,160,744,189"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_SyncTrait.html" title="Adds event syncing to entities." alt="" coords="769,160,881,189"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
@@ -196,11 +195,17 @@ Public Methods</h2></td></tr>
 <tr class="memitem:d925d76"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#d925d76">addToProject</a> ($target)</td></tr>
 <tr class="memdesc:d925d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the task to a project.  <a href="Helix_Asana_Task.html#d925d76">More...</a><br /></td></tr>
 <tr class="separator:d925d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7b673d4"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#7b673d4">addToProjects</a> (iterable $targets)</td></tr>
+<tr class="memdesc:7b673d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the task to multiple projects.  <a href="Helix_Asana_Task.html#7b673d4">More...</a><br /></td></tr>
+<tr class="separator:7b673d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:b5da7ee"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#b5da7ee">create</a> ()</td></tr>
 <tr class="separator:b5da7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ead824a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Asana_Job.html">Job</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#ead824a">duplicate</a> (string $name, array $include)</td></tr>
 <tr class="memdesc:ead824a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates the task.  <a href="Helix_Asana_Task.html#ead824a">More...</a><br /></td></tr>
 <tr class="separator:ead824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8139db1"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#8139db1">follow</a> ()</td></tr>
+<tr class="memdesc:8139db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the API user as a follower.  <a href="Helix_Asana_Task.html#8139db1">More...</a><br /></td></tr>
+<tr class="separator:8139db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:51b101c"><td class="memItemLeft" align="right" valign="top">magic null <a class="el" href="Helix_Asana_User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#51b101c">getAssignee</a> ()</td></tr>
 <tr class="separator:51b101c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:30a47e0"><td class="memItemLeft" align="right" valign="top">magic string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#30a47e0">getAssigneeStatus</a> ()</td></tr>
@@ -321,6 +326,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:5511e44"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#5511e44">removeFromProject</a> (<a class="el" href="Helix_Asana_Project.html">Project</a> $project)</td></tr>
 <tr class="memdesc:5511e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the task from a project.  <a href="Helix_Asana_Task.html#5511e44">More...</a><br /></td></tr>
 <tr class="separator:5511e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:7146b78"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#7146b78">removeFromProjects</a> (iterable $projects)</td></tr>
+<tr class="memdesc:7146b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the task from multiple projects.  <a href="Helix_Asana_Task.html#7146b78">More...</a><br /></td></tr>
+<tr class="separator:7146b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:957e776"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#957e776">removeTag</a> (<a class="el" href="Helix_Asana_Tag.html">Tag</a> $tag)</td></tr>
 <tr class="memdesc:957e776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a tag.  <a href="Helix_Asana_Task.html#957e776">More...</a><br /></td></tr>
 <tr class="separator:957e776"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,6 +387,9 @@ Public Methods</h2></td></tr>
 <tr class="separator:6c0b808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:cb9be28"><td class="memItemLeft" align="right" valign="top">magic $this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#cb9be28">setWorkspace</a> (<a class="el" href="Helix_Asana_Workspace.html">Workspace</a> $workspace)</td></tr>
 <tr class="separator:cb9be28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb928"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#aebb928">unfollow</a> ()</td></tr>
+<tr class="memdesc:aebb928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the API user as a follower.  <a href="Helix_Asana_Task.html#aebb928">More...</a><br /></td></tr>
+<tr class="separator:aebb928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:1dcb9a5"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task.html#1dcb9a5">update</a> ()</td></tr>
 <tr class="separator:1dcb9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_Asana_Base_AbstractEntity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_Asana_Base_AbstractEntity')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_Asana_Base_AbstractEntity.html">AbstractEntity</a></td></tr>
@@ -404,19 +415,18 @@ Public Methods</h2></td></tr>
 <tr class="separator:1dca3f4 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:e6a0f26 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#e6a0f26">__construct</a> ($caller, array $data=[])</td></tr>
 <tr class="separator:e6a0f26 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8770cd0 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#8770cd0">__serialize</a> ()</td></tr>
+<tr class="separator:8770cd0 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:698e15d inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#698e15d">__unserialize</a> (array $data)</td></tr>
+<tr class="separator:698e15d inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c435fd7 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#c435fd7">isDiff</a> ()</td></tr>
 <tr class="memdesc:c435fd7 inherit pub_methods_Helix_Asana_Base_Data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the instance has changes.  <a href="Helix_Asana_Base_Data.html#c435fd7">More...</a><br /></td></tr>
 <tr class="separator:c435fd7 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630cbe inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#a630cbe">jsonSerialize</a> ()</td></tr>
 <tr class="separator:a630cbe inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:35244e9 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#35244e9">serialize</a> ()</td></tr>
-<tr class="memdesc:35244e9 inherit pub_methods_Helix_Asana_Base_Data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dehydrated JSON encode.  <a href="Helix_Asana_Base_Data.html#35244e9">More...</a><br /></td></tr>
-<tr class="separator:35244e9 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7258986 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#7258986">toArray</a> (bool $diff=false)</td></tr>
 <tr class="memdesc:7258986 inherit pub_methods_Helix_Asana_Base_Data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dehydrated data.  <a href="Helix_Asana_Base_Data.html#7258986">More...</a><br /></td></tr>
 <tr class="separator:7258986 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:1f38a58 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#1f38a58">unserialize</a> ($serialized)</td></tr>
-<tr class="separator:1f38a58 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_Asana_Base_AbstractEntity_DeleteTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_Asana_Base_AbstractEntity_DeleteTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_Asana_Base_AbstractEntity_DeleteTrait.html">DeleteTrait</a></td></tr>
 <tr class="memitem:a4d8090 inherit pub_methods_Helix_Asana_Base_AbstractEntity_DeleteTrait"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_AbstractEntity_DeleteTrait.html#a4d8090">delete</a> ()</td></tr>
 <tr class="memdesc:a4d8090 inherit pub_methods_Helix_Asana_Base_AbstractEntity_DeleteTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>DELETE</code>  <a href="Helix_Asana_Base_AbstractEntity_DeleteTrait.html#a4d8090">More...</a><br /></td></tr>
@@ -812,6 +822,33 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="7b673d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#7b673d4">&#9670;&nbsp;</a></span>addToProjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this addToProjects </td>
+          <td>(</td>
+          <td class="paramtype">iterable&#160;</td>
+          <td class="paramname"><em>$targets</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the task to multiple projects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">iterable&#160;|&#160;<a class="el" href="Helix_Asana_Project.html" title="A project.">Project</a>[]&#160;|&#160;Section[]</td><td class="paramname">$targets</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
 <a id="b5da7ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#b5da7ee">&#9670;&nbsp;</a></span>create()</h2>
 
@@ -868,6 +905,26 @@ Protected Methods</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Asana_Job.html" title="An asynchronous job.">Job</a> </dd></dl>
+
+</div>
+</div>
+<a id="8139db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8139db1">&#9670;&nbsp;</a></span>follow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this follow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the API user as a follower. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
 
 </div>
 </div>
@@ -1902,6 +1959,33 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="7146b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#7146b78">&#9670;&nbsp;</a></span>removeFromProjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this removeFromProjects </td>
+          <td>(</td>
+          <td class="paramtype">iterable&#160;</td>
+          <td class="paramname"><em>$projects</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the task from multiple projects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">iterable&#160;|&#160;<a class="el" href="Helix_Asana_Project.html" title="A project.">Project</a>[]</td><td class="paramname">$projects</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
 <a id="957e776"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#957e776">&#9670;&nbsp;</a></span>removeTag()</h2>
 
@@ -2368,6 +2452,26 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="depends"><dt><b><a class="el" href="depends.html#_depends000012">Depends:</a></b></dt><dd>create-only </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="aebb928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb928">&#9670;&nbsp;</a></span>unfollow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this unfollow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the API user as a follower. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
 
 </div>

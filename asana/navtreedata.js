@@ -36,7 +36,6 @@ var NAVTREE =
     ] ],
     [ "Conditional Methods", "depends.html", null ],
     [ "Immutable Objects", "immutable.html", null ],
-    [ "Traits", "mixin.html", null ],
     [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
     [ "Class List", "annotated.html", "annotated" ]
   ] ]
@@ -45,9 +44,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"Helix_Asana_CustomField_EnumOption.html#6cc27b1",
-"Helix_Asana_Tag.html#2f41205",
-"Helix_Asana_User.html#8e11c7f"
+"Helix_Asana_CustomField_EnumOption.html#6a9f534",
+"Helix_Asana_Tag.html#7846f26",
+"Helix_Asana_User.html#ea17bd7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

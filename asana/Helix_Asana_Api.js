@@ -27,6 +27,7 @@ var Helix_Asana_Api =
     [ "getTaskWebhook", "Helix_Asana_Api.html#8988658", null ],
     [ "getTeam", "Helix_Asana_Api.html#4b80caf", null ],
     [ "getUser", "Helix_Asana_Api.html#ac49a1d", null ],
+    [ "getUserByEmail", "Helix_Asana_Api.html#83ef253", null ],
     [ "getWebhookEvent", "Helix_Asana_Api.html#10b6e6b", null ],
     [ "getWorkspace", "Helix_Asana_Api.html#0639d8e", null ],
     [ "load", "Helix_Asana_Api.html#0918e17", null ],

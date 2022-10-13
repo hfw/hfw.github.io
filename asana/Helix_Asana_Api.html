@@ -151,6 +151,9 @@ Public Methods</h2></td></tr>
 <tr class="memitem:ac49a1d"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_Asana_User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api.html#ac49a1d">getUser</a> (string $gid)</td></tr>
 <tr class="memdesc:ac49a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="Helix_Asana_User.html">User</a>.  <a href="Helix_Asana_Api.html#ac49a1d">More...</a><br /></td></tr>
 <tr class="separator:ac49a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:83ef253"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_Asana_User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api.html#83ef253">getUserByEmail</a> (string $email)</td></tr>
+<tr class="memdesc:83ef253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a user in the default workspace by email.  <a href="Helix_Asana_Api.html#83ef253">More...</a><br /></td></tr>
+<tr class="separator:83ef253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:10b6e6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Asana_Event.html">Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api.html#10b6e6b">getWebhookEvent</a> (array $data)</td></tr>
 <tr class="memdesc:10b6e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands received webhook data as a full event object.  <a href="Helix_Asana_Api.html#10b6e6b">More...</a><br /></td></tr>
 <tr class="separator:10b6e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -832,6 +835,34 @@ Public Methods</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$gid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null|User </dd></dl>
+
+</div>
+</div>
+<a id="83ef253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#83ef253">&#9670;&nbsp;</a></span>getUserByEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">null <a class="el" href="Helix_Asana_User.html">User</a> getUserByEmail </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$email</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a user in the default workspace by email. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_Asana_Workspace.html#83ef253" title="Checks the pool before fetching.">Workspace::getUserByEmail()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$email</td><td></td></tr>
   </table>
   </dd>
 </dl>

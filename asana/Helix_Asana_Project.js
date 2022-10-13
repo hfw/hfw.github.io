@@ -22,7 +22,7 @@ var Helix_Asana_Project =
     [ "getDefaultView", "Helix_Asana_Project.html#c3c3518", null ],
     [ "getFollowers", "Helix_Asana_Project.html#64a4186", null ],
     [ "getIcon", "Helix_Asana_Project.html#38d4438", null ],
-    [ "getIterator", "Helix_Asana_Project.html#3e2fd36", null ],
+    [ "getIterator", "Helix_Asana_Project.html#b15b98b", null ],
     [ "getMembers", "Helix_Asana_Project.html#dad693b", null ],
     [ "getModifiedAt", "Helix_Asana_Project.html#5e093b0", null ],
     [ "getName", "Helix_Asana_Project.html#8a0b8ec", null ],

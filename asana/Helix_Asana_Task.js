@@ -22,8 +22,10 @@ var Helix_Asana_Task =
     [ "addFollowers", "Helix_Asana_Task.html#0d62eab", null ],
     [ "addTag", "Helix_Asana_Task.html#dc7df7f", null ],
     [ "addToProject", "Helix_Asana_Task.html#d925d76", null ],
+    [ "addToProjects", "Helix_Asana_Task.html#7b673d4", null ],
     [ "create", "Helix_Asana_Task.html#b5da7ee", null ],
     [ "duplicate", "Helix_Asana_Task.html#ead824a", null ],
+    [ "follow", "Helix_Asana_Task.html#8139db1", null ],
     [ "getAssignee", "Helix_Asana_Task.html#51b101c", null ],
     [ "getAssigneeStatus", "Helix_Asana_Task.html#30a47e0", null ],
     [ "getAttachments", "Helix_Asana_Task.html#325e8e1", null ],
@@ -75,6 +77,7 @@ var Helix_Asana_Task =
     [ "removeFollower", "Helix_Asana_Task.html#b36a86f", null ],
     [ "removeFollowers", "Helix_Asana_Task.html#762dfe1", null ],
     [ "removeFromProject", "Helix_Asana_Task.html#5511e44", null ],
+    [ "removeFromProjects", "Helix_Asana_Task.html#7146b78", null ],
     [ "removeTag", "Helix_Asana_Task.html#957e776", null ],
     [ "selectAttachments", "Helix_Asana_Task.html#7065592", null ],
     [ "selectComments", "Helix_Asana_Task.html#bfb71bb", null ],
@@ -97,5 +100,6 @@ var Helix_Asana_Task =
     [ "setParent", "Helix_Asana_Task.html#d328c63", null ],
     [ "setResourceSubtype", "Helix_Asana_Task.html#6c0b808", null ],
     [ "setWorkspace", "Helix_Asana_Task.html#cb9be28", null ],
+    [ "unfollow", "Helix_Asana_Task.html#aebb928", null ],
     [ "update", "Helix_Asana_Task.html#1dcb9a5", null ]
 ];

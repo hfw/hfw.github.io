@@ -9,7 +9,7 @@ var Helix_Asana_Portfolio =
     [ "getColor", "Helix_Asana_Portfolio.html#6cc27b1", null ],
     [ "getCreatedAt", "Helix_Asana_Portfolio.html#1adffdc", null ],
     [ "getCreatedBy", "Helix_Asana_Portfolio.html#c21942a", null ],
-    [ "getIterator", "Helix_Asana_Portfolio.html#25854b8", null ],
+    [ "getIterator", "Helix_Asana_Portfolio.html#0a46d85", null ],
     [ "getMembers", "Helix_Asana_Portfolio.html#dad693b", null ],
     [ "getName", "Helix_Asana_Portfolio.html#8a0b8ec", null ],
     [ "getOwner", "Helix_Asana_Portfolio.html#4b54e5b", null ],

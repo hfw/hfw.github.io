@@ -5,7 +5,7 @@ var Helix_Asana_Project_Section =
     [ "TYPE", "Helix_Asana_Project_Section.html#0cb7892", null ],
     [ "_setData", "Helix_Asana_Project_Section.html#e470999", null ],
     [ "getCreatedAt", "Helix_Asana_Project_Section.html#1adffdc", null ],
-    [ "getIterator", "Helix_Asana_Project_Section.html#cddfdab", null ],
+    [ "getIterator", "Helix_Asana_Project_Section.html#51801bc", null ],
     [ "getName", "Helix_Asana_Project_Section.html#8a0b8ec", null ],
     [ "getParentNode", "Helix_Asana_Project_Section.html#4b4b09c", null ],
     [ "getProject", "Helix_Asana_Project_Section.html#138a10f", null ],
