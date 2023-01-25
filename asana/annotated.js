@@ -23,15 +23,21 @@ var annotated =
           [ "AbstractEntity", null, [
             [ "CreateTrait", "Helix_Asana_Base_AbstractEntity_CreateTrait.html", "Helix_Asana_Base_AbstractEntity_CreateTrait" ],
             [ "CrudTrait", "Helix_Asana_Base_AbstractEntity_CrudTrait.html", null ],
-            [ "DateTrait", "Helix_Asana_Base_AbstractEntity_DateTrait.html", "Helix_Asana_Base_AbstractEntity_DateTrait" ],
             [ "DeleteTrait", "Helix_Asana_Base_AbstractEntity_DeleteTrait.html", "Helix_Asana_Base_AbstractEntity_DeleteTrait" ],
-            [ "ImmutableInterface", "Helix_Asana_Base_AbstractEntity_ImmutableInterface.html", null ],
-            [ "PostMutatorTrait", "Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html", null ],
+            [ "DueTrait", "Helix_Asana_Base_AbstractEntity_DueTrait.html", "Helix_Asana_Base_AbstractEntity_DueTrait" ],
+            [ "FollowersTrait", "Helix_Asana_Base_AbstractEntity_FollowersTrait.html", "Helix_Asana_Base_AbstractEntity_FollowersTrait" ],
+            [ "LikesTrait", "Helix_Asana_Base_AbstractEntity_LikesTrait.html", "Helix_Asana_Base_AbstractEntity_LikesTrait" ],
+            [ "MembersTrait", "Helix_Asana_Base_AbstractEntity_MembersTrait.html", "Helix_Asana_Base_AbstractEntity_MembersTrait" ],
+            [ "PostMutatorTrait", "Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html", "Helix_Asana_Base_AbstractEntity_PostMutatorTrait" ],
             [ "SyncTrait", "Helix_Asana_Base_AbstractEntity_SyncTrait.html", "Helix_Asana_Base_AbstractEntity_SyncTrait" ],
-            [ "UpdateTrait", "Helix_Asana_Base_AbstractEntity_UpdateTrait.html", "Helix_Asana_Base_AbstractEntity_UpdateTrait" ]
+            [ "TaskIteratorTrait", "Helix_Asana_Base_AbstractEntity_TaskIteratorTrait.html", "Helix_Asana_Base_AbstractEntity_TaskIteratorTrait" ],
+            [ "UpdateTrait", "Helix_Asana_Base_AbstractEntity_UpdateTrait.html", "Helix_Asana_Base_AbstractEntity_UpdateTrait" ],
+            [ "UrlTrait", "Helix_Asana_Base_AbstractEntity_UrlTrait.html", "Helix_Asana_Base_AbstractEntity_UrlTrait" ],
+            [ "UsersTrait", "Helix_Asana_Base_AbstractEntity_UsersTrait.html", "Helix_Asana_Base_AbstractEntity_UsersTrait" ]
           ] ],
           [ "AbstractEntity", "Helix_Asana_Base_AbstractEntity.html", "Helix_Asana_Base_AbstractEntity" ],
-          [ "Data", "Helix_Asana_Base_Data.html", "Helix_Asana_Base_Data" ]
+          [ "Data", "Helix_Asana_Base_Data.html", "Helix_Asana_Base_Data" ],
+          [ "DateTimeTrait", "Helix_Asana_Base_DateTimeTrait.html", "Helix_Asana_Base_DateTimeTrait" ]
         ] ],
         [ "CustomField", null, [
           [ "EnumOption", "Helix_Asana_CustomField_EnumOption.html", "Helix_Asana_CustomField_EnumOption" ],
@@ -54,6 +60,12 @@ var annotated =
           [ "Like", "Helix_Asana_Task_Like.html", "Helix_Asana_Task_Like" ],
           [ "Membership", "Helix_Asana_Task_Membership.html", "Helix_Asana_Task_Membership" ],
           [ "Story", "Helix_Asana_Task_Story.html", "Helix_Asana_Task_Story" ]
+        ] ],
+        [ "Team", null, [
+          [ "ProjectTemplate", null, [
+            [ "Instantiator", "Helix_Asana_Team_ProjectTemplate_Instantiator.html", "Helix_Asana_Team_ProjectTemplate_Instantiator" ]
+          ] ],
+          [ "ProjectTemplate", "Helix_Asana_Team_ProjectTemplate.html", "Helix_Asana_Team_ProjectTemplate" ]
         ] ],
         [ "User", null, [
           [ "Photo", "Helix_Asana_User_Photo.html", "Helix_Asana_User_Photo" ],

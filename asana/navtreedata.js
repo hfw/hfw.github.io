@@ -25,14 +25,11 @@ var NAVTREE =
   [ "hfw/asana", "index.html", [
     [ "Helix :: Asana", "index.html", [
       [ "Introduction", "index.html#autotoc_md0", null ],
-      [ "Examples", "index.html#autotoc_md1", null ],
-      [ "You", "index.html#autotoc_md2", null ],
-      [ "Workspaces", "index.html#autotoc_md3", null ],
-      [ "Create a Project", "index.html#autotoc_md4", null ],
-      [ "Get a Project", "index.html#autotoc_md5", null ],
-      [ "Create a Task", "index.html#autotoc_md6", null ],
-      [ "Iterate Your Tasks", "index.html#autotoc_md7", null ],
-      [ "Class Diagram", "index.html#autotoc_md8", null ]
+      [ "Example: You", "index.html#autotoc_md1", null ],
+      [ "Example: Workspaces", "index.html#autotoc_md2", null ],
+      [ "Example: Projects", "index.html#autotoc_md3", null ],
+      [ "Example: Tasks", "index.html#autotoc_md4", null ],
+      [ "Class Diagram", "index.html#autotoc_md5", null ]
     ] ],
     [ "Conditional Methods", "depends.html", null ],
     [ "Immutable Objects", "immutable.html", null ],
@@ -44,9 +41,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"Helix_Asana_CustomField_EnumOption.html#6a9f534",
-"Helix_Asana_Tag.html#7846f26",
-"Helix_Asana_User.html#ea17bd7"
+"Helix_Asana_CustomField.html#cd4ae42",
+"Helix_Asana_Project_TaskCounts.html#3af958d",
+"Helix_Asana_User.html#2836239"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

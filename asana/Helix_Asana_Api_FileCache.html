@@ -81,37 +81,44 @@ $(document).ready(function(){initNavTree('Helix_Asana_Api_FileCache.html',''); i
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>An optional bare bones PSR-16 "compliant" file-based cache for <a class="el" href="Helix_Asana_Api_SimpleCachePool.html">SimpleCachePool</a>. </p>
-<p>Use this if you don't have a better cache.</p>
+<p><img src="../info.png" alt="" class="inline"/> </p><blockquote class="doxtable">
+<p>Requires <code>psr/simple-cache</code> (any version). </p>
+</blockquote>
+<p><img src="../warning.png" alt="" class="inline"/> </p><blockquote class="doxtable">
 <p>This is not safe for concurrency. </p>
+</blockquote>
+<p>Don't use this if you have a better cache. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr class="memitem:71f92ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#71f92ed">__construct</a> (string $dir)</td></tr>
 <tr class="separator:71f92ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:75ff505"><td class="memItemLeft" align="right" valign="top"><a id="75ff505"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
-<tr class="separator:75ff505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:97b6d70"><td class="memItemLeft" align="right" valign="top"><a id="97b6d70"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>delete</b> ($key)</td></tr>
-<tr class="separator:97b6d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:722cbbd"><td class="memItemLeft" align="right" valign="top"><a id="722cbbd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>deleteMultiple</b> ($keys)</td></tr>
-<tr class="separator:722cbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:12881af"><td class="memItemLeft" align="right" valign="top">null string object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#12881af">get</a> ($key, $default=null)</td></tr>
-<tr class="separator:12881af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:b23dce3"><td class="memItemLeft" align="right" valign="top"><a id="b23dce3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>getMultiple</b> ($keys, $default=null)</td></tr>
-<tr class="separator:b23dce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:02abc5e"><td class="memItemLeft" align="right" valign="top"><a id="02abc5e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>has</b> ($key)</td></tr>
+<tr class="memitem:3051b83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#3051b83">clear</a> ()</td></tr>
+<tr class="memdesc:3051b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <a href="Helix_Asana_Api_FileCache.html#3051b83">More...</a><br /></td></tr>
+<tr class="separator:3051b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f92b92a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#f92b92a">delete</a> ($key)</td></tr>
+<tr class="memdesc:f92b92a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CacheInterface:1|2</code> compatible params.  <a href="Helix_Asana_Api_FileCache.html#f92b92a">More...</a><br /></td></tr>
+<tr class="separator:f92b92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:04c8ee6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#04c8ee6">deleteMultiple</a> ($keys)</td></tr>
+<tr class="memdesc:04c8ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CacheInterface:1|2</code> compatible params.  <a href="Helix_Asana_Api_FileCache.html#04c8ee6">More...</a><br /></td></tr>
+<tr class="separator:04c8ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6dc024"><td class="memItemLeft" align="right" valign="top">string object mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#d6dc024">get</a> ($key, $default=null)</td></tr>
+<tr class="memdesc:d6dc024"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CacheInterface:1|2</code> compatible params.  <a href="Helix_Asana_Api_FileCache.html#d6dc024">More...</a><br /></td></tr>
+<tr class="separator:d6dc024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:3c6d238"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#3c6d238">getMultiple</a> ($keys, $default=null)</td></tr>
+<tr class="memdesc:3c6d238"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CacheInterface:1|2</code> compatible params.  <a href="Helix_Asana_Api_FileCache.html#3c6d238">More...</a><br /></td></tr>
+<tr class="separator:3c6d238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:02abc5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#02abc5e">has</a> ($key)</td></tr>
+<tr class="memdesc:02abc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CacheInterface:1|2</code> compatible params.  <a href="Helix_Asana_Api_FileCache.html#02abc5e">More...</a><br /></td></tr>
 <tr class="separator:02abc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:cb5806e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#cb5806e">set</a> ($key, $value, $ttl=null)</td></tr>
-<tr class="separator:cb5806e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:9d34320"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#9d34320">setLog</a> (LoggerInterface $log)</td></tr>
-<tr class="separator:9d34320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:1715780"><td class="memItemLeft" align="right" valign="top"><a id="1715780"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>setMultiple</b> ($values, $ttl=null)</td></tr>
-<tr class="separator:1715780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f4308b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#f4308b5">set</a> ($key, $value, $ttl=null)</td></tr>
+<tr class="memdesc:f4308b5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CacheInterface:1|2</code> compatible params.  <a href="Helix_Asana_Api_FileCache.html#f4308b5">More...</a><br /></td></tr>
+<tr class="separator:f4308b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b8c8180"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#b8c8180">setLog</a> (?LoggerInterface $log)</td></tr>
+<tr class="separator:b8c8180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:f429224"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_FileCache.html#f429224">setMultiple</a> ($values, $ttl=null)</td></tr>
+<tr class="memdesc:f429224"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>CacheInterface:1|2</code> compatible params.  <a href="Helix_Asana_Api_FileCache.html#f429224">More...</a><br /></td></tr>
+<tr class="separator:f429224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor</h2>
 <a id="71f92ed"></a>
@@ -139,14 +146,88 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has</b> ($key)</td></
 </div>
 </div>
 <h2 class="groupheader">Methods</h2>
-<a id="12881af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#12881af">&#9670;&nbsp;</a></span>get()</h2>
+<a id="3051b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#3051b83">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">null string object get </td>
+          <td class="memname">bool clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Does nothing. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool <code>false</code> </dd></dl>
+
+</div>
+</div>
+<a id="f92b92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f92b92a">&#9670;&nbsp;</a></span>delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool delete </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>CacheInterface:1|2</code> compatible params. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="04c8ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#04c8ee6">&#9670;&nbsp;</a></span>deleteMultiple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool deleteMultiple </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$keys</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>CacheInterface:1|2</code> compatible params. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">iterable</td><td class="paramname">$keys</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="d6dc024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d6dc024">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string object mixed get </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$key</em>, </td>
@@ -164,25 +245,93 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has</b> ($key)</td></
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code>CacheInterface:1|2</code> compatible params. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$key</td><td></td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$default</td><td>Unused. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$default</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>null|string|object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string|object|mixed <code>$default</code> is the only mixed type returned </dd></dl>
 
 </div>
 </div>
-<a id="cb5806e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#cb5806e">&#9670;&nbsp;</a></span>set()</h2>
+<a id="3c6d238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#3c6d238">&#9670;&nbsp;</a></span>getMultiple()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set </td>
+          <td class="memname">array getMultiple </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$default</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>CacheInterface:1|2</code> compatible params. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">iterable</td><td class="paramname">$keys</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$default</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+
+</div>
+</div>
+<a id="02abc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#02abc5e">&#9670;&nbsp;</a></span>has()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>CacheInterface:1|2</code> compatible params. </p>
+<p>This only checks for file existence, regardless of expiration. This is fine, since by principle, cache polling does not guarantee a subsequent hit.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="f4308b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f4308b5">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$key</em>, </td>
@@ -206,20 +355,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has</b> ($key)</td></
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code>CacheInterface:1|2</code> compatible params. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$key</td><td></td></tr>
     <tr><td class="paramtype">string&#160;|&#160;object</td><td class="paramname">$value</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$ttl</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;int&#160;|&#160;DateInterval</td><td class="paramname">$ttl</td><td><code>NULL</code> is the same as <code>0</code> seconds. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 </div>
 </div>
-<a id="9d34320"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#9d34320">&#9670;&nbsp;</a></span>setLog()</h2>
+<a id="b8c8180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b8c8180">&#9670;&nbsp;</a></span>setLog()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +378,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has</b> ($key)</td></
         <tr>
           <td class="memname">$this setLog </td>
           <td>(</td>
-          <td class="paramtype">LoggerInterface&#160;</td>
+          <td class="paramtype">?LoggerInterface&#160;</td>
           <td class="paramname"><em>$log</em></td><td>)</td>
           <td></td>
         </tr>
@@ -235,11 +386,49 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has</b> ($key)</td></
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">LoggerInterface</td><td class="paramname">$log</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;LoggerInterface</td><td class="paramname">$log</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="f429224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#f429224">&#9670;&nbsp;</a></span>setMultiple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool setMultiple </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$ttl</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>CacheInterface:1|2</code> compatible params. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">iterable</td><td class="paramname">$values</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;DateInterval</td><td class="paramname">$ttl</td><td><code>NULL</code> is the same as <code>0</code> seconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 </div>
 </div>

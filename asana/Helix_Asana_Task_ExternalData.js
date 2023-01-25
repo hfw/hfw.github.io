@@ -1,6 +1,5 @@
 var Helix_Asana_Task_ExternalData =
 [
-    [ "$task", "Helix_Asana_Task_ExternalData.html#6f0f87f", null ],
     [ "__construct", "Helix_Asana_Task_ExternalData.html#b6d9a04", null ],
     [ "_set", "Helix_Asana_Task_ExternalData.html#1eab51a", null ],
     [ "getData", "Helix_Asana_Task_ExternalData.html#1c8228f", null ],

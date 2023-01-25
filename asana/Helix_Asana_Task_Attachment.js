@@ -1,8 +1,8 @@
 var Helix_Asana_Task_Attachment =
 [
-    [ "DIR", "Helix_Asana_Task_Attachment.html#c482d92", null ],
+    [ "DIR", "Helix_Asana_Task_Attachment.html#382fec3", null ],
     [ "MAP", "Helix_Asana_Task_Attachment.html#9c07f6e", null ],
-    [ "TYPE", "Helix_Asana_Task_Attachment.html#0cb7892", null ],
+    [ "TYPE", "Helix_Asana_Task_Attachment.html#490da94", null ],
     [ "create", "Helix_Asana_Task_Attachment.html#4440a82", null ],
     [ "getCreatedAt", "Helix_Asana_Task_Attachment.html#1adffdc", null ],
     [ "getDownloadUrl", "Helix_Asana_Task_Attachment.html#4b4e2ed", null ],

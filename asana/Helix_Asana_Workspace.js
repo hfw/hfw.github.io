@@ -1,9 +1,9 @@
 var Helix_Asana_Workspace =
 [
-    [ "DIR", "Helix_Asana_Workspace.html#c482d92", null ],
-    [ "TYPE", "Helix_Asana_Workspace.html#0cb7892", null ],
+    [ "DIR", "Helix_Asana_Workspace.html#382fec3", null ],
+    [ "TYPE", "Helix_Asana_Workspace.html#490da94", null ],
+    [ "_find", "Helix_Asana_Workspace.html#ab667a5", null ],
     [ "export", "Helix_Asana_Workspace.html#e7e84c5", null ],
-    [ "find", "Helix_Asana_Workspace.html#d019e0f", null ],
     [ "findCustomFields", "Helix_Asana_Workspace.html#0e2faa3", null ],
     [ "findPortfolios", "Helix_Asana_Workspace.html#98459bd", null ],
     [ "findProjects", "Helix_Asana_Workspace.html#cb79578", null ],
@@ -17,7 +17,6 @@ var Helix_Asana_Workspace =
     [ "getTags", "Helix_Asana_Workspace.html#bfd56af", null ],
     [ "getTeams", "Helix_Asana_Workspace.html#1fc9b8a", null ],
     [ "getUserByEmail", "Helix_Asana_Workspace.html#83ef253", null ],
-    [ "getUsers", "Helix_Asana_Workspace.html#3b2eb4d", null ],
     [ "getWebhooks", "Helix_Asana_Workspace.html#ecb178d", null ],
     [ "isOrganization", "Helix_Asana_Workspace.html#1132cda", null ],
     [ "newCustomField", "Helix_Asana_Workspace.html#7850e28", null ],
@@ -30,6 +29,5 @@ var Helix_Asana_Workspace =
     [ "selectProjects", "Helix_Asana_Workspace.html#4de31b3", null ],
     [ "selectTags", "Helix_Asana_Workspace.html#4af07e5", null ],
     [ "selectTeams", "Helix_Asana_Workspace.html#b8f5481", null ],
-    [ "selectUsers", "Helix_Asana_Workspace.html#c8867dc", null ],
     [ "setName", "Helix_Asana_Workspace.html#2f41205", null ]
 ];

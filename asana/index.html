@@ -66,66 +66,67 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>A fluent PHP library for Asana's REST API</p>
-<p><a href="https://www.php.net"><img src="https://img.shields.io/badge/PHP-~7.4|~8.1-666999" alt="php" class="inline"/></a> <a href="https://packagist.org/packages/hfw/asana"><img src="https://poser.pugx.org/hfw/asana/v" alt="stable" class="inline"/></a> <a href="https://packagist.org/packages/hfw/asana"><img src="https://poser.pugx.org/hfw/asana/v/unstable" alt="unstable" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/asana"><img src="https://scrutinizer-ci.com/g/hfw/asana/badges/build.png?b=master" alt="build" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/asana"><img src="https://scrutinizer-ci.com/g/hfw/asana/badges/quality-score.png?b=master" alt="score" class="inline"/></a> <a href="https://packagist.org/packages/hfw/asana"><img src="https://poser.pugx.org/hfw/asana/downloads" alt="downloads" class="inline"/></a> <a href="LICENSE.txt"><img src="https://poser.pugx.org/hfw/asana/license" alt="license" class="inline"/></a></p>
+<p><a href="https://www.php.net"><img src="https://img.shields.io/badge/PHP-~8.1-666999" alt="php" class="inline"/></a> <a href="https://packagist.org/packages/hfw/asana"><img src="https://poser.pugx.org/hfw/asana/v" alt="stable" class="inline"/></a> <a href="https://packagist.org/packages/hfw/asana"><img src="https://poser.pugx.org/hfw/asana/v/unstable" alt="unstable" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/asana"><img src="https://scrutinizer-ci.com/g/hfw/asana/badges/build.png?b=master" alt="build" class="inline"/></a> <a href="https://scrutinizer-ci.com/g/hfw/asana"><img src="https://scrutinizer-ci.com/g/hfw/asana/badges/quality-score.png?b=master" alt="score" class="inline"/></a> <a href="https://packagist.org/packages/hfw/asana"><img src="https://poser.pugx.org/hfw/asana/downloads" alt="downloads" class="inline"/></a> <a href="LICENSE.txt"><img src="https://poser.pugx.org/hfw/asana/license" alt="license" class="inline"/></a></p>
 <p>Documentation: <a href="https://hfw.github.io/asana">https://hfw.github.io/asana</a></p>
 <div class="fragment"><div class="line">composer require hfw/asana</div>
 </div><!-- fragment --><p>For Laravel, see <a href="src/Api/Laravel">/src/Api/Laravel</a></p>
 <h1><a class="anchor" id="autotoc_md0"></a>
 Introduction</h1>
-<div class="fragment"><div class="line">use Helix\Asana\Api;</div>
+<div class="fragment"><div class="line">use <a class="code" href="Helix_Asana_Api.html">Helix\Asana\Api</a>;</div>
 <div class="line"> </div>
-<div class="line">$api = new Api( ACCESS TOKEN );</div>
+<div class="line">$api = <span class="keyword">new</span> Api( ACCESS TOKEN );</div>
 </div><!-- fragment --><p>The <code>Api</code> instance is the central access point for entities, and pools entities to avoid redundant network calls and prevent object duplication.</p>
 <p>It's also used as a library-wide factory. Subclassing <code>Api</code> and overriding <code>factory()</code> lets you return whatever you want for any given endpoint.</p>
 <p>You don't need to call <code>new</code> outside of instantiating the <code>Api</code> class. All library objects are injected with the <code>Api</code> instance and use <code>factory()</code> to give you what you want.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Examples</h1>
-<h1><a class="anchor" id="autotoc_md2"></a>
-You</h1>
+Example: You</h1>
 <div class="fragment"><div class="line">$me = $api-&gt;getMe();</div>
-<div class="line"> </div>
 <div class="line">echo $me-&gt;getUrl();</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
-Workspaces</h1>
-<div class="fragment"><div class="line">// if you&#39;re in one workspace</div>
-<div class="line">$workspace = $me-&gt;getDefaultWorkspace();</div>
-<div class="line">$workspace = $api-&gt;getDefaultWorkspace(); // same thing</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2"></a>
+Example: Workspaces</h1>
+<div class="fragment"><div class="line"><span class="comment">// if you&#39;re only in one workspace, then it&#39;s a safe default</span></div>
+<div class="line">$workspace = $api-&gt;getWorkspace();</div>
 <div class="line"> </div>
-<div class="line">// otherwise</div>
+<div class="line"><span class="comment">// or you can set a default</span></div>
+<div class="line">$api-&gt;setWorkspace( GID );</div>
+<div class="line">$workspace = $api-&gt;getWorkspace();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// or you can get a specific workspace any time</span></div>
 <div class="line">$workspace = $api-&gt;getWorkspace( GID );</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
-Create a Project</h1>
-<div class="fragment"><div class="line">$project = $workspace-&gt;newProject()</div>
-<div class="line">                     -&gt;setName(&#39;Test Project&#39;)</div>
-<div class="line">                     -&gt;setNotes(&#39;A test project.&#39;)</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+Example: Projects</h1>
+<div class="fragment"><div class="line"><span class="comment">// create a project</span></div>
+<div class="line">$project = $workspace-&gt;newProject()</div>
+<div class="line">                     -&gt;setName(<span class="stringliteral">&#39;Test Project&#39;</span>)</div>
+<div class="line">                     -&gt;setNotes(<span class="stringliteral">&#39;A test project.&#39;</span>)</div>
 <div class="line">                     -&gt;setOwner($me)</div>
 <div class="line">                     -&gt;create();</div>
-<div class="line"> </div>
 <div class="line">echo $project-&gt;getUrl();</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
-Get a Project</h1>
-<div class="fragment"><div class="line">$project = $api-&gt;getProject( GID );</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
-Create a Task</h1>
-<div class="fragment"><div class="line">$task = $project-&gt;newTask()</div>
-<div class="line">                -&gt;setAssignee($me)</div>
-<div class="line">                -&gt;setName(&#39;Test Task&#39;)</div>
-<div class="line">                -&gt;setNotes(&#39;A test task.&#39;)</div>
-<div class="line">                -&gt;create();</div>
 <div class="line"> </div>
+<div class="line"><span class="comment">// get a project</span></div>
+<div class="line">$project = $api-&gt;getProject( GID );</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+Example: Tasks</h1>
+<div class="fragment"><div class="line"><span class="comment">// create a task</span></div>
+<div class="line">$task = $project-&gt;newTask()</div>
+<div class="line">                -&gt;setAssignee($me)</div>
+<div class="line">                -&gt;setName(<span class="stringliteral">&#39;Test Task&#39;</span>)</div>
+<div class="line">                -&gt;setNotes(<span class="stringliteral">&#39;A test task.&#39;</span>)</div>
+<div class="line">                -&gt;create();</div>
 <div class="line">echo $task-&gt;getUrl();</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
-Iterate Your Tasks</h1>
-<div class="fragment"><div class="line">$taskList = $me-&gt;getTaskList();</div>
-<div class="line">foreach ($taskList as $task){</div>
-<div class="line">    // ...</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// iterate your tasks</span></div>
+<div class="line">$taskList = $me-&gt;getTaskList();</div>
+<div class="line"><span class="keywordflow">foreach</span> ($taskList as $task){</div>
+<div class="line">    <span class="comment">// ...</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Class Diagram</h1>
 <p><a href="https://hfw.github.io/asana/inherits.html"><img src="https://hfw.github.io/asana/classes.png" alt="" class="inline"/></a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aHelix_Asana_Api_html"><div class="ttname"><a href="Helix_Asana_Api.html">Helix\Asana\Api</a></div><div class="ttdoc">API access.</div><div class="ttdef"><b>Definition:</b> Api.php:24</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -62,6 +62,7 @@ $(document).ready(function(){initNavTree('Helix_Asana_Base_AbstractEntity_PostMu
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pro-methods">Protected Methods</a> &#124;
 <a href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PostMutatorTrait</div>  </div>
@@ -74,17 +75,152 @@ $(document).ready(function(){initNavTree('Helix_Asana_Base_AbstractEntity_PostMu
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_Asana_Base_AbstractEntity_PostMutatorTrait__inherit__graph.png" border="0" usemap="#PostMutatorTrait_inherit__map" alt="Inheritance graph"/></div>
 <map name="PostMutatorTrait_inherit__map" id="PostMutatorTrait_inherit__map">
-<area shape="rect" title="Adds helpers to entities with fields that have to mutated through POST after creation." alt="" coords="253,5,436,35"/>
-<area shape="rect" href="Helix_Asana_CustomField.html" title="A custom field." alt="" coords="5,83,137,112"/>
-<area shape="rect" href="Helix_Asana_Portfolio.html" title="A portfolio." alt="" coords="162,83,274,112"/>
-<area shape="rect" href="Helix_Asana_Project.html" title="A project." alt="" coords="299,83,391,112"/>
-<area shape="rect" href="Helix_Asana_Task.html" title="A task." alt="" coords="415,83,477,112"/>
-<area shape="rect" href="Helix_Asana_User.html" title="A user." alt="" coords="501,83,564,112"/>
+<area shape="rect" title="Adds helpers to entities with fields that have to mutated through POST after creation." alt="" coords="253,5,435,35"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_FollowersTrait.html" title="The resource has followers that can only be changed via POST." alt="" coords="5,83,168,112"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_MembersTrait.html" title="The resource has members." alt="" coords="193,83,335,112"/>
+<area shape="rect" href="Helix_Asana_CustomField.html" title="A custom field." alt="" coords="359,83,491,112"/>
+<area shape="rect" href="Helix_Asana_User.html" title="A user." alt="" coords="515,83,578,112"/>
+<area shape="rect" href="Helix_Asana_Project.html" title="A project." alt="" coords="117,160,209,189"/>
+<area shape="rect" href="Helix_Asana_Task.html" title="A task." alt="" coords="30,160,93,189"/>
+<area shape="rect" href="Helix_Asana_Portfolio.html" title="A portfolio." alt="" coords="233,160,345,189"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>Adds helpers to entities with fields that have to mutated through <code>POST</code> after creation. </p>
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Methods</h2></td></tr>
+<tr class="memitem:6a8b234"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html#6a8b234">_addWithPost</a> (string $addPath, array $postData, string $field, array $diff)</td></tr>
+<tr class="memdesc:6a8b234"><td class="mdescLeft">&#160;</td><td class="mdescRight">For existing entities this <em>adds references</em> to other entities via the given <code>POST</code> path.  <a href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html#6a8b234">More...</a><br /></td></tr>
+<tr class="separator:6a8b234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:2859d66"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html#2859d66">_removeWithPost</a> (string $rmPath, array $postData, string $field, array|Closure $diff)</td></tr>
+<tr class="memdesc:2859d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">For existing entities this <em>removes references</em> to other entities via the given <code>POST</code> path.  <a href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html#2859d66">More...</a><br /></td></tr>
+<tr class="separator:2859d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Methods</h2>
+<a id="6a8b234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#6a8b234">&#9670;&nbsp;</a></span>_addWithPost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this _addWithPost </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$addPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$postData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$diff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For existing entities this <em>adds references</em> to other entities via the given <code>POST</code> path. </p>
+<p>Stages otherwise.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$addPath</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$postData</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$field</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$diff</td><td>For staging. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+<a id="2859d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#2859d66">&#9670;&nbsp;</a></span>_removeWithPost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$this _removeWithPost </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$rmPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$postData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array|Closure&#160;</td>
+          <td class="paramname"><em>$diff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For existing entities this <em>removes references</em> to other entities via the given <code>POST</code> path. </p>
+<p>Stages otherwise.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$rmPath</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$postData</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$field</td><td></td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;Closure</td><td class="paramname">$diff</td><td>For staging. An array, or a filter closure: <code>fn($eachValue):bool</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

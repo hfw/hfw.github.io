@@ -8,8 +8,6 @@ var Helix_Asana_Base_AbstractEntity =
     [ "_reload", "Helix_Asana_Base_AbstractEntity.html#26ccbc1", null ],
     [ "_setData", "Helix_Asana_Base_AbstractEntity.html#e470999", null ],
     [ "getGid", "Helix_Asana_Base_AbstractEntity.html#c2157d0", null ],
-    [ "getPoolKeys", "Helix_Asana_Base_AbstractEntity.html#54bdc3f", null ],
-    [ "getResourceType", "Helix_Asana_Base_AbstractEntity.html#a486b6b", null ],
     [ "hasGid", "Helix_Asana_Base_AbstractEntity.html#53627f5", null ],
     [ "reload", "Helix_Asana_Base_AbstractEntity.html#a24ee04", null ]
 ];

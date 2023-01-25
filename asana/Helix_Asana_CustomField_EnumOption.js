@@ -1,14 +1,13 @@
 var Helix_Asana_CustomField_EnumOption =
 [
-    [ "$customField", "Helix_Asana_CustomField_EnumOption.html#8632215", null ],
-    [ "DIR", "Helix_Asana_CustomField_EnumOption.html#c482d92", null ],
-    [ "TYPE", "Helix_Asana_CustomField_EnumOption.html#0cb7892", null ],
-    [ "__construct", "Helix_Asana_CustomField_EnumOption.html#ac6aae2", null ],
+    [ "DIR", "Helix_Asana_CustomField_EnumOption.html#382fec3", null ],
+    [ "TYPE", "Helix_Asana_CustomField_EnumOption.html#490da94", null ],
+    [ "__construct", "Helix_Asana_CustomField_EnumOption.html#c2071e4", null ],
+    [ "_getParentNode", "Helix_Asana_CustomField_EnumOption.html#8830179", null ],
     [ "create", "Helix_Asana_CustomField_EnumOption.html#b5da7ee", null ],
     [ "getColor", "Helix_Asana_CustomField_EnumOption.html#6cc27b1", null ],
     [ "getCustomField", "Helix_Asana_CustomField_EnumOption.html#9b4da77", null ],
     [ "getName", "Helix_Asana_CustomField_EnumOption.html#8a0b8ec", null ],
-    [ "getParentNode", "Helix_Asana_CustomField_EnumOption.html#6a9f534", null ],
     [ "isEnabled", "Helix_Asana_CustomField_EnumOption.html#7409597", null ],
     [ "moveAbove", "Helix_Asana_CustomField_EnumOption.html#ed937c4", null ],
     [ "moveBelow", "Helix_Asana_CustomField_EnumOption.html#53fea79", null ],

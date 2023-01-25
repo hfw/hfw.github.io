@@ -3,13 +3,13 @@ var Helix_Asana_Api_Laravel_Facade_Asana =
     [ "getApi", "Helix_Asana_Api_Laravel_Facade_Asana.html#efbd697", null ],
     [ "getAttachment", "Helix_Asana_Api_Laravel_Facade_Asana.html#10e9c75", null ],
     [ "getCustomField", "Helix_Asana_Api_Laravel_Facade_Asana.html#11a6881", null ],
-    [ "getDefaultWorkspace", "Helix_Asana_Api_Laravel_Facade_Asana.html#3fc8e0a", null ],
     [ "getFacadeAccessor", "Helix_Asana_Api_Laravel_Facade_Asana.html#cc7fbf0", null ],
     [ "getJob", "Helix_Asana_Api_Laravel_Facade_Asana.html#584d87b", null ],
     [ "getMe", "Helix_Asana_Api_Laravel_Facade_Asana.html#9ba3051", null ],
     [ "getOrganizationExport", "Helix_Asana_Api_Laravel_Facade_Asana.html#4b40db8", null ],
     [ "getPortfolio", "Helix_Asana_Api_Laravel_Facade_Asana.html#306a3d8", null ],
     [ "getProject", "Helix_Asana_Api_Laravel_Facade_Asana.html#752deef", null ],
+    [ "getProjectTemplate", "Helix_Asana_Api_Laravel_Facade_Asana.html#8d7266e", null ],
     [ "getProjectWebhook", "Helix_Asana_Api_Laravel_Facade_Asana.html#765a29f", null ],
     [ "getSection", "Helix_Asana_Api_Laravel_Facade_Asana.html#8dbdb8f", null ],
     [ "getStory", "Helix_Asana_Api_Laravel_Facade_Asana.html#377c12e", null ],
@@ -21,5 +21,5 @@ var Helix_Asana_Api_Laravel_Facade_Asana =
     [ "getUser", "Helix_Asana_Api_Laravel_Facade_Asana.html#6486379", null ],
     [ "getUserByEmail", "Helix_Asana_Api_Laravel_Facade_Asana.html#a02f997", null ],
     [ "getWebhookEvent", "Helix_Asana_Api_Laravel_Facade_Asana.html#c581b0f", null ],
-    [ "getWorkspace", "Helix_Asana_Api_Laravel_Facade_Asana.html#dbf1121", null ]
+    [ "getWorkspace", "Helix_Asana_Api_Laravel_Facade_Asana.html#8df2739", null ]
 ];

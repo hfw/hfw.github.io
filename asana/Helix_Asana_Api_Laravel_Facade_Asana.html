@@ -92,8 +92,6 @@ Public Static Methods</h2></td></tr>
 <tr class="separator:10e9c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:11a6881"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_CustomField.html">CustomField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#11a6881">getCustomField</a> (string $gid)</td></tr>
 <tr class="separator:11a6881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:3fc8e0a"><td class="memItemLeft" align="right" valign="top">magic static <a class="el" href="Helix_Asana_Workspace.html">Workspace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#3fc8e0a">getDefaultWorkspace</a> ()</td></tr>
-<tr class="separator:3fc8e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:cc7fbf0"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#cc7fbf0">getFacadeAccessor</a> ()</td></tr>
 <tr class="separator:cc7fbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:584d87b"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_Job.html">Job</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#584d87b">getJob</a> (string $gid)</td></tr>
@@ -106,6 +104,8 @@ Public Static Methods</h2></td></tr>
 <tr class="separator:306a3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:752deef"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_Project.html">Project</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#752deef">getProject</a> (string $gid)</td></tr>
 <tr class="separator:752deef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8d7266e"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_Team_ProjectTemplate.html">ProjectTemplate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#8d7266e">getProjectTemplate</a> (string $gid)</td></tr>
+<tr class="separator:8d7266e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:765a29f"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_Webhook_ProjectWebhook.html">ProjectWebhook</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#765a29f">getProjectWebhook</a> (string $gid)</td></tr>
 <tr class="separator:765a29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:8dbdb8f"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_Project_Section.html">Section</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#8dbdb8f">getSection</a> (string $gid)</td></tr>
@@ -128,8 +128,8 @@ Public Static Methods</h2></td></tr>
 <tr class="separator:a02f997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:c581b0f"><td class="memItemLeft" align="right" valign="top">magic static <a class="el" href="Helix_Asana_Event.html">Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#c581b0f">getWebhookEvent</a> (array $data)</td></tr>
 <tr class="separator:c581b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dbf1121"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_Workspace.html">Workspace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#dbf1121">getWorkspace</a> (string $gid)</td></tr>
-<tr class="separator:dbf1121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8df2739"><td class="memItemLeft" align="right" valign="top">magic static null <a class="el" href="Helix_Asana_Workspace.html">Workspace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_Laravel_Facade_Asana.html#8df2739">getWorkspace</a> (string $gid=null)</td></tr>
+<tr class="separator:8df2739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Methods</h2>
 <a id="efbd697"></a>
@@ -209,32 +209,6 @@ Public Static Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>null|CustomField </dd></dl>
-
-</div>
-</div>
-<a id="3fc8e0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#3fc8e0a">&#9670;&nbsp;</a></span>getDefaultWorkspace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">magic static <a class="el" href="Helix_Asana_Workspace.html">Workspace</a> getDefaultWorkspace </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Asana_Workspace.html" title="A workspace / organization.">Workspace</a> </dd></dl>
 
 </div>
 </div>
@@ -395,6 +369,33 @@ Public Static Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>null|Project </dd></dl>
+
+</div>
+</div>
+<a id="8d7266e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8d7266e">&#9670;&nbsp;</a></span>getProjectTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">magic static null <a class="el" href="Helix_Asana_Team_ProjectTemplate.html">ProjectTemplate</a> getProjectTemplate </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$gid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>null|ProjectTemplate </dd></dl>
 
 </div>
 </div>
@@ -695,8 +696,8 @@ Public Static Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="dbf1121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#dbf1121">&#9670;&nbsp;</a></span>getWorkspace()</h2>
+<a id="8df2739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8df2739">&#9670;&nbsp;</a></span>getWorkspace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -708,7 +709,7 @@ Public Static Methods</h2></td></tr>
           <td class="memname">magic static null <a class="el" href="Helix_Asana_Workspace.html">Workspace</a> getWorkspace </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$gid</em></td><td>)</td>
+          <td class="paramname"><em>$gid</em> = <code>null</code></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -75,9 +75,10 @@ $(document).ready(function(){initNavTree('Helix_Asana_Base_AbstractEntity_SyncTr
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_Asana_Base_AbstractEntity_SyncTrait__inherit__graph.png" border="0" usemap="#SyncTrait_inherit__map" alt="Inheritance graph"/></div>
 <map name="SyncTrait_inherit__map" id="SyncTrait_inherit__map">
-<area shape="rect" title="Adds event syncing to entities." alt="" coords="46,5,158,35"/>
+<area shape="rect" title="Adds event syncing to entities." alt="" coords="97,5,209,35"/>
 <area shape="rect" href="Helix_Asana_Project.html" title="A project." alt="" coords="5,83,97,112"/>
 <area shape="rect" href="Helix_Asana_Task.html" title="A task." alt="" coords="121,83,184,112"/>
+<area shape="rect" href="Helix_Asana_Team_ProjectTemplate.html" title="A team project template." alt="" coords="208,83,380,112"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
@@ -107,8 +108,8 @@ Public Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Polls for new events. </p>
-<p><img src="../info.png" alt="" class="inline"/> </p><blockquote class="doxtable">
-<p>If the given token is <code>null</code> then this method catches Asana's <code>412</code> and returns an empty array. </p>
+<p><img src="../warning.png" alt="" class="inline"/> </p><blockquote class="doxtable">
+<p>Asana throws <code>400</code> when events are read from unknown/deleted entities. </p>
 </blockquote>
 <dl class="section see"><dt>See also</dt><dd><a href="https://developers.asana.com/docs/get-events-on-a-resource">https://developers.asana.com/docs/get-events-on-a-resource</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -117,7 +118,13 @@ Public Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Asana_Event.html" title="An event obtained via sync token or delivered to you via webhook.">Event</a>[] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Asana_Event.html" title="An event obtained via sync token or delivered to you via webhook.">Event</a>[] Empty if the given token is <code>NULL</code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AsanaError</td><td>The given (non-null) token expired, or general API error. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -62,7 +62,7 @@ $(document).ready(function(){initNavTree('Helix_Asana_Api_AsanaError.html',''); 
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pro-attribs">Protected Properties</a> &#124;
+<a href="#pub-attribs">Public Properties</a> &#124;
 <a href="#pub-methods">Public Methods</a> &#124;
 <a href="Helix_Asana_Api_AsanaError-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -83,30 +83,47 @@ $(document).ready(function(){initNavTree('Helix_Asana_Api_AsanaError.html',''); 
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <div class="textblock"><p>An <a class="el" href="Helix_Asana_Api.html">Api</a> error. </p>
 <p>Codes less than <code>400</code> are cURL errors.</p>
-<p>The <a class="el" href="Helix_Asana_Api.html">Api</a> returns <code>null</code> on <code>404</code>, it doesn't throw.</p>
+<p><img src="../info.png" alt="" class="inline"/> </p><blockquote class="doxtable">
+<p>The <a class="el" href="Helix_Asana_Api.html">Api</a> returns <code>null</code> on <code>404</code>, it doesn't throw. </p>
+</blockquote>
 <dl class="section see"><dt>See also</dt><dd><a href="https://developers.asana.com/docs/errors">https://developers.asana.com/docs/errors</a> </dd></dl>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Properties</h2></td></tr>
-<tr class="memitem:53a50eb"><td class="memItemLeft" align="right" valign="top"><a id="53a50eb"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$curlInfo</b></td></tr>
-<tr class="separator:53a50eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Properties</h2></td></tr>
+<tr class="memitem:448cfae"><td class="memItemLeft" align="right" valign="top">readonly array array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_AsanaError.html#448cfae">$curlInfo</a></td></tr>
+<tr class="memdesc:448cfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">cURL context  <a href="Helix_Asana_Api_AsanaError.html#448cfae">More...</a><br /></td></tr>
+<tr class="separator:448cfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr class="memitem:012090e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_AsanaError.html#012090e">__construct</a> (int $code, string $message, array $curlInfo)</td></tr>
 <tr class="separator:012090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:9ed894e"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_AsanaError.html#9ed894e">asResponse</a> ()</td></tr>
-<tr class="memdesc:9ed894e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asana context.  <a href="Helix_Asana_Api_AsanaError.html#9ed894e">More...</a><br /></td></tr>
+<tr class="memdesc:9ed894e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes and returns Asana's error JSON.  <a href="Helix_Asana_Api_AsanaError.html#9ed894e">More...</a><br /></td></tr>
 <tr class="separator:9ed894e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:0b8268a"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_AsanaError.html#0b8268a">getCurlInfo</a> ()</td></tr>
-<tr class="memdesc:0b8268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">cURL context.  <a href="Helix_Asana_Api_AsanaError.html#0b8268a">More...</a><br /></td></tr>
-<tr class="separator:0b8268a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:b80a167"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_AsanaError.html#b80a167">is</a> (int $code)</td></tr>
 <tr class="separator:b80a167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:111c0ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Api_AsanaError.html#111c0ac">isCurl</a> ()</td></tr>
+<tr class="memdesc:111c0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the error was due to cURL failure.  <a href="Helix_Asana_Api_AsanaError.html#111c0ac">More...</a><br /></td></tr>
 <tr class="separator:111c0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Properties</h2>
+<a id="448cfae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#448cfae">&#9670;&nbsp;</a></span>$curlInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly array array $curlInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cURL context </p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor</h2>
 <a id="012090e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#012090e">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -156,32 +173,12 @@ Public Methods</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">array asResponse </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Asana context. </p>
-<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-
-</div>
-</div>
-<a id="0b8268a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#0b8268a">&#9670;&nbsp;</a></span>getCurlInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">array getCurlInfo </td>
+          <td class="memname">array asResponse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -194,7 +191,7 @@ Public Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>cURL context. </p>
+<p>Decodes and returns Asana's error JSON. </p>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
 </div>
@@ -254,6 +251,8 @@ Public Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Whether the error was due to cURL failure. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
 </div>
