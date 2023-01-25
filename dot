@@ -4,6 +4,9 @@
 # for some horrible reason this script must actually be named "dot".
 # doxygen isn't smart enough to take a command path. only a dir.
 
+# the first argument is the ".dot" file, which contains the graph's definiton
+# values are edited in that file in-place.
+
 # only make the graph bg transparent instead of EVERYTHING transparent via doxygen options.
 sed -i 's/{/{ graph [bgcolor="transparent"]; /' $1
 
@@ -17,6 +20,17 @@ sed -i 's/,color="black"/,color="grey75"/' $1
 # make other nodes mute on black, to match section headers in the docs.
 sed -i 's/fillcolor="white"/fillcolor="black",fontcolor="white"/g' $1
 sed -i 's/fontcolor="black"/fontcolor="white"/g' $1
+
+# hide nodes in the overview graph, keeping them for individual hierarchy graphs
+grep "Graphical Class Hierarchy" $1 > /dev/null
+if [ $? -eq 0 ]; then
+    hide="ArrayAccess\|Countable\|Interface\|IteratorAggregate\|JsonSerializable\|Trait"
+    nodes=$(grep "${hide}" $1 | grep -o "Node[[:digit:]]\+ ")
+    sed -i "/${hide}/d" $1
+    for edge in $nodes; do
+        sed -i "/${edge} /d" $1
+    done
+fi
 
 # todo: change fontcolor for interfaces, traits, abstracts, etc.
 
