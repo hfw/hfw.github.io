@@ -77,7 +77,7 @@ $(document).ready(function(){initNavTree('Helix_Asana_Base_Data.html',''); initR
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_Asana_Base_Data__inherit__graph.png" border="0" usemap="#Data_inherit__map" alt="Inheritance graph"/></div>
 <map name="Data_inherit__map" id="Data_inherit__map">
-<area shape="rect" title="A data object with support for annotated magic methods." alt="" coords="236,752,299,781"/>
+<area shape="rect" title="A data object with support for annotated magic methods." alt="" coords="236,779,299,808"/>
 <area shape="rect" href="Helix_Asana_Base_AbstractEntity.html" title="A resource with a GID." alt="" coords="347,459,509,488"/>
 <area shape="rect" href="Helix_Asana_CustomField_FieldSetting.html" title="A custom field setting." alt="" coords="357,512,499,541"/>
 <area shape="rect" href="Helix_Asana_Event.html" title="An event obtained via sync token or delivered to you via webhook." alt="" coords="392,565,464,595"/>
@@ -86,11 +86,13 @@ $(document).ready(function(){initNavTree('Helix_Asana_Base_Data.html',''); initR
 <area shape="rect" href="Helix_Asana_Task_ExternalData.html" title="Custom task data." alt="" coords="357,725,499,755"/>
 <area shape="rect" href="Helix_Asana_Task_FieldEntries.html" title="Acts as a container for a task&#39;s custom&#45;field values." alt="" coords="357,779,499,808"/>
 <area shape="rect" href="Helix_Asana_Task_FieldEntry.html" title="Represents a task&#39;s custom&#45;field value." alt="" coords="367,832,489,861"/>
-<area shape="rect" href="Helix_Asana_Task_Like.html" title="A &quot;like&quot;." alt="" coords="397,885,459,915"/>
-<area shape="rect" href="Helix_Asana_Task_Membership.html" title="A task&#39;s membership." alt="" coords="367,939,489,968"/>
-<area shape="rect" href="Helix_Asana_Team_ProjectTemplate_Instantiator.html" title="Creates a new Project from a ProjectTemplate." alt="" coords="357,992,499,1021"/>
-<area shape="rect" href="Helix_Asana_User_Photo.html" title="URLs to a user&#39;s photo in various sizes." alt="" coords="392,1045,464,1075"/>
+<area shape="rect" href="Helix_Asana_Task_FieldEntry_Date.html" title="A custom&#45;field&#39;s selected date&#45;time." alt="" coords="397,885,459,915"/>
+<area shape="rect" href="Helix_Asana_Task_Like.html" title="A &quot;like&quot;." alt="" coords="397,939,459,968"/>
+<area shape="rect" href="Helix_Asana_Task_Membership.html" title="A task&#39;s membership." alt="" coords="367,992,489,1021"/>
+<area shape="rect" href="Helix_Asana_Team_ProjectTemplate_Instantiator.html" title="Creates a new Project from a ProjectTemplate." alt="" coords="357,1045,499,1075"/>
+<area shape="rect" href="Helix_Asana_User_Photo.html" title="URLs to a user&#39;s photo in various sizes." alt="" coords="392,1099,464,1128"/>
 <area shape="rect" title=" " alt="" coords="5,752,188,781"/>
+<area shape="rect" title=" " alt="" coords="31,805,163,835"/>
 <area shape="rect" href="Helix_Asana_CustomField.html" title="A custom field." alt="" coords="593,5,725,35"/>
 <area shape="rect" href="Helix_Asana_CustomField_EnumOption.html" title="A custom field enum option." alt="" coords="597,59,720,88"/>
 <area shape="rect" href="Helix_Asana_Job.html" title="An asynchronous job." alt="" coords="633,112,685,141"/>
@@ -147,6 +149,14 @@ Public Methods</h2></td></tr>
 <tr class="separator:c435fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630cbe"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#a630cbe">jsonSerialize</a> ()</td></tr>
 <tr class="separator:a630cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5636"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#a6e5636">offsetExists</a> (mixed $offset)</td></tr>
+<tr class="separator:a6e5636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8b8df41"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#8b8df41">offsetGet</a> (mixed $offset)</td></tr>
+<tr class="separator:8b8df41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e8b5dcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#e8b5dcd">offsetSet</a> (mixed $offset, mixed $value)</td></tr>
+<tr class="separator:e8b5dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4fc83cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#4fc83cb">offsetUnset</a> (mixed $offset)</td></tr>
+<tr class="separator:4fc83cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7258986"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#7258986">toArray</a> (bool $diff=false)</td></tr>
 <tr class="memdesc:7258986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dehydrated data.  <a href="Helix_Asana_Base_Data.html#7258986">More...</a><br /></td></tr>
 <tr class="separator:7258986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,7 +637,7 @@ Protected Methods</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="">$this</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="Helix_Asana_Task_ExternalData.html#1eab51a">ExternalData</a>.</p>
+<p>Reimplemented in <a class="el" href="Helix_Asana_Task_FieldEntry.html#1eab51a">FieldEntry</a>, and <a class="el" href="Helix_Asana_Task_ExternalData.html#1eab51a">ExternalData</a>.</p>
 
 </div>
 </div>
@@ -664,7 +674,7 @@ Protected Methods</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Reimplemented in <a class="el" href="Helix_Asana_Task.html#e470999">Task</a>, <a class="el" href="Helix_Asana_Task_Story.html#e470999">Story</a>, <a class="el" href="Helix_Asana_Project.html#e470999">Project</a>, <a class="el" href="Helix_Asana_Event.html#e470999">Event</a>, <a class="el" href="Helix_Asana_Project_Status.html#e470999">Status</a>, <a class="el" href="Helix_Asana_Base_AbstractEntity.html#e470999">AbstractEntity</a>, <a class="el" href="Helix_Asana_Task_FieldEntry.html#e470999">FieldEntry</a>, <a class="el" href="Helix_Asana_Project_Section.html#e470999">Section</a>, <a class="el" href="Helix_Asana_Event_Change.html#e470999">Change</a>, <a class="el" href="Helix_Asana_CustomField_FieldSetting.html#e470999">FieldSetting</a>, and <a class="el" href="Helix_Asana_Task_Like.html#e470999">Like</a>.</p>
+<p>Reimplemented in <a class="el" href="Helix_Asana_Task.html#e470999">Task</a>, <a class="el" href="Helix_Asana_Task_Story.html#e470999">Story</a>, <a class="el" href="Helix_Asana_Project.html#e470999">Project</a>, <a class="el" href="Helix_Asana_Task_FieldEntry.html#e470999">FieldEntry</a>, <a class="el" href="Helix_Asana_Event.html#e470999">Event</a>, <a class="el" href="Helix_Asana_Project_Status.html#e470999">Status</a>, <a class="el" href="Helix_Asana_Base_AbstractEntity.html#e470999">AbstractEntity</a>, <a class="el" href="Helix_Asana_Project_Section.html#e470999">Section</a>, <a class="el" href="Helix_Asana_Event_Change.html#e470999">Change</a>, <a class="el" href="Helix_Asana_CustomField_FieldSetting.html#e470999">FieldSetting</a>, and <a class="el" href="Helix_Asana_Task_Like.html#e470999">Like</a>.</p>
 
 </div>
 </div>
@@ -767,6 +777,117 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+
+</div>
+</div>
+<a id="a6e5636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5636">&#9670;&nbsp;</a></span>offsetExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool offsetExists </td>
+          <td>(</td>
+          <td class="paramtype">mixed&#160;</td>
+          <td class="paramname"><em>$offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="8b8df41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#8b8df41">&#9670;&nbsp;</a></span>offsetGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mixed offsetGet </td>
+          <td>(</td>
+          <td class="paramtype">mixed&#160;</td>
+          <td class="paramname"><em>$offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
+
+</div>
+</div>
+<a id="e8b5dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#e8b5dcd">&#9670;&nbsp;</a></span>offsetSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void offsetSet </td>
+          <td>(</td>
+          <td class="paramtype">mixed&#160;</td>
+          <td class="paramname"><em>$offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mixed&#160;</td>
+          <td class="paramname"><em>$value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="4fc83cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#4fc83cb">&#9670;&nbsp;</a></span>offsetUnset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void offsetUnset </td>
+          <td>(</td>
+          <td class="paramtype">mixed&#160;</td>
+          <td class="paramname"><em>$offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>

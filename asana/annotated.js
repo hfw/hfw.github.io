@@ -37,7 +37,8 @@ var annotated =
           ] ],
           [ "AbstractEntity", "Helix_Asana_Base_AbstractEntity.html", "Helix_Asana_Base_AbstractEntity" ],
           [ "Data", "Helix_Asana_Base_Data.html", "Helix_Asana_Base_Data" ],
-          [ "DateTimeTrait", "Helix_Asana_Base_DateTimeTrait.html", "Helix_Asana_Base_DateTimeTrait" ]
+          [ "DateTimeTrait", "Helix_Asana_Base_DateTimeTrait.html", "Helix_Asana_Base_DateTimeTrait" ],
+          [ "ImmutableArrayTrait", "Helix_Asana_Base_ImmutableArrayTrait.html", "Helix_Asana_Base_ImmutableArrayTrait" ]
         ] ],
         [ "CustomField", null, [
           [ "EnumOption", "Helix_Asana_CustomField_EnumOption.html", "Helix_Asana_CustomField_EnumOption" ],
@@ -53,6 +54,9 @@ var annotated =
           [ "TaskCounts", "Helix_Asana_Project_TaskCounts.html", "Helix_Asana_Project_TaskCounts" ]
         ] ],
         [ "Task", null, [
+          [ "FieldEntry", null, [
+            [ "Date", "Helix_Asana_Task_FieldEntry_Date.html", "Helix_Asana_Task_FieldEntry_Date" ]
+          ] ],
           [ "Attachment", "Helix_Asana_Task_Attachment.html", "Helix_Asana_Task_Attachment" ],
           [ "ExternalData", "Helix_Asana_Task_ExternalData.html", "Helix_Asana_Task_ExternalData" ],
           [ "FieldEntries", "Helix_Asana_Task_FieldEntries.html", "Helix_Asana_Task_FieldEntries" ],

@@ -78,23 +78,25 @@ $(document).ready(function(){initNavTree('Helix_Asana_Project.html',''); initRes
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_Asana_Project__inherit__graph.png" border="0" usemap="#Project_inherit__map" alt="Inheritance graph"/></div>
 <map name="Project_inherit__map" id="Project_inherit__map">
-<area shape="rect" title="A project." alt="" coords="717,297,809,327"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity.html" title="A resource with a GID." alt="" coords="487,32,649,61"/>
-<area shape="rect" href="Helix_Asana_Base_Data.html" title="A data object with support for annotated magic methods." alt="" coords="296,5,359,35"/>
+<area shape="rect" title="A project." alt="" coords="747,377,839,407"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity.html" title="A resource with a GID." alt="" coords="516,85,679,115"/>
+<area shape="rect" href="Helix_Asana_Base_Data.html" title="A data object with support for annotated magic methods." alt="" coords="311,32,373,61"/>
 <area shape="rect" title=" " alt="" coords="5,5,188,35"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CrudTrait.html" title="Adds CRUD methods to entities." alt="" coords="512,112,624,141"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CreateTrait.html" title="Adds create() to entities." alt="" coords="261,59,393,88"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_UpdateTrait.html" title="Adds update() to entities." alt="" coords="261,112,393,141"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DeleteTrait.html" title="Adds delete() to entities." alt="" coords="261,165,393,195"/>
-<area shape="rect" href="Helix_Asana_Base_DateTimeTrait.html" title=" " alt="" coords="251,219,403,248"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DueTrait.html" title="Adds date helpers." alt="" coords="517,217,619,247"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_FollowersTrait.html" title="The resource has followers that can only be changed via POST." alt="" coords="487,271,649,300"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html" title="Adds helpers to entities with fields that have to mutated through POST after creation." alt="" coords="236,297,419,327"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_MembersTrait.html" title="The resource has members." alt="" coords="497,324,639,353"/>
-<area shape="rect" href="Helix_Asana_CustomField_FieldSettingsTrait.html" title="Adds custom field settings to an entity." alt="" coords="467,377,669,407"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_SyncTrait.html" title="Adds event syncing to entities." alt="" coords="512,431,624,460"/>
-<area shape="rect" href="Helix_Asana_Base_AbstractEntity_UrlTrait.html" title=" " alt="" coords="517,484,619,513"/>
-<area shape="rect" title=" " alt="" coords="472,537,664,567"/>
+<area shape="rect" title=" " alt="" coords="31,59,163,88"/>
+<area shape="rect" href="Helix_Asana_Base_ImmutableArrayTrait.html" title="Mutation via array&#45;access is not allowed by default." alt="" coords="236,85,448,115"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CrudTrait.html" title="Adds CRUD methods to entities." alt="" coords="541,192,653,221"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_CreateTrait.html" title="Adds create() to entities." alt="" coords="276,139,408,168"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_UpdateTrait.html" title="Adds update() to entities." alt="" coords="276,192,408,221"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DeleteTrait.html" title="Adds delete() to entities." alt="" coords="276,245,408,275"/>
+<area shape="rect" href="Helix_Asana_Base_DateTimeTrait.html" title=" " alt="" coords="266,299,418,328"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_DueTrait.html" title="Adds date helpers." alt="" coords="546,297,649,327"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_FollowersTrait.html" title="The resource has followers that can only be changed via POST." alt="" coords="516,351,679,380"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_PostMutatorTrait.html" title="Adds helpers to entities with fields that have to mutated through POST after creation." alt="" coords="251,377,433,407"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_MembersTrait.html" title="The resource has members." alt="" coords="526,404,669,433"/>
+<area shape="rect" href="Helix_Asana_CustomField_FieldSettingsTrait.html" title="Adds custom field settings to an entity." alt="" coords="496,457,699,487"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_SyncTrait.html" title="Adds event syncing to entities." alt="" coords="541,511,653,540"/>
+<area shape="rect" href="Helix_Asana_Base_AbstractEntity_UrlTrait.html" title=" " alt="" coords="546,564,649,593"/>
+<area shape="rect" title=" " alt="" coords="501,617,693,647"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
@@ -286,9 +288,21 @@ Public Methods</h2></td></tr>
 <tr class="separator:c435fd7 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630cbe inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#a630cbe">jsonSerialize</a> ()</td></tr>
 <tr class="separator:a630cbe inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5636 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#a6e5636">offsetExists</a> (mixed $offset)</td></tr>
+<tr class="separator:a6e5636 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8b8df41 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#8b8df41">offsetGet</a> (mixed $offset)</td></tr>
+<tr class="separator:8b8df41 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e8b5dcd inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#e8b5dcd">offsetSet</a> (mixed $offset, mixed $value)</td></tr>
+<tr class="separator:e8b5dcd inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4fc83cb inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#4fc83cb">offsetUnset</a> (mixed $offset)</td></tr>
+<tr class="separator:4fc83cb inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7258986 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#7258986">toArray</a> (bool $diff=false)</td></tr>
 <tr class="memdesc:7258986 inherit pub_methods_Helix_Asana_Base_Data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dehydrated data.  <a href="Helix_Asana_Base_Data.html#7258986">More...</a><br /></td></tr>
 <tr class="separator:7258986 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_Helix_Asana_Base_ImmutableArrayTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_Asana_Base_ImmutableArrayTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_Asana_Base_ImmutableArrayTrait.html">ImmutableArrayTrait</a></td></tr>
+<tr class="memitem:e8b5dcd inherit pub_methods_Helix_Asana_Base_ImmutableArrayTrait"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_ImmutableArrayTrait.html#e8b5dcd">offsetSet</a> (mixed $offset, mixed $value)</td></tr>
+<tr class="memdesc:e8b5dcd inherit pub_methods_Helix_Asana_Base_ImmutableArrayTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws unless overridden.  <a href="Helix_Asana_Base_ImmutableArrayTrait.html#e8b5dcd">More...</a><br /></td></tr>
+<tr class="separator:e8b5dcd inherit pub_methods_Helix_Asana_Base_ImmutableArrayTrait"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_Asana_Base_AbstractEntity_CreateTrait"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_Asana_Base_AbstractEntity_CreateTrait')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_Asana_Base_AbstractEntity_CreateTrait.html">CreateTrait</a></td></tr>
 <tr class="memitem:b5da7ee inherit pub_methods_Helix_Asana_Base_AbstractEntity_CreateTrait"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_AbstractEntity_CreateTrait.html#b5da7ee">create</a> ()</td></tr>
 <tr class="memdesc:b5da7ee inherit pub_methods_Helix_Asana_Base_AbstractEntity_CreateTrait"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the new entity in Asana.  <a href="Helix_Asana_Base_AbstractEntity_CreateTrait.html#b5da7ee">More...</a><br /></td></tr>

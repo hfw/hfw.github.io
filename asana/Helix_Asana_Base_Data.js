@@ -19,5 +19,9 @@ var Helix_Asana_Base_Data =
     [ "_setField", "Helix_Asana_Base_Data.html#ab60c3b", null ],
     [ "isDiff", "Helix_Asana_Base_Data.html#c435fd7", null ],
     [ "jsonSerialize", "Helix_Asana_Base_Data.html#a630cbe", null ],
+    [ "offsetExists", "Helix_Asana_Base_Data.html#a6e5636", null ],
+    [ "offsetGet", "Helix_Asana_Base_Data.html#8b8df41", null ],
+    [ "offsetSet", "Helix_Asana_Base_Data.html#e8b5dcd", null ],
+    [ "offsetUnset", "Helix_Asana_Base_Data.html#4fc83cb", null ],
     [ "toArray", "Helix_Asana_Base_Data.html#7258986", null ]
 ];

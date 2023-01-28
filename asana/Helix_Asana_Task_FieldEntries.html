@@ -77,12 +77,12 @@ $(document).ready(function(){initNavTree('Helix_Asana_Task_FieldEntries.html',''
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Helix_Asana_Task_FieldEntries__inherit__graph.png" border="0" usemap="#FieldEntries_inherit__map" alt="Inheritance graph"/></div>
 <map name="FieldEntries_inherit__map" id="FieldEntries_inherit__map">
-<area shape="rect" title="Acts as a container for a task&#39;s custom&#45;field values." alt="" coords="220,160,363,189"/>
-<area shape="rect" href="Helix_Asana_Base_Data.html" title="A data object with support for annotated magic methods." alt="" coords="65,83,128,112"/>
+<area shape="rect" title="Acts as a container for a task&#39;s custom&#45;field values." alt="" coords="253,160,396,189"/>
+<area shape="rect" href="Helix_Asana_Base_Data.html" title="A data object with support for annotated magic methods." alt="" coords="177,83,240,112"/>
 <area shape="rect" title=" " alt="" coords="5,5,188,35"/>
-<area shape="rect" title=" " alt="" coords="152,83,284,112"/>
-<area shape="rect" title=" " alt="" coords="309,83,421,112"/>
-<area shape="rect" title=" " alt="" coords="445,83,637,112"/>
+<area shape="rect" title=" " alt="" coords="212,5,344,35"/>
+<area shape="rect" title=" " alt="" coords="315,83,427,112"/>
+<area shape="rect" title=" " alt="" coords="451,83,643,112"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
@@ -127,27 +127,24 @@ Public Methods</h2></td></tr>
 <tr class="separator:e405fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:99f6f98"><td class="memItemLeft" align="right" valign="top">null <a class="el" href="Helix_Asana_Task_FieldEntry.html">FieldEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#99f6f98">getEntry</a> (string $ident)</td></tr>
 <tr class="separator:99f6f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:fb796ee"><td class="memItemLeft" align="right" valign="top">Generator&lt; string, null|number|string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#fb796ee">getIterator</a> ()</td></tr>
-<tr class="memdesc:fb796ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values, keyed by entry GID.  <a href="Helix_Asana_Task_FieldEntries.html#fb796ee">More...</a><br /></td></tr>
-<tr class="separator:fb796ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:b2938bc"><td class="memItemLeft" align="right" valign="top">Generator&lt; string, null|string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#b2938bc">getIterator</a> ()</td></tr>
+<tr class="memdesc:b2938bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Human values, keyed by entry GID.  <a href="Helix_Asana_Task_FieldEntries.html#b2938bc">More...</a><br /></td></tr>
+<tr class="separator:b2938bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991e71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Helix_Asana_Task.html">Task</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#a991e71">getTask</a> ()</td></tr>
 <tr class="separator:a991e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:9e76baa"><td class="memItemLeft" align="right" valign="top">array&lt; string, null|number|string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#9e76baa">getValues</a> ()</td></tr>
 <tr class="separator:9e76baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1c85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#a0f1c85">offsetExists</a> ($entryIdent)</td></tr>
-<tr class="memdesc:a0f1c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does a <code>null</code> check on an entry's value.  <a href="Helix_Asana_Task_FieldEntries.html#a0f1c85">More...</a><br /></td></tr>
-<tr class="separator:a0f1c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:4e1a736"><td class="memItemLeft" align="right" valign="top">null number string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#4e1a736">offsetGet</a> ($entryIdent)</td></tr>
-<tr class="memdesc:4e1a736"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entry's human-readable value.  <a href="Helix_Asana_Task_FieldEntries.html#4e1a736">More...</a><br /></td></tr>
-<tr class="separator:4e1a736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:13b10e7"><td class="memItemLeft" align="right" valign="top">null string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#13b10e7">offsetGet</a> ($entryIdent)</td></tr>
+<tr class="memdesc:13b10e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entry's display-value.  <a href="Helix_Asana_Task_FieldEntries.html#13b10e7">More...</a><br /></td></tr>
+<tr class="separator:13b10e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:9f267d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#9f267d8">offsetSet</a> ($entryIdent, $value)</td></tr>
-<tr class="memdesc:9f267d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an entry's human-readable value.  <a href="Helix_Asana_Task_FieldEntries.html#9f267d8">More...</a><br /></td></tr>
+<tr class="memdesc:9f267d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an entry's value.  <a href="Helix_Asana_Task_FieldEntries.html#9f267d8">More...</a><br /></td></tr>
 <tr class="separator:9f267d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:b89eb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#b89eb5e">offsetUnset</a> ($entryIdent)</td></tr>
-<tr class="memdesc:b89eb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field entries cannot be "removed" through this.  <a href="Helix_Asana_Task_FieldEntries.html#b89eb5e">More...</a><br /></td></tr>
-<tr class="separator:b89eb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:938625d"><td class="memItemLeft" align="right" valign="top">magic <a class="el" href="Helix_Asana_Task_FieldEntry.html">FieldEntry</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#938625d">selectEntries</a> (callable $filter)</td></tr>
+<tr class="memdesc:938625d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>fn( <a class="el" href="Helix_Asana_Task_FieldEntry.html" title="Represents a task&#39;s custom-field value.">FieldEntry</a> $entry ): bool</code>  <a href="Helix_Asana_Task_FieldEntries.html#938625d">More...</a><br /></td></tr>
+<tr class="separator:938625d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:7258986"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Task_FieldEntries.html#7258986">toArray</a> (bool $diff=false)</td></tr>
-<tr class="memdesc:7258986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overriden to prepare entry diffs for task upsert.  <a href="Helix_Asana_Task_FieldEntries.html#7258986">More...</a><br /></td></tr>
+<tr class="memdesc:7258986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden to prepare entry diffs for task upsert.  <a href="Helix_Asana_Task_FieldEntries.html#7258986">More...</a><br /></td></tr>
 <tr class="separator:7258986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_Helix_Asana_Base_Data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_Helix_Asana_Base_Data')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="Helix_Asana_Base_Data.html">Data</a></td></tr>
 <tr class="memitem:1dca3f4 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#1dca3f4">__call</a> (string $method, array $args)</td></tr>
@@ -164,6 +161,14 @@ Public Methods</h2></td></tr>
 <tr class="separator:c435fd7 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630cbe inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#a630cbe">jsonSerialize</a> ()</td></tr>
 <tr class="separator:a630cbe inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5636 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#a6e5636">offsetExists</a> (mixed $offset)</td></tr>
+<tr class="separator:a6e5636 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:8b8df41 inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">mixed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#8b8df41">offsetGet</a> (mixed $offset)</td></tr>
+<tr class="separator:8b8df41 inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e8b5dcd inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#e8b5dcd">offsetSet</a> (mixed $offset, mixed $value)</td></tr>
+<tr class="separator:e8b5dcd inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:4fc83cb inherit pub_methods_Helix_Asana_Base_Data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Helix_Asana_Base_Data.html#4fc83cb">offsetUnset</a> (mixed $offset)</td></tr>
+<tr class="separator:4fc83cb inherit pub_methods_Helix_Asana_Base_Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Methods</h2></td></tr>
@@ -367,7 +372,7 @@ Protected Methods</h2></td></tr>
 <p>Overridden to use <a class="el" href="Helix_Asana_Task_FieldEntries.html#305345d">$data</a> for each <a class="el" href="Helix_Asana_Task_FieldEntry.html">FieldEntry</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$i</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$i</td><td>Field entry enumeration. This is ignored, since entries are keyed by GID. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
   </table>
   </dd>
@@ -447,14 +452,14 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="fb796ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#fb796ee">&#9670;&nbsp;</a></span>getIterator()</h2>
+<a id="b2938bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#b2938bc">&#9670;&nbsp;</a></span>getIterator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Generator&lt;string,null|number|string&gt; getIterator </td>
+          <td class="memname">Generator&lt;string,null|string&gt; getIterator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -462,8 +467,8 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Values, keyed by entry GID. </p>
-<dl class="section return"><dt>Returns</dt><dd>Generator&lt;string,null|number|string&gt; </dd></dl>
+<p>Human values, keyed by entry GID. </p>
+<dl class="section return"><dt>Returns</dt><dd>Generator&lt;string,null|string&gt; </dd></dl>
 
 </div>
 </div>
@@ -511,8 +516,8 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f1c85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f1c85">&#9670;&nbsp;</a></span>offsetExists()</h2>
+<a id="13b10e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#13b10e7">&#9670;&nbsp;</a></span>offsetGet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -521,7 +526,7 @@ Protected Methods</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool offsetExists </td>
+          <td class="memname">null string offsetGet </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$entryIdent</em></td><td>)</td>
@@ -535,49 +540,14 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Does a <code>null</code> check on an entry's value. </p>
+<p>An entry's display-value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$entryIdent</td><td>GID or name </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
-
-</div>
-</div>
-<a id="4e1a736"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#4e1a736">&#9670;&nbsp;</a></span>offsetGet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">null number string offsetGet </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$entryIdent</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>An entry's human-readable value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$entryIdent</td><td>GID or name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>null|number|string Also returns <code>null</code> if there is no such entry. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string Also returns <code>null</code> if there is no such entry. </dd></dl>
 
 </div>
 </div>
@@ -615,12 +585,13 @@ Protected Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets an entry's human-readable value. </p>
+<p>Sets an entry's value. </p>
 <p>The entry must exist.</p>
+<p>{</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="Helix_Asana_Task_FieldEntry.html#37f3831" title="Calls the respective setter depending on the entry&#39;s type.">FieldEntry::setValue()</a>}</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$entryIdent</td><td>GID or name </td></tr>
-    <tr><td class="paramtype">null&#160;|&#160;number&#160;|&#160;string</td><td class="paramname">$value</td><td>This can be an enum option GID. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -628,39 +599,24 @@ Protected Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="b89eb5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#b89eb5e">&#9670;&nbsp;</a></span>offsetUnset()</h2>
+<a id="938625d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#938625d">&#9670;&nbsp;</a></span>selectEntries()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void offsetUnset </td>
+          <td class="memname">magic <a class="el" href="Helix_Asana_Task_FieldEntry.html">FieldEntry</a> [] selectEntries </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$entryIdent</em></td><td>)</td>
+          <td class="paramtype">callable&#160;</td>
+          <td class="paramname"><em>$filter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Field entries cannot be "removed" through this. </p>
-<p>This only sets them to <code>null</code>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$entryIdent</td><td>GID or name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p><code>fn( <a class="el" href="Helix_Asana_Task_FieldEntry.html" title="Represents a task&#39;s custom-field value.">FieldEntry</a> $entry ): bool</code> </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Helix_Asana_Task_FieldEntry.html" title="Represents a task&#39;s custom-field value.">FieldEntry</a>[] </dd></dl>
 
 </div>
 </div>
@@ -680,8 +636,7 @@ Protected Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Overriden to prepare entry diffs for task upsert. </p>
-<p>When upserting a task, custom fields must be given as their machine-values, keyed by GID.</p>
+<p>Overridden to prepare entry diffs for task upsert. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$diff</td><td></td></tr>
